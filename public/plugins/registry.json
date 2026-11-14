@@ -1,5 +1,5 @@
 {
-  "tag": "v2026.11.14-1003",
+  "tag": "v2026.11.14-1710",
   "plugins": [
     {
       "id": "discord-linux",
@@ -9,7 +9,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/discord_linux_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/discord_linux_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/discord/icons/discord-logo.svg",
       "icon": "discord-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/discord-linux/readme.md",
@@ -33,7 +33,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/discord_macos_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/discord_macos_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/discord/icons/discord-logo.svg",
       "icon": "discord-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/discord-macos/readme.md",
@@ -57,7 +57,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/discord_windows_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/discord_windows_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/discord/icons/discord-logo.svg",
       "icon": "discord-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/discord-windows/readme.md",
@@ -78,14 +78,14 @@
       "name": "Spotify",
       "summary": "Play, pause, skip and now playing for the Spotify desktop app.",
       "description": "Play, pause, skip and now playing for the Spotify desktop app.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/spotify_linux_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/spotify_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-linux/readme.md",
-      "sha256": "59847a4c030b3f8e9d6a4e0e1358a8628a9817d107e4213377bcb0481c5f7058",
+      "sha256": "8b7764b928eb745a8f635a853c0b764d8159fe2b2230b91a5c69d89db3041a28",
       "tags": [
         "Music",
         "Media"
@@ -94,7 +94,7 @@
         "linux"
       ],
       "featured": true,
-      "file": "spotify_linux_1.1.1.knobdeck",
+      "file": "spotify_linux_1.2.0.knobdeck",
       "readmeFile": "spotify_linux_readme.md"
     },
     {
@@ -102,14 +102,14 @@
       "name": "Spotify",
       "summary": "Play, pause, skip and now playing for the Spotify desktop app.",
       "description": "Play, pause, skip and now playing for the Spotify desktop app.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/spotify_macos_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/spotify_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-macos/readme.md",
-      "sha256": "e3015e37d62385ebecd8dfbcf45c5888dd164bfae5242c6165f19d99c6797d74",
+      "sha256": "20e782454e6f7ffda25c391d7017ec4b67a64294c27c7ffb2c2a5c5d836e553c",
       "tags": [
         "Music",
         "Media"
@@ -118,7 +118,7 @@
         "macos"
       ],
       "featured": true,
-      "file": "spotify_macos_1.1.1.knobdeck",
+      "file": "spotify_macos_1.2.0.knobdeck",
       "readmeFile": "spotify_macos_readme.md"
     },
     {
@@ -126,14 +126,14 @@
       "name": "Spotify",
       "summary": "Play, pause, skip and now playing for the Spotify desktop app.",
       "description": "Play, pause, skip and now playing for the Spotify desktop app.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/spotify_windows_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/spotify_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-windows/readme.md",
-      "sha256": "367b431a643154667341e99118e9f33cbb2c77208b45bf2f6f3d7528716201e2",
+      "sha256": "5cecfc94ef3e348131ea3fec957dc246de887643839e18b2c9a3ba55ebb1f12e",
       "tags": [
         "Music",
         "Media"
@@ -142,7 +142,7 @@
         "windows"
       ],
       "featured": true,
-      "file": "spotify_windows_1.1.1.knobdeck",
+      "file": "spotify_windows_1.2.0.knobdeck",
       "readmeFile": "spotify_windows_readme.md"
     },
     {
@@ -150,14 +150,14 @@
       "name": "OBS Studio",
       "summary": "Scenes, sources, recording and streaming.",
       "description": "Control OBS Studio — record, stream, scenes, sources & more.",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/obs_linux_1.2.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/obs_linux_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/obs/icons/obs-logo.svg",
       "icon": "obs-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-linux/readme.md",
-      "sha256": "d9e86bb61b81533cafa26d58f8826ada8380e172c278c5d81a2f4d58326ad85e",
+      "sha256": "b55927ae7cf3f17875451eafcb5d21eb0740d41283b9d7ced28d1408f7e14373",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -166,7 +166,7 @@
         "linux"
       ],
       "featured": true,
-      "file": "obs_linux_1.2.1.knobdeck",
+      "file": "obs_linux_1.3.0.knobdeck",
       "readmeFile": "obs_linux_readme.md"
     },
     {
@@ -174,14 +174,14 @@
       "name": "OBS Studio",
       "summary": "Scenes, sources, recording and streaming.",
       "description": "Control OBS Studio — record, stream, scenes, sources & more.",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/obs_macos_1.2.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/obs_macos_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/obs/icons/obs-logo.svg",
       "icon": "obs-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-macos/readme.md",
-      "sha256": "095a50fca484959450a1ac6763e12f4780de2a112e4e09661ea254abba9e5e28",
+      "sha256": "2127f7966f8cccaf9e1702ab2411dc0231f6d64347746ea6958f98b3a682f231",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -190,7 +190,7 @@
         "macos"
       ],
       "featured": true,
-      "file": "obs_macos_1.2.1.knobdeck",
+      "file": "obs_macos_1.3.0.knobdeck",
       "readmeFile": "obs_macos_readme.md"
     },
     {
@@ -198,14 +198,14 @@
       "name": "OBS Studio",
       "summary": "Scenes, sources, recording and streaming.",
       "description": "Control OBS Studio — record, stream, scenes, sources & more.",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/obs_windows_1.2.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/obs_windows_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/obs/icons/obs-logo.svg",
       "icon": "obs-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-windows/readme.md",
-      "sha256": "93aed46c255fcd5f162da542c591beb51bd778eab88db5b12f8e82e50c646604",
+      "sha256": "41a20650a019f8c73076b223c177cfb3428b2256590a0bd445ff2f3ee2cf8419",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -214,7 +214,7 @@
         "windows"
       ],
       "featured": true,
-      "file": "obs_windows_1.2.1.knobdeck",
+      "file": "obs_windows_1.3.0.knobdeck",
       "readmeFile": "obs_windows_readme.md"
     },
     {
@@ -222,14 +222,14 @@
       "name": "Twitch",
       "summary": "Chat, chat modes, ads, stream info, markers, clips, viewers.",
       "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/twitch_linux_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/twitch_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "twitch",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-linux/readme.md",
-      "sha256": "1dd74acc015755d9d760c741885a0cd600e16e8796efd3e8d767aaa62d3eab7a",
+      "sha256": "28bae7e15818ae353721d99e781431ac34187df69da664723d34772a03ee21e1",
       "tags": [
         "Streaming",
         "Communication"
@@ -238,7 +238,7 @@
         "linux"
       ],
       "featured": true,
-      "file": "twitch_linux_1.1.1.knobdeck",
+      "file": "twitch_linux_1.2.0.knobdeck",
       "readmeFile": "twitch_linux_readme.md"
     },
     {
@@ -246,14 +246,14 @@
       "name": "Twitch",
       "summary": "Chat, chat modes, ads, stream info, markers, clips, viewers.",
       "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/twitch_macos_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/twitch_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "twitch",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-macos/readme.md",
-      "sha256": "e81cd52787e3f5d0dd16b494329021774876bb087c3bcbc7d57181dcddae6820",
+      "sha256": "6833dea67a1f90d7c923d3e582dd0a1f221011f0c7384e3d4160662ff24b14b0",
       "tags": [
         "Streaming",
         "Communication"
@@ -262,7 +262,7 @@
         "macos"
       ],
       "featured": true,
-      "file": "twitch_macos_1.1.1.knobdeck",
+      "file": "twitch_macos_1.2.0.knobdeck",
       "readmeFile": "twitch_macos_readme.md"
     },
     {
@@ -270,14 +270,14 @@
       "name": "Twitch",
       "summary": "Chat, chat modes, ads, stream info, markers, clips, viewers.",
       "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/twitch_windows_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/twitch_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "twitch",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-windows/readme.md",
-      "sha256": "5575a4977da1f8ad98ba445b7e8696872cd84eef8d496f20df7fe7c15b821b1f",
+      "sha256": "64a6641ecdb49e442d763e567fa4e875537f87bc83f2e632346b39f52e3f2a1c",
       "tags": [
         "Streaming",
         "Communication"
@@ -286,7 +286,7 @@
         "windows"
       ],
       "featured": true,
-      "file": "twitch_windows_1.1.1.knobdeck",
+      "file": "twitch_windows_1.2.0.knobdeck",
       "readmeFile": "twitch_windows_readme.md"
     },
     {
@@ -294,14 +294,14 @@
       "name": "Visual Studio Code",
       "summary": "Editor commands through the KnobDeck VS Code extension.",
       "description": "Control Visual Studio Code through the KnobDeck VS Code companion extension.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/vscode_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/vscode_linux_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/vscode/icons/vscode-logo.svg",
       "icon": "vscode-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-linux/readme.md",
-      "sha256": "8dd64e282402ef8e2d18c230443cdfb206a20da845cdef0af633e9f2a3e35f9c",
+      "sha256": "3a581be5ead1ccc308b287acecf46ea9850a8f0d759fbe8bed5a28322056e90f",
       "tags": [
         "Developer tools",
         "Editor"
@@ -310,7 +310,7 @@
         "linux"
       ],
       "featured": true,
-      "file": "vscode_linux_1.1.0.knobdeck",
+      "file": "vscode_linux_1.2.0.knobdeck",
       "readmeFile": "vscode_linux_readme.md"
     },
     {
@@ -318,14 +318,14 @@
       "name": "Visual Studio Code",
       "summary": "Editor commands through the KnobDeck VS Code extension.",
       "description": "Control Visual Studio Code through the KnobDeck VS Code companion extension.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/vscode_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/vscode_macos_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/vscode/icons/vscode-logo.svg",
       "icon": "vscode-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-macos/readme.md",
-      "sha256": "bbdfb6cbe3a5450fc2f043df3862e59680809fa62e8476b8ad38874ebe7e34fb",
+      "sha256": "a2bf2ab2b703ca510d8f207453317a98b6389a62287d42138595e9429e90c628",
       "tags": [
         "Developer tools",
         "Editor"
@@ -334,7 +334,7 @@
         "macos"
       ],
       "featured": true,
-      "file": "vscode_macos_1.1.0.knobdeck",
+      "file": "vscode_macos_1.2.0.knobdeck",
       "readmeFile": "vscode_macos_readme.md"
     },
     {
@@ -342,14 +342,14 @@
       "name": "Visual Studio Code",
       "summary": "Editor commands through the KnobDeck VS Code extension.",
       "description": "Control Visual Studio Code through the KnobDeck VS Code companion extension.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/vscode_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/vscode_windows_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/vscode/icons/vscode-logo.svg",
       "icon": "vscode-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-windows/readme.md",
-      "sha256": "428a8a8ce325ffec07e5a2f8d07c90133f11937d6eafc5ec6a96f025cfc0aba1",
+      "sha256": "fcabf8d0fc540e1ba3d14ee68d25c7e2708c0e87d4a0a025cbc4d71283f31c1f",
       "tags": [
         "Developer tools",
         "Editor"
@@ -358,7 +358,7 @@
         "windows"
       ],
       "featured": true,
-      "file": "vscode_windows_1.1.0.knobdeck",
+      "file": "vscode_windows_1.2.0.knobdeck",
       "readmeFile": "vscode_windows_readme.md"
     },
     {
@@ -369,7 +369,7 @@
       "version": "1.4.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/win-tools_windows_1.4.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/win-tools_windows_1.4.1.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md",
@@ -393,7 +393,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/mac-tools_macos_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/mac-tools_macos_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md",
@@ -417,7 +417,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/linux-tools_linux_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/linux-tools_linux_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md",
@@ -438,14 +438,14 @@
       "name": "YouTube Music Desktop",
       "summary": "Playback, likes, volume, queue and playlists in YTMDesktop.",
       "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/ytmusic_linux_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/ytmusic_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-linux/readme.md",
-      "sha256": "8479562004235a1eaf4754d7e7b3af0b21cd584fd3ac862e7fa9c07046d05624",
+      "sha256": "8cb8e316cc36c67f30efda6a70175721aa408db920cb482dbae6d8dcef4bdcdb",
       "tags": [
         "Music",
         "Media"
@@ -454,7 +454,7 @@
         "linux"
       ],
       "featured": false,
-      "file": "ytmusic_linux_1.0.1.knobdeck",
+      "file": "ytmusic_linux_1.1.0.knobdeck",
       "readmeFile": "ytmusic_linux_readme.md"
     },
     {
@@ -462,14 +462,14 @@
       "name": "YouTube Music Desktop",
       "summary": "Playback, likes, volume, queue and playlists in YTMDesktop.",
       "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/ytmusic_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/ytmusic_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-macos/readme.md",
-      "sha256": "756b5d1e912e03558671a86cea92c64b51031b22fec8e7de09415eabab3b77ef",
+      "sha256": "ec66481b546ae5af210451bfae14f1f96ec44cab4475857d5f16c99bfdf7ad9d",
       "tags": [
         "Music",
         "Media"
@@ -478,7 +478,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "ytmusic_macos_1.0.1.knobdeck",
+      "file": "ytmusic_macos_1.1.0.knobdeck",
       "readmeFile": "ytmusic_macos_readme.md"
     },
     {
@@ -486,14 +486,14 @@
       "name": "YouTube Music Desktop",
       "summary": "Playback, likes, volume, queue and playlists in YTMDesktop.",
       "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/ytmusic_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/ytmusic_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-windows/readme.md",
-      "sha256": "df852442a73fed8306d47f7d8745d5e9acb372b53de1fdedcc6a6c657ffd673e",
+      "sha256": "397a90aa653036f8b0023975fda6e04f8f565aaf5f6cc435d63fcc48d40bdf22",
       "tags": [
         "Music",
         "Media"
@@ -502,7 +502,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "ytmusic_windows_1.0.1.knobdeck",
+      "file": "ytmusic_windows_1.1.0.knobdeck",
       "readmeFile": "ytmusic_windows_readme.md"
     },
     {
@@ -510,14 +510,14 @@
       "name": "Streamlabs Desktop",
       "summary": "Go live, record, replay buffer, scenes, sources and audio.",
       "description": "Go live, record, replay buffer, scenes, sources and audio in Streamlabs Desktop.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/streamlabs_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/streamlabs_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "radio-tower",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-macos/readme.md",
-      "sha256": "822d339197a9529f568315f5d9fd241b5c36d2c4ba6b015eee3c13821bb4dfb4",
+      "sha256": "71de8f1539eca54a2adcd561beee9f3882806448b7232541f88d558f376cf1da",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -526,7 +526,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "streamlabs_macos_1.0.1.knobdeck",
+      "file": "streamlabs_macos_1.1.0.knobdeck",
       "readmeFile": "streamlabs_macos_readme.md"
     },
     {
@@ -534,14 +534,14 @@
       "name": "Streamlabs Desktop",
       "summary": "Go live, record, replay buffer, scenes, sources and audio.",
       "description": "Go live, record, replay buffer, scenes, sources and audio in Streamlabs Desktop.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/streamlabs_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/streamlabs_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "radio-tower",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-windows/readme.md",
-      "sha256": "c9db2bfc3738c90684ea3d708ac77712a8f4508c6d160a3b8dad14d02dd553e0",
+      "sha256": "86c9c999ae065465601d41bba10728a622f99c920a287f2208d188e4da2ebe49",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -550,7 +550,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "streamlabs_windows_1.0.1.knobdeck",
+      "file": "streamlabs_windows_1.1.0.knobdeck",
       "readmeFile": "streamlabs_windows_readme.md"
     },
     {
@@ -558,14 +558,14 @@
       "name": "YouTube",
       "summary": "Live viewers and the Studio live dashboard (read-only).",
       "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/youtube_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/youtube_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "youtube",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-linux/readme.md",
-      "sha256": "477a7f499006196279d324fb6058b103c094a9cb52e3de26ad8dd777f792794e",
+      "sha256": "b321f62bc195cb4b4c66dea216351a2cd5412e53fc6c9cbe5c6831fdc9180b2f",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -574,7 +574,7 @@
         "linux"
       ],
       "featured": false,
-      "file": "youtube_linux_1.1.0.knobdeck",
+      "file": "youtube_linux_1.2.0.knobdeck",
       "readmeFile": "youtube_linux_readme.md"
     },
     {
@@ -582,14 +582,14 @@
       "name": "YouTube",
       "summary": "Live viewers and the Studio live dashboard (read-only).",
       "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/youtube_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/youtube_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "youtube",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-macos/readme.md",
-      "sha256": "f38a9eac28c11794fe2addf5a33b02ae09dd776ea5fb6847c9891ea3ff578db2",
+      "sha256": "3e26e18a4429656dafa1d137f9522bb6f3c75717b426231d9486ee9710a130e8",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -598,7 +598,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "youtube_macos_1.1.0.knobdeck",
+      "file": "youtube_macos_1.2.0.knobdeck",
       "readmeFile": "youtube_macos_readme.md"
     },
     {
@@ -606,14 +606,14 @@
       "name": "YouTube",
       "summary": "Live viewers and the Studio live dashboard (read-only).",
       "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/youtube_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/youtube_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "youtube",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-windows/readme.md",
-      "sha256": "ec003384bbea8b8dadfce7a71411a8b45cc6a5fdcc85decfcffaed4240fa960e",
+      "sha256": "c2fc196782481e20a6fa563cf3855232bc25b26cfc7d30b4d3e5e8995773541b",
       "tags": [
         "Streaming",
         "Broadcast"
@@ -622,7 +622,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "youtube_windows_1.1.0.knobdeck",
+      "file": "youtube_windows_1.2.0.knobdeck",
       "readmeFile": "youtube_windows_readme.md"
     },
     {
@@ -633,7 +633,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/elgato-lights_linux_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/elgato-lights_linux_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "lamp",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/elgato-lights-linux/readme.md",
@@ -657,7 +657,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/elgato-lights_macos_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/elgato-lights_macos_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "lamp",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/elgato-lights-macos/readme.md",
@@ -681,7 +681,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/elgato-lights_windows_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/elgato-lights_windows_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "lamp",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/elgato-lights-windows/readme.md",
@@ -702,14 +702,14 @@
       "name": "Voicemod",
       "summary": "Voices, voice changer, hear myself, mic mute and soundboard.",
       "description": "Voicemod voices, voice changer, hear myself, background effects, mic mute and soundboard.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/voicemod_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/voicemod_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "audio-waveform",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemod-macos/readme.md",
-      "sha256": "6a9bd8e1b743a9ba9b404cae7a7f9627872a91c12399659287b36d1bacada2e2",
+      "sha256": "0e0f3ecb9cd00d4a82d08076b99ad497c95ad9cc984dd27419658883ed80f973",
       "tags": [
         "Voice",
         "Streaming"
@@ -718,7 +718,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "voicemod_macos_1.0.1.knobdeck",
+      "file": "voicemod_macos_1.1.0.knobdeck",
       "readmeFile": "voicemod_macos_readme.md"
     },
     {
@@ -726,14 +726,14 @@
       "name": "Voicemod",
       "summary": "Voices, voice changer, hear myself, mic mute and soundboard.",
       "description": "Voicemod voices, voice changer, hear myself, background effects, mic mute and soundboard.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/voicemod_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/voicemod_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "audio-waveform",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemod-windows/readme.md",
-      "sha256": "8f2105e40fc4ee01b7a0208df8436cd3d75bb1156595994e94c92a6a9c0b20f4",
+      "sha256": "25a2265c42adcd4fe79a354e464518a935d0add0e7c88ea1c6da210aa6f94ac8",
       "tags": [
         "Voice",
         "Streaming"
@@ -742,7 +742,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "voicemod_windows_1.0.1.knobdeck",
+      "file": "voicemod_windows_1.1.0.knobdeck",
       "readmeFile": "voicemod_windows_readme.md"
     },
     {
@@ -750,14 +750,14 @@
       "name": "Home Assistant",
       "summary": "Toggle entities, run scenes, show sensors and set levels.",
       "description": "Toggle lights and switches, run scenes and scripts, show sensors and set levels in Home Assistant.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/home-assistant_linux_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/home-assistant_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "house",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-linux/readme.md",
-      "sha256": "9e9c79dc39cbe866e1ca55d022bc75e7624a40100c4b7a5a5ee506d67acac601",
+      "sha256": "db307c2c1f23ad1efeda0f10645a66a24262a195b423b3c35eb6c1e18a048f6d",
       "tags": [
         "Smart home",
         "Automation"
@@ -766,7 +766,7 @@
         "linux"
       ],
       "featured": false,
-      "file": "home-assistant_linux_1.0.1.knobdeck",
+      "file": "home-assistant_linux_1.1.0.knobdeck",
       "readmeFile": "home-assistant_linux_readme.md"
     },
     {
@@ -774,14 +774,14 @@
       "name": "Home Assistant",
       "summary": "Toggle entities, run scenes, show sensors and set levels.",
       "description": "Toggle lights and switches, run scenes and scripts, show sensors and set levels in Home Assistant.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/home-assistant_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/home-assistant_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "house",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-macos/readme.md",
-      "sha256": "360e59efc0566fdb27da9c6fd25a756625d6584895b7406d6ed084650cf5a671",
+      "sha256": "14de39e194e1e056247feb38824c0c258410ce4f19547fc7a2e8cd7fe617c410",
       "tags": [
         "Smart home",
         "Automation"
@@ -790,7 +790,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "home-assistant_macos_1.0.1.knobdeck",
+      "file": "home-assistant_macos_1.1.0.knobdeck",
       "readmeFile": "home-assistant_macos_readme.md"
     },
     {
@@ -798,14 +798,14 @@
       "name": "Home Assistant",
       "summary": "Toggle entities, run scenes, show sensors and set levels.",
       "description": "Toggle lights and switches, run scenes and scripts, show sensors and set levels in Home Assistant.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/home-assistant_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/home-assistant_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "house",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-windows/readme.md",
-      "sha256": "3afcd12900990afcd078d8a82af43565fb8e5df0cd313c06bb8e12c2741034a6",
+      "sha256": "69e57a0fd6dbc72759481e6189d5eacb2f353ca557f4100f228c330fec9a39ef",
       "tags": [
         "Smart home",
         "Automation"
@@ -814,7 +814,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "home-assistant_windows_1.0.1.knobdeck",
+      "file": "home-assistant_windows_1.1.0.knobdeck",
       "readmeFile": "home-assistant_windows_readme.md"
     },
     {
@@ -822,14 +822,14 @@
       "name": "Philips Hue",
       "summary": "Hue lights, rooms and scenes: power, brightness, color.",
       "description": "Hue lights, rooms and zones: power, brightness, color temperature, color and scenes.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/hue_linux_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/hue_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "lamp-ceiling",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-linux/readme.md",
-      "sha256": "3d11d795a2e29fc8e19de3f2cbb8c8037d997e9b92d4078580ebd0db2a61f2a3",
+      "sha256": "e1cd00ba52d56a0fb0736a9ab380ca0f7f6bed2a9f7ea23dd49dc99162b516ce",
       "tags": [
         "Lighting",
         "Smart home"
@@ -838,7 +838,7 @@
         "linux"
       ],
       "featured": false,
-      "file": "hue_linux_1.0.1.knobdeck",
+      "file": "hue_linux_1.1.0.knobdeck",
       "readmeFile": "hue_linux_readme.md"
     },
     {
@@ -846,14 +846,14 @@
       "name": "Philips Hue",
       "summary": "Hue lights, rooms and scenes: power, brightness, color.",
       "description": "Hue lights, rooms and zones: power, brightness, color temperature, color and scenes.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/hue_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/hue_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "lamp-ceiling",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-macos/readme.md",
-      "sha256": "90685804474babbb6b07b5a7e431fc757a1adb9456c36d8e1fa09d166cd173e2",
+      "sha256": "287e754201ee280df19d564b4de06779d7dcb4412e315ea2690726cdad4c5457",
       "tags": [
         "Lighting",
         "Smart home"
@@ -862,7 +862,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "hue_macos_1.0.1.knobdeck",
+      "file": "hue_macos_1.1.0.knobdeck",
       "readmeFile": "hue_macos_readme.md"
     },
     {
@@ -870,14 +870,14 @@
       "name": "Philips Hue",
       "summary": "Hue lights, rooms and scenes: power, brightness, color.",
       "description": "Hue lights, rooms and zones: power, brightness, color temperature, color and scenes.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/hue_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/hue_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "lamp-ceiling",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-windows/readme.md",
-      "sha256": "33891dc9d8fa6b7d7f20997e64239ee523e9c1954e3e20b79a725eeb26c3cbfe",
+      "sha256": "644bc7c00378054552fd63cc7b8b51c6c3a6edb339bd75f1accad8ce0a2920c9",
       "tags": [
         "Lighting",
         "Smart home"
@@ -886,7 +886,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "hue_windows_1.0.1.knobdeck",
+      "file": "hue_windows_1.1.0.knobdeck",
       "readmeFile": "hue_windows_readme.md"
     },
     {
@@ -897,7 +897,7 @@
       "version": "1.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/game-launcher_linux_1.0.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/game-launcher_linux_1.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gamepad-2",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-linux/readme.md",
@@ -921,7 +921,7 @@
       "version": "1.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/game-launcher_macos_1.0.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/game-launcher_macos_1.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gamepad-2",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-macos/readme.md",
@@ -945,7 +945,7 @@
       "version": "1.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/game-launcher_windows_1.0.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/game-launcher_windows_1.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gamepad-2",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-windows/readme.md",
@@ -969,7 +969,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/browser-plugin_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/browser-plugin_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "globe",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-linux/readme.md",
@@ -993,7 +993,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/browser-plugin_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/browser-plugin_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "globe",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-macos/readme.md",
@@ -1017,7 +1017,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/browser-plugin_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/browser-plugin_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "globe",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-windows/readme.md",
@@ -1041,7 +1041,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/zoom_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/zoom_macos_1.0.1.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/zoom/icons/zoom-logo.svg",
       "icon": "zoom-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/zoom-macos/readme.md",
@@ -1065,7 +1065,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/zoom_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/zoom_windows_1.0.1.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/zoom/icons/zoom-logo.svg",
       "icon": "zoom-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/zoom-windows/readme.md",
@@ -1089,7 +1089,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/slides_linux_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/slides_linux_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "presentation",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-linux/readme.md",
@@ -1113,7 +1113,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/slides_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/slides_macos_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "presentation",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-macos/readme.md",
@@ -1137,7 +1137,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/slides_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/slides_windows_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "presentation",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-windows/readme.md",
@@ -1158,14 +1158,14 @@
       "name": "IntelliJ IDEA",
       "summary": "JetBrains IDE actions on a key.",
       "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/intellij_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/intellij_linux_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/intellij/icons/intellij-logo.svg",
       "icon": "intellij-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/intellij-linux/readme.md",
-      "sha256": "072f6cb7e93da9a94251eff02730f8ef6fa05325ec0b727f6fa8e1945e97edc0",
+      "sha256": "06a2ea0884e675ce479a368fe5e7159178e8b79284c05165b23a32ea28453d0a",
       "tags": [
         "Developer tools",
         "IDE"
@@ -1174,7 +1174,7 @@
         "linux"
       ],
       "featured": false,
-      "file": "intellij_linux_1.1.0.knobdeck",
+      "file": "intellij_linux_1.2.0.knobdeck",
       "readmeFile": "intellij_linux_readme.md"
     },
     {
@@ -1182,14 +1182,14 @@
       "name": "IntelliJ IDEA",
       "summary": "JetBrains IDE actions on a key.",
       "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/intellij_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/intellij_macos_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/intellij/icons/intellij-logo.svg",
       "icon": "intellij-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/intellij-macos/readme.md",
-      "sha256": "8ac89c06599b983fc7790e071e5d1f30014cd5d3df46f4cb7fd05fbbe1804df1",
+      "sha256": "fdeaf84d02b8f6b17d142972baa4c2ae3225e954aae5a71842b83b2493e315da",
       "tags": [
         "Developer tools",
         "IDE"
@@ -1198,7 +1198,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "intellij_macos_1.1.0.knobdeck",
+      "file": "intellij_macos_1.2.0.knobdeck",
       "readmeFile": "intellij_macos_readme.md"
     },
     {
@@ -1206,14 +1206,14 @@
       "name": "IntelliJ IDEA",
       "summary": "JetBrains IDE actions on a key.",
       "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/intellij_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/intellij_windows_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/HarshalKudale/knobdeck-plugins/master/intellij/icons/intellij-logo.svg",
       "icon": "intellij-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/intellij-windows/readme.md",
-      "sha256": "aad172a6e2dd383e548d1bc35f7665d5781a74cc1bc3648f1b1667717a5bc639",
+      "sha256": "1798468efa59e092893d824a95671d9409150ca141a26cf9037e9d00a4c38982",
       "tags": [
         "Developer tools",
         "IDE"
@@ -1222,7 +1222,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "intellij_windows_1.1.0.knobdeck",
+      "file": "intellij_windows_1.2.0.knobdeck",
       "readmeFile": "intellij_windows_readme.md"
     },
     {
@@ -1230,14 +1230,14 @@
       "name": "VLC",
       "summary": "Playback controls for VLC media player.",
       "description": "Control VLC over its built-in HTTP interface.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/vlc_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/vlc_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": null,
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-linux/readme.md",
-      "sha256": "970f8389d930cce10b25ffcba9828560fee02939abbffd04200701c8b3ec88e5",
+      "sha256": "5d3516fd278205953da1c4804a6b120946cc4e6b2cfb4c68420cf5385fdad835",
       "tags": [
         "Media",
         "Playback"
@@ -1246,7 +1246,7 @@
         "linux"
       ],
       "featured": false,
-      "file": "vlc_linux_1.1.0.knobdeck",
+      "file": "vlc_linux_1.2.0.knobdeck",
       "readmeFile": "vlc_linux_readme.md"
     },
     {
@@ -1254,14 +1254,14 @@
       "name": "VLC",
       "summary": "Playback controls for VLC media player.",
       "description": "Control VLC over its built-in HTTP interface.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/vlc_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/vlc_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": null,
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-macos/readme.md",
-      "sha256": "083250d7fcba60d7014ac1a08bfba653333ec9de5d21927b65b8bf7b10d0b08b",
+      "sha256": "fd99dd96bd388cb4f43d9cd440ecf46c937b1cf009cf97670bc0de4b0c1dcee4",
       "tags": [
         "Media",
         "Playback"
@@ -1270,7 +1270,7 @@
         "macos"
       ],
       "featured": false,
-      "file": "vlc_macos_1.1.0.knobdeck",
+      "file": "vlc_macos_1.2.0.knobdeck",
       "readmeFile": "vlc_macos_readme.md"
     },
     {
@@ -1278,14 +1278,14 @@
       "name": "VLC",
       "summary": "Playback controls for VLC media player.",
       "description": "Control VLC over its built-in HTTP interface.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/vlc_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/vlc_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": null,
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-windows/readme.md",
-      "sha256": "7cd1dc1cb58d005607d65cf71276b1e581bf870ce1528fd1a7ed7c737dd4307c",
+      "sha256": "6ec5a01949415122f780b714b8de9c691479070a4cf15b913035b45da04b513f",
       "tags": [
         "Media",
         "Playback"
@@ -1294,7 +1294,7 @@
         "windows"
       ],
       "featured": false,
-      "file": "vlc_windows_1.1.0.knobdeck",
+      "file": "vlc_windows_1.2.0.knobdeck",
       "readmeFile": "vlc_windows_readme.md"
     },
     {
@@ -1305,7 +1305,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/weather_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/weather_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "cloud-sun",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-linux/readme.md",
@@ -1329,7 +1329,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/weather_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/weather_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "cloud-sun",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-macos/readme.md",
@@ -1353,7 +1353,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/weather_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/weather_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "cloud-sun",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-windows/readme.md",
@@ -1377,7 +1377,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/clocks_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/clocks_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "clock",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-linux/readme.md",
@@ -1401,7 +1401,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/clocks_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/clocks_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "clock",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-macos/readme.md",
@@ -1425,7 +1425,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/clocks_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/clocks_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "clock",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-windows/readme.md",
@@ -1449,7 +1449,7 @@
       "version": "2.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/ai-stats_linux_2.0.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/ai-stats_linux_2.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gauge",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-linux/readme.md",
@@ -1473,7 +1473,7 @@
       "version": "2.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/ai-stats_macos_2.0.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/ai-stats_macos_2.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gauge",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-macos/readme.md",
@@ -1497,7 +1497,7 @@
       "version": "2.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/HarshalKudale/knobdeck-plugins",
-      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1003/ai-stats_windows_2.0.0.knobdeck",
+      "artifactUrl": "https://github.com/HarshalKudale/knobdeck-plugins/releases/download/v2026.11.14-1710/ai-stats_windows_2.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gauge",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-windows/readme.md",
