@@ -21,8 +21,8 @@ concurrency:
   group: registries
   cancel-in-progress: false
 env:
-  PLUGINS_REPO: HarshalKudale/knobdeck-plugins
-  THEMES_REPO: HarshalKudale/knobdeck-themes
+  PLUGINS_REPO: Knobdeck/knobdeck-plugins
+  THEMES_REPO: Knobdeck/knobdeck-themes
   GH_TOKEN: ${{ github.token }}
 jobs:
   registries:

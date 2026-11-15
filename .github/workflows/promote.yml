@@ -24,7 +24,7 @@ concurrency:
   group: promote
   cancel-in-progress: false
 env:
-  RELEASES_REPO: ${{ vars.RELEASES_REPO || 'HarshalKudale/knobdeck-releases' }}
+  RELEASES_REPO: ${{ vars.RELEASES_REPO || 'Knobdeck/knobdeck-releases' }}
   GH_TOKEN: ${{ github.token }}
 jobs:
   promote:

@@ -7,7 +7,7 @@ import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
-const { OS, VERSION, NOTES = "", RELEASES_REPO = "HarshalKudale/knobdeck-releases" } = process.env;
+const { OS, VERSION, NOTES = "", RELEASES_REPO = "Knobdeck/knobdeck-releases" } = process.env;
 if (!["darwin", "linux", "windows"].includes(OS)) throw new Error(`OS must be darwin, linux or windows, not ${OS}`);
 const version = (VERSION ?? "").replace(/^v/, "");
 if (!/^\d+\.\d+\.\d+$/.test(version)) throw new Error(`VERSION must look like 1.0.1, not ${VERSION}`);
