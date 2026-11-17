@@ -2,7 +2,7 @@
 // landing/payments site so registry updates never redeploy checkout or licensing.
 //   /plugins/registry.json, /plugins/<id>/readme.md, /themes/registry.json  static (public/)
 //   POST /api/google/token                                                     OAuth secret holder
-//   /profiles/registry.json, /profiles/<id>/profile.json|preview.png            knobdeck-profiles master
+//   /profiles/registry.json, /profiles/<id>/profile.json                         knobdeck-profiles master
 // (The Discord plugin signs in with PKCE straight against Discord: its app is a public client.)
 
 function json(body: unknown, status = 200) {
@@ -94,7 +94,7 @@ async function googleToken(request: Request, env: Env) {
 // The profile registry has no release: registry.json and the profile folders are served from the
 // knobdeck-profiles repo's master as they are, cached here for a few minutes. Only these paths pass.
 const PROFILES_RAW = "https://raw.githubusercontent.com/Knobdeck/knobdeck-profiles/master/";
-const PROFILE_PATH = /^\/profiles\/(registry\.json|[a-z0-9-]{1,64}\/(?:profile\.json|preview\.png))$/;
+const PROFILE_PATH = /^\/profiles\/(registry\.json|[a-z0-9-]{1,64}\/profile\.json)$/;
 const PROFILE_CACHE_SECONDS = 300;
 
 async function profileFile(request: Request, pathname: string) {
@@ -106,10 +106,10 @@ async function profileFile(request: Request, pathname: string) {
     cf: { cacheTtl: PROFILE_CACHE_SECONDS, cacheEverything: true },
   });
   if (!upstream.ok) return json({ error: "not found" }, upstream.status === 404 ? 404 : 502);
-  // raw.githubusercontent.com says text/plain for everything; give the real types.
+  // raw.githubusercontent.com says text/plain for everything; give the real type.
   return new Response(request.method === "HEAD" ? null : upstream.body, {
     headers: {
-      "Content-Type": file.endsWith(".png") ? "image/png" : "application/json; charset=utf-8",
+      "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": `public, max-age=60, s-maxage=${PROFILE_CACHE_SECONDS}, stale-while-revalidate=86400`,
       "X-Content-Type-Options": "nosniff",
     },
