@@ -9,7 +9,7 @@ updates never redeploy checkout or licensing.
 | `/plugins/registry.json` | Plugin registry (desktop app, website `/plugins`) |
 | `/plugins/<id>/readme.md` | Plugin readmes, the registry's `readmeUrl` |
 | `/themes/registry.json` | Dial theme registry |
-| `/profiles/registry.json`, `/profiles/<id>/profile.json`, `/profiles/<id>/preview.png` | Profile registry (Get Profiles in the app), served from `knobdeck-profiles` master by the Worker, cached 5 minutes |
+| `/profiles/registry.json`, `/profiles/<id>/profile.json` | Profile registry (Get Profiles in the app), served from `knobdeck-profiles` master by the Worker, cached 5 minutes |
 | `POST /api/google/token` | OAuth token form (`authorization_code` with PKCE, or `refresh_token`) → Google tokens for the YouTube plugin; holds the client secret |
 
 ## Develop and deploy
