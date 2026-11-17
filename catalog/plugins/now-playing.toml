@@ -1,0 +1,7 @@
+id = "now-playing"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "now-playing", tag = "now-playing-v{version}" }
+first_party = true
+featured = false
+sort = 17
+tags = ["Music", "Media"]
+companions = []
