@@ -1,0 +1,7 @@
+id = "docker"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "docker", tag = "docker-v{version}" }
+first_party = true
+featured = false
+sort = 46
+tags = ["Developer tools", "Automation"]
+companions = []

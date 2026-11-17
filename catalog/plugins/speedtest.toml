@@ -1,0 +1,7 @@
+id = "speedtest"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "speedtest", tag = "speedtest-v{version}" }
+first_party = true
+featured = false
+sort = 87
+tags = ["Network", "Information"]
+companions = []
