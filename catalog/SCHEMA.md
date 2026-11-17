@@ -147,8 +147,8 @@ Ed25519 over the BLAKE2b-512 hash of the file) made with the key whose public ha
 `catalog/minisign.pub`:
 
 ```
-untrusted comment: minisign public key 21ECF2D675813CE4
-RWTkPIF11vLsIQlLweImvvfIKaJZgPuodcv3th0k5aP1oKYZI9hyU10N
+untrusted comment: minisign public key 17DE3528577F3943
+RWRDOX9XKDXeF7cT/p2hlIUAUJeBNABDTvTqR2PwIzAJ+bZroH7TK+oJ
 ```
 
 Trusted comment: `timestamp:<unix seconds>\tfile:<name>`. Verify with `minisign -Vm <file> -P <key>`
