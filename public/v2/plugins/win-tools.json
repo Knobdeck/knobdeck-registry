@@ -5,24 +5,24 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.8.2",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:21:20Z",
     "platforms": {
       "windows": {
         "id": "win-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/win-tools_windows_1.8.2.knobdeck",
-        "sha256": "99d0ed6aad962a43fc0b9b9efd5ab432e4f0852fdc3ce45410b978eee1eb6a49",
-        "size": 370520,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.8.2/win-tools_windows_1.8.2.knobdeck",
+        "sha256": "b1ba19758bebc0a6e113a91766482c1241ddb4d0d24fecb3429d9ba14e6cd208",
+        "size": 370992,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Windows Tools 1.8.2 for windows.",
   "setup": false,
   "versions": [
     {
       "version": "1.8.2",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "win-tools-v1.8.2",
+      "released": "2026-11-17T14:21:20Z",
       "yanked": false,
       "reason": null
     }

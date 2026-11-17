@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.4.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "browser-plugin-v1.4.0",
+      "released": "2026-11-17T14:20:14Z",
+      "notes": "Browser Controls 1.4.0 for linux, macos, windows.",
       "meta": {
+        "dir": "browser-plugin",
+        "version": "1.4.0",
         "name": "Browser Controls",
         "summary": "Tabs, zoom, bookmarks and history for your browser.",
         "tags": [
           "Browser",
           "Automation"
         ],
-        "featured": false
+        "sort": 50
       },
       "platforms": {
         "linux": {
           "id": "browser-plugin-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_linux_1.4.0.knobdeck",
-          "sha256": "a354549511e9c7d8ecead6cd686087ccbebecc96aaeb75c5e85e27c7123528a1",
-          "size": 863504,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.0/browser-plugin_linux_1.4.0.knobdeck",
+          "sha256": "d532331f6145f8de0c9cbe68009a55609f144ebece446e7ca9e66b0f06793b90",
+          "size": 864227,
           "file": "browser-plugin_linux_1.4.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.0/browser-plugin_linux_readme.md",
           "readmeFile": "browser-plugin_linux_readme.md",
           "name": "BrowserPlugin",
           "description": "Shared Chrome, Edge, Brave, Firefox and Zen controls, wheels, and zoom actions on Windows, macOS and Linux, through the KnobDeck browser extension.",
@@ -35,11 +37,11 @@
         },
         "macos": {
           "id": "browser-plugin-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_macos_1.4.0.knobdeck",
-          "sha256": "7d3d82dbdc58cd71d5e578211e7965764968c44b27cfb71930b8e2d17826601c",
-          "size": 695976,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.0/browser-plugin_macos_1.4.0.knobdeck",
+          "sha256": "a9364551c6d0805aa3de7aa03abe467cc4c953dbb0aa67e28a5b022e3dd396ae",
+          "size": 697782,
           "file": "browser-plugin_macos_1.4.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.0/browser-plugin_macos_readme.md",
           "readmeFile": "browser-plugin_macos_readme.md",
           "name": "BrowserPlugin",
           "description": "Shared Chrome, Edge, Brave, Firefox and Zen controls, wheels, and zoom actions on Windows, macOS and Linux, through the KnobDeck browser extension.",
@@ -52,11 +54,11 @@
         },
         "windows": {
           "id": "browser-plugin-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_windows_1.4.0.knobdeck",
-          "sha256": "3e5e5cf0dfa23009262485b35b37d1e5b168f96475360b801d86204a6a65c538",
-          "size": 281216,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.0/browser-plugin_windows_1.4.0.knobdeck",
+          "sha256": "1c8151af28fcb3ead660e8acd85ba2b4a08540fc61e4aedf6fd83eb7887b4a9c",
+          "size": 282787,
           "file": "browser-plugin_windows_1.4.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.0/browser-plugin_windows_readme.md",
           "readmeFile": "browser-plugin_windows_readme.md",
           "name": "BrowserPlugin",
           "description": "Shared Chrome, Edge, Brave, Firefox and Zen controls, wheels, and zoom actions on Windows, macOS and Linux, through the KnobDeck browser extension.",

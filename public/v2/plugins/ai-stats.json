@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "2.0.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:11Z",
     "platforms": {
       "linux": {
         "id": "ai-stats-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-stats_linux_2.0.0.knobdeck",
-        "sha256": "c77c21bc36d12e65dd8b4775976e3198f785a35e76709e7350020634aacda9ca",
-        "size": 988616,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.0/ai-stats_linux_2.0.0.knobdeck",
+        "sha256": "43c0f4fa8c6e055aab25b69c13268f580f3a5ecb4a7591872ee41523cdc2734a",
+        "size": 990350,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-linux/readme.md"
       },
       "macos": {
         "id": "ai-stats-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-stats_macos_2.0.0.knobdeck",
-        "sha256": "057e8a60344073d34f2da33944a2507e84c822d9947ccebfa8eb5c88a6e37da9",
-        "size": 1840597,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.0/ai-stats_macos_2.0.0.knobdeck",
+        "sha256": "e14c8b36c307cec759205f951036fb8fbcdd503ed9a251893142a0a19a626f3f",
+        "size": 1843683,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-macos/readme.md"
       },
       "windows": {
         "id": "ai-stats-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-stats_windows_2.0.0.knobdeck",
-        "sha256": "74de7c2f7cd79e8595f0d7b8da4a25f72fcc2245c06ed9840b861c51a4a58964",
-        "size": 864261,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.0/ai-stats_windows_2.0.0.knobdeck",
+        "sha256": "7cdc6a143a147e45de923680a3589962743ea8270e9fe15378483d702bc88a91",
+        "size": 865951,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "AI Stats 2.0.0 for linux, macos, windows.",
   "setup": false,
   "versions": [
     {
       "version": "2.0.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "ai-stats-v2.0.0",
+      "released": "2026-11-17T14:20:11Z",
       "yanked": false,
       "reason": null
     }

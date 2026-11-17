@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.0.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "coding-agents-v1.0.0",
+      "released": "2026-11-17T14:20:21Z",
+      "notes": "Coding Agents 1.0.0 for linux, macos, windows.",
       "meta": {
+        "dir": "coding-agents",
+        "version": "1.0.0",
         "name": "Coding Agents",
         "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
         "tags": [
           "Developer tools",
           "AI"
         ],
-        "featured": false
+        "sort": 31
       },
       "platforms": {
         "linux": {
           "id": "coding-agents-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_linux_1.0.0.knobdeck",
-          "sha256": "0eadefa1e9344bd0192c98af46f8519be0e1e2b9783fa9d2b88ed2ed326db4cc",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_linux_1.0.0.knobdeck",
+          "sha256": "730c78a1bccfc23d5fab630bbf1026b2d3d27c679b57ca4645c8504deb23fead",
           "size": 618479,
           "file": "coding-agents_linux_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_linux_readme.md",
           "readmeFile": "coding-agents_linux_readme.md",
           "name": "Coding Agents",
           "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "coding-agents-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_macos_1.0.0.knobdeck",
-          "sha256": "826e07bf5f27ba5ae03bfeb9b0b186a33ee16a8ed46ef5ffc8b1326b518561a7",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_macos_1.0.0.knobdeck",
+          "sha256": "4bb123419f0548926cc7c6e4718aef9466f0843690098a5329d8d59893d6e1ee",
           "size": 1130397,
           "file": "coding-agents_macos_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_macos_readme.md",
           "readmeFile": "coding-agents_macos_readme.md",
           "name": "Coding Agents",
           "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "coding-agents-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_windows_1.0.0.knobdeck",
-          "sha256": "01e0dd1622cf53aa4f17bb9e09e221d362c52df8146743cf5eb6442b93033b45",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_windows_1.0.0.knobdeck",
+          "sha256": "76d39bce68d83f2f677fa4368aa874ca1b9cb693ea67ffa8da794e43a4a3bda2",
           "size": 433239,
           "file": "coding-agents_windows_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_windows_readme.md",
           "readmeFile": "coding-agents_windows_readme.md",
           "name": "Coding Agents",
           "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",

@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.1.1",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "elgato-lights-v1.1.1",
+      "released": "2026-11-17T14:20:27Z",
+      "notes": "Elgato Lights 1.1.1 for linux, macos, windows.",
       "meta": {
+        "dir": "elgato-lights",
+        "version": "1.1.1",
         "name": "Elgato Lights",
         "summary": "Key Light, Ring Light and Light Strip: power, brightness, temperature, color.",
         "tags": [
           "Lighting",
           "Streaming"
         ],
-        "featured": false
+        "sort": 25
       },
       "platforms": {
         "linux": {
           "id": "elgato-lights-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_linux_1.1.1.knobdeck",
-          "sha256": "45e30458dd5fbe92098a72e2db9e85d1238e576fae0f258fd98b2ce6a9389142",
-          "size": 1884095,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.1/elgato-lights_linux_1.1.1.knobdeck",
+          "sha256": "20eb480c824d99c4bae03d28a33ace50eb4daf780b1860ac5806fc31fa2d75fa",
+          "size": 1885490,
           "file": "elgato-lights_linux_1.1.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.1/elgato-lights_linux_readme.md",
           "readmeFile": "elgato-lights_linux_readme.md",
           "name": "Elgato Lights",
           "description": "Key Light, Ring Light and Light Strip: power, brightness, temperature and color.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "elgato-lights-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_macos_1.1.1.knobdeck",
-          "sha256": "600a0716590f723dbf8eb8b18d81c138b8ecb6610795860ff53a89e6bc027193",
-          "size": 3448222,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.1/elgato-lights_macos_1.1.1.knobdeck",
+          "sha256": "04519f48f3f02e4bff60d7d1cf2f36eeea45148a964089334be2aaab71ad32b0",
+          "size": 3450241,
           "file": "elgato-lights_macos_1.1.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.1/elgato-lights_macos_readme.md",
           "readmeFile": "elgato-lights_macos_readme.md",
           "name": "Elgato Lights",
           "description": "Key Light, Ring Light and Light Strip: power, brightness, temperature and color.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "elgato-lights-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_windows_1.1.1.knobdeck",
-          "sha256": "d240492193d6ce21c348561e8c6c61f12ef2bca8f3159752ee30a8ab0123dc67",
-          "size": 1633407,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.1/elgato-lights_windows_1.1.1.knobdeck",
+          "sha256": "a27435bcd7bb9a5a49a1b642c97b776a0e6801b0ae36e3f56f0d30c2e842840d",
+          "size": 1634678,
           "file": "elgato-lights_windows_1.1.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.1/elgato-lights_windows_readme.md",
           "readmeFile": "elgato-lights_windows_readme.md",
           "name": "Elgato Lights",
           "description": "Key Light, Ring Light and Light Strip: power, brightness, temperature and color.",

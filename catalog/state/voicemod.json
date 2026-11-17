@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "voicemod-v1.1.0",
+      "released": "2026-11-17T14:21:07Z",
+      "notes": "Voicemod 1.1.0 for macos, windows.",
       "meta": {
+        "dir": "voicemod",
+        "version": "1.1.0",
         "name": "Voicemod",
         "summary": "Voices, voice changer, hear myself, mic mute and soundboard.",
         "tags": [
           "Voice",
           "Streaming"
         ],
-        "featured": false
+        "sort": 26
       },
       "platforms": {
         "macos": {
           "id": "voicemod-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/voicemod_macos_1.1.0.knobdeck",
-          "sha256": "15de87dfd655e6b1735abe3a1885ca56b682bc7e236ca3ed06fd5c23c0a40b65",
-          "size": 1096124,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.0/voicemod_macos_1.1.0.knobdeck",
+          "sha256": "5899dd801ef99e70fd792ed042a4f7b3d359da2710ffbbc0af1428bbdc10c21e",
+          "size": 1098582,
           "file": "voicemod_macos_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/voicemod_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.0/voicemod_macos_readme.md",
           "readmeFile": "voicemod_macos_readme.md",
           "name": "Voicemod",
           "description": "Voicemod voices, voice changer, hear myself, background effects, mic mute and soundboard.",
@@ -33,11 +35,11 @@
         },
         "windows": {
           "id": "voicemod-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/voicemod_windows_1.1.0.knobdeck",
-          "sha256": "fe6cfe5418aac4d2a6abd28c0cee72c90ba63c94cf295c8166bd2292ebce8b5f",
-          "size": 424242,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.0/voicemod_windows_1.1.0.knobdeck",
+          "sha256": "01ae7b539d24a2462d25283385a6d5df9a319a1a72be9f6f41ca669979aad309",
+          "size": 425536,
           "file": "voicemod_windows_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/voicemod_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.0/voicemod_windows_readme.md",
           "readmeFile": "voicemod_windows_readme.md",
           "name": "Voicemod",
           "description": "Voicemod voices, voice changer, hear myself, background effects, mic mute and soundboard.",

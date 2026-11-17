@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.0.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "game-launcher-v1.0.0",
+      "released": "2026-11-17T14:20:33Z",
+      "notes": "Game Launcher 1.0.0 for linux, macos, windows.",
       "meta": {
+        "dir": "game-launcher",
+        "version": "1.0.0",
         "name": "Game Launcher",
         "summary": "Launch installed Steam and Epic games from a key or wheel.",
         "tags": [
           "Gaming",
           "Launcher"
         ],
-        "featured": false
+        "sort": 35
       },
       "platforms": {
         "linux": {
           "id": "game-launcher-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_linux_1.0.0.knobdeck",
-          "sha256": "9f0b878daaba42d69a58a8e4aef69d71534e28ee7da7003027891f79136a1d91",
-          "size": 315945,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_linux_1.0.0.knobdeck",
+          "sha256": "9db7445bf1ee4adb1c944c3ddbd0b3a1a5308bcdf7740e9af9648050bf0f400c",
+          "size": 317581,
           "file": "game-launcher_linux_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_linux_readme.md",
           "readmeFile": "game-launcher_linux_readme.md",
           "name": "Game Launcher",
           "description": "Launch your installed Steam games from a key or a wheel.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "game-launcher-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_macos_1.0.0.knobdeck",
-          "sha256": "225168b3a07af29adc172334144b8728692c65e173dc31d4ffc84902068af5de",
-          "size": 566143,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_macos_1.0.0.knobdeck",
+          "sha256": "f4e61aa54a478f8dd7bd98c6bcb5f09004c73cfcb05f98be32ed125b5807a6df",
+          "size": 568859,
           "file": "game-launcher_macos_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_macos_readme.md",
           "readmeFile": "game-launcher_macos_readme.md",
           "name": "Game Launcher",
           "description": "Launch your installed Steam and Epic Games Store games from a key or a wheel.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "game-launcher-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_windows_1.0.0.knobdeck",
-          "sha256": "e424646615108e4991cd05005d7b6ff0b27b4127a147e188188b7ae0e1b7a1e9",
-          "size": 238607,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_windows_1.0.0.knobdeck",
+          "sha256": "d84df95c645f275b839931d4cec3e912aeb3105814d54488e91ad8644420d13f",
+          "size": 240291,
           "file": "game-launcher_windows_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_windows_readme.md",
           "readmeFile": "game-launcher_windows_readme.md",
           "name": "Game Launcher",
           "description": "Launch your installed Steam and Epic Games Store games from a key or a wheel.",

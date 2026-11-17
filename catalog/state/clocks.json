@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "clocks-v1.1.0",
+      "released": "2026-11-17T14:20:18Z",
+      "notes": "Clocks 1.1.0 for linux, macos, windows.",
       "meta": {
+        "dir": "clocks",
+        "version": "1.1.0",
         "name": "Clocks",
         "summary": "Clock for any time zone, world clock, countdown timer, stopwatch.",
         "tags": [
           "Time",
           "Productivity"
         ],
-        "featured": false
+        "sort": 86
       },
       "platforms": {
         "linux": {
           "id": "clocks-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_linux_1.1.0.knobdeck",
-          "sha256": "994b91d55d6335c8b1bbab32c857ca123d8c6184c8c8849e2f774a0cf48b096d",
-          "size": 399546,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_linux_1.1.0.knobdeck",
+          "sha256": "0c41ec38998c3af051becdc2bec92c5525badb792f97559453ac93cb985f3d73",
+          "size": 401120,
           "file": "clocks_linux_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_linux_readme.md",
           "readmeFile": "clocks_linux_readme.md",
           "name": "Clocks",
           "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "clocks-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_macos_1.1.0.knobdeck",
-          "sha256": "8e3dd3a3b055bb67d1709c65834fd5d562e3129dfbe2b9b3a49c33a69c593fff",
-          "size": 730140,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_macos_1.1.0.knobdeck",
+          "sha256": "2903d9a09a84f479616124afa7a37665662c3f58fd9a96ee70d07285031de01b",
+          "size": 733268,
           "file": "clocks_macos_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_macos_readme.md",
           "readmeFile": "clocks_macos_readme.md",
           "name": "Clocks",
           "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "clocks-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_windows_1.1.0.knobdeck",
-          "sha256": "67e01398ede2a24f490a231fcf33277c8a800508a7057aa3686ce7bc7af389a3",
-          "size": 365225,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_windows_1.1.0.knobdeck",
+          "sha256": "c91cb22e83cc1ac7c9104ac0b57b66eb1d391744fe601b48722867b7cbc7596b",
+          "size": 367529,
           "file": "clocks_windows_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_windows_readme.md",
           "readmeFile": "clocks_windows_readme.md",
           "name": "Clocks",
           "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",

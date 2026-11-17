@@ -3,26 +3,29 @@
   "versions": [
     {
       "version": "1.3.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "discord-v1.3.0",
+      "released": "2026-11-17T14:20:24Z",
+      "notes": "Discord 1.3.0 for linux, macos, windows.",
       "meta": {
+        "dir": "discord",
+        "version": "1.3.0",
         "name": "Discord",
         "summary": "Mute, deafen, push-to-talk, channels and soundboard.",
         "tags": [
           "Communication",
           "Voice"
         ],
-        "featured": true
+        "featured": true,
+        "sort": 10
       },
       "platforms": {
         "linux": {
           "id": "discord-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_linux_1.3.0.knobdeck",
-          "sha256": "7301e4b048b1db6bf00783e1a12fb5e3f7a27da050d098758aeaee5ec1f6673b",
-          "size": 2462884,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/discord-v1.3.0/discord_linux_1.3.0.knobdeck",
+          "sha256": "204ab62191dc0f4d9b5d6288d605f87699bb8833c1d33dde0efc49c24f217778",
+          "size": 2463339,
           "file": "discord_linux_1.3.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/discord-v1.3.0/discord_linux_readme.md",
           "readmeFile": "discord_linux_readme.md",
           "name": "Discord",
           "description": "Control Discord — mute, deafen, PTT, channels, volume, soundboard & more.",
@@ -33,11 +36,11 @@
         },
         "macos": {
           "id": "discord-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_macos_1.3.0.knobdeck",
-          "sha256": "5807b75553831ecf82716cfd7551c06441ed463c551da72a618e232976f3311f",
-          "size": 3630508,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/discord-v1.3.0/discord_macos_1.3.0.knobdeck",
+          "sha256": "7e6e833b8a40463053cb35c1bed4bf6fd3aa49956e824b2ca6d0378c9df04578",
+          "size": 3631780,
           "file": "discord_macos_1.3.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/discord-v1.3.0/discord_macos_readme.md",
           "readmeFile": "discord_macos_readme.md",
           "name": "Discord",
           "description": "Control Discord — mute, deafen, PTT, channels, volume, soundboard & more.",
@@ -48,11 +51,11 @@
         },
         "windows": {
           "id": "discord-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_windows_1.3.0.knobdeck",
-          "sha256": "ab71d39f432236e01c256f4d848d8429131263ae8dfe26327d9e9194c2e499f1",
-          "size": 1726190,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/discord-v1.3.0/discord_windows_1.3.0.knobdeck",
+          "sha256": "de195be5f3674b096ea76f3c3176974bfd285a6493c38cbf38d55e7bbfa07898",
+          "size": 1726788,
           "file": "discord_windows_1.3.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/discord-v1.3.0/discord_windows_readme.md",
           "readmeFile": "discord_windows_readme.md",
           "name": "Discord",
           "description": "Control Discord — mute, deafen, PTT, channels, volume, soundboard & more.",

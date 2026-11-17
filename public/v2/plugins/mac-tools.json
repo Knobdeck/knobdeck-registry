@@ -5,24 +5,24 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.6.1",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:47Z",
     "platforms": {
       "macos": {
         "id": "mac-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/mac-tools_macos_1.6.1.knobdeck",
-        "sha256": "75006ae4128c9a0efd88f11b233f1534c23d2a540f342f29c7b3f26a922d334a",
-        "size": 928856,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.6.1/mac-tools_macos_1.6.1.knobdeck",
+        "sha256": "62d9a245f6a6d67b230a20dc964b1aaa63c0779badf4f80e9cdcc95894956f99",
+        "size": 930446,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "macOS Tools 1.6.1 for macos.",
   "setup": false,
   "versions": [
     {
       "version": "1.6.1",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "mac-tools-v1.6.1",
+      "released": "2026-11-17T14:20:47Z",
       "yanked": false,
       "reason": null
     }

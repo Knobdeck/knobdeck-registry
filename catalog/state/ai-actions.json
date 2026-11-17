@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.0.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "ai-actions-v1.0.0",
+      "released": "2026-11-17T14:20:08Z",
+      "notes": "AI Actions 1.0.0 for linux, macos, windows.",
       "meta": {
+        "dir": "ai-actions",
+        "version": "1.0.0",
         "name": "AI Actions",
         "summary": "Fix, rewrite, translate or explain selected text with your own AI model.",
         "tags": [
           "AI",
           "Productivity"
         ],
-        "featured": false
+        "sort": 37
       },
       "platforms": {
         "linux": {
           "id": "ai-actions-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_linux_1.0.0.knobdeck",
-          "sha256": "45e6dbcd609f623280ee591c9f0237507b686012b3712d68dffd8e845d5643cb",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_linux_1.0.0.knobdeck",
+          "sha256": "d0fa3f6157238035d54d0bd3ee04026e509aaadfedf5b88234a3010ed3451a20",
           "size": 3468150,
           "file": "ai-actions_linux_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_linux_readme.md",
           "readmeFile": "ai-actions_linux_readme.md",
           "name": "AI Actions",
           "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
@@ -41,11 +43,11 @@
         },
         "macos": {
           "id": "ai-actions-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_macos_1.0.0.knobdeck",
-          "sha256": "2fffc0348d2bcd6727b2924a90967011ae1af4ea230482e8fb3bfd37a0891a24",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_macos_1.0.0.knobdeck",
+          "sha256": "d3a93b98c0f2d19b2e31f31e28a856c561173092233d6d7019a3286cf419f74e",
           "size": 3601535,
           "file": "ai-actions_macos_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_macos_readme.md",
           "readmeFile": "ai-actions_macos_readme.md",
           "name": "AI Actions",
           "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
@@ -64,11 +66,11 @@
         },
         "windows": {
           "id": "ai-actions-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_windows_1.0.0.knobdeck",
-          "sha256": "a0274c586f28c39fd13d70684a17f5d2967324693c693bd713ff32e54493f1ec",
-          "size": 1724841,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_windows_1.0.0.knobdeck",
+          "sha256": "33201a8ed7055676088f6b12bf2dc24a9687a5e5f4c1b2a3ea670836a4909ae2",
+          "size": 1724842,
           "file": "ai-actions_windows_1.0.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_windows_readme.md",
           "readmeFile": "ai-actions_windows_readme.md",
           "name": "AI Actions",
           "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",

@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.1.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:29Z",
     "platforms": {
       "linux": {
         "id": "files-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/files_linux_1.1.0.knobdeck",
-        "sha256": "0e40dad600de9ff7bb448f08841a5dbc43d22c93b9ac5edb71214f140d0dc333",
-        "size": 1688297,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.0/files_linux_1.1.0.knobdeck",
+        "sha256": "a05a14cb2b1ce4e7121ec6973fb3174ef36052ac9ccb3de19360fd505fec248f",
+        "size": 1684052,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-linux/readme.md"
       },
       "macos": {
         "id": "files-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/files_macos_1.1.0.knobdeck",
-        "sha256": "9677bc5f74facc47165faf57dc498b432ba0b95e40a3cb7d395fb012d605e944",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.0/files_macos_1.1.0.knobdeck",
+        "sha256": "0dc4fbcb42d30422cf430fab0c65d02749ef77a607e14d2245218c661540c60b",
         "size": 2015283,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-macos/readme.md"
       },
       "windows": {
         "id": "files-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/files_windows_1.1.0.knobdeck",
-        "sha256": "da89bbbd59c5c736310dcac98e8aada569dd687cec7f698c7187790b7cbf4545",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.0/files_windows_1.1.0.knobdeck",
+        "sha256": "4afbc44bc20ac2d4e28387e315d66fd597b2484679156dea007c1e331d30ddfa",
         "size": 967671,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Files 1.1.0 for linux, macos, windows.",
   "setup": false,
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "files-v1.1.0",
+      "released": "2026-11-17T14:20:29Z",
       "yanked": false,
       "reason": null
     }

@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.1.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:21:14Z",
     "platforms": {
       "linux": {
         "id": "weather-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_linux_1.1.0.knobdeck",
-        "sha256": "64891d15ec3752d27bf9847e1498291292c270b2ff6f26114e20ff3117a3816a",
-        "size": 982186,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.0/weather_linux_1.1.0.knobdeck",
+        "sha256": "31b61b05c48a84e0c5d435c4ccbaf22262db88f35e674a819e60c526e137fb94",
+        "size": 984116,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-linux/readme.md"
       },
       "macos": {
         "id": "weather-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_macos_1.1.0.knobdeck",
-        "sha256": "9984b8d797aa6bcfb44f69049dbbddf4027a6fc99a3fc4b988ee02ac27c259c1",
-        "size": 1797547,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.0/weather_macos_1.1.0.knobdeck",
+        "sha256": "a917097c047ea8ee97b45726e456c223d94196ae34e7c85a1bdd0e9f23dc17b9",
+        "size": 1800163,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-macos/readme.md"
       },
       "windows": {
         "id": "weather-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_windows_1.1.0.knobdeck",
-        "sha256": "622db7e5640294d85ee53055c165e97edf96f58e2a7016df38ee67648564ee84",
-        "size": 852363,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.0/weather_windows_1.1.0.knobdeck",
+        "sha256": "cbcaf3626487583fe5958685d1012f69c5f6bc3b6fb4f3fff99f0331be91478e",
+        "size": 854004,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Weather 1.1.0 for linux, macos, windows.",
   "setup": false,
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "weather-v1.1.0",
+      "released": "2026-11-17T14:21:14Z",
       "yanked": false,
       "reason": null
     }

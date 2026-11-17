@@ -3,26 +3,29 @@
   "versions": [
     {
       "version": "1.2.1",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "spotify-v1.2.1",
+      "released": "2026-11-17T14:20:56Z",
+      "notes": "Spotify 1.2.1 for linux, macos, windows.",
       "meta": {
+        "dir": "spotify",
+        "version": "1.2.1",
         "name": "Spotify",
         "summary": "Play, pause, skip and now playing for the Spotify desktop app.",
         "tags": [
           "Music",
           "Media"
         ],
-        "featured": true
+        "featured": true,
+        "sort": 15
       },
       "platforms": {
         "linux": {
           "id": "spotify-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_linux_1.2.1.knobdeck",
-          "sha256": "bde5c255cf76055762d5e455cfb646b2d7b6b883a58bfdd6b165983ba3cacd1a",
-          "size": 797684,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_linux_1.2.1.knobdeck",
+          "sha256": "f4733d591b55481280bc118247bdb9b0389f0831bbe8f7d60ba824e8728304f6",
+          "size": 806047,
           "file": "spotify_linux_1.2.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_linux_readme.md",
           "readmeFile": "spotify_linux_readme.md",
           "name": "Spotify",
           "description": "Play, pause, skip and now playing for the Spotify desktop app.",
@@ -35,11 +38,11 @@
         },
         "macos": {
           "id": "spotify-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_macos_1.2.1.knobdeck",
-          "sha256": "5bd49c311106db18a3ad9bf014abd253bb546296beb8354ee27e2020c97a52d3",
-          "size": 521098,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_macos_1.2.1.knobdeck",
+          "sha256": "8d5ad3198270e76ad9dd34261912483f53738dcf0997a1132cacf1074a401fa3",
+          "size": 523329,
           "file": "spotify_macos_1.2.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_macos_readme.md",
           "readmeFile": "spotify_macos_readme.md",
           "name": "Spotify",
           "description": "Play, pause, skip and now playing for the Spotify desktop app.",
@@ -50,11 +53,11 @@
         },
         "windows": {
           "id": "spotify-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_windows_1.2.1.knobdeck",
-          "sha256": "742596a6bad41401c7ef43bb6883e7e81eaa05cb19e68472f62cd30663341be8",
-          "size": 185529,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_windows_1.2.1.knobdeck",
+          "sha256": "b1c7ed3c0871481c078e436f365679c4f539206c62c9a20e086bc6a7f855d152",
+          "size": 186807,
           "file": "spotify_windows_1.2.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_windows_readme.md",
           "readmeFile": "spotify_windows_readme.md",
           "name": "Spotify",
           "description": "Play, pause, skip and now playing for the Spotify desktop app.",

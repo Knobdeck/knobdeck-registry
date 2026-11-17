@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.1.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:36Z",
     "platforms": {
       "linux": {
         "id": "home-assistant-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_linux_1.1.0.knobdeck",
-        "sha256": "1203f1215789cb6bcf7ae838b70c1f651af5bec54b1517acdc371a5be35ad57c",
-        "size": 2889821,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_linux_1.1.0.knobdeck",
+        "sha256": "18f341ebde51ece2a0d58f7ac54f318709306510bec31307eb0c1811562c7a98",
+        "size": 2890338,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-linux/readme.md"
       },
       "macos": {
         "id": "home-assistant-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_macos_1.1.0.knobdeck",
-        "sha256": "0c14920772e7cc958bd1f53c1c17054e8288a1ce8117d0472c46ae552a24922d",
-        "size": 3536278,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_macos_1.1.0.knobdeck",
+        "sha256": "87cba3b93b75440f6a0c3c9643ddb99941dc2a64ba974ff14194ec50eb01a0a7",
+        "size": 3537862,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-macos/readme.md"
       },
       "windows": {
         "id": "home-assistant-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_windows_1.1.0.knobdeck",
-        "sha256": "7e63a1a988a50dabba226109fc2e5ecccb91076b7aaacfca75fea353832e450a",
-        "size": 1679687,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_windows_1.1.0.knobdeck",
+        "sha256": "5168e45ca1a656cfb860eeef5e73d266d4aa89eefe430d40aa9e22294121f001",
+        "size": 1680762,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Home Assistant 1.1.0 for linux, macos, windows.",
   "setup": true,
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "home-assistant-v1.1.0",
+      "released": "2026-11-17T14:20:36Z",
       "yanked": false,
       "reason": null
     }
