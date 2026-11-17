@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.2.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:21:04Z",
     "platforms": {
       "linux": {
         "id": "vlc-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_linux_1.2.0.knobdeck",
-        "sha256": "c60ed61caa3994adff29a2ffa6c0a8b99029f467498d5bb270a7cc0e8fbf7dbb",
-        "size": 2860786,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.0/vlc_linux_1.2.0.knobdeck",
+        "sha256": "41ccf301f891211b8ca2a2d9cc0e655f5767e3013e583c73a452276ae9ed81f7",
+        "size": 2861468,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-linux/readme.md"
       },
       "macos": {
         "id": "vlc-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_macos_1.2.0.knobdeck",
-        "sha256": "42d36848531246b58745d3a81ab82adcecda9b6bba9fc93947f83f66f8e564ee",
-        "size": 3466244,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.0/vlc_macos_1.2.0.knobdeck",
+        "sha256": "2f444f8fb60c696950f80d160c53b464d597924a73fcaa7dbb03e2ddca19bff9",
+        "size": 3468029,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-macos/readme.md"
       },
       "windows": {
         "id": "vlc-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_windows_1.2.0.knobdeck",
-        "sha256": "69373ea855008350e8f492008563d3fc3557ca8934d77f2734305860c50dbd3c",
-        "size": 1645623,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.0/vlc_windows_1.2.0.knobdeck",
+        "sha256": "87dbefee9246381206022fb82bbf7cfb79a2f0da5ceaa0b564af83ecd9c0b28f",
+        "size": 1647106,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "VLC 1.2.0 for linux, macos, windows.",
   "setup": true,
   "versions": [
     {
       "version": "1.2.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "vlc-v1.2.0",
+      "released": "2026-11-17T14:21:04Z",
       "yanked": false,
       "reason": null
     }

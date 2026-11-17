@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.2.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "intellij-v1.2.0",
+      "released": "2026-11-17T14:20:42Z",
+      "notes": "IntelliJ IDEA 1.2.0 for linux, macos, windows.",
       "meta": {
+        "dir": "intellij",
+        "version": "1.2.0",
         "name": "IntelliJ IDEA",
         "summary": "JetBrains IDE actions on a key.",
         "tags": [
           "Developer tools",
           "IDE"
         ],
-        "featured": false
+        "sort": 70
       },
       "platforms": {
         "linux": {
           "id": "intellij-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_linux_1.2.0.knobdeck",
-          "sha256": "d40e40fb554a9289e8bbcb642479ac85b018ddf253173c69eebf3d7f10e3ae69",
-          "size": 2847243,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/intellij-v1.2.0/intellij_linux_1.2.0.knobdeck",
+          "sha256": "c943006d0265d5c751765afeb49132fb1694254d548856152acd56c2dd4bd6fa",
+          "size": 2848294,
           "file": "intellij_linux_1.2.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/intellij-v1.2.0/intellij_linux_readme.md",
           "readmeFile": "intellij_linux_readme.md",
           "name": "IntelliJ IDE",
           "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "intellij-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_macos_1.2.0.knobdeck",
-          "sha256": "9bb0af622a6551da75ac2f28aed6d557c668e14f4b47b3cae7acf3bb8b1f274b",
-          "size": 3442741,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/intellij-v1.2.0/intellij_macos_1.2.0.knobdeck",
+          "sha256": "7f10116a1e8b24c6ce4d5a5273ebf5b6270b717cc22c1c122d4d66bb37865859",
+          "size": 3444441,
           "file": "intellij_macos_1.2.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/intellij-v1.2.0/intellij_macos_readme.md",
           "readmeFile": "intellij_macos_readme.md",
           "name": "IntelliJ IDE",
           "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "intellij-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_windows_1.2.0.knobdeck",
-          "sha256": "c87cb3936efa55b91ac3704f22eebdfd0a55cc9381213823e750fa6c5f784807",
-          "size": 1633604,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/intellij-v1.2.0/intellij_windows_1.2.0.knobdeck",
+          "sha256": "f2af4e5bef467d27ebfc9a3f219a6eb4a377408cc7a38e97de4e387a0980b2e1",
+          "size": 1635145,
           "file": "intellij_windows_1.2.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/intellij-v1.2.0/intellij_windows_readme.md",
           "readmeFile": "intellij_windows_readme.md",
           "name": "IntelliJ IDE",
           "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",

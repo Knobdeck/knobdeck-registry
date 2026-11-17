@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "ytmusic-v1.1.0",
+      "released": "2026-11-17T14:21:27Z",
+      "notes": "YouTube Music Desktop 1.1.0 for linux, macos, windows.",
       "meta": {
+        "dir": "ytmusic",
+        "version": "1.1.0",
         "name": "YouTube Music Desktop",
         "summary": "Playback, likes, volume, queue and playlists in YTMDesktop.",
         "tags": [
           "Music",
           "Media"
         ],
-        "featured": false
+        "sort": 16
       },
       "platforms": {
         "linux": {
           "id": "ytmusic-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_linux_1.1.0.knobdeck",
-          "sha256": "7261572fec75535a7f7f99b33d7f3033887f765ebb57fdceb6d451b4c68f14ec",
-          "size": 2909058,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_linux_1.1.0.knobdeck",
+          "sha256": "e0ff55bcae602a0bd1fe918a022a068233c8d671f2a78123a92c5d8d34513071",
+          "size": 2910159,
           "file": "ytmusic_linux_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_linux_readme.md",
           "readmeFile": "ytmusic_linux_readme.md",
           "name": "YouTube Music Desktop",
           "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "ytmusic-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_macos_1.1.0.knobdeck",
-          "sha256": "8ac0e8c879ec14b27d014cdf89d640a15e519b829aa289738b393acb8c7c6f51",
-          "size": 3585711,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_macos_1.1.0.knobdeck",
+          "sha256": "f225eb5881155656833058343bea3b825e4d1a3add19f89736ac0bda5fdb4b26",
+          "size": 3587349,
           "file": "ytmusic_macos_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_macos_readme.md",
           "readmeFile": "ytmusic_macos_readme.md",
           "name": "YouTube Music Desktop",
           "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "ytmusic-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_windows_1.1.0.knobdeck",
-          "sha256": "6ede0f7acdbf0dac9e8581d4083b654db0c9e0ae93455eece75039bd32f7ff77",
-          "size": 1706440,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_windows_1.1.0.knobdeck",
+          "sha256": "ecbf2955e00579d224b5b9a4bf2dd52f2db7356206c94db9fd26543ea887d12e",
+          "size": 1707692,
           "file": "ytmusic_windows_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_windows_readme.md",
           "readmeFile": "ytmusic_windows_readme.md",
           "name": "YouTube Music Desktop",
           "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",

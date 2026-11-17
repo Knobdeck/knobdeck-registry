@@ -5,31 +5,31 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.1.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:58Z",
     "platforms": {
       "macos": {
         "id": "streamlabs-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/streamlabs_macos_1.1.0.knobdeck",
-        "sha256": "029e36026d231c47dc8224ed6ba535635a773d65b4eb0fece4b9d4c2784578d3",
-        "size": 1118441,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.0/streamlabs_macos_1.1.0.knobdeck",
+        "sha256": "ffdf85112d8c7001de38d32904dd27e5ecdb1f74848c6de07134a6bbb8c8f9d7",
+        "size": 1120989,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-macos/readme.md"
       },
       "windows": {
         "id": "streamlabs-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/streamlabs_windows_1.1.0.knobdeck",
-        "sha256": "f4c5e8111020a21a1bb287615979235931f43c449d843a98a52a84623f59d9fd",
-        "size": 434513,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.0/streamlabs_windows_1.1.0.knobdeck",
+        "sha256": "bda1fdad4c688032c6d2ea2c575ac7f78c6c4a4a3c2b4bf442ce22d6f5c9cb1f",
+        "size": 436135,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Streamlabs Desktop 1.1.0 for macos, windows.",
   "setup": true,
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "streamlabs-v1.1.0",
+      "released": "2026-11-17T14:20:58Z",
       "yanked": false,
       "reason": null
     }

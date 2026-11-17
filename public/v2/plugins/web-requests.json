@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.0.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:21:17Z",
     "platforms": {
       "linux": {
         "id": "web-requests-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_linux_1.0.0.knobdeck",
-        "sha256": "4aa62de3f009839f882990a45c273ba5abb9ea138e476b9634b22c7af01a810b",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.0/web-requests_linux_1.0.0.knobdeck",
+        "sha256": "18e2729715a73b8c19228c2d5cd809b67605ed0f4268b7ec3179e255fec0ceb3",
         "size": 2794017,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-linux/readme.md"
       },
       "macos": {
         "id": "web-requests-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_macos_1.0.0.knobdeck",
-        "sha256": "7689426dc15d171a3d6cab7b69355ab7b2f71c080aa8b5573f9e73a020ac8282",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.0/web-requests_macos_1.0.0.knobdeck",
+        "sha256": "9c7123028aedb5e7da5047fcb3b059ceccc2ad9bd393ba828d32a3be7140a0e0",
         "size": 2349358,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-macos/readme.md"
       },
       "windows": {
         "id": "web-requests-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_windows_1.0.0.knobdeck",
-        "sha256": "f30e7d1feb0d4c2c745bc21b584020d773d7f604a971f80a241ecc2f2088183a",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.0/web-requests_windows_1.0.0.knobdeck",
+        "sha256": "0331c56efd048bc428b98128fded6598c75f0706dda2a4eda85b77535f714b4f",
         "size": 1071580,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Web Requests 1.0.0 for linux, macos, windows.",
   "setup": true,
   "versions": [
     {
       "version": "1.0.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "web-requests-v1.0.0",
+      "released": "2026-11-17T14:21:17Z",
       "yanked": false,
       "reason": null
     }

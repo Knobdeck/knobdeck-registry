@@ -270,7 +270,9 @@ async function taggedVersions(src) {
 
 async function resolvePlugin(src) {
   const state = loadState(src.id);
-  const known = new Set(state.versions.map((v) => v.version));
+  const isSnapshot = (tag) => /^v\d{4}\.\d{2}\.\d{2}-\d{4}$/.test(tag);
+  // A version first taken from a snapshot release is re-read from its own release once that exists.
+  const known = new Set(state.versions.filter((v) => !isSnapshot(v.tag)).map((v) => v.version));
   const dir = src.source.path && src.source.path !== "." ? src.source.path : src.id;
   const tagged = await taggedVersions(src);
   // A pinned version (third-party) is the only one considered.
@@ -292,6 +294,7 @@ async function resolvePlugin(src) {
     const metaAsset = release.assets.find((a) => a.name === `${dir}.json`);
     const meta = metaAsset ? JSON.parse((await download(metaAsset.browser_download_url)).toString()) : null;
     console.log(`${src.id} ${version}: from ${tag}`);
+    state.versions = state.versions.filter((v) => v.version !== version);
     state.versions.push(await fetchVersion(src, { version, tag, release, entries, meta }));
     known.add(version);
   }

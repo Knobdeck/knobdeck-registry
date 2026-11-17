@@ -5,24 +5,24 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.4.2",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:44Z",
     "platforms": {
       "linux": {
         "id": "linux-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/linux-tools_linux_1.4.2.knobdeck",
-        "sha256": "6ade5a6fe12b408f689a26705b8a794c76bc04d2b4dcf72266c01b1734b79d5d",
-        "size": 1052195,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.4.2/linux-tools_linux_1.4.2.knobdeck",
+        "sha256": "c8444949ea9c2a6a345b25e3c3a27c70d34769b16f2b3252e158ee293e929168",
+        "size": 1070292,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "Linux Tools 1.4.2 for linux.",
   "setup": false,
   "versions": [
     {
       "version": "1.4.2",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "linux-tools-v1.4.2",
+      "released": "2026-11-17T14:20:44Z",
       "yanked": false,
       "reason": null
     }

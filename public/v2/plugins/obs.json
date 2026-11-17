@@ -5,38 +5,38 @@
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
     "version": "1.3.0",
-    "released": "2026-11-17T13:02:53Z",
+    "released": "2026-11-17T14:20:50Z",
     "platforms": {
       "linux": {
         "id": "obs-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_linux_1.3.0.knobdeck",
-        "sha256": "ea70dbcfc0a47d07a1f6c6241898df755872d5e5c5b02490ae9cbbac546e6dea",
-        "size": 1585218,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.3.0/obs_linux_1.3.0.knobdeck",
+        "sha256": "1f4a45fb38ac34502a1a83041d7e9507f81762e3934ca73eb3005c54f62ae033",
+        "size": 1585865,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-linux/readme.md"
       },
       "macos": {
         "id": "obs-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_macos_1.3.0.knobdeck",
-        "sha256": "cbecfa82816578e8d16f8d2d8c8fd8edd663f9576727e3894e805a6bae2f949b",
-        "size": 1081852,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.3.0/obs_macos_1.3.0.knobdeck",
+        "sha256": "a8db24b8fb1496210b9a6513dca262f356b36854481a66f660640676ef2d1ed1",
+        "size": 1083138,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-macos/readme.md"
       },
       "windows": {
         "id": "obs-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_windows_1.3.0.knobdeck",
-        "sha256": "c3c9952893ecf4739b88f9104d936fbdeb55db07dcf2f681c93e6a9c673b107b",
-        "size": 414145,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.3.0/obs_windows_1.3.0.knobdeck",
+        "sha256": "f38cc5dfde2c43c78eb1457c618dd320b912a71153c1ae785914727b92123a35",
+        "size": 415547,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-windows/readme.md"
       }
     }
   },
-  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "changelog": "OBS Studio 1.3.0 for linux, macos, windows.",
   "setup": true,
   "versions": [
     {
       "version": "1.3.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
+      "tag": "obs-v1.3.0",
+      "released": "2026-11-17T14:20:50Z",
       "yanked": false,
       "reason": null
     }

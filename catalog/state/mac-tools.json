@@ -3,26 +3,29 @@
   "versions": [
     {
       "version": "1.6.1",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "mac-tools-v1.6.1",
+      "released": "2026-11-17T14:20:47Z",
+      "notes": "macOS Tools 1.6.1 for macos.",
       "meta": {
+        "dir": "mac-tools",
+        "version": "1.6.1",
         "name": "macOS Tools",
         "summary": "Window management, Spaces, audio devices, mic, app menu commands.",
         "tags": [
           "macOS",
           "Automation"
         ],
-        "featured": true
+        "featured": true,
+        "sort": 41
       },
       "platforms": {
         "macos": {
           "id": "mac-tools",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/mac-tools_macos_1.6.1.knobdeck",
-          "sha256": "75006ae4128c9a0efd88f11b233f1534c23d2a540f342f29c7b3f26a922d334a",
-          "size": 928856,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.6.1/mac-tools_macos_1.6.1.knobdeck",
+          "sha256": "62d9a245f6a6d67b230a20dc964b1aaa63c0779badf4f80e9cdcc95894956f99",
+          "size": 930446,
           "file": "mac-tools_macos_1.6.1.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/mac-tools_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.6.1/mac-tools_macos_readme.md",
           "readmeFile": "mac-tools_macos_readme.md",
           "name": "Mac Tools",
           "description": "macOS window management (snap, fill, full screen, displays), window switcher, Spaces and system actions, live stats, audio devices, mic mute and level, app menu commands, and Shortcuts, AppleScript and Keyboard Maestro actions.",

@@ -3,26 +3,28 @@
   "versions": [
     {
       "version": "1.1.0",
-      "tag": "v2026.11.17-1257",
-      "released": "2026-11-17T13:02:53Z",
-      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "tag": "hue-v1.1.0",
+      "released": "2026-11-17T14:20:39Z",
+      "notes": "Philips Hue 1.1.0 for linux, macos, windows.",
       "meta": {
+        "dir": "hue",
+        "version": "1.1.0",
         "name": "Philips Hue",
         "summary": "Hue lights, rooms and scenes: power, brightness, color.",
         "tags": [
           "Lighting",
           "Smart home"
         ],
-        "featured": false
+        "sort": 28
       },
       "platforms": {
         "linux": {
           "id": "hue-linux",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_linux_1.1.0.knobdeck",
-          "sha256": "a399a0b88482c5515a53fe6af3cd9fc9af3b77216c940f0cf220a529f67967c9",
-          "size": 2887159,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_linux_1.1.0.knobdeck",
+          "sha256": "4553a0ae1859601f0599b7c2f6d497fad255b9d8661a8b7e42b729319ead9e50",
+          "size": 2888511,
           "file": "hue_linux_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_linux_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_linux_readme.md",
           "readmeFile": "hue_linux_readme.md",
           "name": "Philips Hue",
           "description": "Hue lights, rooms and zones: power, brightness, color temperature, color and scenes.",
@@ -33,11 +35,11 @@
         },
         "macos": {
           "id": "hue-macos",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_macos_1.1.0.knobdeck",
-          "sha256": "f00fb715fd472cdd3f68f89561b55b41bb498bfb00d318058e96280233d00d4c",
-          "size": 3528311,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_macos_1.1.0.knobdeck",
+          "sha256": "ea264ef18c574354f864b2faf6462e34e7d95402daa5b23caf8ed7e74555ca1c",
+          "size": 3531162,
           "file": "hue_macos_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_macos_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_macos_readme.md",
           "readmeFile": "hue_macos_readme.md",
           "name": "Philips Hue",
           "description": "Hue lights, rooms and zones: power, brightness, color temperature, color and scenes.",
@@ -48,11 +50,11 @@
         },
         "windows": {
           "id": "hue-windows",
-          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_windows_1.1.0.knobdeck",
-          "sha256": "2f875145f02c9af8853290a69bb624c442751ab6e754e73eea2e00146639542a",
-          "size": 1675472,
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_windows_1.1.0.knobdeck",
+          "sha256": "07b8b0dcd90ba1cb2e0be71ef370488eda6c802b550343af2365ad45dea4903a",
+          "size": 1677723,
           "file": "hue_windows_1.1.0.knobdeck",
-          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_windows_readme.md",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_windows_readme.md",
           "readmeFile": "hue_windows_readme.md",
           "name": "Philips Hue",
           "description": "Hue lights, rooms and zones: power, brightness, color temperature, color and scenes.",
