@@ -1,0 +1,619 @@
+{
+  "id": "browser-plugin",
+  "versions": [
+    {
+      "version": "1.4.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "Browser Controls",
+        "summary": "Tabs, zoom, bookmarks and history for your browser.",
+        "tags": [
+          "Browser",
+          "Automation"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "browser-plugin-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_linux_1.4.0.knobdeck",
+          "sha256": "a354549511e9c7d8ecead6cd686087ccbebecc96aaeb75c5e85e27c7123528a1",
+          "size": 863504,
+          "file": "browser-plugin_linux_1.4.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_linux_readme.md",
+          "readmeFile": "browser-plugin_linux_readme.md",
+          "name": "BrowserPlugin",
+          "description": "Shared Chrome, Edge, Brave, Firefox and Zen controls, wheels, and zoom actions on Windows, macOS and Linux, through the KnobDeck browser extension.",
+          "author": "KnobDeck",
+          "icon": "globe",
+          "iconInBundle": false,
+          "uses": [
+            "window"
+          ]
+        },
+        "macos": {
+          "id": "browser-plugin-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_macos_1.4.0.knobdeck",
+          "sha256": "7d3d82dbdc58cd71d5e578211e7965764968c44b27cfb71930b8e2d17826601c",
+          "size": 695976,
+          "file": "browser-plugin_macos_1.4.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_macos_readme.md",
+          "readmeFile": "browser-plugin_macos_readme.md",
+          "name": "BrowserPlugin",
+          "description": "Shared Chrome, Edge, Brave, Firefox and Zen controls, wheels, and zoom actions on Windows, macOS and Linux, through the KnobDeck browser extension.",
+          "author": "KnobDeck",
+          "icon": "globe",
+          "iconInBundle": false,
+          "uses": [
+            "window"
+          ]
+        },
+        "windows": {
+          "id": "browser-plugin-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_windows_1.4.0.knobdeck",
+          "sha256": "3e5e5cf0dfa23009262485b35b37d1e5b168f96475360b801d86204a6a65c538",
+          "size": 281216,
+          "file": "browser-plugin_windows_1.4.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_windows_readme.md",
+          "readmeFile": "browser-plugin_windows_readme.md",
+          "name": "BrowserPlugin",
+          "description": "Shared Chrome, Edge, Brave, Firefox and Zen controls, wheels, and zoom actions on Windows, macOS and Linux, through the KnobDeck browser extension.",
+          "author": "KnobDeck",
+          "icon": "globe",
+          "iconInBundle": false,
+          "uses": [
+            "window"
+          ]
+        }
+      },
+      "actions": {
+        "new-tab": {
+          "type": "button",
+          "label": "New Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "new-window": {
+          "type": "button",
+          "label": "New Window",
+          "icon": "app-window",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "new-private-window": {
+          "type": "button",
+          "label": "New Private / Incognito Window",
+          "icon": "app-window",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "close-tab": {
+          "type": "button",
+          "label": "Close Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "reopen-closed-tab": {
+          "type": "button",
+          "label": "Reopen Closed Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "next-tab": {
+          "type": "button",
+          "label": "Next Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "previous-tab": {
+          "type": "button",
+          "label": "Previous Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "reload-tab": {
+          "type": "button",
+          "label": "Reload Tab",
+          "icon": "refresh-cw",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "hard-reload-tab": {
+          "type": "button",
+          "label": "Hard Reload",
+          "icon": "refresh-cw",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "go-back": {
+          "type": "button",
+          "label": "Back",
+          "icon": "arrow-left",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "go-forward": {
+          "type": "button",
+          "label": "Forward",
+          "icon": "arrow-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "focus-address-bar": {
+          "type": "button",
+          "label": "Focus Address Bar",
+          "icon": "search",
+          "platforms": [],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "open-downloads": {
+          "type": "button",
+          "label": "Open Downloads",
+          "icon": "download",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "open-history": {
+          "type": "button",
+          "label": "Open History",
+          "icon": "history",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "open-bookmarks-manager": {
+          "type": "button",
+          "label": "Open Bookmarks Manager",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "bookmark-page": {
+          "type": "button",
+          "label": "Bookmark Page",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "find-in-page": {
+          "type": "button",
+          "label": "Find in Page",
+          "icon": "search",
+          "platforms": [],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "print-page": {
+          "type": "button",
+          "label": "Print Page",
+          "icon": "printer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "save-page": {
+          "type": "button",
+          "label": "Save Page",
+          "icon": "save",
+          "platforms": [],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "toggle-fullscreen": {
+          "type": "button",
+          "label": "Toggle Fullscreen",
+          "icon": "maximize",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "stop-loading": {
+          "type": "button",
+          "label": "Stop Loading",
+          "icon": "circle-stop",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "custom-keybind": {
+          "type": "button",
+          "label": "Custom Keybind",
+          "icon": "keyboard",
+          "platforms": [],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            },
+            {
+              "key": "keys",
+              "type": "keybind",
+              "label": "Keys"
+            }
+          ]
+        },
+        "open-url": {
+          "type": "button",
+          "label": "Open URL",
+          "icon": "link",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            },
+            {
+              "key": "url",
+              "type": "text",
+              "label": "URL"
+            }
+          ]
+        },
+        "hold-next-tab": {
+          "type": "hold",
+          "label": "Hold Next Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ],
+          "released": {
+            "label": "Idle",
+            "icon": "chevron-right"
+          },
+          "held": {
+            "label": "Cycling",
+            "icon": "chevrons-right"
+          }
+        },
+        "hold-previous-tab": {
+          "type": "hold",
+          "label": "Hold Previous Tab",
+          "icon": "notebook-tabs",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ],
+          "released": {
+            "label": "Idle",
+            "icon": "chevron-left"
+          },
+          "held": {
+            "label": "Cycling",
+            "icon": "chevrons-left"
+          }
+        },
+        "hold-zoom-in": {
+          "type": "hold",
+          "label": "Hold Zoom In",
+          "icon": "zoom-in",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ],
+          "released": {
+            "label": "Idle",
+            "icon": "zoom-in"
+          },
+          "held": {
+            "label": "Zooming",
+            "icon": "zoom-in"
+          }
+        },
+        "hold-zoom-out": {
+          "type": "hold",
+          "label": "Hold Zoom Out",
+          "icon": "zoom-in",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ],
+          "released": {
+            "label": "Idle",
+            "icon": "zoom-out"
+          },
+          "held": {
+            "label": "Zooming",
+            "icon": "zoom-out"
+          }
+        },
+        "page-zoom": {
+          "type": "slider",
+          "label": "Page Zoom",
+          "icon": "zoom-in",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ],
+          "min": 25,
+          "max": 300,
+          "step": 5,
+          "unit": "%"
+        },
+        "bookmarks-wheel": {
+          "type": "wheel",
+          "label": "Bookmarks",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        },
+        "history-wheel": {
+          "type": "wheel",
+          "label": "Recent History",
+          "icon": "history",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "browser",
+              "type": "combobox",
+              "label": "Browser"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": [
+        "window"
+      ]
+    }
+  ]
+}

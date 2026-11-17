@@ -1,0 +1,7 @@
+id = "game-launcher"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "game-launcher", tag = "game-launcher-v{version}" }
+first_party = true
+featured = false
+sort = 35
+tags = ["Gaming", "Launcher"]
+companions = []

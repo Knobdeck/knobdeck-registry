@@ -1,0 +1,7 @@
+id = "ai-stats"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "ai-stats", tag = "ai-stats-v{version}" }
+first_party = true
+featured = false
+sort = 90
+tags = ["Developer tools", "AI"]
+companions = []

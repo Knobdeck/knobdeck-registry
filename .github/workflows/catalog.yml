@@ -1,0 +1,62 @@
+# Builds the catalog (scripts/build.mjs, PLUGIN_INFRA_PLAN.md §4.3) and commits public/ + catalog/state;
+# the push is the deploy (Cloudflare builds this Worker on every push to master).
+# Runs when:
+#  - a plugin, theme or companion repo releases (repository_dispatch from the KnobDeck Catalog GitHub App);
+#  - catalog sources change on master (policy.toml edits go live without any rebuild);
+#  - nightly, to pick up anything a missed dispatch left behind (and third-party releases later);
+#  - by hand (Actions > catalog > Run workflow).
+# Pull requests that touch the catalog build it offline (no commit) to check the sources.
+name: catalog
+on:
+  repository_dispatch:
+    types: [plugin-released, theme-released, companion-released]
+  push:
+    branches: [master]
+    paths: ["catalog/**", "!catalog/state/**", "scripts/build.mjs", "scripts/sign.mjs", ".github/workflows/catalog.yml"]
+  pull_request:
+    paths: ["catalog/**", "scripts/build.mjs", "scripts/sign.mjs", ".github/workflows/catalog.yml"]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: catalog-${{ github.event_name == 'pull_request' && github.ref || 'master' }}
+  cancel-in-progress: false
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Build offline from the committed state
+        run: node scripts/build.mjs --offline
+  build:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment: catalog
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: master }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Event
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          echo "${{ github.event.action }}: $(jq -c .client_payload "$GITHUB_EVENT_PATH")"
+      - name: Build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: node scripts/build.mjs
+      - name: Commit
+        run: |
+          git config user.name "knobdeck-catalog[bot]" && git config user.email "knobdeck-catalog@users.noreply.github.com"
+          git add -A public catalog/state
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "Catalog: ${{ github.event_name }}${{ github.event.action && format(' {0}', github.event.action) || '' }}"
+          git push

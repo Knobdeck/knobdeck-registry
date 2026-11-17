@@ -1,0 +1,7 @@
+id = "browser-plugin"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "browser-plugin", tag = "browser-plugin-v{version}" }
+first_party = true
+featured = false
+sort = 50
+tags = ["Browser", "Automation"]
+companions = ["browser"]

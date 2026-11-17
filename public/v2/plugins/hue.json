@@ -1,0 +1,216 @@
+{
+  "schema": 2,
+  "id": "hue",
+  "name": "Philips Hue",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.1.0",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "hue-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_linux_1.1.0.knobdeck",
+        "sha256": "a399a0b88482c5515a53fe6af3cd9fc9af3b77216c940f0cf220a529f67967c9",
+        "size": 2887159,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-linux/readme.md"
+      },
+      "macos": {
+        "id": "hue-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_macos_1.1.0.knobdeck",
+        "sha256": "f00fb715fd472cdd3f68f89561b55b41bb498bfb00d318058e96280233d00d4c",
+        "size": 3528311,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-macos/readme.md"
+      },
+      "windows": {
+        "id": "hue-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_windows_1.1.0.knobdeck",
+        "sha256": "2f875145f02c9af8853290a69bb624c442751ab6e754e73eea2e00146639542a",
+        "size": 1675472,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": true,
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "power": {
+      "type": "toggle",
+      "label": "Power",
+      "icon": "lightbulb",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "target",
+          "type": "select",
+          "label": "Light, room or zone",
+          "default": "group:0"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "lightbulb-off"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "lightbulb"
+        }
+      ]
+    },
+    "brightness": {
+      "type": "slider",
+      "label": "Brightness",
+      "icon": "sun",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "target",
+          "type": "select",
+          "label": "Light, room or zone",
+          "default": "group:0"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "set-brightness": {
+      "type": "button",
+      "label": "Set Brightness",
+      "icon": "sun",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "target",
+          "type": "select",
+          "label": "Light, room or zone",
+          "default": "group:0"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Brightness (%)",
+          "default": "50"
+        }
+      ]
+    },
+    "temperature": {
+      "type": "slider",
+      "label": "Color Temperature",
+      "icon": "thermometer",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "target",
+          "type": "select",
+          "label": "Light, room or zone",
+          "default": "group:0"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (K)",
+          "default": "100"
+        }
+      ],
+      "min": 2000,
+      "max": 6500,
+      "step": 100,
+      "unit": "K"
+    },
+    "set-color": {
+      "type": "button",
+      "label": "Set Color",
+      "icon": "palette",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "target",
+          "type": "select",
+          "label": "Light, room or zone",
+          "default": "group:0"
+        },
+        {
+          "key": "color",
+          "type": "text",
+          "label": "Color (#RRGGBB)",
+          "default": "#FF8800"
+        }
+      ]
+    },
+    "scene": {
+      "type": "button",
+      "label": "Scene",
+      "icon": "sparkles",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "scene",
+          "type": "select",
+          "label": "Scene"
+        }
+      ]
+    },
+    "scenes-wheel": {
+      "type": "wheel",
+      "label": "Scenes Wheel",
+      "icon": "sparkles",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "room",
+          "type": "select",
+          "label": "Room or zone",
+          "default": "0"
+        }
+      ]
+    }
+  },
+  "companions": []
+}

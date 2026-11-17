@@ -1,0 +1,6 @@
+# Verified third-party authors (PLUGIN_INFRA_PLAN.md §7): their catalog update PRs may auto-merge once
+# CI passes. Empty until third-party plugins are opened up.
+#
+# [[author]]
+# github = "someone"
+# plugins = ["foo"]

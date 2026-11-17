@@ -1,0 +1,7 @@
+id = "intellij"
+name = "KnobDeck Companion for JetBrains IDEs"
+repository = "https://github.com/Knobdeck/knobdeck-intellij-companion"
+runs_in = "IntelliJ IDEA, Android Studio, PyCharm, WebStorm and other JetBrains IDEs (2024.3+)"
+plugins = ["intellij"]
+# TODO: add the JetBrains Marketplace listing (plugins.jetbrains.com/plugin/<numeric id>-…) once it is public.
+stores = []

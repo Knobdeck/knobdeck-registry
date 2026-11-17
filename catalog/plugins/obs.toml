@@ -1,0 +1,7 @@
+id = "obs"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "obs", tag = "obs-v{version}" }
+first_party = true
+featured = true
+sort = 20
+tags = ["Streaming", "Broadcast"]
+companions = []

@@ -1,0 +1,7 @@
+id = "web-requests"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "web-requests", tag = "web-requests-v{version}" }
+first_party = true
+featured = false
+sort = 45
+tags = ["Automation", "Developer tools"]
+companions = []

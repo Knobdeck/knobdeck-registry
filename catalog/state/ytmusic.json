@@ -1,0 +1,321 @@
+{
+  "id": "ytmusic",
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "YouTube Music Desktop",
+        "summary": "Playback, likes, volume, queue and playlists in YTMDesktop.",
+        "tags": [
+          "Music",
+          "Media"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "ytmusic-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_linux_1.1.0.knobdeck",
+          "sha256": "7261572fec75535a7f7f99b33d7f3033887f765ebb57fdceb6d451b4c68f14ec",
+          "size": 2909058,
+          "file": "ytmusic_linux_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_linux_readme.md",
+          "readmeFile": "ytmusic_linux_readme.md",
+          "name": "YouTube Music Desktop",
+          "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "ytmusic-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_macos_1.1.0.knobdeck",
+          "sha256": "8ac0e8c879ec14b27d014cdf89d640a15e519b829aa289738b393acb8c7c6f51",
+          "size": 3585711,
+          "file": "ytmusic_macos_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_macos_readme.md",
+          "readmeFile": "ytmusic_macos_readme.md",
+          "name": "YouTube Music Desktop",
+          "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "ytmusic-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_windows_1.1.0.knobdeck",
+          "sha256": "6ede0f7acdbf0dac9e8581d4083b654db0c9e0ae93455eece75039bd32f7ff77",
+          "size": 1706440,
+          "file": "ytmusic_windows_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_windows_readme.md",
+          "readmeFile": "ytmusic_windows_readme.md",
+          "name": "YouTube Music Desktop",
+          "description": "Control the YouTube Music Desktop App: playback, likes, volume, queue and playlists.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "pause"
+            }
+          ]
+        },
+        "next": {
+          "type": "button",
+          "label": "Next",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "now-playing": {
+          "type": "button",
+          "label": "Now Playing",
+          "icon": "music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "art",
+              "type": "checkbox",
+              "label": "Show album art",
+              "default": true
+            }
+          ]
+        },
+        "like": {
+          "type": "toggle",
+          "label": "Like",
+          "icon": "thumbs-up",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "none",
+              "label": "Not liked",
+              "icon": "thumbs-up"
+            },
+            {
+              "value": "liked",
+              "label": "Liked",
+              "icon": "heart"
+            }
+          ]
+        },
+        "dislike": {
+          "type": "toggle",
+          "label": "Dislike",
+          "icon": "thumbs-down",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "none",
+              "label": "Not disliked",
+              "icon": "thumbs-down"
+            },
+            {
+              "value": "disliked",
+              "label": "Disliked",
+              "icon": "thumbs-down"
+            }
+          ]
+        },
+        "volume": {
+          "type": "slider",
+          "label": "Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "mute": {
+          "type": "toggle",
+          "label": "Mute",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Sound on",
+              "icon": "volume-2"
+            },
+            {
+              "value": "muted",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "shuffle": {
+          "type": "button",
+          "label": "Shuffle",
+          "icon": "shuffle",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "repeat": {
+          "type": "toggle",
+          "label": "Repeat",
+          "icon": "repeat",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "none",
+              "label": "Repeat off",
+              "icon": "repeat"
+            },
+            {
+              "value": "all",
+              "label": "Repeat all",
+              "icon": "repeat"
+            },
+            {
+              "value": "one",
+              "label": "Repeat one",
+              "icon": "repeat-1"
+            }
+          ]
+        },
+        "seek": {
+          "type": "button",
+          "label": "Seek",
+          "icon": "fast-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "seconds",
+              "type": "text",
+              "label": "Seconds (negative goes back)",
+              "default": "10"
+            }
+          ]
+        },
+        "play-playlist": {
+          "type": "button",
+          "label": "Play Playlist",
+          "icon": "list-music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "playlist",
+              "type": "select",
+              "label": "Playlist"
+            }
+          ]
+        },
+        "playlists-wheel": {
+          "type": "wheel",
+          "label": "Playlists Wheel",
+          "icon": "list-music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "queue-wheel": {
+          "type": "wheel",
+          "label": "Up Next Wheel",
+          "icon": "list-ordered",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

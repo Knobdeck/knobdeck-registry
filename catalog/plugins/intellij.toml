@@ -1,0 +1,7 @@
+id = "intellij"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "intellij", tag = "intellij-v{version}" }
+first_party = true
+featured = false
+sort = 70
+tags = ["Developer tools", "IDE"]
+companions = ["intellij"]

@@ -1,0 +1,155 @@
+{
+  "schema": 2,
+  "id": "weather",
+  "name": "Weather",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.1.0",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "weather-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_linux_1.1.0.knobdeck",
+        "sha256": "64891d15ec3752d27bf9847e1498291292c270b2ff6f26114e20ff3117a3816a",
+        "size": 982186,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-linux/readme.md"
+      },
+      "macos": {
+        "id": "weather-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_macos_1.1.0.knobdeck",
+        "sha256": "9984b8d797aa6bcfb44f69049dbbddf4027a6fc99a3fc4b988ee02ac27c259c1",
+        "size": 1797547,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-macos/readme.md"
+      },
+      "windows": {
+        "id": "weather-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_windows_1.1.0.knobdeck",
+        "sha256": "622db7e5640294d85ee53055c165e97edf96f58e2a7016df38ee67648564ee84",
+        "size": 852363,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "weather": {
+      "type": "button",
+      "label": "Weather",
+      "icon": "cloud-sun",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "location",
+          "type": "text",
+          "label": "Location"
+        },
+        {
+          "key": "units",
+          "type": "select",
+          "label": "Units",
+          "default": "c",
+          "options": [
+            "c",
+            "f"
+          ]
+        }
+      ]
+    },
+    "forecast-wheel": {
+      "type": "wheel",
+      "label": "Forecast (7 days)",
+      "icon": "calendar-days",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "location",
+          "type": "text",
+          "label": "Location"
+        },
+        {
+          "key": "units",
+          "type": "select",
+          "label": "Units",
+          "default": "c",
+          "options": [
+            "c",
+            "f"
+          ]
+        }
+      ]
+    },
+    "hourly-wheel": {
+      "type": "wheel",
+      "label": "Next 24 hours",
+      "icon": "clock",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "location",
+          "type": "text",
+          "label": "Location"
+        },
+        {
+          "key": "units",
+          "type": "select",
+          "label": "Units",
+          "default": "c",
+          "options": [
+            "c",
+            "f"
+          ]
+        }
+      ]
+    },
+    "air-quality": {
+      "type": "button",
+      "label": "Air Quality",
+      "icon": "wind",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "location",
+          "type": "text",
+          "label": "Location"
+        },
+        {
+          "key": "scale",
+          "type": "select",
+          "label": "Scale",
+          "default": "us",
+          "options": [
+            "us",
+            "eu"
+          ]
+        }
+      ]
+    }
+  },
+  "companions": []
+}

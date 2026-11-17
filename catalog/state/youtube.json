@@ -1,0 +1,93 @@
+{
+  "id": "youtube",
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "YouTube",
+        "summary": "Live viewers and the Studio live dashboard (read-only).",
+        "tags": [
+          "Streaming",
+          "Broadcast"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "youtube-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_linux_1.2.0.knobdeck",
+          "sha256": "07860b1e9df23472b0d2e78ae22833505e27700618314e620f475f87def3eba2",
+          "size": 2910927,
+          "file": "youtube_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_linux_readme.md",
+          "readmeFile": "youtube_linux_readme.md",
+          "name": "YouTube",
+          "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
+          "author": "KnobDeck",
+          "icon": "youtube",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "youtube-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_macos_1.2.0.knobdeck",
+          "sha256": "24041650048739670366c261f2b8bbb10dcb5f38aeab383746657da049f4e081",
+          "size": 3561125,
+          "file": "youtube_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_macos_readme.md",
+          "readmeFile": "youtube_macos_readme.md",
+          "name": "YouTube",
+          "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
+          "author": "KnobDeck",
+          "icon": "youtube",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "youtube-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_windows_1.2.0.knobdeck",
+          "sha256": "aaa17c2e984a16733ae81e2994f845f83320c347d3ae42bfae5ce8af601e98e5",
+          "size": 1717703,
+          "file": "youtube_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_windows_readme.md",
+          "readmeFile": "youtube_windows_readme.md",
+          "name": "YouTube",
+          "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
+          "author": "KnobDeck",
+          "icon": "youtube",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "viewers": {
+          "type": "button",
+          "label": "Viewers",
+          "icon": "eye",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "dashboard": {
+          "type": "button",
+          "label": "Live Dashboard",
+          "icon": "layout-dashboard",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

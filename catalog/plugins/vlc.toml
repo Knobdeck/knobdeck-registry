@@ -1,0 +1,7 @@
+id = "vlc"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "vlc", tag = "vlc-v{version}" }
+first_party = true
+featured = false
+sort = 80
+tags = ["Media", "Playback"]
+companions = []

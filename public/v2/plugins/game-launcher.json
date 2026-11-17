@@ -1,0 +1,128 @@
+{
+  "schema": 2,
+  "id": "game-launcher",
+  "name": "Game Launcher",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "game-launcher-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_linux_1.0.0.knobdeck",
+        "sha256": "9f0b878daaba42d69a58a8e4aef69d71534e28ee7da7003027891f79136a1d91",
+        "size": 315945,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-linux/readme.md"
+      },
+      "macos": {
+        "id": "game-launcher-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_macos_1.0.0.knobdeck",
+        "sha256": "225168b3a07af29adc172334144b8728692c65e173dc31d4ffc84902068af5de",
+        "size": 566143,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-macos/readme.md"
+      },
+      "windows": {
+        "id": "game-launcher-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_windows_1.0.0.knobdeck",
+        "sha256": "e424646615108e4991cd05005d7b6ff0b27b4127a147e188188b7ae0e1b7a1e9",
+        "size": 238607,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "launch": {
+      "type": "button",
+      "label": "Launch Game",
+      "icon": "gamepad-2",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "game",
+          "type": "select",
+          "label": "Game"
+        },
+        {
+          "key": "show_name",
+          "type": "checkbox",
+          "label": "Show the game's name",
+          "default": true
+        }
+      ]
+    },
+    "games-wheel": {
+      "type": "wheel",
+      "label": "Games Wheel",
+      "icon": "layout-grid",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "store",
+          "type": "select",
+          "label": "Store",
+          "default": "all",
+          "options": [
+            "all",
+            "steam"
+          ]
+        },
+        {
+          "key": "sort",
+          "type": "select",
+          "label": "Show",
+          "default": "recent",
+          "options": [
+            "recent",
+            "name"
+          ]
+        }
+      ]
+    },
+    "open-page": {
+      "type": "button",
+      "label": "Open Launcher Page",
+      "icon": "library",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "page",
+          "type": "select",
+          "label": "Page",
+          "default": "steam-library",
+          "options": [
+            "steam-library",
+            "steam-store",
+            "steam-friends",
+            "steam-downloads",
+            "steam-settings",
+            "steam-bigpicture"
+          ]
+        }
+      ]
+    }
+  },
+  "companions": []
+}

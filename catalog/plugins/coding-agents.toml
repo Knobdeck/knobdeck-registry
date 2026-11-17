@@ -1,0 +1,7 @@
+id = "coding-agents"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "coding-agents", tag = "coding-agents-v{version}" }
+first_party = true
+featured = false
+sort = 31
+tags = ["Developer tools", "AI"]
+companions = []

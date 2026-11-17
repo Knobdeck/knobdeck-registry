@@ -1,0 +1,7 @@
+id = "weather"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "weather", tag = "weather-v{version}" }
+first_party = true
+featured = false
+sort = 85
+tags = ["Weather", "Information"]
+companions = []

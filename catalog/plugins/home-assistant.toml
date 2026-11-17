@@ -1,0 +1,7 @@
+id = "home-assistant"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "home-assistant", tag = "home-assistant-v{version}" }
+first_party = true
+featured = false
+sort = 27
+tags = ["Smart home", "Automation"]
+companions = []

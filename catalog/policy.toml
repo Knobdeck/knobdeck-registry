@@ -1,0 +1,198 @@
+# Distribution policy: what the catalog ships, hides or pulls, without rebuilding a plugin.
+# Compiled to /v2/policy.json (signed). See catalog/SCHEMA.md.
+#
+#   [[disable]]  plugin (portable id), optional action (local id), platforms ("*" or macos/windows/linux), reason
+#                No action = the whole plugin on those OSes (left out of the index and of v1).
+#   [[yank]]     plugin, versions, reason: never served as latest; apps offer the previous good version.
+#   [min_host]   plugin = "x.y.z": needs at least this KnobDeck version.
+#
+# Plugin source `platforms` says where code *works*; this file says what KnobDeck *ships*.
+# The entries below mirror the actions that are still disabled in source with `.platforms(&["none"])`
+# (plugin Rule 1: no keybind actions, no imitation routes). Apps older than the v2 catalog only
+# see the source disables, so the source ones stay until those apps have updated.
+
+# --- browser-plugin: no extension API in any browser ---
+[[disable]]
+plugin = "browser-plugin"
+action = "focus-address-bar"
+platforms = ["*"]
+reason = "Browsers give extensions no way to focus the address bar."
+
+[[disable]]
+plugin = "browser-plugin"
+action = "find-in-page"
+platforms = ["*"]
+reason = "Browsers give extensions no way to open Find in Page."
+
+[[disable]]
+plugin = "browser-plugin"
+action = "save-page"
+platforms = ["*"]
+reason = "Browsers give extensions no way to open Save Page."
+
+[[disable]]
+plugin = "browser-plugin"
+action = "custom-keybind"
+platforms = ["*"]
+reason = "Keyboard shortcuts belong in KnobDeck's Keybind action."
+
+# --- mac-tools ---
+[[disable]]
+plugin = "mac-tools"
+action = "spotlight"
+platforms = ["*"]
+reason = "Only possible as a keyboard shortcut; use the Keybind action."
+
+[[disable]]
+plugin = "mac-tools"
+action = "force-quit"
+platforms = ["*"]
+reason = "Only possible as a keyboard shortcut; Force Quit App quits the front app directly."
+
+[[disable]]
+plugin = "mac-tools"
+action = "clipboard-history-wheel"
+platforms = ["*"]
+reason = "macOS has no clipboard history to read; a plugin-kept history isn't reliable enough."
+
+[[disable]]
+plugin = "mac-tools"
+action = "switch-window-wheel"
+platforms = ["*"]
+reason = "KnobDeck doesn't bring other apps' windows to the front."
+
+[[disable]]
+plugin = "mac-tools"
+action = "focus-app"
+platforms = ["*"]
+reason = "KnobDeck doesn't bring other apps to the front."
+
+# --- win-tools ---
+[[disable]]
+plugin = "win-tools"
+action = "desktop-previous"
+platforms = ["*"]
+reason = "Windows has no public API for virtual desktops."
+
+[[disable]]
+plugin = "win-tools"
+action = "desktop-next"
+platforms = ["*"]
+reason = "Windows has no public API for virtual desktops."
+
+[[disable]]
+plugin = "win-tools"
+action = "desktop-new"
+platforms = ["*"]
+reason = "Windows has no public API for virtual desktops."
+
+[[disable]]
+plugin = "win-tools"
+action = "desktop-close"
+platforms = ["*"]
+reason = "Windows has no public API for virtual desktops."
+
+[[disable]]
+plugin = "win-tools"
+action = "emoji-panel"
+platforms = ["*"]
+reason = "Only possible as a keyboard shortcut; use the Keybind action."
+
+[[disable]]
+plugin = "win-tools"
+action = "clipboard-history-wheel"
+platforms = ["*"]
+reason = "Windows' clipboard history has no API for other apps."
+
+[[disable]]
+plugin = "win-tools"
+action = "toggle-borderless"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "toggle-transparency"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "set-opacity"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "toggle-click-through"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "dynamic-borderless-wheel"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "dynamic-transparency-wheel"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "dynamic-click-through-wheel"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "dynamic-set-opacity-wheel"
+platforms = ["*"]
+reason = "Restyles another app's window; not reliable enough to ship."
+
+[[disable]]
+plugin = "win-tools"
+action = "fullscreen"
+platforms = ["*"]
+reason = "Only resized the window; not real fullscreen."
+
+[[disable]]
+plugin = "win-tools"
+action = "dynamic-fullscreen-wheel"
+platforms = ["*"]
+reason = "Only resized the window; not real fullscreen."
+
+[[disable]]
+plugin = "win-tools"
+action = "switch-window-wheel"
+platforms = ["*"]
+reason = "Windows only lets a background app take the foreground by a workaround."
+
+[[disable]]
+plugin = "win-tools"
+action = "focus-app"
+platforms = ["*"]
+reason = "Windows only lets a background app take the foreground by a workaround."
+
+# --- linux-tools ---
+[[disable]]
+plugin = "linux-tools"
+action = "clipboard-history-wheel"
+platforms = ["*"]
+reason = "Not reliable enough to ship."
+
+[[disable]]
+plugin = "linux-tools"
+action = "switch-window-wheel"
+platforms = ["*"]
+reason = "KnobDeck doesn't bring other apps' windows to the front."
+
+[[disable]]
+plugin = "linux-tools"
+action = "focus-app"
+platforms = ["*"]
+reason = "KnobDeck doesn't bring other apps to the front."
+
+[min_host]

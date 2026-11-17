@@ -1,0 +1,7 @@
+id = "elgato-lights"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "elgato-lights", tag = "elgato-lights-v{version}" }
+first_party = true
+featured = false
+sort = 25
+tags = ["Lighting", "Streaming"]
+companions = []

@@ -1,0 +1,312 @@
+{
+  "schema": 2,
+  "id": "web-requests",
+  "name": "Web Requests",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "web-requests-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_linux_1.0.0.knobdeck",
+        "sha256": "4aa62de3f009839f882990a45c273ba5abb9ea138e476b9634b22c7af01a810b",
+        "size": 2794017,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-linux/readme.md"
+      },
+      "macos": {
+        "id": "web-requests-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_macos_1.0.0.knobdeck",
+        "sha256": "7689426dc15d171a3d6cab7b69355ab7b2f71c080aa8b5573f9e73a020ac8282",
+        "size": 2349358,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-macos/readme.md"
+      },
+      "windows": {
+        "id": "web-requests-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_windows_1.0.0.knobdeck",
+        "sha256": "f30e7d1feb0d4c2c745bc21b584020d773d7f604a971f80a241ecc2f2088183a",
+        "size": 1071580,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": true,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "request": {
+      "type": "button",
+      "label": "HTTP Request",
+      "icon": "send",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "method",
+          "type": "select",
+          "label": "method",
+          "default": "POST",
+          "options": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "HEAD"
+          ]
+        },
+        {
+          "key": "url",
+          "type": "text",
+          "label": "URL"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "body (optional)"
+        },
+        {
+          "key": "body_type",
+          "type": "select",
+          "label": "Body is",
+          "default": "json",
+          "options": [
+            "json",
+            "form",
+            "text"
+          ]
+        },
+        {
+          "key": "headers",
+          "type": "textarea",
+          "label": "Headers (optional)"
+        },
+        {
+          "key": "token",
+          "type": "select",
+          "label": "Token (optional)"
+        },
+        {
+          "key": "token_header",
+          "type": "text",
+          "label": "Send the token as",
+          "default": "Authorization: Bearer"
+        },
+        {
+          "key": "show",
+          "type": "select",
+          "label": "After the request, show",
+          "default": "none",
+          "options": [
+            "none",
+            "status",
+            "value",
+            "text"
+          ]
+        },
+        {
+          "key": "path",
+          "type": "text",
+          "label": "Value path",
+          "showIf": {
+            "key": "show",
+            "equals": "value"
+          }
+        }
+      ]
+    },
+    "value": {
+      "type": "button",
+      "label": "Show Value",
+      "icon": "braces",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "url",
+          "type": "text",
+          "label": "URL"
+        },
+        {
+          "key": "path",
+          "type": "text",
+          "label": "Value path"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title (optional)"
+        },
+        {
+          "key": "prefix",
+          "type": "text",
+          "label": "Before the value (optional)"
+        },
+        {
+          "key": "suffix",
+          "type": "text",
+          "label": "After the value (optional)"
+        },
+        {
+          "key": "every",
+          "type": "select",
+          "label": "Refresh every",
+          "default": "30",
+          "options": [
+            "5",
+            "15",
+            "30",
+            "60",
+            "300",
+            "900"
+          ]
+        },
+        {
+          "key": "headers",
+          "type": "textarea",
+          "label": "Headers (optional)"
+        },
+        {
+          "key": "token",
+          "type": "select",
+          "label": "Token (optional)"
+        },
+        {
+          "key": "token_header",
+          "type": "text",
+          "label": "Send the token as",
+          "default": "Authorization: Bearer"
+        }
+      ]
+    },
+    "toggle": {
+      "type": "toggle",
+      "label": "HTTP Toggle",
+      "icon": "toggle-right",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "on_method",
+          "type": "select",
+          "label": "Turn on: method",
+          "default": "POST",
+          "options": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "HEAD"
+          ]
+        },
+        {
+          "key": "on_url",
+          "type": "text",
+          "label": "Turn on: URL"
+        },
+        {
+          "key": "on_body",
+          "type": "textarea",
+          "label": "Turn on: body (optional)"
+        },
+        {
+          "key": "off_method",
+          "type": "select",
+          "label": "Turn off: method",
+          "default": "POST",
+          "options": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "HEAD"
+          ]
+        },
+        {
+          "key": "off_url",
+          "type": "text",
+          "label": "Turn off: URL"
+        },
+        {
+          "key": "off_body",
+          "type": "textarea",
+          "label": "Turn off: body (optional)"
+        },
+        {
+          "key": "body_type",
+          "type": "select",
+          "label": "Body is",
+          "default": "json",
+          "options": [
+            "json",
+            "form",
+            "text"
+          ]
+        },
+        {
+          "key": "headers",
+          "type": "textarea",
+          "label": "Headers (optional)"
+        },
+        {
+          "key": "token",
+          "type": "select",
+          "label": "Token (optional)"
+        },
+        {
+          "key": "token_header",
+          "type": "text",
+          "label": "Send the token as",
+          "default": "Authorization: Bearer"
+        },
+        {
+          "key": "status_url",
+          "type": "text",
+          "label": "Read the state from (optional)"
+        },
+        {
+          "key": "status_path",
+          "type": "text",
+          "label": "State path"
+        },
+        {
+          "key": "on_value",
+          "type": "text",
+          "label": "On when the value is (optional)"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "toggle-left"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "toggle-right"
+        }
+      ]
+    }
+  },
+  "companions": []
+}

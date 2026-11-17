@@ -1,0 +1,253 @@
+{
+  "schema": 2,
+  "id": "slides",
+  "name": "Slides",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.1",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "slides-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/slides_linux_1.0.1.knobdeck",
+        "sha256": "9afc70910a5ca6a6074338c59225e8a33be42aaeab31a0f16e287845835d37a7",
+        "size": 277692,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-linux/readme.md"
+      },
+      "macos": {
+        "id": "slides-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/slides_macos_1.0.1.knobdeck",
+        "sha256": "534b789eb65178c19d9b2486360dd13b9a07f02c4c411e90713f3778322b843b",
+        "size": 542983,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-macos/readme.md"
+      },
+      "windows": {
+        "id": "slides-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/slides_windows_1.0.1.knobdeck",
+        "sha256": "6b5bfda5de513eff4aeaa89b8474003266ad4991bb925273439d68b215848d6c",
+        "size": 194895,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "next": {
+      "type": "button",
+      "label": "Next Slide",
+      "icon": "chevron-right",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ]
+    },
+    "previous": {
+      "type": "button",
+      "label": "Previous Slide",
+      "icon": "chevron-left",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ]
+    },
+    "start": {
+      "type": "button",
+      "label": "Start Slide Show",
+      "icon": "play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ]
+    },
+    "end": {
+      "type": "button",
+      "label": "End Slide Show",
+      "icon": "square",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ]
+    },
+    "goto": {
+      "type": "button",
+      "label": "Go to Slide",
+      "icon": "hash",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        },
+        {
+          "key": "slide",
+          "type": "text",
+          "label": "Slide number",
+          "default": "1"
+        }
+      ]
+    },
+    "black": {
+      "type": "toggle",
+      "label": "Black Screen",
+      "icon": "square",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "value": "showing",
+          "label": "Showing",
+          "icon": "square"
+        },
+        {
+          "value": "blank",
+          "label": "Black",
+          "icon": "eye-off"
+        }
+      ]
+    },
+    "white": {
+      "type": "toggle",
+      "label": "White Screen",
+      "icon": "square-dashed",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "value": "showing",
+          "label": "Showing",
+          "icon": "square-dashed"
+        },
+        {
+          "value": "blank",
+          "label": "White",
+          "icon": "eye-off"
+        }
+      ]
+    },
+    "counter": {
+      "type": "button",
+      "label": "Slide Counter",
+      "icon": "presentation",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "app",
+          "type": "select",
+          "label": "App",
+          "default": "auto",
+          "options": [
+            "auto",
+            "impress"
+          ]
+        }
+      ]
+    }
+  },
+  "companions": []
+}

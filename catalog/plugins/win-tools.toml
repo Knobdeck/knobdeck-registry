@@ -1,0 +1,7 @@
+id = "win-tools"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "win-tools", tag = "win-tools-v{version}" }
+first_party = true
+featured = true
+sort = 40
+tags = ["Windows", "Automation"]
+companions = []

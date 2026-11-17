@@ -1,0 +1,7 @@
+id = "files"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "files", tag = "files-v{version}" }
+first_party = true
+featured = false
+sort = 36
+tags = ["Files", "Productivity"]
+companions = []

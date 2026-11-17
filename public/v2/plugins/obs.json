@@ -1,0 +1,575 @@
+{
+  "schema": 2,
+  "id": "obs",
+  "name": "OBS Studio",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.3.0",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "obs-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_linux_1.3.0.knobdeck",
+        "sha256": "ea70dbcfc0a47d07a1f6c6241898df755872d5e5c5b02490ae9cbbac546e6dea",
+        "size": 1585218,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-linux/readme.md"
+      },
+      "macos": {
+        "id": "obs-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_macos_1.3.0.knobdeck",
+        "sha256": "cbecfa82816578e8d16f8d2d8c8fd8edd663f9576727e3894e805a6bae2f949b",
+        "size": 1081852,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-macos/readme.md"
+      },
+      "windows": {
+        "id": "obs-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_windows_1.3.0.knobdeck",
+        "sha256": "c3c9952893ecf4739b88f9104d936fbdeb55db07dcf2f681c93e6a9c673b107b",
+        "size": 414145,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": true,
+  "versions": [
+    {
+      "version": "1.3.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "record": {
+      "type": "toggle",
+      "label": "Record",
+      "icon": "circle",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "stopped",
+          "label": "Record Off",
+          "icon": "square"
+        },
+        {
+          "value": "recording",
+          "label": "Recording",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "record-pause": {
+      "type": "toggle",
+      "label": "Record Pause",
+      "icon": "circle-pause",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "recording",
+          "label": "Recording",
+          "icon": "play"
+        },
+        {
+          "value": "paused",
+          "label": "Paused",
+          "icon": "pause"
+        }
+      ]
+    },
+    "chapter-marker": {
+      "type": "button",
+      "label": "Chapter Marker",
+      "icon": "bookmark-plus",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "chapterName",
+          "type": "text",
+          "label": "Chapter Name"
+        }
+      ]
+    },
+    "stream": {
+      "type": "toggle",
+      "label": "Stream",
+      "icon": "radio-tower",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "stopped",
+          "label": "Offline",
+          "icon": "circle"
+        },
+        {
+          "value": "streaming",
+          "label": "Live",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "virtual-cam": {
+      "type": "toggle",
+      "label": "Virtual Camera",
+      "icon": "webcam",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "off",
+          "label": "Virtual Cam Off",
+          "icon": "circle"
+        },
+        {
+          "value": "on",
+          "label": "Virtual Cam On",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "replay-buffer": {
+      "type": "toggle",
+      "label": "Replay Buffer",
+      "icon": "history",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "stopped",
+          "label": "Buffer Off",
+          "icon": "circle"
+        },
+        {
+          "value": "active",
+          "label": "Buffer On",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "replay-buffer-save": {
+      "type": "button",
+      "label": "Save Replay",
+      "icon": "save",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "scene-collection": {
+      "type": "button",
+      "label": "Scene Collection",
+      "icon": "layers",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "collection",
+          "type": "select",
+          "label": "Scene Collection"
+        }
+      ]
+    },
+    "profile": {
+      "type": "button",
+      "label": "Profile",
+      "icon": "user-round",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "profile",
+          "type": "select",
+          "label": "Profile"
+        }
+      ]
+    },
+    "scene": {
+      "type": "button",
+      "label": "Scene",
+      "icon": "layout-grid",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "scene",
+          "type": "select",
+          "label": "Scene"
+        }
+      ]
+    },
+    "source-visibility": {
+      "type": "toggle",
+      "label": "Source Visibility",
+      "icon": "eye",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "scene",
+          "type": "select",
+          "label": "Scene"
+        },
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Source",
+          "showIf": {
+            "key": "scene",
+            "truthy": true
+          }
+        }
+      ],
+      "states": [
+        {
+          "value": "visible",
+          "label": "Visible",
+          "icon": "eye"
+        },
+        {
+          "value": "hidden",
+          "label": "Hidden",
+          "icon": "eye-off"
+        }
+      ]
+    },
+    "audio-mixer": {
+      "type": "toggle",
+      "label": "Audio Mixer",
+      "icon": "sliders-vertical",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Audio Source"
+        }
+      ],
+      "states": [
+        {
+          "value": "unmuted",
+          "label": "Unmuted",
+          "icon": "volume-2"
+        },
+        {
+          "value": "muted",
+          "label": "Muted",
+          "icon": "volume-x"
+        }
+      ]
+    },
+    "media-source-control": {
+      "type": "button",
+      "label": "Media Source Control",
+      "icon": "circle-play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Media Source"
+        },
+        {
+          "key": "action",
+          "type": "select",
+          "label": "Action",
+          "options": [
+            "OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PLAY",
+            "OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PAUSE",
+            "OBS_WEBSOCKET_MEDIA_INPUT_ACTION_STOP",
+            "OBS_WEBSOCKET_MEDIA_INPUT_ACTION_RESTART",
+            "OBS_WEBSOCKET_MEDIA_INPUT_ACTION_NEXT",
+            "OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PREVIOUS"
+          ]
+        }
+      ]
+    },
+    "studio-mode": {
+      "type": "toggle",
+      "label": "Studio Mode",
+      "icon": "square-split-horizontal",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "off",
+          "label": "Studio Off",
+          "icon": "circle"
+        },
+        {
+          "value": "on",
+          "label": "Studio On",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "transition": {
+      "type": "button",
+      "label": "Transition",
+      "icon": "arrow-left-right",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "transition",
+          "type": "select",
+          "label": "Transition"
+        },
+        {
+          "key": "duration",
+          "type": "text",
+          "label": "Duration (ms)"
+        }
+      ]
+    },
+    "filter": {
+      "type": "toggle",
+      "label": "Filter",
+      "icon": "filter",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Source"
+        },
+        {
+          "key": "filter",
+          "type": "select",
+          "label": "Filter",
+          "showIf": {
+            "key": "source",
+            "truthy": true
+          }
+        }
+      ],
+      "states": [
+        {
+          "value": "enabled",
+          "label": "Filter On",
+          "icon": "check"
+        },
+        {
+          "value": "disabled",
+          "label": "Filter Off",
+          "icon": "x"
+        }
+      ]
+    },
+    "screenshot": {
+      "type": "button",
+      "label": "Screenshot",
+      "icon": "camera",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Source"
+        },
+        {
+          "key": "imageFormat",
+          "type": "select",
+          "label": "Format",
+          "options": [
+            "png",
+            "jpg",
+            "bmp"
+          ]
+        },
+        {
+          "key": "imagePath",
+          "type": "text",
+          "label": "Save Path"
+        },
+        {
+          "key": "imageWidth",
+          "type": "text",
+          "label": "Width (px)"
+        },
+        {
+          "key": "imageHeight",
+          "type": "text",
+          "label": "Height (px)"
+        }
+      ]
+    },
+    "scene-transition": {
+      "type": "button",
+      "label": "Scene Transition",
+      "icon": "arrow-right",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "previous-scene": {
+      "type": "button",
+      "label": "Previous Scene",
+      "icon": "undo-2",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "preview-scene": {
+      "type": "button",
+      "label": "Preview Scene",
+      "icon": "monitor-play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "scene",
+          "type": "select",
+          "label": "Preview Scene"
+        }
+      ]
+    },
+    "source-volume": {
+      "type": "slider",
+      "label": "Source Volume",
+      "icon": "volume-2",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Audio Source"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "stats": {
+      "type": "button",
+      "label": "OBS Stats",
+      "icon": "gauge",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "stat",
+          "type": "select",
+          "label": "Show",
+          "default": "cpu",
+          "options": [
+            "cpu",
+            "fps",
+            "dropped",
+            "skipped"
+          ]
+        }
+      ]
+    },
+    "browser-source": {
+      "type": "button",
+      "label": "Browser Source",
+      "icon": "globe",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "source",
+          "type": "select",
+          "label": "Browser Source"
+        },
+        {
+          "key": "url",
+          "type": "text",
+          "label": "Set URL (optional)"
+        }
+      ]
+    }
+  },
+  "companions": []
+}
