@@ -9,6 +9,7 @@ updates never redeploy checkout or licensing.
 | `/plugins/registry.json` | Plugin registry (desktop app, website `/plugins`) |
 | `/plugins/<id>/readme.md` | Plugin readmes, the registry's `readmeUrl` |
 | `/themes/registry.json` | Dial theme registry |
+| `/profiles/registry.json`, `/profiles/<id>/profile.json`, `/profiles/<id>/preview.png` | Profile registry (Get Profiles in the app), served from `knobdeck-profiles` master by the Worker, cached 5 minutes |
 | `POST /api/google/token` | OAuth token form (`authorization_code` with PKCE, or `refresh_token`) → Google tokens for the YouTube plugin; holds the client secret |
 
 ## Develop and deploy
@@ -30,6 +31,10 @@ The Google OAuth client (Desktop app, id in `wrangler.jsonc`) is used only with
 `registry.json` and readmes to `public/plugins/` (`scripts/build-registry.mjs`) and the latest
 `knobdeck-themes` release's `registry.json` to `public/themes/`, then commits; the push redeploys.
 Bundles and theme zips stay on the GitHub Releases.
+
+Profiles need no workflow: `knobdeck-profiles` has no release, and the Worker reads its
+`registry.json` and profile folders from `master` (only those paths), so a merged profile is live
+within the 5-minute cache.
 
 ## App updates and downloads
 
