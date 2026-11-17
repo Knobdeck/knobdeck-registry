@@ -1,0 +1,131 @@
+{
+  "id": "spotify",
+  "versions": [
+    {
+      "version": "1.2.1",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "Spotify",
+        "summary": "Play, pause, skip and now playing for the Spotify desktop app.",
+        "tags": [
+          "Music",
+          "Media"
+        ],
+        "featured": true
+      },
+      "platforms": {
+        "linux": {
+          "id": "spotify-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_linux_1.2.1.knobdeck",
+          "sha256": "bde5c255cf76055762d5e455cfb646b2d7b6b883a58bfdd6b165983ba3cacd1a",
+          "size": 797684,
+          "file": "spotify_linux_1.2.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_linux_readme.md",
+          "readmeFile": "spotify_linux_readme.md",
+          "name": "Spotify",
+          "description": "Play, pause, skip and now playing for the Spotify desktop app.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": [
+            "window"
+          ]
+        },
+        "macos": {
+          "id": "spotify-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_macos_1.2.1.knobdeck",
+          "sha256": "5bd49c311106db18a3ad9bf014abd253bb546296beb8354ee27e2020c97a52d3",
+          "size": 521098,
+          "file": "spotify_macos_1.2.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_macos_readme.md",
+          "readmeFile": "spotify_macos_readme.md",
+          "name": "Spotify",
+          "description": "Play, pause, skip and now playing for the Spotify desktop app.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "spotify-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_windows_1.2.1.knobdeck",
+          "sha256": "742596a6bad41401c7ef43bb6883e7e81eaa05cb19e68472f62cd30663341be8",
+          "size": 185529,
+          "file": "spotify_windows_1.2.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_windows_readme.md",
+          "readmeFile": "spotify_windows_readme.md",
+          "name": "Spotify",
+          "description": "Play, pause, skip and now playing for the Spotify desktop app.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "pause"
+            }
+          ]
+        },
+        "next": {
+          "type": "button",
+          "label": "Next Track",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous Track",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "now-playing": {
+          "type": "button",
+          "label": "Now Playing",
+          "icon": "music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": [
+        "window"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "id": "discord",
+  "versions": [
+    {
+      "version": "1.3.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "Discord",
+        "summary": "Mute, deafen, push-to-talk, channels and soundboard.",
+        "tags": [
+          "Communication",
+          "Voice"
+        ],
+        "featured": true
+      },
+      "platforms": {
+        "linux": {
+          "id": "discord-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_linux_1.3.0.knobdeck",
+          "sha256": "7301e4b048b1db6bf00783e1a12fb5e3f7a27da050d098758aeaee5ec1f6673b",
+          "size": 2462884,
+          "file": "discord_linux_1.3.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_linux_readme.md",
+          "readmeFile": "discord_linux_readme.md",
+          "name": "Discord",
+          "description": "Control Discord — mute, deafen, PTT, channels, volume, soundboard & more.",
+          "author": "KnobDeck",
+          "icon": "discord-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "discord-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_macos_1.3.0.knobdeck",
+          "sha256": "5807b75553831ecf82716cfd7551c06441ed463c551da72a618e232976f3311f",
+          "size": 3630508,
+          "file": "discord_macos_1.3.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_macos_readme.md",
+          "readmeFile": "discord_macos_readme.md",
+          "name": "Discord",
+          "description": "Control Discord — mute, deafen, PTT, channels, volume, soundboard & more.",
+          "author": "KnobDeck",
+          "icon": "discord-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "discord-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_windows_1.3.0.knobdeck",
+          "sha256": "ab71d39f432236e01c256f4d848d8429131263ae8dfe26327d9e9194c2e499f1",
+          "size": 1726190,
+          "file": "discord_windows_1.3.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_windows_readme.md",
+          "readmeFile": "discord_windows_readme.md",
+          "name": "Discord",
+          "description": "Control Discord — mute, deafen, PTT, channels, volume, soundboard & more.",
+          "author": "KnobDeck",
+          "icon": "discord-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "mute": {
+          "type": "toggle",
+          "label": "Mute",
+          "icon": "mic",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Unmuted",
+              "icon": "mic"
+            },
+            {
+              "value": "muted",
+              "label": "Muted",
+              "icon": "mic-off"
+            }
+          ]
+        },
+        "deafen": {
+          "type": "toggle",
+          "label": "Deafen",
+          "icon": "headphones",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "undeafened",
+              "label": "Undeafened",
+              "icon": "headphones"
+            },
+            {
+              "value": "deafened",
+              "label": "Deafened",
+              "icon": "headphone-off"
+            }
+          ]
+        },
+        "push-to-talk": {
+          "type": "hold",
+          "label": "Push to Talk",
+          "icon": "mic-off",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "released": {
+            "label": "Idle",
+            "icon": "mic-off"
+          },
+          "held": {
+            "label": "Talking",
+            "icon": "mic"
+          }
+        },
+        "push-to-mute": {
+          "type": "hold",
+          "label": "Push to Mute",
+          "icon": "mic",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "released": {
+            "label": "Active",
+            "icon": "mic"
+          },
+          "held": {
+            "label": "Muted",
+            "icon": "mic-off"
+          }
+        },
+        "voice-mode-toggle": {
+          "type": "toggle",
+          "label": "Voice Input Mode",
+          "icon": "audio-lines",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "VOICE_ACTIVITY",
+              "label": "Voice Activity",
+              "icon": "audio-lines"
+            },
+            {
+              "value": "PUSH_TO_TALK",
+              "label": "Push to Talk",
+              "icon": "keyboard"
+            }
+          ]
+        },
+        "join-voice-channel": {
+          "type": "toggle",
+          "label": "Join Voice Channel",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "guildId",
+              "type": "select",
+              "label": "Server"
+            },
+            {
+              "key": "channelId",
+              "type": "select",
+              "label": "Voice Channel",
+              "showIf": {
+                "key": "guildId",
+                "truthy": true
+              }
+            },
+            {
+              "key": "force",
+              "type": "checkbox",
+              "label": "Force Join (auto-disconnect current channel first)",
+              "default": true
+            }
+          ],
+          "states": [
+            {
+              "value": "idle",
+              "label": "Join",
+              "icon": "volume-2"
+            },
+            {
+              "value": "in",
+              "label": "In Channel",
+              "icon": "audio-lines"
+            }
+          ]
+        },
+        "leave-voice-channel": {
+          "type": "toggle",
+          "label": "Leave Voice Channel",
+          "icon": "phone-off",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "idle",
+              "label": "Not in Call",
+              "icon": "phone-off"
+            },
+            {
+              "value": "in-call",
+              "label": "In Call — Disconnect",
+              "icon": "phone-off"
+            }
+          ]
+        },
+        "text-channel": {
+          "type": "button",
+          "label": "Text Channel",
+          "icon": "hash",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "guildId",
+              "type": "select",
+              "label": "Server"
+            },
+            {
+              "key": "channelId",
+              "type": "select",
+              "label": "Text Channel",
+              "showIf": {
+                "key": "guildId",
+                "truthy": true
+              }
+            }
+          ]
+        },
+        "server-jump": {
+          "type": "button",
+          "label": "Server Jump",
+          "icon": "hash",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "guildId",
+              "type": "select",
+              "label": "Server"
+            },
+            {
+              "key": "channelId",
+              "type": "select",
+              "label": "Landing Channel (optional)",
+              "showIf": {
+                "key": "guildId",
+                "truthy": true
+              }
+            }
+          ]
+        },
+        "open-direct-message": {
+          "type": "button",
+          "label": "Open Direct Message",
+          "icon": "hash",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "friendId",
+              "type": "select",
+              "label": "Friend"
+            }
+          ]
+        },
+        "video-toggle": {
+          "type": "toggle",
+          "label": "Video Toggle",
+          "icon": "video-off",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Camera Off",
+              "icon": "video-off"
+            },
+            {
+              "value": "on",
+              "label": "Camera On",
+              "icon": "video"
+            }
+          ]
+        },
+        "stream-toggle": {
+          "type": "toggle",
+          "label": "Stream Toggle",
+          "icon": "screen-share-off",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Share Off",
+              "icon": "screen-share-off"
+            },
+            {
+              "value": "on",
+              "label": "Sharing",
+              "icon": "screen-share"
+            }
+          ]
+        },
+        "volume-control": {
+          "type": "button",
+          "label": "Volume Control",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "options": [
+                "output",
+                "input",
+                "both"
+              ]
+            },
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "Mode",
+              "options": [
+                "adjust",
+                "set",
+                "mute"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step / Target Volume (0–200)",
+              "showIf": {
+                "key": "mode",
+                "in": [
+                  "adjust",
+                  "set"
+                ]
+              }
+            }
+          ]
+        },
+        "output-volume": {
+          "type": "slider",
+          "label": "Output Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 200,
+          "step": 1,
+          "unit": "%"
+        },
+        "user-volume-control": {
+          "type": "button",
+          "label": "User Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "userId",
+              "type": "select",
+              "label": "Call Member"
+            },
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "Mode",
+              "options": [
+                "adjust",
+                "set",
+                "mute"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step / Target (0–200)",
+              "showIf": {
+                "key": "mode",
+                "in": [
+                  "adjust",
+                  "set"
+                ]
+              }
+            }
+          ]
+        },
+        "set-audio-device": {
+          "type": "button",
+          "label": "Set Audio Device",
+          "icon": "headset",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "deviceType",
+              "type": "select",
+              "label": "Device Type",
+              "options": [
+                "output",
+                "input",
+                "both"
+              ]
+            },
+            {
+              "key": "deviceId",
+              "type": "select",
+              "label": "Device"
+            }
+          ]
+        },
+        "soundboard": {
+          "type": "button",
+          "label": "Soundboard",
+          "icon": "audio-waveform",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "guildId",
+              "type": "select",
+              "label": "Sound Source",
+              "default": "__default__",
+              "options": [
+                "__default__"
+              ]
+            },
+            {
+              "key": "soundId",
+              "type": "select",
+              "label": "Sound"
+            }
+          ]
+        },
+        "voice-channel-wheel": {
+          "type": "wheel",
+          "label": "Voice Channels",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "guildId",
+              "type": "select",
+              "label": "Server"
+            },
+            {
+              "key": "force",
+              "type": "checkbox",
+              "label": "Force Join",
+              "default": true
+            }
+          ]
+        },
+        "call-member-mute-wheel": {
+          "type": "wheel",
+          "label": "Call Member Mute",
+          "icon": "mic",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "activity-preset": {
+          "type": "button",
+          "label": "Activity Preset",
+          "icon": "discord-logo.svg",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "details",
+              "type": "text",
+              "label": "Details"
+            },
+            {
+              "key": "stateText",
+              "type": "text",
+              "label": "State"
+            },
+            {
+              "key": "clearExisting",
+              "type": "checkbox",
+              "label": "Clear current activity instead",
+              "default": false
+            }
+          ]
+        },
+        "soundboard-wheel": {
+          "type": "wheel",
+          "label": "Soundboard Wheel",
+          "icon": "audio-waveform",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "guildId",
+              "type": "select",
+              "label": "Sound Source",
+              "default": "__default__",
+              "options": [
+                "__default__"
+              ]
+            }
+          ]
+        },
+        "notifications": {
+          "type": "toggle",
+          "label": "Notifications",
+          "icon": "bell",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "onPress",
+              "type": "select",
+              "label": "On Press Action",
+              "options": [
+                "nothing",
+                "clear",
+                "open_channel"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "none",
+              "label": "No Alerts",
+              "icon": "bell"
+            },
+            {
+              "value": "active",
+              "label": "Unread!",
+              "icon": "bell"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

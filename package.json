@@ -5,10 +5,15 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "catalog": "node scripts/build.mjs",
+    "catalog:offline": "node scripts/build.mjs --offline"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
     "wrangler": "^4.153.0"
+  },
+  "dependencies": {
+    "smol-toml": "^1.3.1"
   }
 }

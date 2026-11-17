@@ -1,5 +1,5 @@
 {
-  "tag": "v2026.11.16-1400",
+  "tag": "catalog-2026-11-17T13:22:14Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -9,7 +9,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/discord_linux_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_linux_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/discord/icons/discord-logo.svg",
       "icon": "discord-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/discord-linux/readme.md",
@@ -21,7 +21,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "discord_linux_1.3.0.knobdeck",
       "readmeFile": "discord_linux_readme.md"
@@ -34,7 +34,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/discord_macos_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_macos_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/discord/icons/discord-logo.svg",
       "icon": "discord-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/discord-macos/readme.md",
@@ -46,7 +46,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "discord_macos_1.3.0.knobdeck",
       "readmeFile": "discord_macos_readme.md"
@@ -59,7 +59,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/discord_windows_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/discord_windows_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/discord/icons/discord-logo.svg",
       "icon": "discord-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/discord-windows/readme.md",
@@ -71,7 +71,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "discord_windows_1.3.0.knobdeck",
       "readmeFile": "discord_windows_readme.md"
@@ -84,7 +84,7 @@
       "version": "1.2.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/spotify_linux_1.2.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_linux_1.2.1.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-linux/readme.md",
@@ -96,7 +96,9 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [
+        "window"
+      ],
       "featured": true,
       "file": "spotify_linux_1.2.1.knobdeck",
       "readmeFile": "spotify_linux_readme.md"
@@ -109,7 +111,7 @@
       "version": "1.2.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/spotify_macos_1.2.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_macos_1.2.1.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-macos/readme.md",
@@ -121,7 +123,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "spotify_macos_1.2.1.knobdeck",
       "readmeFile": "spotify_macos_readme.md"
@@ -134,7 +136,7 @@
       "version": "1.2.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/spotify_windows_1.2.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/spotify_windows_1.2.1.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-windows/readme.md",
@@ -146,7 +148,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "spotify_windows_1.2.1.knobdeck",
       "readmeFile": "spotify_windows_readme.md"
@@ -159,7 +161,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/obs_linux_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_linux_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/obs/icons/obs-logo.svg",
       "icon": "obs-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-linux/readme.md",
@@ -171,7 +173,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "obs_linux_1.3.0.knobdeck",
       "readmeFile": "obs_linux_readme.md"
@@ -184,7 +186,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/obs_macos_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_macos_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/obs/icons/obs-logo.svg",
       "icon": "obs-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-macos/readme.md",
@@ -196,7 +198,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "obs_macos_1.3.0.knobdeck",
       "readmeFile": "obs_macos_readme.md"
@@ -209,7 +211,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/obs_windows_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/obs_windows_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/obs/icons/obs-logo.svg",
       "icon": "obs-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-windows/readme.md",
@@ -221,7 +223,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "obs_windows_1.3.0.knobdeck",
       "readmeFile": "obs_windows_readme.md"
@@ -234,7 +236,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/twitch_linux_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "twitch",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-linux/readme.md",
@@ -246,7 +248,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "twitch_linux_1.2.0.knobdeck",
       "readmeFile": "twitch_linux_readme.md"
@@ -259,7 +261,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/twitch_macos_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "twitch",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-macos/readme.md",
@@ -271,7 +273,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "twitch_macos_1.2.0.knobdeck",
       "readmeFile": "twitch_macos_readme.md"
@@ -284,7 +286,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/twitch_windows_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "twitch",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-windows/readme.md",
@@ -296,7 +298,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": true,
       "file": "twitch_windows_1.2.0.knobdeck",
       "readmeFile": "twitch_windows_readme.md"
@@ -309,7 +311,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/vscode_linux_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vscode_linux_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/vscode/icons/vscode-logo.svg",
       "icon": "vscode-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-linux/readme.md",
@@ -334,7 +336,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/vscode_macos_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vscode_macos_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/vscode/icons/vscode-logo.svg",
       "icon": "vscode-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-macos/readme.md",
@@ -359,7 +361,7 @@
       "version": "1.3.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/vscode_windows_1.3.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vscode_windows_1.3.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/vscode/icons/vscode-logo.svg",
       "icon": "vscode-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-windows/readme.md",
@@ -384,7 +386,7 @@
       "version": "1.8.2",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/win-tools_windows_1.8.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/win-tools_windows_1.8.2.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md",
@@ -418,7 +420,7 @@
       "version": "1.6.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/mac-tools_macos_1.6.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/mac-tools_macos_1.6.1.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md",
@@ -452,7 +454,7 @@
       "version": "1.4.2",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/linux-tools_linux_1.4.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/linux-tools_linux_1.4.2.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md",
@@ -486,7 +488,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/ytmusic_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-linux/readme.md",
@@ -498,7 +500,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "ytmusic_linux_1.1.0.knobdeck",
       "readmeFile": "ytmusic_linux_readme.md"
@@ -511,7 +513,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/ytmusic_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-macos/readme.md",
@@ -523,7 +525,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "ytmusic_macos_1.1.0.knobdeck",
       "readmeFile": "ytmusic_macos_readme.md"
@@ -536,7 +538,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/ytmusic_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ytmusic_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "music",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-windows/readme.md",
@@ -548,7 +550,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "ytmusic_windows_1.1.0.knobdeck",
       "readmeFile": "ytmusic_windows_readme.md"
@@ -561,7 +563,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/streamlabs_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/streamlabs_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "radio-tower",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-macos/readme.md",
@@ -573,7 +575,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "streamlabs_macos_1.1.0.knobdeck",
       "readmeFile": "streamlabs_macos_readme.md"
@@ -586,7 +588,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/streamlabs_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/streamlabs_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "radio-tower",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-windows/readme.md",
@@ -598,7 +600,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "streamlabs_windows_1.1.0.knobdeck",
       "readmeFile": "streamlabs_windows_readme.md"
@@ -611,7 +613,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/youtube_linux_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "youtube",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-linux/readme.md",
@@ -623,7 +625,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "youtube_linux_1.2.0.knobdeck",
       "readmeFile": "youtube_linux_readme.md"
@@ -636,7 +638,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/youtube_macos_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "youtube",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-macos/readme.md",
@@ -648,7 +650,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "youtube_macos_1.2.0.knobdeck",
       "readmeFile": "youtube_macos_readme.md"
@@ -661,7 +663,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/youtube_windows_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/youtube_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": "youtube",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-windows/readme.md",
@@ -673,7 +675,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "youtube_windows_1.2.0.knobdeck",
       "readmeFile": "youtube_windows_readme.md"
@@ -686,7 +688,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/elgato-lights_linux_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_linux_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "lamp",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/elgato-lights-linux/readme.md",
@@ -698,7 +700,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "elgato-lights_linux_1.1.1.knobdeck",
       "readmeFile": "elgato-lights_linux_readme.md"
@@ -711,7 +713,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/elgato-lights_macos_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_macos_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "lamp",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/elgato-lights-macos/readme.md",
@@ -723,7 +725,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "elgato-lights_macos_1.1.1.knobdeck",
       "readmeFile": "elgato-lights_macos_readme.md"
@@ -736,7 +738,7 @@
       "version": "1.1.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/elgato-lights_windows_1.1.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/elgato-lights_windows_1.1.1.knobdeck",
       "iconUrl": null,
       "icon": "lamp",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/elgato-lights-windows/readme.md",
@@ -748,7 +750,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "elgato-lights_windows_1.1.1.knobdeck",
       "readmeFile": "elgato-lights_windows_readme.md"
@@ -761,7 +763,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/voicemod_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/voicemod_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "audio-waveform",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemod-macos/readme.md",
@@ -773,7 +775,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "voicemod_macos_1.1.0.knobdeck",
       "readmeFile": "voicemod_macos_readme.md"
@@ -786,7 +788,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/voicemod_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/voicemod_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "audio-waveform",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemod-windows/readme.md",
@@ -798,7 +800,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "voicemod_windows_1.1.0.knobdeck",
       "readmeFile": "voicemod_windows_readme.md"
@@ -811,7 +813,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/home-assistant_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "house",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-linux/readme.md",
@@ -823,7 +825,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "home-assistant_linux_1.1.0.knobdeck",
       "readmeFile": "home-assistant_linux_readme.md"
@@ -836,7 +838,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/home-assistant_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "house",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-macos/readme.md",
@@ -848,7 +850,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "home-assistant_macos_1.1.0.knobdeck",
       "readmeFile": "home-assistant_macos_readme.md"
@@ -861,7 +863,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/home-assistant_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "house",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-windows/readme.md",
@@ -873,7 +875,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "home-assistant_windows_1.1.0.knobdeck",
       "readmeFile": "home-assistant_windows_readme.md"
@@ -886,7 +888,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/hue_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "lamp-ceiling",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-linux/readme.md",
@@ -898,7 +900,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "hue_linux_1.1.0.knobdeck",
       "readmeFile": "hue_linux_readme.md"
@@ -911,7 +913,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/hue_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "lamp-ceiling",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-macos/readme.md",
@@ -923,7 +925,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "hue_macos_1.1.0.knobdeck",
       "readmeFile": "hue_macos_readme.md"
@@ -936,7 +938,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/hue_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/hue_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "lamp-ceiling",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-windows/readme.md",
@@ -948,10 +950,85 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "hue_windows_1.1.0.knobdeck",
       "readmeFile": "hue_windows_readme.md"
+    },
+    {
+      "id": "coding-agents-linux",
+      "name": "Coding Agents",
+      "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
+      "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "bot",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-linux/readme.md",
+      "sha256": "0eadefa1e9344bd0192c98af46f8519be0e1e2b9783fa9d2b88ed2ed326db4cc",
+      "tags": [
+        "Developer tools",
+        "AI"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "coding-agents_linux_1.0.0.knobdeck",
+      "readmeFile": "coding-agents_linux_readme.md"
+    },
+    {
+      "id": "coding-agents-macos",
+      "name": "Coding Agents",
+      "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
+      "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "bot",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-macos/readme.md",
+      "sha256": "826e07bf5f27ba5ae03bfeb9b0b186a33ee16a8ed46ef5ffc8b1326b518561a7",
+      "tags": [
+        "Developer tools",
+        "AI"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "coding-agents_macos_1.0.0.knobdeck",
+      "readmeFile": "coding-agents_macos_readme.md"
+    },
+    {
+      "id": "coding-agents-windows",
+      "name": "Coding Agents",
+      "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
+      "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/coding-agents_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "bot",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-windows/readme.md",
+      "sha256": "01e0dd1622cf53aa4f17bb9e09e221d362c52df8146743cf5eb6442b93033b45",
+      "tags": [
+        "Developer tools",
+        "AI"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "coding-agents_windows_1.0.0.knobdeck",
+      "readmeFile": "coding-agents_windows_readme.md"
     },
     {
       "id": "game-launcher-linux",
@@ -961,7 +1038,7 @@
       "version": "1.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/game-launcher_linux_1.0.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_linux_1.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gamepad-2",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-linux/readme.md",
@@ -973,7 +1050,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "game-launcher_linux_1.0.0.knobdeck",
       "readmeFile": "game-launcher_linux_readme.md"
@@ -986,7 +1063,7 @@
       "version": "1.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/game-launcher_macos_1.0.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_macos_1.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gamepad-2",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-macos/readme.md",
@@ -998,7 +1075,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "game-launcher_macos_1.0.0.knobdeck",
       "readmeFile": "game-launcher_macos_readme.md"
@@ -1011,7 +1088,7 @@
       "version": "1.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/game-launcher_windows_1.0.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/game-launcher_windows_1.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gamepad-2",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-windows/readme.md",
@@ -1023,7 +1100,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "game-launcher_windows_1.0.0.knobdeck",
       "readmeFile": "game-launcher_windows_readme.md"
@@ -1033,14 +1110,14 @@
       "name": "Files",
       "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
       "description": "Act on the files selected in Dolphin: convert and resize images, merge PDFs, zip, rename, copy paths.",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/files_linux_1.0.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/files_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "files",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-linux/readme.md",
-      "sha256": "0e5c44b988409cb34b66dc612772189533751aa5093fc17a98473ebb27b32746",
+      "sha256": "0e40dad600de9ff7bb448f08841a5dbc43d22c93b9ac5edb71214f140d0dc333",
       "tags": [
         "Files",
         "Productivity"
@@ -1058,7 +1135,7 @@
         "browser"
       ],
       "featured": false,
-      "file": "files_linux_1.0.2.knobdeck",
+      "file": "files_linux_1.1.0.knobdeck",
       "readmeFile": "files_linux_readme.md"
     },
     {
@@ -1066,14 +1143,14 @@
       "name": "Files",
       "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
       "description": "Act on the files selected in Finder: convert and resize images, merge PDFs, zip, rename, copy paths.",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/files_macos_1.0.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/files_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "files",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-macos/readme.md",
-      "sha256": "7ce064a84545d4412ab5d056f715a2b414d1d94a98701f710a3d56150c3ce997",
+      "sha256": "9677bc5f74facc47165faf57dc498b432ba0b95e40a3cb7d395fb012d605e944",
       "tags": [
         "Files",
         "Productivity"
@@ -1091,7 +1168,7 @@
         "browser"
       ],
       "featured": false,
-      "file": "files_macos_1.0.2.knobdeck",
+      "file": "files_macos_1.1.0.knobdeck",
       "readmeFile": "files_macos_readme.md"
     },
     {
@@ -1099,14 +1176,14 @@
       "name": "Files",
       "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
       "description": "Act on the files selected in File Explorer: convert and resize images, merge PDFs, zip, rename, copy paths.",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/files_windows_1.0.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/files_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "files",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-windows/readme.md",
-      "sha256": "10785745931fa7a38c8873a187d53553205425523ad63ce701b1f75d1298181f",
+      "sha256": "da89bbbd59c5c736310dcac98e8aada569dd687cec7f698c7187790b7cbf4545",
       "tags": [
         "Files",
         "Productivity"
@@ -1124,8 +1201,206 @@
         "browser"
       ],
       "featured": false,
-      "file": "files_windows_1.0.2.knobdeck",
+      "file": "files_windows_1.1.0.knobdeck",
       "readmeFile": "files_windows_readme.md"
+    },
+    {
+      "id": "ai-actions-linux",
+      "name": "AI Actions",
+      "summary": "Fix, rewrite, translate or explain selected text with your own AI model.",
+      "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "sparkles",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-linux/readme.md",
+      "sha256": "45e6dbcd609f623280ee591c9f0237507b686012b3712d68dffd8e845d5643cb",
+      "tags": [
+        "AI",
+        "Productivity"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "ai-actions_linux_1.0.0.knobdeck",
+      "readmeFile": "ai-actions_linux_readme.md"
+    },
+    {
+      "id": "ai-actions-macos",
+      "name": "AI Actions",
+      "summary": "Fix, rewrite, translate or explain selected text with your own AI model.",
+      "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "sparkles",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-macos/readme.md",
+      "sha256": "2fffc0348d2bcd6727b2924a90967011ae1af4ea230482e8fb3bfd37a0891a24",
+      "tags": [
+        "AI",
+        "Productivity"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "ai-actions_macos_1.0.0.knobdeck",
+      "readmeFile": "ai-actions_macos_readme.md"
+    },
+    {
+      "id": "ai-actions-windows",
+      "name": "AI Actions",
+      "summary": "Fix, rewrite, translate or explain selected text with your own AI model.",
+      "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "sparkles",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-windows/readme.md",
+      "sha256": "a0274c586f28c39fd13d70684a17f5d2967324693c693bd713ff32e54493f1ec",
+      "tags": [
+        "AI",
+        "Productivity"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "ai-actions_windows_1.0.0.knobdeck",
+      "readmeFile": "ai-actions_windows_readme.md"
+    },
+    {
+      "id": "web-requests-linux",
+      "name": "Web Requests",
+      "summary": "Call webhooks and web APIs, show a JSON value on a key.",
+      "description": "Call any web address from a key: webhooks (IFTTT, n8n, Zapier, Make), REST APIs, local servers. Show a value from a JSON reply on a key, and switch things on and off.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "globe",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-linux/readme.md",
+      "sha256": "4aa62de3f009839f882990a45c273ba5abb9ea138e476b9634b22c7af01a810b",
+      "tags": [
+        "Automation",
+        "Developer tools"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "web-requests_linux_1.0.0.knobdeck",
+      "readmeFile": "web-requests_linux_readme.md"
+    },
+    {
+      "id": "web-requests-macos",
+      "name": "Web Requests",
+      "summary": "Call webhooks and web APIs, show a JSON value on a key.",
+      "description": "Call any web address from a key: webhooks (IFTTT, n8n, Zapier, Make), REST APIs, local servers. Show a value from a JSON reply on a key, and switch things on and off.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "globe",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-macos/readme.md",
+      "sha256": "7689426dc15d171a3d6cab7b69355ab7b2f71c080aa8b5573f9e73a020ac8282",
+      "tags": [
+        "Automation",
+        "Developer tools"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "web-requests_macos_1.0.0.knobdeck",
+      "readmeFile": "web-requests_macos_readme.md"
+    },
+    {
+      "id": "web-requests-windows",
+      "name": "Web Requests",
+      "summary": "Call webhooks and web APIs, show a JSON value on a key.",
+      "description": "Call any web address from a key: webhooks (IFTTT, n8n, Zapier, Make), REST APIs, local servers. Show a value from a JSON reply on a key, and switch things on and off.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/web-requests_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "globe",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-windows/readme.md",
+      "sha256": "f30e7d1feb0d4c2c745bc21b584020d773d7f604a971f80a241ecc2f2088183a",
+      "tags": [
+        "Automation",
+        "Developer tools"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "web-requests_windows_1.0.0.knobdeck",
+      "readmeFile": "web-requests_windows_readme.md"
     },
     {
       "id": "browser-plugin-linux",
@@ -1135,7 +1410,7 @@
       "version": "1.4.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/browser-plugin_linux_1.4.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_linux_1.4.0.knobdeck",
       "iconUrl": null,
       "icon": "globe",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-linux/readme.md",
@@ -1162,7 +1437,7 @@
       "version": "1.4.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/browser-plugin_macos_1.4.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_macos_1.4.0.knobdeck",
       "iconUrl": null,
       "icon": "globe",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-macos/readme.md",
@@ -1189,7 +1464,7 @@
       "version": "1.4.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/browser-plugin_windows_1.4.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/browser-plugin_windows_1.4.0.knobdeck",
       "iconUrl": null,
       "icon": "globe",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-windows/readme.md",
@@ -1216,7 +1491,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/slides_linux_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/slides_linux_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "presentation",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-linux/readme.md",
@@ -1228,7 +1503,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "slides_linux_1.0.1.knobdeck",
       "readmeFile": "slides_linux_readme.md"
@@ -1241,7 +1516,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/slides_macos_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/slides_macos_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "presentation",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-macos/readme.md",
@@ -1253,7 +1528,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "slides_macos_1.0.1.knobdeck",
       "readmeFile": "slides_macos_readme.md"
@@ -1266,7 +1541,7 @@
       "version": "1.0.1",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/slides_windows_1.0.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/slides_windows_1.0.1.knobdeck",
       "iconUrl": null,
       "icon": "presentation",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/slides-windows/readme.md",
@@ -1278,7 +1553,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "slides_windows_1.0.1.knobdeck",
       "readmeFile": "slides_windows_readme.md"
@@ -1291,7 +1566,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/intellij_linux_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_linux_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/intellij/icons/intellij-logo.svg",
       "icon": "intellij-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/intellij-linux/readme.md",
@@ -1303,7 +1578,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "intellij_linux_1.2.0.knobdeck",
       "readmeFile": "intellij_linux_readme.md"
@@ -1316,7 +1591,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/intellij_macos_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_macos_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/intellij/icons/intellij-logo.svg",
       "icon": "intellij-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/intellij-macos/readme.md",
@@ -1328,7 +1603,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "intellij_macos_1.2.0.knobdeck",
       "readmeFile": "intellij_macos_readme.md"
@@ -1341,7 +1616,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/intellij_windows_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_windows_1.2.0.knobdeck",
       "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/master/intellij/icons/intellij-logo.svg",
       "icon": "intellij-logo.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/intellij-windows/readme.md",
@@ -1353,7 +1628,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "intellij_windows_1.2.0.knobdeck",
       "readmeFile": "intellij_windows_readme.md"
@@ -1366,7 +1641,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/vlc_linux_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_linux_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": null,
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-linux/readme.md",
@@ -1378,7 +1653,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "vlc_linux_1.2.0.knobdeck",
       "readmeFile": "vlc_linux_readme.md"
@@ -1391,7 +1666,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/vlc_macos_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_macos_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": null,
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-macos/readme.md",
@@ -1403,7 +1678,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "vlc_macos_1.2.0.knobdeck",
       "readmeFile": "vlc_macos_readme.md"
@@ -1416,7 +1691,7 @@
       "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/vlc_windows_1.2.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_windows_1.2.0.knobdeck",
       "iconUrl": null,
       "icon": null,
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-windows/readme.md",
@@ -1428,7 +1703,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "vlc_windows_1.2.0.knobdeck",
       "readmeFile": "vlc_windows_readme.md"
@@ -1441,7 +1716,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/weather_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "cloud-sun",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-linux/readme.md",
@@ -1453,7 +1728,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "weather_linux_1.1.0.knobdeck",
       "readmeFile": "weather_linux_readme.md"
@@ -1466,7 +1741,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/weather_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "cloud-sun",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-macos/readme.md",
@@ -1478,7 +1753,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "weather_macos_1.1.0.knobdeck",
       "readmeFile": "weather_macos_readme.md"
@@ -1491,7 +1766,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/weather_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/weather_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "cloud-sun",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-windows/readme.md",
@@ -1503,7 +1778,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "weather_windows_1.1.0.knobdeck",
       "readmeFile": "weather_windows_readme.md"
@@ -1516,7 +1791,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/clocks_linux_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_linux_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "clock",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-linux/readme.md",
@@ -1528,7 +1803,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "clocks_linux_1.1.0.knobdeck",
       "readmeFile": "clocks_linux_readme.md"
@@ -1541,7 +1816,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/clocks_macos_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_macos_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "clock",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-macos/readme.md",
@@ -1553,7 +1828,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "clocks_macos_1.1.0.knobdeck",
       "readmeFile": "clocks_macos_readme.md"
@@ -1566,7 +1841,7 @@
       "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/clocks_windows_1.1.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_windows_1.1.0.knobdeck",
       "iconUrl": null,
       "icon": "clock",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-windows/readme.md",
@@ -1578,7 +1853,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "clocks_windows_1.1.0.knobdeck",
       "readmeFile": "clocks_windows_readme.md"
@@ -1591,7 +1866,7 @@
       "version": "2.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/ai-stats_linux_2.0.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-stats_linux_2.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gauge",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-linux/readme.md",
@@ -1603,7 +1878,7 @@
       "platforms": [
         "linux"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "ai-stats_linux_2.0.0.knobdeck",
       "readmeFile": "ai-stats_linux_readme.md"
@@ -1616,7 +1891,7 @@
       "version": "2.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/ai-stats_macos_2.0.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-stats_macos_2.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gauge",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-macos/readme.md",
@@ -1628,7 +1903,7 @@
       "platforms": [
         "macos"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "ai-stats_macos_2.0.0.knobdeck",
       "readmeFile": "ai-stats_macos_readme.md"
@@ -1641,7 +1916,7 @@
       "version": "2.0.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.16-1400/ai-stats_windows_2.0.0.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-stats_windows_2.0.0.knobdeck",
       "iconUrl": null,
       "icon": "gauge",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-windows/readme.md",
@@ -1653,7 +1928,7 @@
       "platforms": [
         "windows"
       ],
-      "uses": null,
+      "uses": [],
       "featured": false,
       "file": "ai-stats_windows_2.0.0.knobdeck",
       "readmeFile": "ai-stats_windows_readme.md"

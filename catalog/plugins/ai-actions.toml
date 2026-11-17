@@ -1,0 +1,7 @@
+id = "ai-actions"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "ai-actions", tag = "ai-actions-v{version}" }
+first_party = true
+featured = false
+sort = 37
+tags = ["AI", "Productivity"]
+companions = []

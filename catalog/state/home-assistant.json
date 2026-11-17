@@ -1,0 +1,241 @@
+{
+  "id": "home-assistant",
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "Home Assistant",
+        "summary": "Toggle entities, run scenes, show sensors and set levels.",
+        "tags": [
+          "Smart home",
+          "Automation"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "home-assistant-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_linux_1.1.0.knobdeck",
+          "sha256": "1203f1215789cb6bcf7ae838b70c1f651af5bec54b1517acdc371a5be35ad57c",
+          "size": 2889821,
+          "file": "home-assistant_linux_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_linux_readme.md",
+          "readmeFile": "home-assistant_linux_readme.md",
+          "name": "Home Assistant",
+          "description": "Toggle lights and switches, run scenes and scripts, show sensors and set levels in Home Assistant.",
+          "author": "KnobDeck",
+          "icon": "house",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "home-assistant-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_macos_1.1.0.knobdeck",
+          "sha256": "0c14920772e7cc958bd1f53c1c17054e8288a1ce8117d0472c46ae552a24922d",
+          "size": 3536278,
+          "file": "home-assistant_macos_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_macos_readme.md",
+          "readmeFile": "home-assistant_macos_readme.md",
+          "name": "Home Assistant",
+          "description": "Toggle lights and switches, run scenes and scripts, show sensors and set levels in Home Assistant.",
+          "author": "KnobDeck",
+          "icon": "house",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "home-assistant-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_windows_1.1.0.knobdeck",
+          "sha256": "7e63a1a988a50dabba226109fc2e5ecccb91076b7aaacfca75fea353832e450a",
+          "size": 1679687,
+          "file": "home-assistant_windows_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/home-assistant_windows_readme.md",
+          "readmeFile": "home-assistant_windows_readme.md",
+          "name": "Home Assistant",
+          "description": "Toggle lights and switches, run scenes and scripts, show sensors and set levels in Home Assistant.",
+          "author": "KnobDeck",
+          "icon": "house",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "toggle": {
+          "type": "toggle",
+          "label": "Toggle Entity",
+          "icon": "toggle-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "entity",
+              "type": "select",
+              "label": "Entity"
+            },
+            {
+              "key": "show_name",
+              "type": "checkbox",
+              "label": "Show the entity's name",
+              "default": true
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "toggle-left"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "toggle-right"
+            }
+          ]
+        },
+        "activate": {
+          "type": "button",
+          "label": "Run Scene / Script",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "entity",
+              "type": "select",
+              "label": "Scene, script, automation or button"
+            }
+          ]
+        },
+        "state": {
+          "type": "button",
+          "label": "Show State",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "entity",
+              "type": "select",
+              "label": "Entity"
+            },
+            {
+              "key": "attribute",
+              "type": "text",
+              "label": "Attribute (optional)"
+            },
+            {
+              "key": "show_name",
+              "type": "checkbox",
+              "label": "Show the entity's name",
+              "default": false
+            }
+          ]
+        },
+        "level": {
+          "type": "slider",
+          "label": "Level",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "entity",
+              "type": "select",
+              "label": "Light, cover, fan, media player or number"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "call-service": {
+          "type": "button",
+          "label": "Call Service",
+          "icon": "zap",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "service",
+              "type": "combobox",
+              "label": "Service"
+            },
+            {
+              "key": "entity",
+              "type": "combobox",
+              "label": "Entity (optional)"
+            },
+            {
+              "key": "data",
+              "type": "textarea",
+              "label": "Service data (JSON, optional)"
+            }
+          ]
+        },
+        "entities-wheel": {
+          "type": "wheel",
+          "label": "Entities Wheel",
+          "icon": "layout-grid",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "domain",
+              "type": "select",
+              "label": "Show",
+              "default": "light",
+              "options": [
+                "light",
+                "switch",
+                "scene",
+                "script",
+                "automation",
+                "fan",
+                "cover",
+                "lock",
+                "media_player",
+                "input_boolean",
+                "button"
+              ]
+            },
+            {
+              "key": "filter",
+              "type": "text",
+              "label": "Name contains (optional)"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

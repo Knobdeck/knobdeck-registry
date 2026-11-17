@@ -1,0 +1,7 @@
+id = "clocks"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "clocks", tag = "clocks-v{version}" }
+first_party = true
+featured = false
+sort = 86
+tags = ["Time", "Productivity"]
+companions = []

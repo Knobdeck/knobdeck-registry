@@ -1,0 +1,5 @@
+# Profiles have no release: the Worker serves registry.json and profile folders from this repo's
+# master (/profiles/*). The catalog build checks every profile's action refs against the plugin
+# catalog and reports refs to actions that no longer exist or that policy disables.
+repo = "Knobdeck/knobdeck-profiles"
+branch = "master"

@@ -1,0 +1,150 @@
+{
+  "schema": 2,
+  "id": "ai-actions",
+  "name": "AI Actions",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-17T13:02:53Z",
+    "platforms": {
+      "linux": {
+        "id": "ai-actions-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_linux_1.0.0.knobdeck",
+        "sha256": "45e6dbcd609f623280ee591c9f0237507b686012b3712d68dffd8e845d5643cb",
+        "size": 3468150,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-linux/readme.md"
+      },
+      "macos": {
+        "id": "ai-actions-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_macos_1.0.0.knobdeck",
+        "sha256": "2fffc0348d2bcd6727b2924a90967011ae1af4ea230482e8fb3bfd37a0891a24",
+        "size": 3601535,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-macos/readme.md"
+      },
+      "windows": {
+        "id": "ai-actions-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/ai-actions_windows_1.0.0.knobdeck",
+        "sha256": "a0274c586f28c39fd13d70684a17f5d2967324693c693bd713ff32e54493f1ec",
+        "size": 1724841,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+  "setup": true,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "run": {
+      "type": "button",
+      "label": "AI Action",
+      "icon": "sparkles",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "preset",
+          "type": "select",
+          "label": "Do",
+          "default": "fix",
+          "options": [
+            "fix",
+            "rewrite",
+            "shorter",
+            "professional",
+            "friendly",
+            "bullets",
+            "translate",
+            "summarize",
+            "explain",
+            "explain-code",
+            "reply",
+            "custom"
+          ]
+        },
+        {
+          "key": "prompt",
+          "type": "textarea",
+          "label": "Prompt",
+          "showIf": {
+            "key": "preset",
+            "equals": "custom"
+          }
+        },
+        {
+          "key": "language",
+          "type": "text",
+          "label": "Translate into",
+          "default": "English",
+          "showIf": {
+            "key": "preset",
+            "equals": "translate"
+          }
+        },
+        {
+          "key": "output",
+          "type": "select",
+          "label": "Put the answer",
+          "default": "auto",
+          "options": [
+            "auto",
+            "replace",
+            "copy",
+            "show"
+          ]
+        },
+        {
+          "key": "no_clipboard",
+          "type": "checkbox",
+          "label": "Don't fall back to the clipboard when nothing is selected"
+        }
+      ]
+    },
+    "wheel": {
+      "type": "wheel",
+      "label": "AI Actions Wheel",
+      "icon": "wand-sparkles",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "language",
+          "type": "text",
+          "label": "Translate into",
+          "default": "English"
+        },
+        {
+          "key": "output",
+          "type": "select",
+          "label": "Put the answer",
+          "default": "auto",
+          "options": [
+            "auto",
+            "replace",
+            "copy",
+            "show"
+          ]
+        },
+        {
+          "key": "no_clipboard",
+          "type": "checkbox",
+          "label": "Don't fall back to the clipboard when nothing is selected"
+        }
+      ]
+    }
+  },
+  "companions": []
+}

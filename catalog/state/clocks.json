@@ -1,0 +1,170 @@
+{
+  "id": "clocks",
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "Clocks",
+        "summary": "Clock for any time zone, world clock, countdown timer, stopwatch.",
+        "tags": [
+          "Time",
+          "Productivity"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "clocks-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_linux_1.1.0.knobdeck",
+          "sha256": "994b91d55d6335c8b1bbab32c857ca123d8c6184c8c8849e2f774a0cf48b096d",
+          "size": 399546,
+          "file": "clocks_linux_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_linux_readme.md",
+          "readmeFile": "clocks_linux_readme.md",
+          "name": "Clocks",
+          "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",
+          "author": "KnobDeck",
+          "icon": "clock",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "clocks-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_macos_1.1.0.knobdeck",
+          "sha256": "8e3dd3a3b055bb67d1709c65834fd5d562e3129dfbe2b9b3a49c33a69c593fff",
+          "size": 730140,
+          "file": "clocks_macos_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_macos_readme.md",
+          "readmeFile": "clocks_macos_readme.md",
+          "name": "Clocks",
+          "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",
+          "author": "KnobDeck",
+          "icon": "clock",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "clocks-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_windows_1.1.0.knobdeck",
+          "sha256": "67e01398ede2a24f490a231fcf33277c8a800508a7057aa3686ce7bc7af389a3",
+          "size": 365225,
+          "file": "clocks_windows_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/clocks_windows_readme.md",
+          "readmeFile": "clocks_windows_readme.md",
+          "name": "Clocks",
+          "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",
+          "author": "KnobDeck",
+          "icon": "clock",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "clock": {
+          "type": "button",
+          "label": "Clock",
+          "icon": "clock",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "zone",
+              "type": "combobox",
+              "label": "Time zone",
+              "default": "__local__"
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name on the key (optional)"
+            },
+            {
+              "key": "format",
+              "type": "select",
+              "label": "Format",
+              "default": "24",
+              "options": [
+                "24",
+                "12"
+              ]
+            },
+            {
+              "key": "date",
+              "type": "checkbox",
+              "label": "Show the date"
+            }
+          ]
+        },
+        "world-clock-wheel": {
+          "type": "wheel",
+          "label": "World Clock",
+          "icon": "globe",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "zones",
+              "type": "textarea",
+              "label": "Time zones, one per line"
+            },
+            {
+              "key": "format",
+              "type": "select",
+              "label": "Format",
+              "default": "24",
+              "options": [
+                "24",
+                "12"
+              ]
+            },
+            {
+              "key": "date",
+              "type": "checkbox",
+              "label": "Show the date"
+            }
+          ]
+        },
+        "timer": {
+          "type": "button",
+          "label": "Countdown Timer",
+          "icon": "timer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "length",
+              "type": "text",
+              "label": "Length",
+              "default": "5m"
+            }
+          ]
+        },
+        "stopwatch": {
+          "type": "button",
+          "label": "Stopwatch",
+          "icon": "timer-reset",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+id = "twitch"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "twitch", tag = "twitch-v{version}" }
+first_party = true
+featured = true
+sort = 21
+tags = ["Streaming", "Communication"]
+companions = []

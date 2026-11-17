@@ -1,0 +1,7 @@
+id = "ytmusic"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "ytmusic", tag = "ytmusic-v{version}" }
+first_party = true
+featured = false
+sort = 16
+tags = ["Music", "Media"]
+companions = []

@@ -1,0 +1,380 @@
+{
+  "id": "intellij",
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "IntelliJ IDEA",
+        "summary": "JetBrains IDE actions on a key.",
+        "tags": [
+          "Developer tools",
+          "IDE"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "intellij-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_linux_1.2.0.knobdeck",
+          "sha256": "d40e40fb554a9289e8bbcb642479ac85b018ddf253173c69eebf3d7f10e3ae69",
+          "size": 2847243,
+          "file": "intellij_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_linux_readme.md",
+          "readmeFile": "intellij_linux_readme.md",
+          "name": "IntelliJ IDE",
+          "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
+          "author": "KnobDeck",
+          "icon": "intellij-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "intellij-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_macos_1.2.0.knobdeck",
+          "sha256": "9bb0af622a6551da75ac2f28aed6d557c668e14f4b47b3cae7acf3bb8b1f274b",
+          "size": 3442741,
+          "file": "intellij_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_macos_readme.md",
+          "readmeFile": "intellij_macos_readme.md",
+          "name": "IntelliJ IDE",
+          "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
+          "author": "KnobDeck",
+          "icon": "intellij-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "intellij-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_windows_1.2.0.knobdeck",
+          "sha256": "c87cb3936efa55b91ac3704f22eebdfd0a55cc9381213823e750fa6c5f784807",
+          "size": 1633604,
+          "file": "intellij_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/intellij_windows_readme.md",
+          "readmeFile": "intellij_windows_readme.md",
+          "name": "IntelliJ IDE",
+          "description": "Control IntelliJ IDEs through the KnobDeck IntelliJ companion plugin.",
+          "author": "KnobDeck",
+          "icon": "intellij-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "open-action-browser": {
+          "type": "button",
+          "label": "Open Action Browser",
+          "icon": "compass",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "custom-action": {
+          "type": "button",
+          "label": "Customized Action",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "actionId",
+              "type": "text",
+              "label": "Action ID"
+            },
+            {
+              "key": "runConfig",
+              "type": "text",
+              "label": "Run / Debug Configuration Name (Optional)"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "update-project": {
+          "type": "button",
+          "label": "Update Project",
+          "icon": "arrow-down-to-line",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "new-project": {
+          "type": "button",
+          "label": "New Project",
+          "icon": "folder-plus",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "run": {
+          "type": "button",
+          "label": "Run",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "runConfig",
+              "type": "text",
+              "label": "Run / Debug Configuration Name (Optional)"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "debug": {
+          "type": "button",
+          "label": "Debug",
+          "icon": "bug",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "runConfig",
+              "type": "text",
+              "label": "Run / Debug Configuration Name (Optional)"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "step-over": {
+          "type": "button",
+          "label": "Step Over",
+          "icon": "redo",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "step-into": {
+          "type": "button",
+          "label": "Step Into",
+          "icon": "arrow-down-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "step-out": {
+          "type": "button",
+          "label": "Step Out",
+          "icon": "arrow-up-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "resume": {
+          "type": "button",
+          "label": "Resume",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "pause": {
+          "type": "button",
+          "label": "Pause",
+          "icon": "pause",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "search-everywhere": {
+          "type": "button",
+          "label": "Search Everywhere",
+          "icon": "search",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "stop": {
+          "type": "button",
+          "label": "Stop",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "project-structure": {
+          "type": "button",
+          "label": "Project Structure",
+          "icon": "blocks",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "reset-frame": {
+          "type": "button",
+          "label": "Reset Frame",
+          "icon": "rotate-ccw",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "terminal": {
+          "type": "button",
+          "label": "Terminal",
+          "icon": "terminal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "claude-code": {
+          "type": "button",
+          "label": "Claude Code",
+          "icon": "bot",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

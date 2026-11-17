@@ -1,0 +1,7 @@
+id = "streamlabs"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "streamlabs", tag = "streamlabs-v{version}" }
+first_party = true
+featured = false
+sort = 22
+tags = ["Streaming", "Broadcast"]
+companions = []

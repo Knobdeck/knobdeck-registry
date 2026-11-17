@@ -1,0 +1,7 @@
+id = "browser"
+name = "KnobDeck Browser Companion"
+repository = "https://github.com/Knobdeck/knobdeck-browser-companion"
+runs_in = "Chrome, Edge, Brave and other Chromium browsers; Firefox, Zen"
+plugins = ["browser-plugin"]
+# TODO: add the Chrome Web Store listing (in review) and the addons.mozilla.org listing once public.
+stores = []

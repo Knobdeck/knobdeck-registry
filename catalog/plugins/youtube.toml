@@ -1,0 +1,7 @@
+id = "youtube"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "youtube", tag = "youtube-v{version}" }
+first_party = true
+featured = false
+sort = 23
+tags = ["Streaming", "Broadcast"]
+companions = []

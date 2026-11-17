@@ -1,0 +1,249 @@
+{
+  "id": "vlc",
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "VLC",
+        "summary": "Playback controls for VLC media player.",
+        "tags": [
+          "Media",
+          "Playback"
+        ],
+        "featured": false
+      },
+      "platforms": {
+        "linux": {
+          "id": "vlc-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_linux_1.2.0.knobdeck",
+          "sha256": "c60ed61caa3994adff29a2ffa6c0a8b99029f467498d5bb270a7cc0e8fbf7dbb",
+          "size": 2860786,
+          "file": "vlc_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_linux_readme.md",
+          "readmeFile": "vlc_linux_readme.md",
+          "name": "VLC",
+          "description": "Control VLC over its built-in HTTP interface.",
+          "author": "KnobDeck",
+          "icon": null,
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "vlc-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_macos_1.2.0.knobdeck",
+          "sha256": "42d36848531246b58745d3a81ab82adcecda9b6bba9fc93947f83f66f8e564ee",
+          "size": 3466244,
+          "file": "vlc_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_macos_readme.md",
+          "readmeFile": "vlc_macos_readme.md",
+          "name": "VLC",
+          "description": "Control VLC over its built-in HTTP interface.",
+          "author": "KnobDeck",
+          "icon": null,
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "vlc-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_windows_1.2.0.knobdeck",
+          "sha256": "69373ea855008350e8f492008563d3fc3557ca8934d77f2734305860c50dbd3c",
+          "size": 1645623,
+          "file": "vlc_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/vlc_windows_readme.md",
+          "readmeFile": "vlc_windows_readme.md",
+          "name": "VLC",
+          "description": "Control VLC over its built-in HTTP interface.",
+          "author": "KnobDeck",
+          "icon": null,
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "playback-status": {
+          "type": "toggle",
+          "label": "Playback Status",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "offline",
+              "label": "Offline",
+              "icon": "triangle-alert"
+            },
+            {
+              "value": "stopped",
+              "label": "Stopped",
+              "icon": "square"
+            },
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "pause"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "play"
+            }
+          ]
+        },
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "stopped",
+              "label": "Stopped",
+              "icon": "play"
+            },
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "pause"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "play"
+            }
+          ]
+        },
+        "stop": {
+          "type": "button",
+          "label": "Stop",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "next": {
+          "type": "button",
+          "label": "Next",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "fullscreen": {
+          "type": "toggle",
+          "label": "Fullscreen",
+          "icon": "maximize",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Windowed",
+              "icon": "square"
+            },
+            {
+              "value": "on",
+              "label": "Fullscreen",
+              "icon": "maximize"
+            }
+          ]
+        },
+        "seek-backward": {
+          "type": "button",
+          "label": "Seek Back 10s",
+          "icon": "rewind",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "seek-forward": {
+          "type": "button",
+          "label": "Seek Forward 10s",
+          "icon": "fast-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "volume-down": {
+          "type": "button",
+          "label": "Volume Down",
+          "icon": "volume-1",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "volume-up": {
+          "type": "button",
+          "label": "Volume Up",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "open-url": {
+          "type": "button",
+          "label": "Open Stream / URL",
+          "icon": "link",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "url",
+              "type": "text",
+              "label": "Media URL"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

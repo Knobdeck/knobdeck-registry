@@ -1,0 +1,7 @@
+id = "voicemod"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "voicemod", tag = "voicemod-v{version}" }
+first_party = true
+featured = false
+sort = 26
+tags = ["Voice", "Streaming"]
+companions = []

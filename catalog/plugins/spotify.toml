@@ -1,0 +1,7 @@
+id = "spotify"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "spotify", tag = "spotify-v{version}" }
+first_party = true
+featured = true
+sort = 15
+tags = ["Music", "Media"]
+companions = []

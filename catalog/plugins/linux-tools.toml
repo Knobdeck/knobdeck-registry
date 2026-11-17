@@ -1,0 +1,7 @@
+id = "linux-tools"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "linux-tools", tag = "linux-tools-v{version}" }
+first_party = true
+featured = true
+sort = 42
+tags = ["Linux", "Automation"]
+companions = []

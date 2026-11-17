@@ -1,0 +1,7 @@
+id = "vscode"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "vscode", tag = "vscode-v{version}" }
+first_party = true
+featured = true
+sort = 30
+tags = ["Developer tools", "Editor"]
+companions = ["vscode"]

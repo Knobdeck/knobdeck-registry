@@ -1,0 +1,3 @@
+# Dial themes: one repo, one date-tagged release holding every theme and its registry.json.
+# The catalog copies the latest release's registry.json to /themes/registry.json and /v2/themes.json.
+repo = "Knobdeck/knobdeck-themes"

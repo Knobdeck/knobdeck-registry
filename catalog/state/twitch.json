@@ -1,0 +1,320 @@
+{
+  "id": "twitch",
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v2026.11.17-1257",
+      "released": "2026-11-17T13:02:53Z",
+      "notes": "## What's Changed\n* PLG-031/032/033: Coding Agents, AI Actions, Web Requests (1.0.0) by @HarshalKudale in https://github.com/Knobdeck/knobdeck-plugins/pull/26\n\n\n**Full Changelog**: https://github.com/Knobdeck/knobdeck-plugins/compare/v2026.11.16-1746...v2026.11.17-1257",
+      "meta": {
+        "name": "Twitch",
+        "summary": "Chat, chat modes, ads, stream info, markers, clips, viewers.",
+        "tags": [
+          "Streaming",
+          "Communication"
+        ],
+        "featured": true
+      },
+      "platforms": {
+        "linux": {
+          "id": "twitch-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_linux_1.2.0.knobdeck",
+          "sha256": "4a3b77e38316fdb83d954bedeb740c53e28e67d7ef243168e9eea9eaaa458ace",
+          "size": 2914772,
+          "file": "twitch_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_linux_readme.md",
+          "readmeFile": "twitch_linux_readme.md",
+          "name": "Twitch",
+          "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
+          "author": "KnobDeck",
+          "icon": "twitch",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "twitch-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_macos_1.2.0.knobdeck",
+          "sha256": "878bb1fb6fbcf1fa67576b7b640402a6086910567badfb53e6b6b9d08fbf644c",
+          "size": 3560072,
+          "file": "twitch_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_macos_readme.md",
+          "readmeFile": "twitch_macos_readme.md",
+          "name": "Twitch",
+          "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
+          "author": "KnobDeck",
+          "icon": "twitch",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "twitch-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_windows_1.2.0.knobdeck",
+          "sha256": "761d1dbfa2cee7cb182f63fbf1f77606ba2e327b104e410b7557bac218603575",
+          "size": 1719122,
+          "file": "twitch_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/v2026.11.17-1257/twitch_windows_readme.md",
+          "readmeFile": "twitch_windows_readme.md",
+          "name": "Twitch",
+          "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
+          "author": "KnobDeck",
+          "icon": "twitch",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "chat-message": {
+          "type": "button",
+          "label": "Chat Message",
+          "icon": "message-square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "message",
+              "type": "textarea",
+              "label": "Message"
+            }
+          ]
+        },
+        "clear-chat": {
+          "type": "button",
+          "label": "Clear Chat",
+          "icon": "eraser",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "emote-only": {
+          "type": "toggle",
+          "label": "Emote-Only Chat",
+          "icon": "smile",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "message-circle"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "smile"
+            }
+          ]
+        },
+        "follower-only": {
+          "type": "toggle",
+          "label": "Follower-Only Chat",
+          "icon": "user-check",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "message-circle"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "user-check"
+            }
+          ]
+        },
+        "sub-only": {
+          "type": "toggle",
+          "label": "Subscriber-Only Chat",
+          "icon": "star",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "message-circle"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "star"
+            }
+          ]
+        },
+        "slow-mode": {
+          "type": "toggle",
+          "label": "Slow Mode",
+          "icon": "hourglass",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "seconds",
+              "type": "text",
+              "label": "Seconds between messages",
+              "default": "30"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "message-circle"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "hourglass"
+            }
+          ]
+        },
+        "ad-break": {
+          "type": "button",
+          "label": "Run Ad",
+          "icon": "megaphone",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "length",
+              "type": "select",
+              "label": "Length",
+              "default": "60",
+              "options": [
+                "30",
+                "60",
+                "90",
+                "120",
+                "150",
+                "180"
+              ]
+            }
+          ]
+        },
+        "stream-info": {
+          "type": "button",
+          "label": "Stream Info",
+          "icon": "pencil",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Title (empty keeps it)"
+            },
+            {
+              "key": "category",
+              "type": "text",
+              "label": "Category (empty keeps it)"
+            }
+          ]
+        },
+        "marker": {
+          "type": "button",
+          "label": "Stream Marker",
+          "icon": "bookmark-plus",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "description",
+              "type": "text",
+              "label": "Description (optional)"
+            }
+          ]
+        },
+        "create-clip": {
+          "type": "button",
+          "label": "Create Clip",
+          "icon": "clapperboard",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "open",
+              "type": "checkbox",
+              "label": "Open the clip editor"
+            }
+          ]
+        },
+        "viewers": {
+          "type": "button",
+          "label": "Viewer Count",
+          "icon": "eye",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "channel-live": {
+          "type": "toggle",
+          "label": "Channel Monitor",
+          "icon": "radio",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "channel",
+              "type": "text",
+              "label": "Channel"
+            }
+          ],
+          "states": [
+            {
+              "value": "offline",
+              "label": "Offline",
+              "icon": "radio"
+            },
+            {
+              "value": "live",
+              "label": "Live",
+              "icon": "circle-dot"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

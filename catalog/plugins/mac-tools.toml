@@ -1,0 +1,7 @@
+id = "mac-tools"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "mac-tools", tag = "mac-tools-v{version}" }
+first_party = true
+featured = true
+sort = 41
+tags = ["macOS", "Automation"]
+companions = []

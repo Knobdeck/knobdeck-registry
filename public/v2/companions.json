@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "companions": [
+    {
+      "id": "browser",
+      "name": "KnobDeck Browser Companion",
+      "repository": "https://github.com/Knobdeck/knobdeck-browser-companion",
+      "runsIn": "Chrome, Edge, Brave and other Chromium browsers; Firefox, Zen",
+      "latest": "1.0.0",
+      "minVersion": null,
+      "plugins": [
+        "browser-plugin"
+      ],
+      "stores": []
+    },
+    {
+      "id": "intellij",
+      "name": "KnobDeck Companion for JetBrains IDEs",
+      "repository": "https://github.com/Knobdeck/knobdeck-intellij-companion",
+      "runsIn": "IntelliJ IDEA, Android Studio, PyCharm, WebStorm and other JetBrains IDEs (2024.3+)",
+      "latest": "1.0.1",
+      "minVersion": null,
+      "plugins": [
+        "intellij"
+      ],
+      "stores": []
+    },
+    {
+      "id": "vscode",
+      "name": "KnobDeck VS Code Companion",
+      "repository": "https://github.com/Knobdeck/knobdeck-vscode-companion",
+      "runsIn": "VS Code, VSCodium, Cursor, Windsurf",
+      "latest": "1.2.0",
+      "minVersion": null,
+      "plugins": [
+        "vscode"
+      ],
+      "stores": [
+        {
+          "name": "Visual Studio Marketplace",
+          "url": "https://marketplace.visualstudio.com/items?itemName=knobdeck.knobdeck-vscode-companion"
+        },
+        {
+          "name": "Open VSX",
+          "url": "https://open-vsx.org/extension/knobdeck/knobdeck-vscode-companion"
+        }
+      ]
+    }
+  ]
+}

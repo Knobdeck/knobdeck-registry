@@ -1,0 +1,7 @@
+id = "discord"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "discord", tag = "discord-v{version}" }
+first_party = true
+featured = true
+sort = 10
+tags = ["Communication", "Voice"]
+companions = []

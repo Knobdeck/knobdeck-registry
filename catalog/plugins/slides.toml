@@ -1,0 +1,7 @@
+id = "slides"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "slides", tag = "slides-v{version}" }
+first_party = true
+featured = false
+sort = 65
+tags = ["Productivity", "Presentations"]
+companions = []
