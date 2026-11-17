@@ -2,6 +2,7 @@
 // landing/payments site so registry updates never redeploy checkout or licensing.
 //   /plugins/registry.json, /plugins/<id>/readme.md, /themes/registry.json  static (public/)
 //   POST /api/google/token                                                     OAuth secret holder
+//   /profiles/registry.json, /profiles/<id>/profile.json|preview.png            knobdeck-profiles master
 // (The Discord plugin signs in with PKCE straight against Discord: its app is a public client.)
 
 function json(body: unknown, status = 200) {
@@ -11,6 +12,7 @@ function json(body: unknown, status = 200) {
 export default {
   async fetch(request, env): Promise<Response> {
     const { pathname } = new URL(request.url);
+    if (pathname.startsWith("/profiles/")) return profileFile(request, pathname);
     if (pathname === "/api/google/token") {
       if (request.method !== "POST") return json({ error: "method not allowed" }, 405);
       return googleToken(request, env);
@@ -86,5 +88,30 @@ async function googleToken(request: Request, env: Env) {
     refresh_token: data.refresh_token,
     scope: data.scope,
     token_type: data.token_type,
+  });
+}
+
+// The profile registry has no release: registry.json and the profile folders are served from the
+// knobdeck-profiles repo's master as they are, cached here for a few minutes. Only these paths pass.
+const PROFILES_RAW = "https://raw.githubusercontent.com/Knobdeck/knobdeck-profiles/master/";
+const PROFILE_PATH = /^\/profiles\/(registry\.json|[a-z0-9-]{1,64}\/(?:profile\.json|preview\.png))$/;
+const PROFILE_CACHE_SECONDS = 300;
+
+async function profileFile(request: Request, pathname: string) {
+  if (request.method !== "GET" && request.method !== "HEAD") return json({ error: "method not allowed" }, 405);
+  const match = PROFILE_PATH.exec(pathname);
+  if (!match) return json({ error: "not found" }, 404);
+  const file = match[1] === "registry.json" ? "registry.json" : `profiles/${match[1]}`;
+  const upstream = await fetch(PROFILES_RAW + file, {
+    cf: { cacheTtl: PROFILE_CACHE_SECONDS, cacheEverything: true },
+  });
+  if (!upstream.ok) return json({ error: "not found" }, upstream.status === 404 ? 404 : 502);
+  // raw.githubusercontent.com says text/plain for everything; give the real types.
+  return new Response(request.method === "HEAD" ? null : upstream.body, {
+    headers: {
+      "Content-Type": file.endsWith(".png") ? "image/png" : "application/json; charset=utf-8",
+      "Cache-Control": `public, max-age=60, s-maxage=${PROFILE_CACHE_SECONDS}, stale-while-revalidate=86400`,
+      "X-Content-Type-Options": "nosniff",
+    },
   });
 }
