@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-17T14:22:51Z",
+  "tag": "catalog-2026-11-17T17:09:38Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -383,14 +383,14 @@
       "name": "Windows Tools",
       "summary": "Window management, audio devices, per-app volume, mic, system actions.",
       "description": "Advanced window management: snap, resize, always-on-top, per-app volume, audio devices, and more.",
-      "version": "1.8.2",
+      "version": "1.9.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.8.2/win-tools_windows_1.8.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.9.0/win-tools_windows_1.9.0.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md",
-      "sha256": "b1ba19758bebc0a6e113a91766482c1241ddb4d0d24fecb3429d9ba14e6cd208",
+      "sha256": "6fc10eb567d7f2013bc12cda348fdc7c53b5e4c9224579c7101c46dba68dad21",
       "tags": [
         "Windows",
         "Automation"
@@ -409,7 +409,7 @@
         "browser"
       ],
       "featured": true,
-      "file": "win-tools_windows_1.8.2.knobdeck",
+      "file": "win-tools_windows_1.9.0.knobdeck",
       "readmeFile": "win-tools_windows_readme.md"
     },
     {
@@ -417,14 +417,14 @@
       "name": "macOS Tools",
       "summary": "Window management, Spaces, audio devices, mic, app menu commands.",
       "description": "macOS window management (snap, fill, full screen, displays), window switcher, Spaces and system actions, live stats, audio devices, mic mute and level, app menu commands, and Shortcuts, AppleScript and Keyboard Maestro actions.",
-      "version": "1.6.1",
+      "version": "1.7.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.6.1/mac-tools_macos_1.6.1.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.7.0/mac-tools_macos_1.7.0.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md",
-      "sha256": "62d9a245f6a6d67b230a20dc964b1aaa63c0779badf4f80e9cdcc95894956f99",
+      "sha256": "2e4f96d4cbc0bd630f7910bfd8736291609004e1ab5188e3a24445971866fb1b",
       "tags": [
         "macOS",
         "Automation"
@@ -443,7 +443,7 @@
         "browser"
       ],
       "featured": true,
-      "file": "mac-tools_macos_1.6.1.knobdeck",
+      "file": "mac-tools_macos_1.7.0.knobdeck",
       "readmeFile": "mac-tools_macos_readme.md"
     },
     {
@@ -451,14 +451,14 @@
       "name": "Linux Tools",
       "summary": "Windows, workspaces, per-app volume, audio devices on GNOME and KDE.",
       "description": "Window management, workspaces, per-app volume, audio devices and system actions for GNOME and KDE Plasma.",
-      "version": "1.4.2",
+      "version": "1.5.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.4.2/linux-tools_linux_1.4.2.knobdeck",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.0/linux-tools_linux_1.5.0.knobdeck",
       "iconUrl": null,
       "icon": "app-window",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md",
-      "sha256": "c8444949ea9c2a6a345b25e3c3a27c70d34769b16f2b3252e158ee293e929168",
+      "sha256": "a4630d899f3b257e811edde41b237d5d1bf9866345756de94d91b7650b6b8bda",
       "tags": [
         "Linux",
         "Automation"
@@ -477,7 +477,7 @@
         "browser"
       ],
       "featured": true,
-      "file": "linux-tools_linux_1.4.2.knobdeck",
+      "file": "linux-tools_linux_1.5.0.knobdeck",
       "readmeFile": "linux-tools_linux_readme.md"
     },
     {

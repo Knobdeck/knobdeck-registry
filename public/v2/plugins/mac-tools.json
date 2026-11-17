@@ -4,21 +4,28 @@
   "name": "macOS Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.6.1",
-    "released": "2026-11-17T14:20:47Z",
+    "version": "1.7.0",
+    "released": "2026-11-17T17:09:06Z",
     "platforms": {
       "macos": {
         "id": "mac-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.6.1/mac-tools_macos_1.6.1.knobdeck",
-        "sha256": "62d9a245f6a6d67b230a20dc964b1aaa63c0779badf4f80e9cdcc95894956f99",
-        "size": 930446,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.7.0/mac-tools_macos_1.7.0.knobdeck",
+        "sha256": "2e4f96d4cbc0bd630f7910bfd8736291609004e1ab5188e3a24445971866fb1b",
+        "size": 950440,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md"
       }
     }
   },
-  "changelog": "macOS Tools 1.6.1 for macos.",
+  "changelog": "macOS Tools 1.7.0 for macos.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.7.0",
+      "tag": "mac-tools-v1.7.0",
+      "released": "2026-11-17T17:09:06Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.6.1",
       "tag": "mac-tools-v1.6.1",
@@ -1134,6 +1141,54 @@
         "macos"
       ],
       "inputs": []
+    },
+    "brightness": {
+      "type": "slider",
+      "label": "Display Brightness",
+      "icon": "sun",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [
+        {
+          "key": "display",
+          "type": "select",
+          "label": "Display",
+          "default": "__all__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "set-brightness": {
+      "type": "button",
+      "label": "Set Display Brightness",
+      "icon": "sun",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [
+        {
+          "key": "display",
+          "type": "select",
+          "label": "Display",
+          "default": "__all__"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Brightness (%)",
+          "default": "50"
+        }
+      ]
     },
     "clipboard-history-wheel": {
       "type": "wheel",

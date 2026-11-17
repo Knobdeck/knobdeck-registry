@@ -4,21 +4,28 @@
   "name": "Windows Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.8.2",
-    "released": "2026-11-17T14:21:20Z",
+    "version": "1.9.0",
+    "released": "2026-11-17T17:09:21Z",
     "platforms": {
       "windows": {
         "id": "win-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.8.2/win-tools_windows_1.8.2.knobdeck",
-        "sha256": "b1ba19758bebc0a6e113a91766482c1241ddb4d0d24fecb3429d9ba14e6cd208",
-        "size": 370992,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.9.0/win-tools_windows_1.9.0.knobdeck",
+        "sha256": "6fc10eb567d7f2013bc12cda348fdc7c53b5e4c9224579c7101c46dba68dad21",
+        "size": 379057,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
       }
     }
   },
-  "changelog": "Windows Tools 1.8.2 for windows.",
+  "changelog": "Windows Tools 1.9.0 for windows.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.9.0",
+      "tag": "win-tools-v1.9.0",
+      "released": "2026-11-17T17:09:21Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.8.2",
       "tag": "win-tools-v1.8.2",
@@ -1628,6 +1635,54 @@
           "key": "text",
           "type": "textarea",
           "label": "Text"
+        }
+      ]
+    },
+    "brightness": {
+      "type": "slider",
+      "label": "Display Brightness",
+      "icon": "sun",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "display",
+          "type": "select",
+          "label": "Display",
+          "default": "__all__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "set-brightness": {
+      "type": "button",
+      "label": "Set Display Brightness",
+      "icon": "sun",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "display",
+          "type": "select",
+          "label": "Display",
+          "default": "__all__"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Brightness (%)",
+          "default": "50"
         }
       ]
     },

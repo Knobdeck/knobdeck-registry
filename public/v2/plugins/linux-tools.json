@@ -4,21 +4,28 @@
   "name": "Linux Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.4.2",
-    "released": "2026-11-17T14:20:44Z",
+    "version": "1.5.0",
+    "released": "2026-11-17T17:09:02Z",
     "platforms": {
       "linux": {
         "id": "linux-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.4.2/linux-tools_linux_1.4.2.knobdeck",
-        "sha256": "c8444949ea9c2a6a345b25e3c3a27c70d34769b16f2b3252e158ee293e929168",
-        "size": 1070292,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.0/linux-tools_linux_1.5.0.knobdeck",
+        "sha256": "a4630d899f3b257e811edde41b237d5d1bf9866345756de94d91b7650b6b8bda",
+        "size": 1100951,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md"
       }
     }
   },
-  "changelog": "Linux Tools 1.4.2 for linux.",
+  "changelog": "Linux Tools 1.5.0 for linux.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.5.0",
+      "tag": "linux-tools-v1.5.0",
+      "released": "2026-11-17T17:09:02Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.4.2",
       "tag": "linux-tools-v1.4.2",
@@ -1528,6 +1535,54 @@
       "max": 100,
       "step": 1,
       "unit": "%"
+    },
+    "brightness": {
+      "type": "slider",
+      "label": "Display Brightness",
+      "icon": "sun",
+      "platforms": [
+        "linux"
+      ],
+      "inputs": [
+        {
+          "key": "display",
+          "type": "select",
+          "label": "Display",
+          "default": "__all__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "set-brightness": {
+      "type": "button",
+      "label": "Set Display Brightness",
+      "icon": "sun",
+      "platforms": [
+        "linux"
+      ],
+      "inputs": [
+        {
+          "key": "display",
+          "type": "select",
+          "label": "Display",
+          "default": "__all__"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Brightness (%)",
+          "default": "50"
+        }
+      ]
     },
     "clipboard-history-wheel": {
       "type": "wheel",

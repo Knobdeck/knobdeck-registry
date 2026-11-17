@@ -2,6 +2,1603 @@
   "id": "linux-tools",
   "versions": [
     {
+      "version": "1.5.0",
+      "tag": "linux-tools-v1.5.0",
+      "released": "2026-11-17T17:09:02Z",
+      "notes": "Linux Tools 1.5.0 for linux.",
+      "meta": {
+        "dir": "linux-tools",
+        "version": "1.5.0",
+        "name": "Linux Tools",
+        "summary": "Windows, workspaces, per-app volume, audio devices on GNOME and KDE.",
+        "tags": [
+          "Linux",
+          "Automation"
+        ],
+        "featured": true,
+        "sort": 42
+      },
+      "platforms": {
+        "linux": {
+          "id": "linux-tools",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.0/linux-tools_linux_1.5.0.knobdeck",
+          "sha256": "a4630d899f3b257e811edde41b237d5d1bf9866345756de94d91b7650b6b8bda",
+          "size": 1100951,
+          "file": "linux-tools_linux_1.5.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.0/linux-tools_linux_readme.md",
+          "readmeFile": "linux-tools_linux_readme.md",
+          "name": "Linux Tools",
+          "description": "Window management, workspaces, per-app volume, audio devices and system actions for GNOME and KDE Plasma.",
+          "author": "KnobDeck",
+          "icon": "app-window",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "apps",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "minimize": {
+          "type": "button",
+          "label": "Minimize",
+          "icon": "minus",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "maximize": {
+          "type": "button",
+          "label": "Maximize",
+          "icon": "square",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "restore": {
+          "type": "button",
+          "label": "Restore",
+          "icon": "copy",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "close-window": {
+          "type": "button",
+          "label": "Close Window",
+          "icon": "x",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "send-to-back": {
+          "type": "button",
+          "label": "Send to Back",
+          "icon": "send-to-back",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "toggle-max-restore": {
+          "type": "toggle",
+          "label": "Maximize / Restore",
+          "icon": "maximize-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "normal",
+              "label": "Windowed",
+              "icon": "minimize-2"
+            },
+            {
+              "value": "maximized",
+              "label": "Maximized",
+              "icon": "maximize-2"
+            }
+          ]
+        },
+        "toggle-fullscreen": {
+          "type": "toggle",
+          "label": "Full Screen",
+          "icon": "fullscreen",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "windowed",
+              "label": "Windowed",
+              "icon": "minimize-2"
+            },
+            {
+              "value": "fullscreen",
+              "label": "Full Screen",
+              "icon": "fullscreen"
+            }
+          ]
+        },
+        "toggle-always-on-top": {
+          "type": "toggle",
+          "label": "Always on Top",
+          "icon": "pin",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Normal",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Always on Top",
+              "icon": "pin"
+            }
+          ]
+        },
+        "toggle-borderless": {
+          "type": "toggle",
+          "label": "Toggle Borderless (Plasma)",
+          "icon": "square-dashed",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "bordered",
+              "label": "Bordered",
+              "icon": "square"
+            },
+            {
+              "value": "borderless",
+              "label": "Borderless",
+              "icon": "square-dashed"
+            }
+          ]
+        },
+        "toggle-transparency": {
+          "type": "toggle",
+          "label": "Toggle Transparency (Plasma)",
+          "icon": "blend",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "opacity",
+              "type": "select",
+              "label": "Opacity when enabled",
+              "default": "75",
+              "options": [
+                "90",
+                "80",
+                "75",
+                "60",
+                "50",
+                "30"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "opaque",
+              "label": "Opaque",
+              "icon": "square"
+            },
+            {
+              "value": "transparent",
+              "label": "Transparent",
+              "icon": "square-dashed"
+            }
+          ]
+        },
+        "set-opacity": {
+          "type": "button",
+          "label": "Set Opacity (Plasma)",
+          "icon": "droplet",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "preset",
+              "type": "select",
+              "label": "Opacity",
+              "default": "75",
+              "options": [
+                "100",
+                "90",
+                "80",
+                "75",
+                "60",
+                "50",
+                "40",
+                "30",
+                "20",
+                "10",
+                "__custom__"
+              ]
+            },
+            {
+              "key": "custom",
+              "type": "text",
+              "label": "Custom opacity (10–100)",
+              "showIf": {
+                "key": "preset",
+                "equals": "__custom__"
+              }
+            }
+          ]
+        },
+        "move-next-monitor": {
+          "type": "button",
+          "label": "Move to Next Monitor",
+          "icon": "monitor-up",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "center-window": {
+          "type": "button",
+          "label": "Center Window",
+          "icon": "focus",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-left-half": {
+          "type": "button",
+          "label": "Move Left Half",
+          "icon": "panel-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-right-half": {
+          "type": "button",
+          "label": "Move Right Half",
+          "icon": "panel-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-top-half": {
+          "type": "button",
+          "label": "Move Top Half",
+          "icon": "panel-top",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-bottom-half": {
+          "type": "button",
+          "label": "Move Bottom Half",
+          "icon": "panel-bottom",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-top-left": {
+          "type": "button",
+          "label": "Move Top Left",
+          "icon": "move-up-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-top-right": {
+          "type": "button",
+          "label": "Move Top Right",
+          "icon": "move-up-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-bottom-left": {
+          "type": "button",
+          "label": "Move Bottom Left",
+          "icon": "move-down-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-bottom-right": {
+          "type": "button",
+          "label": "Move Bottom Right",
+          "icon": "move-down-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-left-third": {
+          "type": "button",
+          "label": "Move Left Third",
+          "icon": "panel-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-center-third": {
+          "type": "button",
+          "label": "Move Center Third",
+          "icon": "focus",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "move-right-third": {
+          "type": "button",
+          "label": "Move Right Third",
+          "icon": "panel-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "fill-display": {
+          "type": "button",
+          "label": "Fill Display",
+          "icon": "fullscreen",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "custom-position": {
+          "type": "button",
+          "label": "Custom Position",
+          "icon": "move",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            },
+            {
+              "key": "x",
+              "type": "text",
+              "label": "X (from monitor left)"
+            },
+            {
+              "key": "y",
+              "type": "text",
+              "label": "Y (from monitor top)"
+            },
+            {
+              "key": "w",
+              "type": "text",
+              "label": "Width"
+            },
+            {
+              "key": "h",
+              "type": "text",
+              "label": "Height"
+            }
+          ]
+        },
+        "move-app-window": {
+          "type": "button",
+          "label": "Move App Window",
+          "icon": "app-window",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "combobox",
+              "label": "App"
+            },
+            {
+              "key": "position",
+              "type": "select",
+              "label": "Position",
+              "default": "left-half",
+              "options": [
+                "left-half",
+                "right-half",
+                "top-half",
+                "bottom-half",
+                "top-left",
+                "top-right",
+                "bottom-left",
+                "bottom-right",
+                "left-third",
+                "center-third",
+                "right-third",
+                "fill",
+                "center",
+                "maximize",
+                "minimize",
+                "front",
+                "custom"
+              ]
+            },
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            },
+            {
+              "key": "x",
+              "type": "text",
+              "label": "X (from monitor left)",
+              "showIf": {
+                "key": "position",
+                "equals": "custom"
+              }
+            },
+            {
+              "key": "y",
+              "type": "text",
+              "label": "Y (from monitor top)",
+              "showIf": {
+                "key": "position",
+                "equals": "custom"
+              }
+            },
+            {
+              "key": "w",
+              "type": "text",
+              "label": "Width",
+              "showIf": {
+                "key": "position",
+                "equals": "custom"
+              }
+            },
+            {
+              "key": "h",
+              "type": "text",
+              "label": "Height",
+              "showIf": {
+                "key": "position",
+                "equals": "custom"
+              }
+            },
+            {
+              "key": "focus",
+              "type": "checkbox",
+              "label": "Bring it to the front"
+            }
+          ]
+        },
+        "switch-window-wheel": {
+          "type": "wheel",
+          "label": "Switch to Window",
+          "icon": "layout-grid",
+          "platforms": [],
+          "inputs": []
+        },
+        "focus-app": {
+          "type": "button",
+          "label": "Focus App",
+          "icon": "app-window",
+          "platforms": [],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "combobox",
+              "label": "App"
+            },
+            {
+              "key": "hint",
+              "type": "text",
+              "label": "Name hint (optional)"
+            }
+          ]
+        },
+        "dynamic-minimize-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Minimize",
+          "icon": "minus",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-maximize-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Maximize",
+          "icon": "square",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-restore-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Restore",
+          "icon": "copy",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-close-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Close",
+          "icon": "x",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-send-to-back-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Send to Back",
+          "icon": "send-to-back",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-always-on-top-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Always on Top",
+          "icon": "pin",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-fullscreen-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Full Screen",
+          "icon": "fullscreen",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-max-restore-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Maximize / Restore",
+          "icon": "maximize-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-transparency-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Transparency (Plasma)",
+          "icon": "blend",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "opacity",
+              "type": "select",
+              "label": "Opacity when enabled",
+              "default": "75",
+              "options": [
+                "90",
+                "80",
+                "75",
+                "60",
+                "50",
+                "30"
+              ]
+            }
+          ]
+        },
+        "dynamic-move-next-monitor-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move to Next Monitor",
+          "icon": "monitor-up",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "dynamic-center-window-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Center Window",
+          "icon": "focus",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-left-half-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Left Half",
+          "icon": "panel-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-right-half-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Right Half",
+          "icon": "panel-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-top-half-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Top Half",
+          "icon": "panel-top",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-bottom-half-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Bottom Half",
+          "icon": "panel-bottom",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-top-left-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Top Left",
+          "icon": "move-up-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-top-right-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Top Right",
+          "icon": "move-up-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-bottom-left-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Bottom Left",
+          "icon": "move-down-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-move-bottom-right-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Move Bottom Right",
+          "icon": "move-down-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-fill-display-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Fill Display",
+          "icon": "fullscreen",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            }
+          ]
+        },
+        "dynamic-custom-position-wheel": {
+          "type": "wheel",
+          "label": "Dynamic Custom Position",
+          "icon": "move",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "monitor",
+              "type": "select",
+              "label": "Monitor",
+              "default": "current"
+            },
+            {
+              "key": "x",
+              "type": "text",
+              "label": "X (from monitor left)"
+            },
+            {
+              "key": "y",
+              "type": "text",
+              "label": "Y (from monitor top)"
+            },
+            {
+              "key": "w",
+              "type": "text",
+              "label": "Width"
+            },
+            {
+              "key": "h",
+              "type": "text",
+              "label": "Height"
+            }
+          ]
+        },
+        "desktop-previous": {
+          "type": "button",
+          "label": "Previous Desktop",
+          "icon": "chevrons-left",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "desktop-next": {
+          "type": "button",
+          "label": "Next Desktop",
+          "icon": "chevrons-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "desktop-new": {
+          "type": "button",
+          "label": "New Desktop",
+          "icon": "copy-plus",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "desktop-close": {
+          "type": "button",
+          "label": "Close Desktop",
+          "icon": "copy-x",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "overview": {
+          "type": "button",
+          "label": "Overview",
+          "icon": "layout-grid",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "present-windows": {
+          "type": "button",
+          "label": "Present Windows",
+          "icon": "app-window",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "app-launcher": {
+          "type": "button",
+          "label": "Applications",
+          "icon": "layout-dashboard",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "search": {
+          "type": "button",
+          "label": "Search",
+          "icon": "search",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "show-desktop": {
+          "type": "button",
+          "label": "Show Desktop (Plasma)",
+          "icon": "monitor",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "screen-snip": {
+          "type": "button",
+          "label": "Screenshot",
+          "icon": "scissors",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "emoji-panel": {
+          "type": "button",
+          "label": "Emoji Picker (Plasma)",
+          "icon": "smile",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "file-manager": {
+          "type": "button",
+          "label": "Files",
+          "icon": "folder-open",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "open-settings": {
+          "type": "button",
+          "label": "System Settings",
+          "icon": "settings",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "system-monitor": {
+          "type": "button",
+          "label": "System Monitor",
+          "icon": "activity",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "system-stats": {
+          "type": "button",
+          "label": "System Stats",
+          "icon": "gauge",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "stat",
+              "type": "select",
+              "label": "Show",
+              "default": "cpu",
+              "options": [
+                "cpu",
+                "gpu",
+                "memory"
+              ]
+            }
+          ]
+        },
+        "lock-screen": {
+          "type": "button",
+          "label": "Lock Screen",
+          "icon": "lock",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "sleep-display": {
+          "type": "button",
+          "label": "Turn Off Display (Plasma)",
+          "icon": "moon",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "radio-toggle": {
+          "type": "toggle",
+          "label": "Wi-Fi / Bluetooth",
+          "icon": "wifi",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "radio",
+              "type": "select",
+              "label": "Radio",
+              "default": "wifi",
+              "options": [
+                "wifi",
+                "bluetooth"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "toggle-left"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "toggle-right"
+            }
+          ]
+        },
+        "power-profile": {
+          "type": "toggle",
+          "label": "Power Profile",
+          "icon": "battery-charging",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "profile",
+              "type": "select",
+              "label": "Power profile"
+            }
+          ],
+          "states": [
+            {
+              "value": "inactive",
+              "label": "Not Active",
+              "icon": "battery"
+            },
+            {
+              "value": "active",
+              "label": "Active",
+              "icon": "battery-charging"
+            }
+          ]
+        },
+        "power-profile-wheel": {
+          "type": "wheel",
+          "label": "Power Profiles",
+          "icon": "battery-charging",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "ping": {
+          "type": "button",
+          "label": "Ping",
+          "icon": "activity",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "host",
+              "type": "text",
+              "label": "Host",
+              "default": "1.1.1.1"
+            }
+          ]
+        },
+        "text-snippet": {
+          "type": "button",
+          "label": "Text Snippet",
+          "icon": "text-cursor-input",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "text",
+              "type": "textarea",
+              "label": "Text"
+            }
+          ]
+        },
+        "set-app-volume": {
+          "type": "button",
+          "label": "Set App Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "select",
+              "label": "App",
+              "default": "__foreground__"
+            },
+            {
+              "key": "preset",
+              "type": "select",
+              "label": "Volume",
+              "default": "75",
+              "options": [
+                "100",
+                "90",
+                "80",
+                "75",
+                "60",
+                "50",
+                "40",
+                "30",
+                "20",
+                "10",
+                "0",
+                "__custom__"
+              ]
+            },
+            {
+              "key": "custom",
+              "type": "text",
+              "label": "Custom volume (0–100)",
+              "showIf": {
+                "key": "preset",
+                "equals": "__custom__"
+              }
+            }
+          ]
+        },
+        "app-volume-up": {
+          "type": "button",
+          "label": "App Volume Up",
+          "icon": "volume-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "select",
+              "label": "App",
+              "default": "__foreground__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ]
+        },
+        "app-volume-down": {
+          "type": "button",
+          "label": "App Volume Down",
+          "icon": "volume-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "select",
+              "label": "App",
+              "default": "__foreground__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ]
+        },
+        "toggle-app-mute": {
+          "type": "toggle",
+          "label": "Mute App",
+          "icon": "volume-x",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "select",
+              "label": "App",
+              "default": "__foreground__"
+            }
+          ],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Unmuted",
+              "icon": "volume-2"
+            },
+            {
+              "value": "muted",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "app-volume": {
+          "type": "slider",
+          "label": "App Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "app",
+              "type": "select",
+              "label": "App",
+              "default": "__foreground__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "toggle-mic-mute": {
+          "type": "toggle",
+          "label": "Mute Microphone",
+          "icon": "mic",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Mic On",
+              "icon": "mic"
+            },
+            {
+              "value": "muted",
+              "label": "Mic Muted",
+              "icon": "mic-off"
+            }
+          ]
+        },
+        "push-to-talk": {
+          "type": "hold",
+          "label": "Push to Talk",
+          "icon": "mic-off",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [],
+          "released": {
+            "label": "Mic Muted",
+            "icon": "mic-off"
+          },
+          "held": {
+            "label": "Talking",
+            "icon": "mic"
+          }
+        },
+        "output-device-wheel": {
+          "type": "wheel",
+          "label": "Output Device",
+          "icon": "speaker",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "input-device-wheel": {
+          "type": "wheel",
+          "label": "Input Device",
+          "icon": "mic",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": []
+        },
+        "set-audio-device": {
+          "type": "toggle",
+          "label": "Set Audio Device",
+          "icon": "speaker",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "flow",
+              "type": "select",
+              "label": "Type",
+              "default": "output",
+              "options": [
+                "output",
+                "input"
+              ]
+            },
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device"
+            }
+          ],
+          "states": [
+            {
+              "value": "inactive",
+              "label": "Not Selected",
+              "icon": "speaker"
+            },
+            {
+              "value": "active",
+              "label": "Selected",
+              "icon": "circle-check"
+            }
+          ]
+        },
+        "toggle-audio-device": {
+          "type": "toggle",
+          "label": "Toggle Audio Device",
+          "icon": "arrow-left-right",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "flow",
+              "type": "select",
+              "label": "Type",
+              "default": "output",
+              "options": [
+                "output",
+                "input"
+              ]
+            },
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device A"
+            },
+            {
+              "key": "device_b",
+              "type": "select",
+              "label": "Device B"
+            }
+          ],
+          "states": [
+            {
+              "value": "a",
+              "label": "Device A",
+              "icon": "headphones"
+            },
+            {
+              "value": "b",
+              "label": "Device B",
+              "icon": "speaker"
+            }
+          ]
+        },
+        "device-mute": {
+          "type": "toggle",
+          "label": "Mute Device",
+          "icon": "volume-x",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "flow",
+              "type": "select",
+              "label": "Type",
+              "default": "output",
+              "options": [
+                "output",
+                "input"
+              ]
+            },
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__default__"
+            }
+          ],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "On",
+              "icon": "volume-2"
+            },
+            {
+              "value": "muted",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "device-volume": {
+          "type": "slider",
+          "label": "Device Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "flow",
+              "type": "select",
+              "label": "Type",
+              "default": "output",
+              "options": [
+                "output",
+                "input"
+              ]
+            },
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__default__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Display Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "display",
+              "type": "select",
+              "label": "Display",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "set-brightness": {
+          "type": "button",
+          "label": "Set Display Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux"
+          ],
+          "inputs": [
+            {
+              "key": "display",
+              "type": "select",
+              "label": "Display",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Brightness (%)",
+              "default": "50"
+            }
+          ]
+        },
+        "clipboard-history-wheel": {
+          "type": "wheel",
+          "label": "Clipboard History",
+          "icon": "clipboard-list",
+          "platforms": [],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": [
+        "apps",
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.4.2",
       "tag": "linux-tools-v1.4.2",
       "released": "2026-11-17T14:20:44Z",

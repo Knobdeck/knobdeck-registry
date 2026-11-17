@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-17T14:22:51Z",
+  "generated": "2026-11-17T17:09:38Z",
   "plugins": [
     {
       "id": "discord",
@@ -287,14 +287,14 @@
         "window"
       ],
       "latest": {
-        "version": "1.8.2",
-        "released": "2026-11-17T14:21:20Z",
+        "version": "1.9.0",
+        "released": "2026-11-17T17:09:21Z",
         "platforms": {
           "windows": {
             "id": "win-tools",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.8.2/win-tools_windows_1.8.2.knobdeck",
-            "sha256": "b1ba19758bebc0a6e113a91766482c1241ddb4d0d24fecb3429d9ba14e6cd208",
-            "size": 370992,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.9.0/win-tools_windows_1.9.0.knobdeck",
+            "sha256": "6fc10eb567d7f2013bc12cda348fdc7c53b5e4c9224579c7101c46dba68dad21",
+            "size": 379057,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
           }
         }
@@ -332,14 +332,14 @@
         "window"
       ],
       "latest": {
-        "version": "1.6.1",
-        "released": "2026-11-17T14:20:47Z",
+        "version": "1.7.0",
+        "released": "2026-11-17T17:09:06Z",
         "platforms": {
           "macos": {
             "id": "mac-tools",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.6.1/mac-tools_macos_1.6.1.knobdeck",
-            "sha256": "62d9a245f6a6d67b230a20dc964b1aaa63c0779badf4f80e9cdcc95894956f99",
-            "size": 930446,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.7.0/mac-tools_macos_1.7.0.knobdeck",
+            "sha256": "2e4f96d4cbc0bd630f7910bfd8736291609004e1ab5188e3a24445971866fb1b",
+            "size": 950440,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md"
           }
         }
@@ -377,14 +377,14 @@
         "window"
       ],
       "latest": {
-        "version": "1.4.2",
-        "released": "2026-11-17T14:20:44Z",
+        "version": "1.5.0",
+        "released": "2026-11-17T17:09:02Z",
         "platforms": {
           "linux": {
             "id": "linux-tools",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.4.2/linux-tools_linux_1.4.2.knobdeck",
-            "sha256": "c8444949ea9c2a6a345b25e3c3a27c70d34769b16f2b3252e158ee293e929168",
-            "size": 1070292,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.0/linux-tools_linux_1.5.0.knobdeck",
+            "sha256": "a4630d899f3b257e811edde41b237d5d1bf9866345756de94d91b7650b6b8bda",
+            "size": 1100951,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md"
           }
         }
