@@ -1,0 +1,127 @@
+{
+  "id": "speedtest",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "speedtest-v1.0.0",
+      "released": "2026-11-17T17:09:18Z",
+      "notes": "Speed Test 1.0.0 for linux, macos, windows.",
+      "meta": {
+        "dir": "speedtest",
+        "version": "1.0.0",
+        "name": "Speed Test",
+        "summary": "Internet speed test on a key, and live latency to any host.",
+        "tags": [
+          "Network",
+          "Information"
+        ],
+        "sort": 87
+      },
+      "platforms": {
+        "linux": {
+          "id": "speedtest-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_linux_1.0.0.knobdeck",
+          "sha256": "71adff5f337c285e5dc37f7192bc9d5685465194f39d044efa7076e8e419d348",
+          "size": 979196,
+          "file": "speedtest_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_linux_readme.md",
+          "readmeFile": "speedtest_linux_readme.md",
+          "name": "Speed Test",
+          "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+          "author": "KnobDeck",
+          "icon": "gauge",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "speedtest-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_macos_1.0.0.knobdeck",
+          "sha256": "bbd1ff2a74e0e7fa6f70c9229495bdf6c1ba485e52b0627ad22ae903479f7e7c",
+          "size": 1796707,
+          "file": "speedtest_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_macos_readme.md",
+          "readmeFile": "speedtest_macos_readme.md",
+          "name": "Speed Test",
+          "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+          "author": "KnobDeck",
+          "icon": "gauge",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "speedtest-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_windows_1.0.0.knobdeck",
+          "sha256": "0a9c0b5d93951860f359d2967721e0e6ad99c7ddce5ac3385a809d1c5478bf30",
+          "size": 853710,
+          "file": "speedtest_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_windows_readme.md",
+          "readmeFile": "speedtest_windows_readme.md",
+          "name": "Speed Test",
+          "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+          "author": "KnobDeck",
+          "icon": "gauge",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "speed-test": {
+          "type": "button",
+          "label": "Speed Test",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "show",
+              "type": "select",
+              "label": "Show",
+              "default": "all",
+              "options": [
+                "all",
+                "down",
+                "up",
+                "ping"
+              ]
+            },
+            {
+              "key": "every",
+              "type": "select",
+              "label": "Test again by itself",
+              "default": "0",
+              "options": [
+                "0",
+                "15",
+                "60",
+                "360"
+              ]
+            }
+          ]
+        },
+        "latency": {
+          "type": "button",
+          "label": "Latency",
+          "icon": "activity",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "host",
+              "type": "text",
+              "label": "Host",
+              "default": "one.one.one.one"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    }
+  ]
+}

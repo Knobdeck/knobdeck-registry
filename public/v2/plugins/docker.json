@@ -1,0 +1,201 @@
+{
+  "schema": 2,
+  "id": "docker",
+  "name": "Docker",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-17T17:08:55Z",
+    "platforms": {
+      "linux": {
+        "id": "docker-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.0/docker_linux_1.0.0.knobdeck",
+        "sha256": "f047ccbaa3798b5ee5a9ca90a91d1ba685630277e0c20d6b079ce8492aac1001",
+        "size": 311327,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/docker-linux/readme.md"
+      },
+      "macos": {
+        "id": "docker-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.0/docker_macos_1.0.0.knobdeck",
+        "sha256": "1384084451c104dee4f302e187ac8614a232d919d73c300c94555dd3c6c80102",
+        "size": 565064,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/docker-macos/readme.md"
+      },
+      "windows": {
+        "id": "docker-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.0/docker_windows_1.0.0.knobdeck",
+        "sha256": "83248269c158320e144b1f1e3bc0f2be1d167d4fa2a81878ffe445a7b6dc1e6e",
+        "size": 219084,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/docker-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "Docker 1.0.0 for linux, macos, windows.",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "docker-v1.0.0",
+      "released": "2026-11-17T17:08:55Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "container": {
+      "type": "toggle",
+      "label": "Start / Stop Container",
+      "icon": "container",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "container",
+          "type": "combobox",
+          "label": "Container"
+        }
+      ],
+      "states": [
+        {
+          "value": "stopped",
+          "label": "Stopped",
+          "icon": "square"
+        },
+        {
+          "value": "running",
+          "label": "Running",
+          "icon": "play"
+        }
+      ]
+    },
+    "start": {
+      "type": "button",
+      "label": "Start Container",
+      "icon": "play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "container",
+          "type": "combobox",
+          "label": "Container"
+        }
+      ]
+    },
+    "stop": {
+      "type": "button",
+      "label": "Stop Container",
+      "icon": "square",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "container",
+          "type": "combobox",
+          "label": "Container"
+        }
+      ]
+    },
+    "restart": {
+      "type": "button",
+      "label": "Restart Container",
+      "icon": "rotate-cw",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "container",
+          "type": "combobox",
+          "label": "Container"
+        }
+      ]
+    },
+    "status": {
+      "type": "button",
+      "label": "Container Status",
+      "icon": "activity",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "container",
+          "type": "combobox",
+          "label": "Container"
+        }
+      ]
+    },
+    "project": {
+      "type": "toggle",
+      "label": "Start / Stop Compose Project",
+      "icon": "layers",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "project",
+          "type": "select",
+          "label": "Compose project"
+        }
+      ],
+      "states": [
+        {
+          "value": "stopped",
+          "label": "Stopped",
+          "icon": "square"
+        },
+        {
+          "value": "running",
+          "label": "Running",
+          "icon": "play"
+        }
+      ]
+    },
+    "running-count": {
+      "type": "button",
+      "label": "Running Containers",
+      "icon": "boxes",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "containers-wheel": {
+      "type": "wheel",
+      "label": "Containers Wheel",
+      "icon": "container",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "running_only",
+          "type": "checkbox",
+          "label": "Only running containers"
+        }
+      ]
+    }
+  },
+  "companions": []
+}

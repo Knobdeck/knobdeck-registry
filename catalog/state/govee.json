@@ -1,0 +1,229 @@
+{
+  "id": "govee",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "govee-v1.0.0",
+      "released": "2026-11-17T17:08:59Z",
+      "notes": "Govee 1.0.0 for linux, macos, windows.",
+      "meta": {
+        "dir": "govee",
+        "version": "1.0.0",
+        "name": "Govee",
+        "summary": "Govee lights: power, brightness, color, color temperature, scenes. LAN or API key.",
+        "tags": [
+          "Lighting",
+          "Smart home"
+        ],
+        "sort": 29
+      },
+      "platforms": {
+        "linux": {
+          "id": "govee-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_linux_1.0.0.knobdeck",
+          "sha256": "9c75a76d14ed759585b8b582c19dba0d53ef87540a9fb5e082ff166e7c408060",
+          "size": 2898563,
+          "file": "govee_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_linux_readme.md",
+          "readmeFile": "govee_linux_readme.md",
+          "name": "Govee",
+          "description": "Govee lights and light strips: power, brightness, color, color temperature and scenes. Local LAN control, or your Govee API key for other models.",
+          "author": "KnobDeck",
+          "icon": "lamp-ceiling",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "govee-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_macos_1.0.0.knobdeck",
+          "sha256": "f188516edf01d58b069c7fea823f4698bc4fc6e254400378cadc05dc5302c54b",
+          "size": 3550471,
+          "file": "govee_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_macos_readme.md",
+          "readmeFile": "govee_macos_readme.md",
+          "name": "Govee",
+          "description": "Govee lights and light strips: power, brightness, color, color temperature and scenes. Local LAN control, or your Govee API key for other models.",
+          "author": "KnobDeck",
+          "icon": "lamp-ceiling",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "govee-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_windows_1.0.0.knobdeck",
+          "sha256": "da339d485574974c2d4ff5d4a51502169a2e6c1dfe8bf69969181f63e53df8dc",
+          "size": 1686010,
+          "file": "govee_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_windows_readme.md",
+          "readmeFile": "govee_windows_readme.md",
+          "name": "Govee",
+          "description": "Govee lights and light strips: power, brightness, color, color temperature and scenes. Local LAN control, or your Govee API key for other models.",
+          "author": "KnobDeck",
+          "icon": "lamp-ceiling",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "power": {
+          "type": "toggle",
+          "label": "Power",
+          "icon": "lightbulb",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "lightbulb-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "lightbulb"
+            }
+          ]
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "temperature": {
+          "type": "slider",
+          "label": "Color Temperature",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (K)",
+              "default": "200"
+            }
+          ],
+          "min": 2000,
+          "max": 9000,
+          "step": 100,
+          "unit": "K"
+        },
+        "set-color": {
+          "type": "button",
+          "label": "Set Color",
+          "icon": "palette",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "color",
+              "type": "text",
+              "label": "Color (#RRGGBB)",
+              "default": "#FF8800"
+            }
+          ]
+        },
+        "set-brightness": {
+          "type": "button",
+          "label": "Set Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Brightness (%)",
+              "default": "50"
+            }
+          ]
+        },
+        "scene": {
+          "type": "button",
+          "label": "Scene (API key)",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device"
+            },
+            {
+              "key": "scene",
+              "type": "select",
+              "label": "Scene"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

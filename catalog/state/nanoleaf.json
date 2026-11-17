@@ -1,0 +1,224 @@
+{
+  "id": "nanoleaf",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "nanoleaf-v1.0.0",
+      "released": "2026-11-17T17:09:09Z",
+      "notes": "Nanoleaf 1.0.0 for linux, macos, windows.",
+      "meta": {
+        "dir": "nanoleaf",
+        "version": "1.0.0",
+        "name": "Nanoleaf",
+        "summary": "Nanoleaf panels and lightstrips: power, brightness, color temperature, color, effects.",
+        "tags": [
+          "Lighting",
+          "Smart home"
+        ],
+        "sort": 29
+      },
+      "platforms": {
+        "linux": {
+          "id": "nanoleaf-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_linux_1.0.0.knobdeck",
+          "sha256": "02e98e13823608e0e7d11872a97005c6ef118adc7e1278fdf3bb09a830065bb4",
+          "size": 2869748,
+          "file": "nanoleaf_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_linux_readme.md",
+          "readmeFile": "nanoleaf_linux_readme.md",
+          "name": "Nanoleaf",
+          "description": "Nanoleaf Shapes, Elements, Canvas, Lines and lightstrips: power, brightness, color temperature, color and effects.",
+          "author": "KnobDeck",
+          "icon": "hexagon",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "nanoleaf-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_macos_1.0.0.knobdeck",
+          "sha256": "e8ece52096649b21bce586316356bb7c62ff4d06cfbc50ec78ec952083111bdb",
+          "size": 3506789,
+          "file": "nanoleaf_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_macos_readme.md",
+          "readmeFile": "nanoleaf_macos_readme.md",
+          "name": "Nanoleaf",
+          "description": "Nanoleaf Shapes, Elements, Canvas, Lines and lightstrips: power, brightness, color temperature, color and effects.",
+          "author": "KnobDeck",
+          "icon": "hexagon",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "nanoleaf-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_windows_1.0.0.knobdeck",
+          "sha256": "ae76d98b991088390af095263d4cc9c4e87dc2efebfcd032b6af97d4374e3e8c",
+          "size": 1660801,
+          "file": "nanoleaf_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_windows_readme.md",
+          "readmeFile": "nanoleaf_windows_readme.md",
+          "name": "Nanoleaf",
+          "description": "Nanoleaf Shapes, Elements, Canvas, Lines and lightstrips: power, brightness, color temperature, color and effects.",
+          "author": "KnobDeck",
+          "icon": "hexagon",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "power": {
+          "type": "toggle",
+          "label": "Power",
+          "icon": "lightbulb",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "lightbulb-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "lightbulb"
+            }
+          ]
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "temperature": {
+          "type": "slider",
+          "label": "Color Temperature",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (K)",
+              "default": "100"
+            }
+          ],
+          "min": 1200,
+          "max": 6500,
+          "step": 100,
+          "unit": "K"
+        },
+        "set-color": {
+          "type": "button",
+          "label": "Set Color",
+          "icon": "palette",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "color",
+              "type": "text",
+              "label": "Color (#RRGGBB)",
+              "default": "#FF8800"
+            }
+          ]
+        },
+        "effect": {
+          "type": "button",
+          "label": "Play Effect",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "effect",
+              "type": "select",
+              "label": "Effect"
+            }
+          ]
+        },
+        "effects-wheel": {
+          "type": "wheel",
+          "label": "Effects Wheel",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

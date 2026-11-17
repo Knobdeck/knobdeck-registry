@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-17T17:09:38Z",
+  "generated": "2026-11-17T17:45:57Z",
   "plugins": [
     {
       "id": "discord",
@@ -442,6 +442,58 @@
       "detail": "/v2/plugins/ytmusic.json"
     },
     {
+      "id": "now-playing",
+      "name": "Now Playing",
+      "summary": "What any player is playing, with its cover: play/pause, next, previous, position.",
+      "description": "What any media player is playing, with its cover, and play/pause, next, previous and seeking: browsers, Spotify, VLC and every app with media controls.",
+      "author": "KnobDeck",
+      "tags": [
+        "Music",
+        "Media"
+      ],
+      "icon": "disc-3",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [
+        "window"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-17T17:09:13Z",
+        "platforms": {
+          "linux": {
+            "id": "now-playing-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.0.0/now-playing_linux_1.0.0.knobdeck",
+            "sha256": "cfd01c01cac1ce986a42c77c3a77a3e586a01135c54ac8490a3649dc1daf64cc",
+            "size": 1711944,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-linux/readme.md"
+          },
+          "macos": {
+            "id": "now-playing-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.0.0/now-playing_macos_1.0.0.knobdeck",
+            "sha256": "b753e2ef889d524ce610d75452a3284d476dbb52c4939bf43aa3f515885e832b",
+            "size": 2230646,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-macos/readme.md"
+          },
+          "windows": {
+            "id": "now-playing-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.0.0/now-playing_windows_1.0.0.knobdeck",
+            "sha256": "18c890eda8a2535917588d576caad99f45179e68d55c2237166387b993bd8af3",
+            "size": 1066294,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/now-playing.json"
+    },
+    {
       "id": "streamlabs",
       "name": "Streamlabs Desktop",
       "summary": "Go live, record, replay buffer, scenes, sources and audio.",
@@ -728,6 +780,106 @@
       "detail": "/v2/plugins/hue.json"
     },
     {
+      "id": "govee",
+      "name": "Govee",
+      "summary": "Govee lights: power, brightness, color, color temperature, scenes. LAN or API key.",
+      "description": "Govee lights and light strips: power, brightness, color, color temperature and scenes. Local LAN control, or your Govee API key for other models.",
+      "author": "KnobDeck",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "icon": "lamp-ceiling",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-17T17:08:59Z",
+        "platforms": {
+          "linux": {
+            "id": "govee-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_linux_1.0.0.knobdeck",
+            "sha256": "9c75a76d14ed759585b8b582c19dba0d53ef87540a9fb5e082ff166e7c408060",
+            "size": 2898563,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/govee-linux/readme.md"
+          },
+          "macos": {
+            "id": "govee-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_macos_1.0.0.knobdeck",
+            "sha256": "f188516edf01d58b069c7fea823f4698bc4fc6e254400378cadc05dc5302c54b",
+            "size": 3550471,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/govee-macos/readme.md"
+          },
+          "windows": {
+            "id": "govee-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_windows_1.0.0.knobdeck",
+            "sha256": "da339d485574974c2d4ff5d4a51502169a2e6c1dfe8bf69969181f63e53df8dc",
+            "size": 1686010,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/govee-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/govee.json"
+    },
+    {
+      "id": "nanoleaf",
+      "name": "Nanoleaf",
+      "summary": "Nanoleaf panels and lightstrips: power, brightness, color temperature, color, effects.",
+      "description": "Nanoleaf Shapes, Elements, Canvas, Lines and lightstrips: power, brightness, color temperature, color and effects.",
+      "author": "KnobDeck",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "icon": "hexagon",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-17T17:09:09Z",
+        "platforms": {
+          "linux": {
+            "id": "nanoleaf-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_linux_1.0.0.knobdeck",
+            "sha256": "02e98e13823608e0e7d11872a97005c6ef118adc7e1278fdf3bb09a830065bb4",
+            "size": 2869748,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/nanoleaf-linux/readme.md"
+          },
+          "macos": {
+            "id": "nanoleaf-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_macos_1.0.0.knobdeck",
+            "sha256": "e8ece52096649b21bce586316356bb7c62ff4d06cfbc50ec78ec952083111bdb",
+            "size": 3506789,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/nanoleaf-macos/readme.md"
+          },
+          "windows": {
+            "id": "nanoleaf-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_windows_1.0.0.knobdeck",
+            "sha256": "ae76d98b991088390af095263d4cc9c4e87dc2efebfcd032b6af97d4374e3e8c",
+            "size": 1660801,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/nanoleaf-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/nanoleaf.json"
+    },
+    {
       "id": "coding-agents",
       "name": "Coding Agents",
       "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
@@ -1000,6 +1152,56 @@
         }
       },
       "detail": "/v2/plugins/web-requests.json"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "summary": "Start, stop and restart containers and Compose projects; see what is running.",
+      "description": "Start, stop and restart containers and Compose projects, and see what is running. Works with Docker Desktop, Docker Engine, Colima, OrbStack and Podman.",
+      "author": "KnobDeck",
+      "tags": [
+        "Developer tools",
+        "Automation"
+      ],
+      "icon": "container",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-17T17:08:55Z",
+        "platforms": {
+          "linux": {
+            "id": "docker-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.0/docker_linux_1.0.0.knobdeck",
+            "sha256": "f047ccbaa3798b5ee5a9ca90a91d1ba685630277e0c20d6b079ce8492aac1001",
+            "size": 311327,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/docker-linux/readme.md"
+          },
+          "macos": {
+            "id": "docker-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.0/docker_macos_1.0.0.knobdeck",
+            "sha256": "1384084451c104dee4f302e187ac8614a232d919d73c300c94555dd3c6c80102",
+            "size": 565064,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/docker-macos/readme.md"
+          },
+          "windows": {
+            "id": "docker-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.0/docker_windows_1.0.0.knobdeck",
+            "sha256": "83248269c158320e144b1f1e3bc0f2be1d167d4fa2a81878ffe445a7b6dc1e6e",
+            "size": 219084,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/docker-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/docker.json"
     },
     {
       "id": "browser-plugin",
@@ -1306,6 +1508,56 @@
         }
       },
       "detail": "/v2/plugins/clocks.json"
+    },
+    {
+      "id": "speedtest",
+      "name": "Speed Test",
+      "summary": "Internet speed test on a key, and live latency to any host.",
+      "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+      "author": "KnobDeck",
+      "tags": [
+        "Network",
+        "Information"
+      ],
+      "icon": "gauge",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-17T17:09:18Z",
+        "platforms": {
+          "linux": {
+            "id": "speedtest-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_linux_1.0.0.knobdeck",
+            "sha256": "71adff5f337c285e5dc37f7192bc9d5685465194f39d044efa7076e8e419d348",
+            "size": 979196,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/speedtest-linux/readme.md"
+          },
+          "macos": {
+            "id": "speedtest-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_macos_1.0.0.knobdeck",
+            "sha256": "bbd1ff2a74e0e7fa6f70c9229495bdf6c1ba485e52b0627ad22ae903479f7e7c",
+            "size": 1796707,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/speedtest-macos/readme.md"
+          },
+          "windows": {
+            "id": "speedtest-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_windows_1.0.0.knobdeck",
+            "sha256": "0a9c0b5d93951860f359d2967721e0e6ad99c7ddce5ac3385a809d1c5478bf30",
+            "size": 853710,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/speedtest-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/speedtest.json"
     },
     {
       "id": "ai-stats",
