@@ -1,4 +1,442 @@
 {
   "id": "blender",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "blender-v1.0.0",
+      "released": "2026-11-18T18:29:16Z",
+      "notes": "- First release, for Windows, macOS and Linux. Needs KnobDeck with the companion hub and the\n  KnobDeck add-on for Blender (Blender 4.2+, from extensions.blender.org or\n  github.com/Knobdeck/knobdeck-blender-companion).\n- Play / Pause, Frame dial, Jump to Start / End, Previous / Next Keyframe, Workspace (button and\n  wheel), Object Interaction Mode, Viewport Shading, Overlays, X-Ray, Render Image, Render\n  Animation, Save, Undo, Redo, Brush Size and Brush Strength dials, Object Transform dial\n  (location / rotation / scale, per axis), and a Mode and Object key.\n- Keys follow Blender live: playback, frame, overlays, X-ray, brush, transform, mode and object.",
+      "meta": {
+        "dir": "blender",
+        "version": "1.0.0",
+        "name": "Blender",
+        "summary": "Playback, frames, workspaces, shading, render, brush and transform dials through the KnobDeck add-on.",
+        "tags": [
+          "3D",
+          "Creative"
+        ],
+        "sort": 100
+      },
+      "platforms": {
+        "linux": {
+          "id": "blender-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_linux_1.0.0.knobdeck",
+          "sha256": "7c3632af9209cc00a8d004279b366047331feeb13e06a91b1d53a8282e6888b0",
+          "size": 306608,
+          "file": "blender_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_linux_readme.md",
+          "readmeFile": "blender_linux_readme.md",
+          "name": "Blender",
+          "description": "Control Blender through the KnobDeck add-on: playback and frames, workspaces, viewport shading, overlays and X-ray, render, save, undo, brush size and strength, and the selected objects' transform on a dial.",
+          "author": "KnobDeck",
+          "icon": "box",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "blender-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_macos_1.0.0.knobdeck",
+          "sha256": "5d3b211dc339d3edfb20634987af40fcf41dc3848363f6cbe241f591c606561e",
+          "size": 554389,
+          "file": "blender_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_macos_readme.md",
+          "readmeFile": "blender_macos_readme.md",
+          "name": "Blender",
+          "description": "Control Blender through the KnobDeck add-on: playback and frames, workspaces, viewport shading, overlays and X-ray, render, save, undo, brush size and strength, and the selected objects' transform on a dial.",
+          "author": "KnobDeck",
+          "icon": "box",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "blender-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_windows_1.0.0.knobdeck",
+          "sha256": "69101702056b0fddd8d2b875d7257441a6dc5d8d46f9cd3dbb32f9e5996f7446",
+          "size": 211753,
+          "file": "blender_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_windows_readme.md",
+          "readmeFile": "blender_windows_readme.md",
+          "name": "Blender",
+          "description": "Control Blender through the KnobDeck add-on: playback and frames, workspaces, viewport shading, overlays and X-ray, render, save, undo, brush size and strength, and the selected objects' transform on a dial.",
+          "author": "KnobDeck",
+          "icon": "box",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "paused",
+              "label": "Play",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Pause",
+              "icon": "pause"
+            }
+          ]
+        },
+        "frame": {
+          "type": "slider",
+          "label": "Frame",
+          "icon": "film",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Frames per tick",
+              "default": "1"
+            }
+          ],
+          "min": 0,
+          "max": 10000,
+          "step": 1,
+          "unit": null
+        },
+        "jump-start": {
+          "type": "button",
+          "label": "Jump to Start",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "jump-end": {
+          "type": "button",
+          "label": "Jump to End",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous-keyframe": {
+          "type": "button",
+          "label": "Previous Keyframe",
+          "icon": "chevron-first",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "next-keyframe": {
+          "type": "button",
+          "label": "Next Keyframe",
+          "icon": "chevron-last",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "workspace": {
+          "type": "button",
+          "label": "Workspace",
+          "icon": "layout-panel-top",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "workspace",
+              "type": "select",
+              "label": "Workspace"
+            }
+          ]
+        },
+        "workspace-wheel": {
+          "type": "wheel",
+          "label": "Workspaces",
+          "icon": "layout-panel-top",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "object-mode": {
+          "type": "button",
+          "label": "Object Interaction Mode",
+          "icon": "mouse-pointer-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "Mode",
+              "default": "OBJECT",
+              "options": [
+                "OBJECT",
+                "EDIT",
+                "SCULPT",
+                "VERTEX_PAINT",
+                "WEIGHT_PAINT",
+                "TEXTURE_PAINT",
+                "POSE"
+              ]
+            }
+          ]
+        },
+        "status": {
+          "type": "button",
+          "label": "Mode and Object",
+          "icon": "info",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "shading": {
+          "type": "button",
+          "label": "Viewport Shading",
+          "icon": "contrast",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "shading",
+              "type": "select",
+              "label": "Shading",
+              "default": "next",
+              "options": [
+                "next",
+                "previous",
+                "WIREFRAME",
+                "SOLID",
+                "MATERIAL",
+                "RENDERED"
+              ]
+            }
+          ]
+        },
+        "overlays": {
+          "type": "toggle",
+          "label": "Overlays",
+          "icon": "layers",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Overlays Off",
+              "icon": "layers"
+            },
+            {
+              "value": "on",
+              "label": "Overlays On",
+              "icon": "layers"
+            }
+          ]
+        },
+        "xray": {
+          "type": "toggle",
+          "label": "X-Ray",
+          "icon": "scan",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "X-Ray Off",
+              "icon": "scan"
+            },
+            {
+              "value": "on",
+              "label": "X-Ray On",
+              "icon": "scan-eye"
+            }
+          ]
+        },
+        "render-image": {
+          "type": "button",
+          "label": "Render Image",
+          "icon": "camera",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "render-animation": {
+          "type": "button",
+          "label": "Render Animation",
+          "icon": "clapperboard",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "save": {
+          "type": "button",
+          "label": "Save",
+          "icon": "save",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "undo": {
+          "type": "button",
+          "label": "Undo",
+          "icon": "undo-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "redo": {
+          "type": "button",
+          "label": "Redo",
+          "icon": "redo-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "brush-size": {
+          "type": "slider",
+          "label": "Brush Size",
+          "icon": "brush",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Pixels per tick",
+              "default": "5"
+            }
+          ],
+          "min": 1,
+          "max": 1000,
+          "step": 1,
+          "unit": "px"
+        },
+        "brush-strength": {
+          "type": "slider",
+          "label": "Brush Strength",
+          "icon": "brush",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Percent per tick",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "transform": {
+          "type": "slider",
+          "label": "Object Transform",
+          "icon": "move-3d",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "property",
+              "type": "select",
+              "label": "Property",
+              "default": "location",
+              "options": [
+                "location",
+                "rotation",
+                "scale"
+              ]
+            },
+            {
+              "key": "axis",
+              "type": "select",
+              "label": "Axis",
+              "default": "x",
+              "options": [
+                "x",
+                "y",
+                "z"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick"
+            }
+          ],
+          "min": -10000,
+          "max": 10000,
+          "step": 0.01,
+          "unit": null
+        }
+      },
+      "setup": false,
+      "uses": []
+    }
+  ]
 }

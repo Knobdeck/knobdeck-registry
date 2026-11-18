@@ -1,0 +1,220 @@
+{
+  "schema": 2,
+  "id": "soundboard",
+  "name": "Soundboard",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-18T18:29:26Z",
+    "platforms": {
+      "linux": {
+        "id": "soundboard-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_linux_1.0.0.knobdeck",
+        "sha256": "404f17308e08389af5c2ecc7756fdd49b95455f22c47e0f460bf2dd318f3e763",
+        "size": 742584,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-linux/readme.md"
+      },
+      "macos": {
+        "id": "soundboard-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_macos_1.0.0.knobdeck",
+        "sha256": "8fe906b10fe921242533ebf31289b176c7aa502a66b31d143d2d07290a39096c",
+        "size": 1300821,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-macos/readme.md"
+      },
+      "windows": {
+        "id": "soundboard-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_windows_1.0.0.knobdeck",
+        "sha256": "b7aef90adb4a08d1a743f6341c8f13ec9afc6dbd9bbd5ff0c7f74c7018149246",
+        "size": 597125,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "- Play Sound and Hold to Play: mp3, wav, ogg and flac files, per-sound volume, restart / stop /\n  overlap / loop on press, a second output device per sound (virtual cable + headphones).\n- Stop All Sounds and a master Soundboard Volume dial.\n- Windows: Soundpad Play Sound, Stop and Pause / Resume through its remote control pipe.",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "soundboard-v1.0.0",
+      "released": "2026-11-18T18:29:26Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "play": {
+      "type": "button",
+      "label": "Play Sound",
+      "icon": "play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "file",
+          "type": "text",
+          "label": "Sound file (mp3, wav, ogg, flac)"
+        },
+        {
+          "key": "output",
+          "type": "select",
+          "label": "Output device",
+          "default": "default"
+        },
+        {
+          "key": "output2",
+          "type": "select",
+          "label": "Also play on",
+          "default": ""
+        },
+        {
+          "key": "volume",
+          "type": "text",
+          "label": "Volume (%)",
+          "default": "100"
+        },
+        {
+          "key": "mode",
+          "type": "select",
+          "label": "When pressed while playing",
+          "default": "restart",
+          "options": [
+            "restart",
+            "stop",
+            "overlap",
+            "loop"
+          ]
+        }
+      ]
+    },
+    "hold": {
+      "type": "hold",
+      "label": "Hold to Play",
+      "icon": "play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "file",
+          "type": "text",
+          "label": "Sound file (mp3, wav, ogg, flac)"
+        },
+        {
+          "key": "output",
+          "type": "select",
+          "label": "Output device",
+          "default": "default"
+        },
+        {
+          "key": "output2",
+          "type": "select",
+          "label": "Also play on",
+          "default": ""
+        },
+        {
+          "key": "volume",
+          "type": "text",
+          "label": "Volume (%)",
+          "default": "100"
+        },
+        {
+          "key": "loop",
+          "type": "checkbox",
+          "label": "Loop while held",
+          "default": true
+        }
+      ],
+      "released": {
+        "label": "Hold to play",
+        "icon": "play"
+      },
+      "held": {
+        "label": "Playing",
+        "icon": "volume-2"
+      }
+    },
+    "stop-all": {
+      "type": "button",
+      "label": "Stop All Sounds",
+      "icon": "square",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "master-volume": {
+      "type": "slider",
+      "label": "Soundboard Volume",
+      "icon": "volume-2",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "soundpad-play": {
+      "type": "button",
+      "label": "Soundpad: Play Sound",
+      "icon": "play",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "sound",
+          "type": "select",
+          "label": "Sound"
+        },
+        {
+          "key": "lines",
+          "type": "select",
+          "label": "Play on",
+          "default": "both",
+          "options": [
+            "both",
+            "speakers",
+            "mic"
+          ]
+        }
+      ]
+    },
+    "soundpad-stop": {
+      "type": "button",
+      "label": "Soundpad: Stop",
+      "icon": "square",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": []
+    },
+    "soundpad-pause": {
+      "type": "button",
+      "label": "Soundpad: Pause / Resume",
+      "icon": "pause",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": []
+    }
+  },
+  "companions": []
+}

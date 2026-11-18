@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-18T18:20:22Z",
+  "generated": "2026-11-18T18:29:46Z",
   "plugins": [
     {
       "id": "discord",
@@ -1740,6 +1740,56 @@
       "detail": "/v2/plugins/hardware-monitor.json"
     },
     {
+      "id": "soundboard",
+      "name": "Soundboard",
+      "summary": "Play sound files from a key to any output, or to a virtual mic and your headphones at once.",
+      "description": "Play sound files from a key to any output device, or two at once (your headphones and a virtual cable into your mic). Master volume dial; Soundpad on Windows.",
+      "author": "KnobDeck",
+      "tags": [
+        "Audio",
+        "Streaming"
+      ],
+      "icon": "audio-lines",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T18:29:26Z",
+        "platforms": {
+          "linux": {
+            "id": "soundboard-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_linux_1.0.0.knobdeck",
+            "sha256": "404f17308e08389af5c2ecc7756fdd49b95455f22c47e0f460bf2dd318f3e763",
+            "size": 742584,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-linux/readme.md"
+          },
+          "macos": {
+            "id": "soundboard-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_macos_1.0.0.knobdeck",
+            "sha256": "8fe906b10fe921242533ebf31289b176c7aa502a66b31d143d2d07290a39096c",
+            "size": 1300821,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-macos/readme.md"
+          },
+          "windows": {
+            "id": "soundboard-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_windows_1.0.0.knobdeck",
+            "sha256": "b7aef90adb4a08d1a743f6341c8f13ec9afc6dbd9bbd5ff0c7f74c7018149246",
+            "size": 597125,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/soundboard.json"
+    },
+    {
       "id": "github",
       "name": "GitHub",
       "summary": "Notifications, review requests, your PRs, workflow runs and repo counters.",
@@ -1990,6 +2040,151 @@
         }
       },
       "detail": "/v2/plugins/lifx.json"
+    },
+    {
+      "id": "teamspeak",
+      "name": "TeamSpeak",
+      "summary": "Mute mic and speakers, away, push-to-talk, current channel and who's talking (TeamSpeak 5/6 and 3).",
+      "description": "TeamSpeak microphone and speaker mute, away, push-to-talk, and the current channel and who is talking. TeamSpeak 5/6 (Remote Apps) and TeamSpeak 3 (ClientQuery).",
+      "author": "KnobDeck",
+      "tags": [
+        "Communication",
+        "Gaming"
+      ],
+      "icon": "headset",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T18:29:29Z",
+        "platforms": {
+          "linux": {
+            "id": "teamspeak-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.0/teamspeak_linux_1.0.0.knobdeck",
+            "sha256": "d85ed420b0e52dd3ae6e26bb33c1898aa0618177d67388cd49aa537dcb3f16fc",
+            "size": 1564488,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/teamspeak-linux/readme.md"
+          },
+          "macos": {
+            "id": "teamspeak-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.0/teamspeak_macos_1.0.0.knobdeck",
+            "sha256": "a46af124986027d73f647598b711ac781617662c07e157edc605cb981fb9280e",
+            "size": 1029709,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/teamspeak-macos/readme.md"
+          },
+          "windows": {
+            "id": "teamspeak-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.0/teamspeak_windows_1.0.0.knobdeck",
+            "sha256": "c44d67b8082ffeb56a23d8c3a6b8620c232659938b881a08c2e671fdd6ac5eb1",
+            "size": 386866,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/teamspeak-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/teamspeak.json"
+    },
+    {
+      "id": "vtube-studio",
+      "name": "VTube Studio",
+      "summary": "Hotkeys, models and expressions on keys; move, resize or drive a parameter on a dial.",
+      "description": "VTube Studio hotkeys, models and expressions on keys; move, resize and rotate the model or drive a tracking parameter on a dial; the current model on a key.",
+      "author": "KnobDeck",
+      "tags": [
+        "Streaming",
+        "VTubing"
+      ],
+      "icon": "sparkles",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T18:29:32Z",
+        "platforms": {
+          "macos": {
+            "id": "vtube-studio-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vtube-studio-v1.0.0/vtube-studio_macos_1.0.0.knobdeck",
+            "sha256": "09fe61774db435cf4ed099c3174ea765852988ee7bd08f30ba09a02190d378ae",
+            "size": 989010,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vtube-studio-macos/readme.md"
+          },
+          "windows": {
+            "id": "vtube-studio-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vtube-studio-v1.0.0/vtube-studio_windows_1.0.0.knobdeck",
+            "sha256": "3916905bf3ee9c4797bc04314d8a878e453353952e6cf390c446b7b34ed7c0dd",
+            "size": 360718,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vtube-studio-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/vtube-studio.json"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "summary": "Playback, frames, workspaces, shading, render, brush and transform dials through the KnobDeck add-on.",
+      "description": "Control Blender through the KnobDeck add-on: playback and frames, workspaces, viewport shading, overlays and X-ray, render, save, undo, brush size and strength, and the selected objects' transform on a dial.",
+      "author": "KnobDeck",
+      "tags": [
+        "3D",
+        "Creative"
+      ],
+      "icon": "box",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [
+        "blender"
+      ],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T18:29:16Z",
+        "platforms": {
+          "linux": {
+            "id": "blender-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_linux_1.0.0.knobdeck",
+            "sha256": "7c3632af9209cc00a8d004279b366047331feeb13e06a91b1d53a8282e6888b0",
+            "size": 306608,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/blender-linux/readme.md"
+          },
+          "macos": {
+            "id": "blender-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_macos_1.0.0.knobdeck",
+            "sha256": "5d3b211dc339d3edfb20634987af40fcf41dc3848363f6cbe241f591c606561e",
+            "size": 554389,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/blender-macos/readme.md"
+          },
+          "windows": {
+            "id": "blender-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_windows_1.0.0.knobdeck",
+            "sha256": "69101702056b0fddd8d2b875d7257441a6dc5d8d46f9cd3dbb32f9e5996f7446",
+            "size": 211753,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/blender-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/blender.json"
     }
   ]
 }

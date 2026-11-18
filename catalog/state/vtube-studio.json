@@ -1,4 +1,211 @@
 {
   "id": "vtube-studio",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "vtube-studio-v1.0.0",
+      "released": "2026-11-18T18:29:32Z",
+      "notes": "- First release: Trigger Hotkey, Load Model, Toggle Expression, Move / Resize Model and Parameter\n  Dial on a dial, Current Model.",
+      "meta": {
+        "dir": "vtube-studio",
+        "version": "1.0.0",
+        "name": "VTube Studio",
+        "summary": "Hotkeys, models and expressions on keys; move, resize or drive a parameter on a dial.",
+        "tags": [
+          "Streaming",
+          "VTubing"
+        ],
+        "sort": 99
+      },
+      "platforms": {
+        "macos": {
+          "id": "vtube-studio-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vtube-studio-v1.0.0/vtube-studio_macos_1.0.0.knobdeck",
+          "sha256": "09fe61774db435cf4ed099c3174ea765852988ee7bd08f30ba09a02190d378ae",
+          "size": 989010,
+          "file": "vtube-studio_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vtube-studio-v1.0.0/vtube-studio_macos_readme.md",
+          "readmeFile": "vtube-studio_macos_readme.md",
+          "name": "VTube Studio",
+          "description": "VTube Studio hotkeys, models and expressions on keys; move, resize and rotate the model or drive a tracking parameter on a dial; the current model on a key.",
+          "author": "KnobDeck",
+          "icon": "sparkles",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "vtube-studio-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vtube-studio-v1.0.0/vtube-studio_windows_1.0.0.knobdeck",
+          "sha256": "3916905bf3ee9c4797bc04314d8a878e453353952e6cf390c446b7b34ed7c0dd",
+          "size": 360718,
+          "file": "vtube-studio_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vtube-studio-v1.0.0/vtube-studio_windows_readme.md",
+          "readmeFile": "vtube-studio_windows_readme.md",
+          "name": "VTube Studio",
+          "description": "VTube Studio hotkeys, models and expressions on keys; move, resize and rotate the model or drive a tracking parameter on a dial; the current model on a key.",
+          "author": "KnobDeck",
+          "icon": "sparkles",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "hotkey": {
+          "type": "button",
+          "label": "Trigger Hotkey",
+          "icon": "zap",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "hotkey",
+              "type": "combobox",
+              "label": "Hotkey"
+            }
+          ]
+        },
+        "model": {
+          "type": "toggle",
+          "label": "Load Model",
+          "icon": "user-round",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "model",
+              "type": "combobox",
+              "label": "Model"
+            }
+          ],
+          "states": [
+            {
+              "value": "other",
+              "label": "Load Model",
+              "icon": "user-round"
+            },
+            {
+              "value": "loaded",
+              "label": "Loaded",
+              "icon": "circle-check"
+            }
+          ]
+        },
+        "expression": {
+          "type": "toggle",
+          "label": "Toggle Expression",
+          "icon": "smile",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "expression",
+              "type": "combobox",
+              "label": "Expression"
+            },
+            {
+              "key": "fade",
+              "type": "text",
+              "label": "Fade (seconds)",
+              "default": "0.25"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Expression Off",
+              "icon": "meh"
+            },
+            {
+              "value": "on",
+              "label": "Expression On",
+              "icon": "smile"
+            }
+          ]
+        },
+        "move-model": {
+          "type": "slider",
+          "label": "Move / Resize Model",
+          "icon": "move",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "axis",
+              "type": "select",
+              "label": "What the dial changes",
+              "default": "size",
+              "options": [
+                "size",
+                "x",
+                "y",
+                "rotation"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step",
+              "default": "2"
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "parameter": {
+          "type": "slider",
+          "label": "Parameter Dial",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "parameter",
+              "type": "combobox",
+              "label": "Parameter"
+            },
+            {
+              "key": "hold",
+              "type": "checkbox",
+              "label": "Keep the value (VTube Studio returns a parameter to tracking a second after the last value)",
+              "default": true
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "current-model": {
+          "type": "button",
+          "label": "Current Model",
+          "icon": "user-round",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
 }
