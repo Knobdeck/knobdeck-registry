@@ -1,0 +1,7 @@
+id = "soundboard"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "soundboard", tag = "soundboard-v{version}" }
+first_party = true
+featured = false
+sort = 92
+tags = ["Audio", "Streaming"]
+companions = []
