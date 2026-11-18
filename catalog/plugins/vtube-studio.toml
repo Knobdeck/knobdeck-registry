@@ -1,0 +1,7 @@
+id = "vtube-studio"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "vtube-studio", tag = "vtube-studio-v{version}" }
+first_party = true
+featured = false
+sort = 99
+tags = ["Streaming", "VTubing"]
+companions = []
