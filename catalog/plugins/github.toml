@@ -1,0 +1,7 @@
+id = "github"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "github", tag = "github-v{version}" }
+first_party = true
+featured = false
+sort = 93
+tags = ["Developer", "Productivity"]
+companions = []
