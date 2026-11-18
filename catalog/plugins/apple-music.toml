@@ -1,0 +1,7 @@
+id = "apple-music"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "apple-music", tag = "apple-music-v{version}" }
+first_party = true
+featured = false
+sort = 94
+tags = ["Music", "Media"]
+companions = []
