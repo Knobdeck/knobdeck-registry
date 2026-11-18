@@ -1,0 +1,7 @@
+id = "hardware-monitor"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "hardware-monitor", tag = "hardware-monitor-v{version}" }
+first_party = true
+featured = false
+sort = 91
+tags = ["System", "Monitoring"]
+companions = []
