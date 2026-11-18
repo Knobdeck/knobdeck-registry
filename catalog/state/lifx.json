@@ -1,0 +1,293 @@
+{
+  "id": "lifx",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "lifx-v1.0.0",
+      "released": "2026-11-18T17:58:52Z",
+      "notes": "- First release: power, brightness, color temperature, hue and saturation dials, set color and\n  set white for LIFX lights over the LAN protocol, found by broadcast or typed by address.",
+      "meta": {
+        "dir": "lifx",
+        "version": "1.0.0",
+        "name": "LIFX",
+        "summary": "LIFX lights on your network: power, brightness, white temperature, hue, saturation, color. No account.",
+        "tags": [
+          "Lighting",
+          "Smart home"
+        ],
+        "sort": 97
+      },
+      "platforms": {
+        "linux": {
+          "id": "lifx-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_linux_1.0.0.knobdeck",
+          "sha256": "8710458c93a196572e74869ac34674b25ae7a08d739025d927042e330bbfe6c6",
+          "size": 488607,
+          "file": "lifx_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_linux_readme.md",
+          "readmeFile": "lifx_linux_readme.md",
+          "name": "LIFX",
+          "description": "LIFX bulbs, strips and panels on your network: power, brightness, white temperature, hue, saturation and color. No account needed.",
+          "author": "KnobDeck",
+          "icon": "lamp-floor",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "lifx-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_macos_1.0.0.knobdeck",
+          "sha256": "798d16dc83b03429fe3f359c8fe4204b1cf060476788b249947cbce222e5fb60",
+          "size": 891772,
+          "file": "lifx_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_macos_readme.md",
+          "readmeFile": "lifx_macos_readme.md",
+          "name": "LIFX",
+          "description": "LIFX bulbs, strips and panels on your network: power, brightness, white temperature, hue, saturation and color. No account needed.",
+          "author": "KnobDeck",
+          "icon": "lamp-floor",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "lifx-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_windows_1.0.0.knobdeck",
+          "sha256": "8bfc932347f86090c462d4880242e95327fae84c9091a00a7bbe0554d5bc0e7a",
+          "size": 315469,
+          "file": "lifx_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_windows_readme.md",
+          "readmeFile": "lifx_windows_readme.md",
+          "name": "LIFX",
+          "description": "LIFX bulbs, strips and panels on your network: power, brightness, white temperature, hue, saturation and color. No account needed.",
+          "author": "KnobDeck",
+          "icon": "lamp-floor",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "power": {
+          "type": "toggle",
+          "label": "Power",
+          "icon": "lightbulb",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "lightbulb-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "lightbulb"
+            }
+          ]
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "set-brightness": {
+          "type": "button",
+          "label": "Set Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Brightness (%)",
+              "default": "50"
+            }
+          ]
+        },
+        "temperature": {
+          "type": "slider",
+          "label": "Color Temperature",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (K)",
+              "default": "100"
+            }
+          ],
+          "min": 1500,
+          "max": 9000,
+          "step": 100,
+          "unit": "K"
+        },
+        "set-temperature": {
+          "type": "button",
+          "label": "Set White",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Temperature (K, 1500–9000)",
+              "default": "4000"
+            }
+          ]
+        },
+        "hue": {
+          "type": "slider",
+          "label": "Hue",
+          "icon": "palette",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (°)",
+              "default": "10"
+            }
+          ],
+          "min": 0,
+          "max": 359,
+          "step": 1,
+          "unit": "°"
+        },
+        "saturation": {
+          "type": "slider",
+          "label": "Saturation",
+          "icon": "droplet",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "set-color": {
+          "type": "button",
+          "label": "Set Color",
+          "icon": "paintbrush",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "color",
+              "type": "text",
+              "label": "Color (#RRGGBB)",
+              "default": "#FF8800"
+            },
+            {
+              "key": "duration",
+              "type": "text",
+              "label": "Fade (seconds)",
+              "default": "0"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

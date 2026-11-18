@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-18T17:56:21Z",
+  "tag": "catalog-2026-11-18T18:07:39Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -2491,6 +2491,156 @@
       "featured": false,
       "file": "neovim_windows_1.0.0.knobdeck",
       "readmeFile": "neovim_windows_readme.md"
+    },
+    {
+      "id": "wled-linux",
+      "name": "WLED",
+      "summary": "WLED LED strips: power, brightness, presets, effects with speed and intensity, palettes, color, segments.",
+      "description": "LED strips and matrices running WLED: power, brightness, presets, effects with speed and intensity, palettes, color and segments.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.0/wled_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "rainbow",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/wled-linux/readme.md",
+      "sha256": "2379ab240a4a2271aa2eb64713c669b0bf4a1990e84c484ebf1e8c77191bd10a",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "wled_linux_1.0.0.knobdeck",
+      "readmeFile": "wled_linux_readme.md"
+    },
+    {
+      "id": "wled-macos",
+      "name": "WLED",
+      "summary": "WLED LED strips: power, brightness, presets, effects with speed and intensity, palettes, color, segments.",
+      "description": "LED strips and matrices running WLED: power, brightness, presets, effects with speed and intensity, palettes, color and segments.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.0/wled_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "rainbow",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/wled-macos/readme.md",
+      "sha256": "03bbed3e955e1cf75a7a74aa46f81134410e632c2f23370549ad1b99a2824d5d",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "wled_macos_1.0.0.knobdeck",
+      "readmeFile": "wled_macos_readme.md"
+    },
+    {
+      "id": "wled-windows",
+      "name": "WLED",
+      "summary": "WLED LED strips: power, brightness, presets, effects with speed and intensity, palettes, color, segments.",
+      "description": "LED strips and matrices running WLED: power, brightness, presets, effects with speed and intensity, palettes, color and segments.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.0/wled_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "rainbow",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/wled-windows/readme.md",
+      "sha256": "523fab6d151283a39859be185f460b62206f46eda9525221e68e07ec025a4d35",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "wled_windows_1.0.0.knobdeck",
+      "readmeFile": "wled_windows_readme.md"
+    },
+    {
+      "id": "lifx-linux",
+      "name": "LIFX",
+      "summary": "LIFX lights on your network: power, brightness, white temperature, hue, saturation, color. No account.",
+      "description": "LIFX bulbs, strips and panels on your network: power, brightness, white temperature, hue, saturation and color. No account needed.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "lamp-floor",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lifx-linux/readme.md",
+      "sha256": "8710458c93a196572e74869ac34674b25ae7a08d739025d927042e330bbfe6c6",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "lifx_linux_1.0.0.knobdeck",
+      "readmeFile": "lifx_linux_readme.md"
+    },
+    {
+      "id": "lifx-macos",
+      "name": "LIFX",
+      "summary": "LIFX lights on your network: power, brightness, white temperature, hue, saturation, color. No account.",
+      "description": "LIFX bulbs, strips and panels on your network: power, brightness, white temperature, hue, saturation and color. No account needed.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "lamp-floor",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lifx-macos/readme.md",
+      "sha256": "798d16dc83b03429fe3f359c8fe4204b1cf060476788b249947cbce222e5fb60",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "lifx_macos_1.0.0.knobdeck",
+      "readmeFile": "lifx_macos_readme.md"
+    },
+    {
+      "id": "lifx-windows",
+      "name": "LIFX",
+      "summary": "LIFX lights on your network: power, brightness, white temperature, hue, saturation, color. No account.",
+      "description": "LIFX bulbs, strips and panels on your network: power, brightness, white temperature, hue, saturation and color. No account needed.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "lamp-floor",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lifx-windows/readme.md",
+      "sha256": "8bfc932347f86090c462d4880242e95327fae84c9091a00a7bbe0554d5bc0e7a",
+      "tags": [
+        "Lighting",
+        "Smart home"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "lifx_windows_1.0.0.knobdeck",
+      "readmeFile": "lifx_windows_readme.md"
     }
   ]
 }
