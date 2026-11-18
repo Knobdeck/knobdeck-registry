@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-18T18:19:48Z",
+  "tag": "catalog-2026-11-18T18:20:22Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -2367,6 +2367,81 @@
       "featured": false,
       "file": "ai-stats_windows_2.0.0.knobdeck",
       "readmeFile": "ai-stats_windows_readme.md"
+    },
+    {
+      "id": "hardware-monitor-linux",
+      "name": "Hardware Monitor",
+      "summary": "CPU and GPU temperatures, fans, power, GPU load and VRAM on a key or a gauge.",
+      "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "thermometer",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-linux/readme.md",
+      "sha256": "939ecb78b318fa6bebd52bb9a8bd40192a52a69b453dc060ceeffddcc7965d9b",
+      "tags": [
+        "System",
+        "Monitoring"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "hardware-monitor_linux_1.0.0.knobdeck",
+      "readmeFile": "hardware-monitor_linux_readme.md"
+    },
+    {
+      "id": "hardware-monitor-macos",
+      "name": "Hardware Monitor",
+      "summary": "CPU and GPU temperatures, fans, power, GPU load and VRAM on a key or a gauge.",
+      "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "thermometer",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-macos/readme.md",
+      "sha256": "a5bc518fef889a0e803e9dabafb05790b925c7b345975a9a9581e697f87529b5",
+      "tags": [
+        "System",
+        "Monitoring"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "hardware-monitor_macos_1.0.0.knobdeck",
+      "readmeFile": "hardware-monitor_macos_readme.md"
+    },
+    {
+      "id": "hardware-monitor-windows",
+      "name": "Hardware Monitor",
+      "summary": "CPU and GPU temperatures, fans, power, GPU load and VRAM on a key or a gauge.",
+      "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "thermometer",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-windows/readme.md",
+      "sha256": "cb8e4d5cc5ec5a0d179e1f71e8926916ae95daf400299278c4ee3e25711f0407",
+      "tags": [
+        "System",
+        "Monitoring"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "hardware-monitor_windows_1.0.0.knobdeck",
+      "readmeFile": "hardware-monitor_windows_readme.md"
     },
     {
       "id": "github-linux",

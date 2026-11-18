@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-18T18:19:48Z",
+  "generated": "2026-11-18T18:20:22Z",
   "plugins": [
     {
       "id": "discord",
@@ -1688,6 +1688,56 @@
         }
       },
       "detail": "/v2/plugins/ai-stats.json"
+    },
+    {
+      "id": "hardware-monitor",
+      "name": "Hardware Monitor",
+      "summary": "CPU and GPU temperatures, fans, power, GPU load and VRAM on a key or a gauge.",
+      "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+      "author": "KnobDeck",
+      "tags": [
+        "System",
+        "Monitoring"
+      ],
+      "icon": "thermometer",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T18:19:59Z",
+        "platforms": {
+          "linux": {
+            "id": "hardware-monitor-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_linux_1.0.0.knobdeck",
+            "sha256": "939ecb78b318fa6bebd52bb9a8bd40192a52a69b453dc060ceeffddcc7965d9b",
+            "size": 314030,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-linux/readme.md"
+          },
+          "macos": {
+            "id": "hardware-monitor-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_macos_1.0.0.knobdeck",
+            "sha256": "a5bc518fef889a0e803e9dabafb05790b925c7b345975a9a9581e697f87529b5",
+            "size": 536795,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-macos/readme.md"
+          },
+          "windows": {
+            "id": "hardware-monitor-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_windows_1.0.0.knobdeck",
+            "sha256": "cb8e4d5cc5ec5a0d179e1f71e8926916ae95daf400299278c4ee3e25711f0407",
+            "size": 210778,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/hardware-monitor.json"
     },
     {
       "id": "github",
