@@ -1,0 +1,7 @@
+id = "teamspeak"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "teamspeak", tag = "teamspeak-v{version}" }
+first_party = true
+featured = false
+sort = 98
+tags = ["Communication", "Gaming"]
+companions = []
