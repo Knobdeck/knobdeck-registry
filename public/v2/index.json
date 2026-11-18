@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-18T12:16:54Z",
+  "generated": "2026-11-18T17:56:21Z",
   "plugins": [
     {
       "id": "discord",
@@ -1688,6 +1688,100 @@
         }
       },
       "detail": "/v2/plugins/ai-stats.json"
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "summary": "Music app playback, shuffle, repeat, favorites, volume dial, playlists and what is playing.",
+      "description": "Music app playback, shuffle, repeat, favorites, volume and playlists, with what is playing and its artwork.",
+      "author": "KnobDeck",
+      "tags": [
+        "Music",
+        "Media"
+      ],
+      "icon": "music",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T17:54:50Z",
+        "platforms": {
+          "macos": {
+            "id": "apple-music-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/apple-music-v1.0.0/apple-music_macos_1.0.0.knobdeck",
+            "sha256": "5f452d9f4e687cd357febd4122a2d08c4d0eeb5a06ee94d9dc01262c274baa15",
+            "size": 890191,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/apple-music-macos/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/apple-music.json"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "summary": "Run Ex commands and Lua, save all, switch buffers on a dial, toggle options, see the mode and file.",
+      "description": "Run Ex commands and Lua in Neovim, save all, switch buffers on a dial, toggle options and see the mode and file, over Neovim's own RPC API.",
+      "author": "KnobDeck",
+      "tags": [
+        "Developer tools",
+        "Editor"
+      ],
+      "icon": "terminal",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T17:54:53Z",
+        "platforms": {
+          "linux": {
+            "id": "neovim-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.0/neovim_linux_1.0.0.knobdeck",
+            "sha256": "e3e62c8d0cd1bcbc948269290ad9d56e4fcd8973b525b6b32d8c66903a39f7bf",
+            "size": 985459,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/neovim-linux/readme.md"
+          },
+          "macos": {
+            "id": "neovim-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.0/neovim_macos_1.0.0.knobdeck",
+            "sha256": "36cdfed5d42ec81dfe8dd2dbf197e6182af3779d27771113a3271e3284b57782",
+            "size": 739818,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/neovim-macos/readme.md"
+          },
+          "windows": {
+            "id": "neovim-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.0/neovim_windows_1.0.0.knobdeck",
+            "sha256": "4b96e7d2781ef6d987228c11a605e015c47b61b20c09a08cbd7f7db90cff11b8",
+            "size": 317896,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/neovim-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/neovim.json"
     }
   ]
 }
