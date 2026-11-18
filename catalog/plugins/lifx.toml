@@ -1,0 +1,7 @@
+id = "lifx"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "lifx", tag = "lifx-v{version}" }
+first_party = true
+featured = false
+sort = 97
+tags = ["Lighting", "Smart home"]
+companions = []
