@@ -1,0 +1,227 @@
+{
+  "schema": 2,
+  "id": "voicemeeter",
+  "name": "Voicemeeter",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-17T17:50:07Z",
+    "platforms": {
+      "windows": {
+        "id": "voicemeeter-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemeeter-v1.0.0/voicemeeter_windows_1.0.0.knobdeck",
+        "sha256": "31fb1eb9acd07affd0e627adff76d457cff94c38931e90817d3706c268110792",
+        "size": 204842,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemeeter-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "Voicemeeter 1.0.0 for windows.",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "voicemeeter-v1.0.0",
+      "released": "2026-11-17T17:50:07Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "strip-mute": {
+      "type": "toggle",
+      "label": "Strip Mute",
+      "icon": "volume-x",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "strip",
+          "type": "select",
+          "label": "Input strip"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Unmuted",
+          "icon": "volume-2"
+        },
+        {
+          "value": "on",
+          "label": "Muted",
+          "icon": "volume-x"
+        }
+      ]
+    },
+    "strip-gain": {
+      "type": "slider",
+      "label": "Strip Gain",
+      "icon": "sliders-vertical",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "strip",
+          "type": "select",
+          "label": "Input strip"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (dB)",
+          "default": "1"
+        }
+      ],
+      "min": -60,
+      "max": 12,
+      "step": 1,
+      "unit": "dB"
+    },
+    "bus-mute": {
+      "type": "toggle",
+      "label": "Bus Mute",
+      "icon": "volume-x",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "bus",
+          "type": "select",
+          "label": "Output bus"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Unmuted",
+          "icon": "volume-2"
+        },
+        {
+          "value": "on",
+          "label": "Muted",
+          "icon": "volume-x"
+        }
+      ]
+    },
+    "bus-gain": {
+      "type": "slider",
+      "label": "Bus Gain",
+      "icon": "sliders-vertical",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "bus",
+          "type": "select",
+          "label": "Output bus"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (dB)",
+          "default": "1"
+        }
+      ],
+      "min": -60,
+      "max": 12,
+      "step": 1,
+      "unit": "dB"
+    },
+    "route": {
+      "type": "toggle",
+      "label": "Strip Routing",
+      "icon": "route",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "strip",
+          "type": "select",
+          "label": "Input strip"
+        },
+        {
+          "key": "output",
+          "type": "select",
+          "label": "Output (A1–A5, B1–B3)"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "circle"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "macro": {
+      "type": "button",
+      "label": "Macro Button",
+      "icon": "square-mouse-pointer",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "button",
+          "type": "text",
+          "label": "Button number"
+        },
+        {
+          "key": "mode",
+          "type": "select",
+          "label": "Button type",
+          "default": "push",
+          "options": [
+            "push",
+            "toggle"
+          ]
+        }
+      ]
+    },
+    "load-config": {
+      "type": "button",
+      "label": "Load Configuration",
+      "icon": "folder-open",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "path",
+          "type": "text",
+          "label": "Configuration file (.xml)"
+        }
+      ]
+    },
+    "restart-engine": {
+      "type": "button",
+      "label": "Restart Audio Engine",
+      "icon": "rotate-cw",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": []
+    },
+    "show": {
+      "type": "button",
+      "label": "Show Voicemeeter",
+      "icon": "app-window",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": []
+    }
+  },
+  "companions": []
+}

@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-17T17:45:57Z",
+  "tag": "catalog-2026-11-18T12:16:54Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -683,6 +683,39 @@
       "readmeFile": "streamlabs_windows_readme.md"
     },
     {
+      "id": "streamerbot-windows",
+      "name": "Streamer.bot",
+      "summary": "Run Streamer.bot actions and code triggers, an action wheel, and global variables on keys.",
+      "description": "Run Streamer.bot actions and code triggers, a wheel of an action group, and show global variables. Streamer.bot reaches Twitch, YouTube, Kick, OBS and more.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamerbot-v1.0.0/streamerbot_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "bot",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamerbot-windows/readme.md",
+      "sha256": "2e1250015da9547067249af0d554eedbddd67fd65a8d41070d466d2ae2a21c73",
+      "tags": [
+        "Streaming",
+        "Automation"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "streamerbot_windows_1.0.0.knobdeck",
+      "readmeFile": "streamerbot_windows_readme.md"
+    },
+    {
       "id": "youtube-linux",
       "name": "YouTube",
       "summary": "Live viewers and the Studio live dashboard (read-only).",
@@ -756,6 +789,31 @@
       "featured": false,
       "file": "youtube_windows_1.2.0.knobdeck",
       "readmeFile": "youtube_windows_readme.md"
+    },
+    {
+      "id": "voicemeeter-windows",
+      "name": "Voicemeeter",
+      "summary": "Strip and bus gain on a dial, mute, A1–B3 routing, Macro Buttons and configurations.",
+      "description": "Voicemeeter, Banana and Potato: strip and bus mute and gain on a dial, A1–A5 / B1–B3 routing, Macro Buttons and configurations.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemeeter-v1.0.0/voicemeeter_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "audio-lines",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemeeter-windows/readme.md",
+      "sha256": "31fb1eb9acd07affd0e627adff76d457cff94c38931e90817d3706c268110792",
+      "tags": [
+        "Audio",
+        "Streaming"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "voicemeeter_windows_1.0.0.knobdeck",
+      "readmeFile": "voicemeeter_windows_readme.md"
     },
     {
       "id": "elgato-lights-linux",

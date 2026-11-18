@@ -1,0 +1,135 @@
+{
+  "id": "streamerbot",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "streamerbot-v1.0.0",
+      "released": "2026-11-17T17:50:04Z",
+      "notes": "Streamer.bot 1.0.0 for windows.",
+      "meta": {
+        "dir": "streamerbot",
+        "version": "1.0.0",
+        "name": "Streamer.bot",
+        "summary": "Run Streamer.bot actions and code triggers, an action wheel, and global variables on keys.",
+        "tags": [
+          "Streaming",
+          "Automation"
+        ],
+        "sort": 23
+      },
+      "platforms": {
+        "windows": {
+          "id": "streamerbot-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamerbot-v1.0.0/streamerbot_windows_1.0.0.knobdeck",
+          "sha256": "2e1250015da9547067249af0d554eedbddd67fd65a8d41070d466d2ae2a21c73",
+          "size": 459450,
+          "file": "streamerbot_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamerbot-v1.0.0/streamerbot_windows_readme.md",
+          "readmeFile": "streamerbot_windows_readme.md",
+          "name": "Streamer.bot",
+          "description": "Run Streamer.bot actions and code triggers, a wheel of an action group, and show global variables. Streamer.bot reaches Twitch, YouTube, Kick, OBS and more.",
+          "author": "KnobDeck",
+          "icon": "bot",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "run-action": {
+          "type": "button",
+          "label": "Run Action",
+          "icon": "play",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "action",
+              "type": "combobox",
+              "label": "Action"
+            },
+            {
+              "key": "args",
+              "type": "text",
+              "label": "Arguments (optional)"
+            }
+          ]
+        },
+        "code-trigger": {
+          "type": "button",
+          "label": "Run Code Trigger",
+          "icon": "zap",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "trigger",
+              "type": "combobox",
+              "label": "Trigger"
+            },
+            {
+              "key": "args",
+              "type": "text",
+              "label": "Arguments (optional)"
+            }
+          ]
+        },
+        "global": {
+          "type": "button",
+          "label": "Global Variable",
+          "icon": "variable",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "variable",
+              "type": "text",
+              "label": "Variable name"
+            },
+            {
+              "key": "persisted",
+              "type": "checkbox",
+              "label": "Persisted (saved between restarts)",
+              "default": true
+            }
+          ]
+        },
+        "actions-wheel": {
+          "type": "wheel",
+          "label": "Actions Wheel",
+          "icon": "bot",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "group",
+              "type": "select",
+              "label": "Action group"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    }
+  ]
+}
