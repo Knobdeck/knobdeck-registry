@@ -1,0 +1,7 @@
+id = "voicemeeter"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "voicemeeter", tag = "voicemeeter-v{version}" }
+first_party = true
+featured = false
+sort = 24
+tags = ["Audio", "Streaming"]
+companions = []

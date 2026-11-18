@@ -1,0 +1,7 @@
+id = "streamerbot"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "streamerbot", tag = "streamerbot-v{version}" }
+first_party = true
+featured = false
+sort = 23
+tags = ["Streaming", "Automation"]
+companions = []
