@@ -1,0 +1,7 @@
+id = "blender"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "blender", tag = "blender-v{version}" }
+first_party = true
+featured = false
+sort = 100
+tags = ["3D", "Creative"]
+companions = ["blender"]
