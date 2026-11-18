@@ -1,0 +1,7 @@
+id = "neovim"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "neovim", tag = "neovim-v{version}" }
+first_party = true
+featured = false
+sort = 95
+tags = ["Developer tools", "Editor"]
+companions = []
