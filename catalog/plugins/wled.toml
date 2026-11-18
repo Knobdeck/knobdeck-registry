@@ -1,0 +1,7 @@
+id = "wled"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "wled", tag = "wled-v{version}" }
+first_party = true
+featured = false
+sort = 96
+tags = ["Lighting", "Smart home"]
+companions = []
