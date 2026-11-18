@@ -2,6 +2,18 @@
   "schema": 2,
   "companions": [
     {
+      "id": "blender",
+      "name": "KnobDeck add-on for Blender",
+      "repository": "https://github.com/Knobdeck/knobdeck-blender-companion",
+      "runsIn": "Blender 4.2 and newer",
+      "latest": null,
+      "minVersion": null,
+      "plugins": [
+        "blender"
+      ],
+      "stores": []
+    },
+    {
       "id": "browser",
       "name": "KnobDeck Browser Companion",
       "repository": "https://github.com/Knobdeck/knobdeck-browser-companion",

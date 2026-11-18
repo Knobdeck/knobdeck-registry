@@ -1,0 +1,263 @@
+{
+  "schema": 2,
+  "id": "github",
+  "name": "GitHub",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-18T18:17:15Z",
+    "platforms": {
+      "linux": {
+        "id": "github-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_linux_1.0.0.knobdeck",
+        "sha256": "9351cff2be126fd07f9ef0f404e559cbde7acba7a7ce0f4052f264ba5d0d159d",
+        "size": 3522622,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-linux/readme.md"
+      },
+      "macos": {
+        "id": "github-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_macos_1.0.0.knobdeck",
+        "sha256": "8ee6d29979517f778298a73b55b92ed4c460edb7cb08cfa50dd09cedffa83dd9",
+        "size": 3729252,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-macos/readme.md"
+      },
+      "windows": {
+        "id": "github-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_windows_1.0.0.knobdeck",
+        "sha256": "480689dc15c10a09b10fd4578671d7a74572ccb203b896c84bf2ba6de54ee599",
+        "size": 1797788,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "GitHub 1.0.0 for linux, macos, windows.",
+  "setup": true,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "github-v1.0.0",
+      "released": "2026-11-18T18:17:15Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "notifications": {
+      "type": "toggle",
+      "label": "Notifications",
+      "icon": "bell",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "participating",
+          "type": "checkbox",
+          "label": "Only threads I take part in"
+        }
+      ],
+      "states": [
+        {
+          "value": "none",
+          "label": "None",
+          "icon": "bell"
+        },
+        {
+          "value": "some",
+          "label": "Unread",
+          "icon": "bell-dot"
+        }
+      ]
+    },
+    "review-requests": {
+      "type": "toggle",
+      "label": "Review Requests",
+      "icon": "git-pull-request-arrow",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "none",
+          "label": "None",
+          "icon": "git-pull-request-arrow"
+        },
+        {
+          "value": "some",
+          "label": "Some",
+          "icon": "git-pull-request-arrow"
+        }
+      ]
+    },
+    "my-prs": {
+      "type": "toggle",
+      "label": "My Open PRs",
+      "icon": "git-pull-request",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "none",
+          "label": "None",
+          "icon": "git-pull-request"
+        },
+        {
+          "value": "some",
+          "label": "Some",
+          "icon": "git-pull-request"
+        }
+      ]
+    },
+    "workflow-status": {
+      "type": "toggle",
+      "label": "Workflow Status",
+      "icon": "workflow",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "repo",
+          "type": "combobox",
+          "label": "Repository"
+        },
+        {
+          "key": "workflow",
+          "type": "select",
+          "label": "Workflow"
+        },
+        {
+          "key": "branch",
+          "type": "text",
+          "label": "Branch (optional)"
+        }
+      ],
+      "states": [
+        {
+          "value": "none",
+          "label": "No runs",
+          "icon": "circle-dashed"
+        },
+        {
+          "value": "running",
+          "label": "Running",
+          "icon": "loader"
+        },
+        {
+          "value": "success",
+          "label": "Success",
+          "icon": "circle-check"
+        },
+        {
+          "value": "failure",
+          "label": "Failed",
+          "icon": "circle-x"
+        },
+        {
+          "value": "cancelled",
+          "label": "Cancelled",
+          "icon": "circle-slash"
+        }
+      ]
+    },
+    "rerun-failed": {
+      "type": "button",
+      "label": "Re-run Failed Jobs",
+      "icon": "rotate-ccw",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "repo",
+          "type": "combobox",
+          "label": "Repository"
+        },
+        {
+          "key": "workflow",
+          "type": "select",
+          "label": "Workflow"
+        },
+        {
+          "key": "branch",
+          "type": "text",
+          "label": "Branch (optional)"
+        }
+      ]
+    },
+    "run-workflow": {
+      "type": "button",
+      "label": "Run Workflow",
+      "icon": "play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "repo",
+          "type": "combobox",
+          "label": "Repository"
+        },
+        {
+          "key": "workflow",
+          "type": "select",
+          "label": "Workflow (needs a workflow_dispatch trigger)"
+        },
+        {
+          "key": "ref",
+          "type": "text",
+          "label": "Branch or tag (optional)"
+        },
+        {
+          "key": "inputs",
+          "type": "textarea",
+          "label": "Inputs, one name=value per line (optional)"
+        }
+      ]
+    },
+    "repo-counter": {
+      "type": "button",
+      "label": "Repository Counter",
+      "icon": "star",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "repo",
+          "type": "combobox",
+          "label": "Repository"
+        },
+        {
+          "key": "metric",
+          "type": "select",
+          "label": "Show",
+          "default": "stars",
+          "options": [
+            "stars",
+            "issues",
+            "prs"
+          ]
+        }
+      ]
+    }
+  },
+  "companions": []
+}

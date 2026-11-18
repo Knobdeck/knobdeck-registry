@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-18T18:07:39Z",
+  "tag": "catalog-2026-11-18T18:19:48Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -2367,6 +2367,105 @@
       "featured": false,
       "file": "ai-stats_windows_2.0.0.knobdeck",
       "readmeFile": "ai-stats_windows_readme.md"
+    },
+    {
+      "id": "github-linux",
+      "name": "GitHub",
+      "summary": "Notifications, review requests, your PRs, workflow runs and repo counters.",
+      "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "github",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-linux/readme.md",
+      "sha256": "9351cff2be126fd07f9ef0f404e559cbde7acba7a7ce0f4052f264ba5d0d159d",
+      "tags": [
+        "Developer",
+        "Productivity"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "github_linux_1.0.0.knobdeck",
+      "readmeFile": "github_linux_readme.md"
+    },
+    {
+      "id": "github-macos",
+      "name": "GitHub",
+      "summary": "Notifications, review requests, your PRs, workflow runs and repo counters.",
+      "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "github",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-macos/readme.md",
+      "sha256": "8ee6d29979517f778298a73b55b92ed4c460edb7cb08cfa50dd09cedffa83dd9",
+      "tags": [
+        "Developer",
+        "Productivity"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "github_macos_1.0.0.knobdeck",
+      "readmeFile": "github_macos_readme.md"
+    },
+    {
+      "id": "github-windows",
+      "name": "GitHub",
+      "summary": "Notifications, review requests, your PRs, workflow runs and repo counters.",
+      "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "github",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-windows/readme.md",
+      "sha256": "480689dc15c10a09b10fd4578671d7a74572ccb203b896c84bf2ba6de54ee599",
+      "tags": [
+        "Developer",
+        "Productivity"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "github_windows_1.0.0.knobdeck",
+      "readmeFile": "github_windows_readme.md"
     },
     {
       "id": "apple-music-macos",

@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-18T18:07:39Z",
+  "generated": "2026-11-18T18:19:48Z",
   "plugins": [
     {
       "id": "discord",
@@ -1688,6 +1688,64 @@
         }
       },
       "detail": "/v2/plugins/ai-stats.json"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "summary": "Notifications, review requests, your PRs, workflow runs and repo counters.",
+      "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+      "author": "KnobDeck",
+      "tags": [
+        "Developer",
+        "Productivity"
+      ],
+      "icon": "github",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-18T18:17:15Z",
+        "platforms": {
+          "linux": {
+            "id": "github-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_linux_1.0.0.knobdeck",
+            "sha256": "9351cff2be126fd07f9ef0f404e559cbde7acba7a7ce0f4052f264ba5d0d159d",
+            "size": 3522622,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-linux/readme.md"
+          },
+          "macos": {
+            "id": "github-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_macos_1.0.0.knobdeck",
+            "sha256": "8ee6d29979517f778298a73b55b92ed4c460edb7cb08cfa50dd09cedffa83dd9",
+            "size": 3729252,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-macos/readme.md"
+          },
+          "windows": {
+            "id": "github-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_windows_1.0.0.knobdeck",
+            "sha256": "480689dc15c10a09b10fd4578671d7a74572ccb203b896c84bf2ba6de54ee599",
+            "size": 1797788,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/github.json"
     },
     {
       "id": "apple-music",
