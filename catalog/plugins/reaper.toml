@@ -1,0 +1,7 @@
+id = "reaper"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "reaper", tag = "reaper-v{version}" }
+first_party = true
+featured = false
+sort = 107
+tags = ["Audio", "Music", "Creative"]
+companions = []
