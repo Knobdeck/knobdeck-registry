@@ -1,0 +1,7 @@
+id = "midi"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "midi", tag = "midi-v{version}" }
+first_party = true
+featured = false
+sort = 105
+tags = ["Music", "Audio"]
+companions = []
