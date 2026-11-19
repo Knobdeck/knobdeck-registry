@@ -1,0 +1,7 @@
+id = "openrgb"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "openrgb", tag = "openrgb-v{version}" }
+first_party = true
+featured = false
+sort = 109
+tags = ["Lighting", "RGB"]
+companions = []

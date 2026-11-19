@@ -1,0 +1,7 @@
+id = "mqtt"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "mqtt", tag = "mqtt-v{version}" }
+first_party = true
+featured = false
+sort = 108
+tags = ["Smart home", "Automation"]
+companions = []
