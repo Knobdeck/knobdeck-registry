@@ -6,7 +6,7 @@
       "name": "KnobDeck add-on for Blender",
       "repository": "https://github.com/Knobdeck/knobdeck-blender-companion",
       "runsIn": "Blender 4.2 and newer",
-      "latest": null,
+      "latest": "1.0.0",
       "minVersion": null,
       "plugins": [
         "blender"
