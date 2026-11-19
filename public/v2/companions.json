@@ -18,7 +18,7 @@
       "name": "KnobDeck Browser Companion",
       "repository": "https://github.com/Knobdeck/knobdeck-browser-companion",
       "runsIn": "Chrome, Edge, Brave and other Chromium browsers; Firefox, Zen",
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "minVersion": null,
       "plugins": [
         "browser-plugin"
