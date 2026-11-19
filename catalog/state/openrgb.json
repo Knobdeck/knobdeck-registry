@@ -1,4 +1,153 @@
 {
   "id": "openrgb",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "openrgb-v1.0.0",
+      "released": "2026-11-19T07:36:51Z",
+      "notes": "- First release: load profiles (key and wheel), set a colour on every device or one, and a\n  brightness dial, through OpenRGB's SDK server.",
+      "meta": {
+        "dir": "openrgb",
+        "version": "1.0.0",
+        "name": "OpenRGB",
+        "summary": "RGB lighting through OpenRGB: load profiles, set a colour on all devices or one, brightness dial.",
+        "tags": [
+          "Lighting",
+          "RGB"
+        ],
+        "sort": 109
+      },
+      "platforms": {
+        "linux": {
+          "id": "openrgb-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_linux_1.0.0.knobdeck",
+          "sha256": "2fcd2d603ff71a50008d35e691a1d93331780481b31a14c6c0234b1d730993a9",
+          "size": 484760,
+          "file": "openrgb_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_linux_readme.md",
+          "readmeFile": "openrgb_linux_readme.md",
+          "name": "OpenRGB",
+          "description": "RGB lighting through OpenRGB: load profiles, set a colour on every device or one, and a brightness dial.",
+          "author": "KnobDeck",
+          "icon": "palette",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "openrgb-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_macos_1.0.0.knobdeck",
+          "sha256": "674ae28cb64590c590d678d49acbf8487b104c17676f3cf55f5a5e19a282dc8c",
+          "size": 886382,
+          "file": "openrgb_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_macos_readme.md",
+          "readmeFile": "openrgb_macos_readme.md",
+          "name": "OpenRGB",
+          "description": "RGB lighting through OpenRGB: load profiles, set a colour on every device or one, and a brightness dial.",
+          "author": "KnobDeck",
+          "icon": "palette",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "openrgb-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_windows_1.0.0.knobdeck",
+          "sha256": "bd84385b42cfe3438ef7bde93b4fee4d42dc22ff95eec7a39e4d97ec1af96951",
+          "size": 308553,
+          "file": "openrgb_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_windows_readme.md",
+          "readmeFile": "openrgb_windows_readme.md",
+          "name": "OpenRGB",
+          "description": "RGB lighting through OpenRGB: load profiles, set a colour on every device or one, and a brightness dial.",
+          "author": "KnobDeck",
+          "icon": "palette",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "profile": {
+          "type": "button",
+          "label": "Load Profile",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "profile",
+              "type": "select",
+              "label": "Profile"
+            }
+          ]
+        },
+        "profiles-wheel": {
+          "type": "wheel",
+          "label": "Profiles Wheel",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "set-color": {
+          "type": "button",
+          "label": "Set Color",
+          "icon": "paintbrush",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "color",
+              "type": "text",
+              "label": "Color (#RRGGBB)",
+              "default": "#FF8800"
+            }
+          ]
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
 }

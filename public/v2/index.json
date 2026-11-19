@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-19T07:33:20Z",
+  "generated": "2026-11-19T07:37:14Z",
   "plugins": [
     {
       "id": "discord",
@@ -2452,6 +2452,106 @@
       "detail": "/v2/plugins/network.json"
     },
     {
+      "id": "midi",
+      "name": "MIDI",
+      "summary": "Send notes, CCs and program changes to any MIDI port, turn a CC on a dial, and see incoming values on a key.",
+      "description": "Send MIDI notes, control changes, program changes and raw messages to any MIDI port, turn a CC on a dial, and show incoming CCs and notes on a key.",
+      "author": "KnobDeck",
+      "tags": [
+        "Music",
+        "Audio"
+      ],
+      "icon": "piano",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:36:45Z",
+        "platforms": {
+          "linux": {
+            "id": "midi-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_linux_1.0.0.knobdeck",
+            "sha256": "ca4af20253f6c5481bcfd921418d4402748d3a0ce8a08b0b91198bd5ccf873ae",
+            "size": 316512,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/midi-linux/readme.md"
+          },
+          "macos": {
+            "id": "midi-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_macos_1.0.0.knobdeck",
+            "sha256": "ff74dd302ff03164977cc1edd1b8b2a700ebbeeacbdc5e4e993df39eb932afa0",
+            "size": 572018,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/midi-macos/readme.md"
+          },
+          "windows": {
+            "id": "midi-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_windows_1.0.0.knobdeck",
+            "sha256": "09498dd9a57d9f07e7131b1bcdc0c86b192ee366cf5afe0dbfd9c790f71fc3fe",
+            "size": 225312,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/midi-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/midi.json"
+    },
+    {
+      "id": "daw-mackie",
+      "name": "DAW Control (Mackie)",
+      "summary": "Control your DAW as a Mackie Control surface: transport, jog, faders, banks, mute / solo / arm, with its LEDs and track names.",
+      "description": "Control your DAW as a Mackie Control surface: transport, jog wheel, faders, V-Pots, banks, mute / solo / record arm / select, with the DAW's LEDs, fader positions, track names and time display.",
+      "author": "KnobDeck",
+      "tags": [
+        "Music",
+        "Audio"
+      ],
+      "icon": "sliders-vertical",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:36:41Z",
+        "platforms": {
+          "linux": {
+            "id": "daw-mackie-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.0/daw-mackie_linux_1.0.0.knobdeck",
+            "sha256": "3fc628411550b87876944e988afc1f14dc5efc8e02f5697c3379d403f5e3a197",
+            "size": 493690,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/daw-mackie-linux/readme.md"
+          },
+          "macos": {
+            "id": "daw-mackie-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.0/daw-mackie_macos_1.0.0.knobdeck",
+            "sha256": "cdd93fefce598bb012334ff7c06cf413e994528ea0faad311985d0fd3064ed53",
+            "size": 901165,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/daw-mackie-macos/readme.md"
+          },
+          "windows": {
+            "id": "daw-mackie-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.0/daw-mackie_windows_1.0.0.knobdeck",
+            "sha256": "bc710d041462a48a000ffa1c0ad1331ac5dfb5b253034dacb9aa9bc60002d545",
+            "size": 317544,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/daw-mackie-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/daw-mackie.json"
+    },
+    {
       "id": "reaper",
       "name": "REAPER",
       "summary": "Transport with live state, markers, any action by command id, track volume / pan dials, mute, solo, arm.",
@@ -2501,6 +2601,114 @@
         }
       },
       "detail": "/v2/plugins/reaper.json"
+    },
+    {
+      "id": "mqtt",
+      "name": "MQTT",
+      "summary": "Publish to your MQTT broker, toggle and dim devices, show a topic's value. Zigbee2MQTT, Tasmota, Shelly.",
+      "description": "Publish messages, toggle and dim devices, and show a topic's value on a key through your MQTT broker. Works with Zigbee2MQTT, Tasmota and Shelly.",
+      "author": "KnobDeck",
+      "tags": [
+        "Smart home",
+        "Automation"
+      ],
+      "icon": "radio-tower",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:36:48Z",
+        "platforms": {
+          "linux": {
+            "id": "mqtt-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_linux_1.0.0.knobdeck",
+            "sha256": "43a4dee8aa2f92dfaf5db39a9a7d79e6a5a470c9f4b1b2a5fad80a2b29683c93",
+            "size": 3254253,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mqtt-linux/readme.md"
+          },
+          "macos": {
+            "id": "mqtt-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_macos_1.0.0.knobdeck",
+            "sha256": "0d56d928574c0119bbcaf97c624979336db2d306fcf9aed505c986220cfca24a",
+            "size": 3197690,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mqtt-macos/readme.md"
+          },
+          "windows": {
+            "id": "mqtt-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_windows_1.0.0.knobdeck",
+            "sha256": "113f2a53d06ee432bd98a0d8c0b8bb0464c44ab52ea73b335f98107c3b50b7c4",
+            "size": 1535460,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mqtt-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/mqtt.json"
+    },
+    {
+      "id": "openrgb",
+      "name": "OpenRGB",
+      "summary": "RGB lighting through OpenRGB: load profiles, set a colour on all devices or one, brightness dial.",
+      "description": "RGB lighting through OpenRGB: load profiles, set a colour on every device or one, and a brightness dial.",
+      "author": "KnobDeck",
+      "tags": [
+        "Lighting",
+        "RGB"
+      ],
+      "icon": "palette",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:36:51Z",
+        "platforms": {
+          "linux": {
+            "id": "openrgb-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_linux_1.0.0.knobdeck",
+            "sha256": "2fcd2d603ff71a50008d35e691a1d93331780481b31a14c6c0234b1d730993a9",
+            "size": 484760,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/openrgb-linux/readme.md"
+          },
+          "macos": {
+            "id": "openrgb-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_macos_1.0.0.knobdeck",
+            "sha256": "674ae28cb64590c590d678d49acbf8487b104c17676f3cf55f5a5e19a282dc8c",
+            "size": 886382,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/openrgb-macos/readme.md"
+          },
+          "windows": {
+            "id": "openrgb-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_windows_1.0.0.knobdeck",
+            "sha256": "bd84385b42cfe3438ef7bde93b4fee4d42dc22ff95eec7a39e4d97ec1af96951",
+            "size": 308553,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/openrgb-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/openrgb.json"
     }
   ]
 }

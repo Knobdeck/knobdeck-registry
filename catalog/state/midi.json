@@ -1,4 +1,468 @@
 {
   "id": "midi",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "midi-v1.0.0",
+      "released": "2026-11-19T07:36:45Z",
+      "notes": "- First release: Note, Control Change, CC Toggle, CC Dial, Program Change, Send MIDI Message and\n  Received Value, on any MIDI port; a virtual \"KnobDeck\" port on macOS and Linux.",
+      "meta": {
+        "dir": "midi",
+        "version": "1.0.0",
+        "name": "MIDI",
+        "summary": "Send notes, CCs and program changes to any MIDI port, turn a CC on a dial, and see incoming values on a key.",
+        "tags": [
+          "Music",
+          "Audio"
+        ],
+        "sort": 105
+      },
+      "platforms": {
+        "linux": {
+          "id": "midi-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_linux_1.0.0.knobdeck",
+          "sha256": "ca4af20253f6c5481bcfd921418d4402748d3a0ce8a08b0b91198bd5ccf873ae",
+          "size": 316512,
+          "file": "midi_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_linux_readme.md",
+          "readmeFile": "midi_linux_readme.md",
+          "name": "MIDI",
+          "description": "Send MIDI notes, control changes, program changes and raw messages to any MIDI port, turn a CC on a dial, and show incoming CCs and notes on a key.",
+          "author": "KnobDeck",
+          "icon": "piano",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "midi-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_macos_1.0.0.knobdeck",
+          "sha256": "ff74dd302ff03164977cc1edd1b8b2a700ebbeeacbdc5e4e993df39eb932afa0",
+          "size": 572018,
+          "file": "midi_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_macos_readme.md",
+          "readmeFile": "midi_macos_readme.md",
+          "name": "MIDI",
+          "description": "Send MIDI notes, control changes, program changes and raw messages to any MIDI port, turn a CC on a dial, and show incoming CCs and notes on a key.",
+          "author": "KnobDeck",
+          "icon": "piano",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "midi-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_windows_1.0.0.knobdeck",
+          "sha256": "09498dd9a57d9f07e7131b1bcdc0c86b192ee366cf5afe0dbfd9c790f71fc3fe",
+          "size": 225312,
+          "file": "midi_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_windows_readme.md",
+          "readmeFile": "midi_windows_readme.md",
+          "name": "MIDI",
+          "description": "Send MIDI notes, control changes, program changes and raw messages to any MIDI port, turn a CC on a dial, and show incoming CCs and notes on a key.",
+          "author": "KnobDeck",
+          "icon": "piano",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "note": {
+          "type": "hold",
+          "label": "Note",
+          "icon": "piano",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Send to",
+              "default": ""
+            },
+            {
+              "key": "channel",
+              "type": "select",
+              "label": "Channel",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "note",
+              "type": "text",
+              "label": "Note (number or name)",
+              "default": "C4"
+            },
+            {
+              "key": "velocity",
+              "type": "text",
+              "label": "Velocity",
+              "default": "100"
+            }
+          ],
+          "released": {
+            "label": "Note",
+            "icon": "piano"
+          },
+          "held": {
+            "label": "Playing",
+            "icon": "music"
+          }
+        },
+        "cc": {
+          "type": "button",
+          "label": "Control Change",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Send to",
+              "default": ""
+            },
+            {
+              "key": "channel",
+              "type": "select",
+              "label": "Channel",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "controller",
+              "type": "text",
+              "label": "Controller (CC number)",
+              "default": "7"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Value",
+              "default": "127"
+            }
+          ]
+        },
+        "cc-toggle": {
+          "type": "toggle",
+          "label": "CC Toggle",
+          "icon": "toggle-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Send to",
+              "default": ""
+            },
+            {
+              "key": "channel",
+              "type": "select",
+              "label": "Channel",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "controller",
+              "type": "text",
+              "label": "Controller (CC number)",
+              "default": "64"
+            },
+            {
+              "key": "on",
+              "type": "text",
+              "label": "On value",
+              "default": "127"
+            },
+            {
+              "key": "off",
+              "type": "text",
+              "label": "Off value",
+              "default": "0"
+            },
+            {
+              "key": "feedback",
+              "type": "select",
+              "label": "Follow values from (optional)",
+              "default": "none"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "toggle-left"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "toggle-right"
+            }
+          ]
+        },
+        "cc-dial": {
+          "type": "slider",
+          "label": "CC Dial",
+          "icon": "circle-gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Send to",
+              "default": ""
+            },
+            {
+              "key": "channel",
+              "type": "select",
+              "label": "Channel",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "controller",
+              "type": "text",
+              "label": "Controller (CC number)",
+              "default": "1"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step",
+              "default": "1"
+            },
+            {
+              "key": "feedback",
+              "type": "select",
+              "label": "Follow values from (optional)",
+              "default": "none"
+            }
+          ],
+          "min": 0,
+          "max": 127,
+          "step": 1,
+          "unit": null
+        },
+        "program": {
+          "type": "button",
+          "label": "Program Change",
+          "icon": "list-music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Send to",
+              "default": ""
+            },
+            {
+              "key": "channel",
+              "type": "select",
+              "label": "Channel",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "program",
+              "type": "text",
+              "label": "Program (1–128)",
+              "default": "1"
+            },
+            {
+              "key": "bank",
+              "type": "text",
+              "label": "Bank (optional, 1–16384)"
+            }
+          ]
+        },
+        "raw": {
+          "type": "button",
+          "label": "Send MIDI Message",
+          "icon": "binary",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Send to",
+              "default": ""
+            },
+            {
+              "key": "bytes",
+              "type": "text",
+              "label": "Bytes (hex)"
+            }
+          ]
+        },
+        "received": {
+          "type": "button",
+          "label": "Received Value",
+          "icon": "activity",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Listen on",
+              "default": ""
+            },
+            {
+              "key": "kind",
+              "type": "select",
+              "label": "Message",
+              "default": "cc",
+              "options": [
+                "cc",
+                "note",
+                "program",
+                "pitch",
+                "any"
+              ]
+            },
+            {
+              "key": "channel",
+              "type": "select",
+              "label": "Channel",
+              "default": "any",
+              "options": [
+                "any",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "number",
+              "type": "text",
+              "label": "Controller or note"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    }
+  ]
 }

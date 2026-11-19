@@ -1,4 +1,332 @@
 {
   "id": "mqtt",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "mqtt-v1.0.0",
+      "released": "2026-11-19T07:36:48Z",
+      "notes": "- First release: Publish (placeholders, QoS, retain), Toggle with state from a topic, Topic Value\n  (JSON path, wildcards) and Value Dial, through your MQTT broker with optional TLS and login.",
+      "meta": {
+        "dir": "mqtt",
+        "version": "1.0.0",
+        "name": "MQTT",
+        "summary": "Publish to your MQTT broker, toggle and dim devices, show a topic's value. Zigbee2MQTT, Tasmota, Shelly.",
+        "tags": [
+          "Smart home",
+          "Automation"
+        ],
+        "sort": 108
+      },
+      "platforms": {
+        "linux": {
+          "id": "mqtt-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_linux_1.0.0.knobdeck",
+          "sha256": "43a4dee8aa2f92dfaf5db39a9a7d79e6a5a470c9f4b1b2a5fad80a2b29683c93",
+          "size": 3254253,
+          "file": "mqtt_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_linux_readme.md",
+          "readmeFile": "mqtt_linux_readme.md",
+          "name": "MQTT",
+          "description": "Publish messages, toggle and dim devices, and show a topic's value on a key through your MQTT broker. Works with Zigbee2MQTT, Tasmota and Shelly.",
+          "author": "KnobDeck",
+          "icon": "radio-tower",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "mqtt-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_macos_1.0.0.knobdeck",
+          "sha256": "0d56d928574c0119bbcaf97c624979336db2d306fcf9aed505c986220cfca24a",
+          "size": 3197690,
+          "file": "mqtt_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_macos_readme.md",
+          "readmeFile": "mqtt_macos_readme.md",
+          "name": "MQTT",
+          "description": "Publish messages, toggle and dim devices, and show a topic's value on a key through your MQTT broker. Works with Zigbee2MQTT, Tasmota and Shelly.",
+          "author": "KnobDeck",
+          "icon": "radio-tower",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "mqtt-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_windows_1.0.0.knobdeck",
+          "sha256": "113f2a53d06ee432bd98a0d8c0b8bb0464c44ab52ea73b335f98107c3b50b7c4",
+          "size": 1535460,
+          "file": "mqtt_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_windows_readme.md",
+          "readmeFile": "mqtt_windows_readme.md",
+          "name": "MQTT",
+          "description": "Publish messages, toggle and dim devices, and show a topic's value on a key through your MQTT broker. Works with Zigbee2MQTT, Tasmota and Shelly.",
+          "author": "KnobDeck",
+          "icon": "radio-tower",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "publish": {
+          "type": "button",
+          "label": "Publish",
+          "icon": "send",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "topic",
+              "type": "text",
+              "label": "Topic"
+            },
+            {
+              "key": "payload",
+              "type": "textarea",
+              "label": "Message"
+            },
+            {
+              "key": "qos",
+              "type": "select",
+              "label": "QoS",
+              "default": "0",
+              "options": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            {
+              "key": "retain",
+              "type": "checkbox",
+              "label": "Retain (the broker keeps the last message for new subscribers)",
+              "default": false
+            }
+          ]
+        },
+        "toggle": {
+          "type": "toggle",
+          "label": "Toggle",
+          "icon": "toggle-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "topic",
+              "type": "text",
+              "label": "Command topic"
+            },
+            {
+              "key": "on_payload",
+              "type": "text",
+              "label": "On message",
+              "default": "ON"
+            },
+            {
+              "key": "off_payload",
+              "type": "text",
+              "label": "Off message",
+              "default": "OFF"
+            },
+            {
+              "key": "state_topic",
+              "type": "text",
+              "label": "State topic (optional)"
+            },
+            {
+              "key": "state_path",
+              "type": "text",
+              "label": "State JSON path (optional)"
+            },
+            {
+              "key": "on_value",
+              "type": "text",
+              "label": "On when the state is (optional)"
+            },
+            {
+              "key": "qos",
+              "type": "select",
+              "label": "QoS",
+              "default": "0",
+              "options": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            {
+              "key": "retain",
+              "type": "checkbox",
+              "label": "Retain (the broker keeps the last message for new subscribers)",
+              "default": false
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "toggle-left"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "toggle-right"
+            }
+          ]
+        },
+        "value": {
+          "type": "button",
+          "label": "Topic Value",
+          "icon": "radio-receiver",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "topic",
+              "type": "text",
+              "label": "Topic"
+            },
+            {
+              "key": "path",
+              "type": "text",
+              "label": "JSON path (optional)"
+            },
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Title (optional)"
+            },
+            {
+              "key": "prefix",
+              "type": "text",
+              "label": "Before the value (optional)"
+            },
+            {
+              "key": "suffix",
+              "type": "text",
+              "label": "After the value (optional)"
+            }
+          ]
+        },
+        "dial": {
+          "type": "slider",
+          "label": "Value Dial",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "topic",
+              "type": "text",
+              "label": "Command topic"
+            },
+            {
+              "key": "payload",
+              "type": "text",
+              "label": "Message",
+              "default": "{value}"
+            },
+            {
+              "key": "min",
+              "type": "text",
+              "label": "From",
+              "default": "0"
+            },
+            {
+              "key": "max",
+              "type": "text",
+              "label": "To",
+              "default": "100"
+            },
+            {
+              "key": "decimals",
+              "type": "text",
+              "label": "Decimals",
+              "default": "0"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (% of the range)",
+              "default": "5"
+            },
+            {
+              "key": "state_topic",
+              "type": "text",
+              "label": "State topic (optional)"
+            },
+            {
+              "key": "state_path",
+              "type": "text",
+              "label": "State JSON path (optional)"
+            },
+            {
+              "key": "qos",
+              "type": "select",
+              "label": "QoS",
+              "default": "0",
+              "options": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            {
+              "key": "retain",
+              "type": "checkbox",
+              "label": "Retain (the broker keeps the last message for new subscribers)",
+              "default": false
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        }
+      },
+      "setup": true,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    }
+  ]
 }
