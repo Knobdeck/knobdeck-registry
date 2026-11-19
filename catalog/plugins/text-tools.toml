@@ -1,0 +1,7 @@
+id = "text-tools"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "text-tools", tag = "text-tools-v{version}" }
+first_party = true
+featured = false
+sort = 101
+tags = ["Productivity", "Text"]
+companions = []
