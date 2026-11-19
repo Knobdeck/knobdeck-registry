@@ -2,6 +2,349 @@
   "id": "spotify",
   "versions": [
     {
+      "version": "1.3.0",
+      "tag": "spotify-v1.3.0",
+      "released": "2026-11-19T10:58:45Z",
+      "notes": "- Web API keys, through your own Spotify app (setup asks for its client ID; see the readme): Like\n  Song, Shuffle, Repeat, Spotify Volume (dial), Play On Device and a Devices wheel (Spotify Connect\n  transfer), Play Playlist, a Playlists wheel, Add Song to Playlist and Add to Queue (a song or\n  episode link; `{clipboard}` works). Player commands need Spotify Premium.\n- Play / Pause, Next, Previous and Now Playing are unchanged and need no setup: leave the client ID\n  empty. Web API keys say \"Set up your Spotify app first\" until it is set.\n- Uses Spotify's current library and playlist endpoints (`/me/library`, `/playlists/{id}/items`).",
+      "meta": {
+        "dir": "spotify",
+        "version": "1.3.0",
+        "name": "Spotify",
+        "summary": "Play, pause, skip and now playing; likes, shuffle, volume, devices, playlists and the queue with your own Spotify app.",
+        "tags": [
+          "Music",
+          "Media"
+        ],
+        "featured": true,
+        "sort": 15
+      },
+      "platforms": {
+        "linux": {
+          "id": "spotify-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_linux_1.3.0.knobdeck",
+          "sha256": "7a790bbc4f7ca0e9e46f45287d532737fc6f5591fab74bae185ae4e3fe038ff2",
+          "size": 3552530,
+          "file": "spotify_linux_1.3.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_linux_readme.md",
+          "readmeFile": "spotify_linux_readme.md",
+          "name": "Spotify",
+          "description": "Play, pause, skip and now playing for the Spotify desktop app; likes, shuffle, repeat, volume, devices, playlists and the queue with your own Spotify app.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "spotify-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_macos_1.3.0.knobdeck",
+          "sha256": "6a15baadec04df1e30cb2cbd42aca5cbe2d47f31e281fb5d2d8e56104b48a39c",
+          "size": 3755122,
+          "file": "spotify_macos_1.3.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_macos_readme.md",
+          "readmeFile": "spotify_macos_readme.md",
+          "name": "Spotify",
+          "description": "Play, pause, skip and now playing for the Spotify desktop app; likes, shuffle, repeat, volume, devices, playlists and the queue with your own Spotify app.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "spotify-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_windows_1.3.0.knobdeck",
+          "sha256": "58061719073659036a1f048096cedf79fcfb30fd9b3f3dbd63989ef2e5337d8c",
+          "size": 1814258,
+          "file": "spotify_windows_1.3.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_windows_readme.md",
+          "readmeFile": "spotify_windows_readme.md",
+          "name": "Spotify",
+          "description": "Play, pause, skip and now playing for the Spotify desktop app; likes, shuffle, repeat, volume, devices, playlists and the queue with your own Spotify app.",
+          "author": "KnobDeck",
+          "icon": "music",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "pause"
+            }
+          ]
+        },
+        "next": {
+          "type": "button",
+          "label": "Next Track",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous Track",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "now-playing": {
+          "type": "button",
+          "label": "Now Playing",
+          "icon": "music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "like": {
+          "type": "toggle",
+          "label": "Like Song",
+          "icon": "heart",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "not-liked",
+              "label": "Not Liked",
+              "icon": "heart-plus"
+            },
+            {
+              "value": "liked",
+              "label": "Liked",
+              "icon": "heart"
+            }
+          ]
+        },
+        "shuffle": {
+          "type": "toggle",
+          "label": "Shuffle",
+          "icon": "shuffle",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Shuffle Off",
+              "icon": "arrow-right"
+            },
+            {
+              "value": "on",
+              "label": "Shuffle On",
+              "icon": "shuffle"
+            }
+          ]
+        },
+        "repeat": {
+          "type": "toggle",
+          "label": "Repeat",
+          "icon": "repeat",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Repeat Off",
+              "icon": "arrow-right"
+            },
+            {
+              "value": "context",
+              "label": "Repeat All",
+              "icon": "repeat"
+            },
+            {
+              "value": "track",
+              "label": "Repeat One",
+              "icon": "repeat-1"
+            }
+          ]
+        },
+        "volume": {
+          "type": "slider",
+          "label": "Spotify Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "device": {
+          "type": "button",
+          "label": "Play On Device",
+          "icon": "monitor-speaker",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "combobox",
+              "label": "Device"
+            }
+          ]
+        },
+        "devices-wheel": {
+          "type": "wheel",
+          "label": "Devices",
+          "icon": "monitor-speaker",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "play-playlist": {
+          "type": "button",
+          "label": "Play Playlist",
+          "icon": "list-music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "playlist",
+              "type": "combobox",
+              "label": "Playlist"
+            }
+          ]
+        },
+        "add-to-playlist": {
+          "type": "button",
+          "label": "Add Song to Playlist",
+          "icon": "list-plus",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "playlist",
+              "type": "combobox",
+              "label": "Playlist"
+            }
+          ]
+        },
+        "add-to-queue": {
+          "type": "button",
+          "label": "Add to Queue",
+          "icon": "list-end",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "link",
+              "type": "text",
+              "label": "Song or episode link"
+            }
+          ]
+        },
+        "playlists-wheel": {
+          "type": "wheel",
+          "label": "Playlists",
+          "icon": "list-music",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.2.1",
       "tag": "spotify-v1.2.1",
       "released": "2026-11-17T14:20:56Z",

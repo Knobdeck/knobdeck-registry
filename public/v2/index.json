@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-19T07:37:14Z",
+  "generated": "2026-11-19T10:59:11Z",
   "plugins": [
     {
       "id": "discord",
@@ -55,8 +55,8 @@
     {
       "id": "spotify",
       "name": "Spotify",
-      "summary": "Play, pause, skip and now playing for the Spotify desktop app.",
-      "description": "Play, pause, skip and now playing for the Spotify desktop app.",
+      "summary": "Play, pause, skip and now playing; likes, shuffle, volume, devices, playlists and the queue with your own Spotify app.",
+      "description": "Play, pause, skip and now playing for the Spotify desktop app; likes, shuffle, repeat, volume, devices, playlists and the queue with your own Spotify app.",
       "author": "KnobDeck",
       "tags": [
         "Music",
@@ -73,31 +73,37 @@
       "minHost": null,
       "companions": [],
       "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
         "window"
       ],
       "latest": {
-        "version": "1.2.1",
-        "released": "2026-11-17T14:20:56Z",
+        "version": "1.3.0",
+        "released": "2026-11-19T10:58:45Z",
         "platforms": {
           "linux": {
             "id": "spotify-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_linux_1.2.1.knobdeck",
-            "sha256": "f4733d591b55481280bc118247bdb9b0389f0831bbe8f7d60ba824e8728304f6",
-            "size": 806047,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_linux_1.3.0.knobdeck",
+            "sha256": "7a790bbc4f7ca0e9e46f45287d532737fc6f5591fab74bae185ae4e3fe038ff2",
+            "size": 3552530,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-linux/readme.md"
           },
           "macos": {
             "id": "spotify-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_macos_1.2.1.knobdeck",
-            "sha256": "8d5ad3198270e76ad9dd34261912483f53738dcf0997a1132cacf1074a401fa3",
-            "size": 523329,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_macos_1.3.0.knobdeck",
+            "sha256": "6a15baadec04df1e30cb2cbd42aca5cbe2d47f31e281fb5d2d8e56104b48a39c",
+            "size": 3755122,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-macos/readme.md"
           },
           "windows": {
             "id": "spotify-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.2.1/spotify_windows_1.2.1.knobdeck",
-            "sha256": "b1c7ed3c0871481c078e436f365679c4f539206c62c9a20e086bc6a7f855d152",
-            "size": 186807,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.0/spotify_windows_1.3.0.knobdeck",
+            "sha256": "58061719073659036a1f048096cedf79fcfb30fd9b3f3dbd63989ef2e5337d8c",
+            "size": 1814258,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-windows/readme.md"
           }
         }
@@ -781,28 +787,28 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.1.0",
-        "released": "2026-11-17T14:20:36Z",
+        "version": "1.2.0",
+        "released": "2026-11-19T10:58:41Z",
         "platforms": {
           "linux": {
             "id": "home-assistant-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_linux_1.1.0.knobdeck",
-            "sha256": "18f341ebde51ece2a0d58f7ac54f318709306510bec31307eb0c1811562c7a98",
-            "size": 2890338,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.2.0/home-assistant_linux_1.2.0.knobdeck",
+            "sha256": "aef707db57592854e3d77d9e3a0ce8d0e357bda258cf063a2ebe63d258f34027",
+            "size": 2948026,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-linux/readme.md"
           },
           "macos": {
             "id": "home-assistant-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_macos_1.1.0.knobdeck",
-            "sha256": "87cba3b93b75440f6a0c3c9643ddb99941dc2a64ba974ff14194ec50eb01a0a7",
-            "size": 3537862,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.2.0/home-assistant_macos_1.2.0.knobdeck",
+            "sha256": "3d237ba602806e33296d5de01e61b816733639488a60537559225b22d1d39426",
+            "size": 3652248,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-macos/readme.md"
           },
           "windows": {
             "id": "home-assistant-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_windows_1.1.0.knobdeck",
-            "sha256": "5168e45ca1a656cfb860eeef5e73d266d4aa89eefe430d40aa9e22294121f001",
-            "size": 1680762,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.2.0/home-assistant_windows_1.2.0.knobdeck",
+            "sha256": "6760a1330ebecc78839f3996fe56559b27ab3bf088885038ffd0dc7628273bf2",
+            "size": 1740115,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-windows/readme.md"
           }
         }

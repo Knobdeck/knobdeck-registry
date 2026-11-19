@@ -4,35 +4,42 @@
   "name": "Home Assistant",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:20:36Z",
+    "version": "1.2.0",
+    "released": "2026-11-19T10:58:41Z",
     "platforms": {
       "linux": {
         "id": "home-assistant-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_linux_1.1.0.knobdeck",
-        "sha256": "18f341ebde51ece2a0d58f7ac54f318709306510bec31307eb0c1811562c7a98",
-        "size": 2890338,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.2.0/home-assistant_linux_1.2.0.knobdeck",
+        "sha256": "aef707db57592854e3d77d9e3a0ce8d0e357bda258cf063a2ebe63d258f34027",
+        "size": 2948026,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-linux/readme.md"
       },
       "macos": {
         "id": "home-assistant-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_macos_1.1.0.knobdeck",
-        "sha256": "87cba3b93b75440f6a0c3c9643ddb99941dc2a64ba974ff14194ec50eb01a0a7",
-        "size": 3537862,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.2.0/home-assistant_macos_1.2.0.knobdeck",
+        "sha256": "3d237ba602806e33296d5de01e61b816733639488a60537559225b22d1d39426",
+        "size": 3652248,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-macos/readme.md"
       },
       "windows": {
         "id": "home-assistant-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.1.0/home-assistant_windows_1.1.0.knobdeck",
-        "sha256": "5168e45ca1a656cfb860eeef5e73d266d4aa89eefe430d40aa9e22294121f001",
-        "size": 1680762,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/home-assistant-v1.2.0/home-assistant_windows_1.2.0.knobdeck",
+        "sha256": "6760a1330ebecc78839f3996fe56559b27ab3bf088885038ffd0dc7628273bf2",
+        "size": 1740115,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/home-assistant-windows/readme.md"
       }
     }
   },
-  "changelog": "Home Assistant 1.1.0 for linux, macos, windows.",
+  "changelog": "- Keys follow entities live over Home Assistant's WebSocket API (`/api/websocket`, the same\n  long-lived token): a change made in Home Assistant, by an automation or a wall switch shows at\n  once instead of at the next poll. `wss://` (Nabu Casa, a reverse proxy) works too.\n- When the WebSocket connection drops the plugin polls over REST as before, and reconnects with\n  back-off (1 s up to 60 s).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "home-assistant-v1.2.0",
+      "released": "2026-11-19T10:58:41Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "home-assistant-v1.1.0",
