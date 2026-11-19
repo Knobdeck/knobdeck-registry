@@ -4,35 +4,42 @@
   "name": "GitHub",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T18:17:15Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:24Z",
     "platforms": {
       "linux": {
         "id": "github-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_linux_1.0.0.knobdeck",
-        "sha256": "9351cff2be126fd07f9ef0f404e559cbde7acba7a7ce0f4052f264ba5d0d159d",
-        "size": 3522622,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_linux_1.0.1.knobdeck",
+        "sha256": "01d570a46d12f2a8bc353e179eca247193c939b404a02ad50d2dcfa25634844c",
+        "size": 3525198,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-linux/readme.md"
       },
       "macos": {
         "id": "github-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_macos_1.0.0.knobdeck",
-        "sha256": "8ee6d29979517f778298a73b55b92ed4c460edb7cb08cfa50dd09cedffa83dd9",
-        "size": 3729252,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_macos_1.0.1.knobdeck",
+        "sha256": "a58d724d0621308b30ce7b80f00ccb6fb60e3298e2c8b31b4e5965728e38e1ee",
+        "size": 3731656,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-macos/readme.md"
       },
       "windows": {
         "id": "github-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.0/github_windows_1.0.0.knobdeck",
-        "sha256": "480689dc15c10a09b10fd4578671d7a74572ccb203b896c84bf2ba6de54ee599",
-        "size": 1797788,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_windows_1.0.1.knobdeck",
+        "sha256": "30960f70394884ab5be71d4b2cc6f5e053616c60c7172b6d1c0efcf8146ef2ac",
+        "size": 1800170,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/github-windows/readme.md"
       }
     }
   },
-  "changelog": "GitHub 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "github-v1.0.1",
+      "released": "2026-11-19T13:31:24Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "github-v1.0.0",

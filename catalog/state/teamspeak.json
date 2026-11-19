@@ -2,6 +2,209 @@
   "id": "teamspeak",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "teamspeak-v1.0.1",
+      "released": "2026-11-19T13:32:32Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "teamspeak",
+        "version": "1.0.1",
+        "name": "TeamSpeak",
+        "summary": "Mute mic and speakers, away, push-to-talk, current channel and who's talking (TeamSpeak 5/6 and 3).",
+        "tags": [
+          "Communication",
+          "Gaming"
+        ],
+        "sort": 98
+      },
+      "platforms": {
+        "linux": {
+          "id": "teamspeak-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_linux_1.0.1.knobdeck",
+          "sha256": "bd026d000e0b54be4f9a97b7dc8cae98e08675336604ac95a09c4043635eb967",
+          "size": 1568653,
+          "file": "teamspeak_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_linux_readme.md",
+          "readmeFile": "teamspeak_linux_readme.md",
+          "name": "TeamSpeak",
+          "description": "TeamSpeak microphone and speaker mute, away, push-to-talk, and the current channel and who is talking. TeamSpeak 5/6 (Remote Apps) and TeamSpeak 3 (ClientQuery).",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "teamspeak-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_macos_1.0.1.knobdeck",
+          "sha256": "8d6c6b612432e39e5c6fdfa8407423b587bebab011ec4619f78bfc3a1b7e3152",
+          "size": 1033930,
+          "file": "teamspeak_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_macos_readme.md",
+          "readmeFile": "teamspeak_macos_readme.md",
+          "name": "TeamSpeak",
+          "description": "TeamSpeak microphone and speaker mute, away, push-to-talk, and the current channel and who is talking. TeamSpeak 5/6 (Remote Apps) and TeamSpeak 3 (ClientQuery).",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "teamspeak-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_windows_1.0.1.knobdeck",
+          "sha256": "5dd2acba79a169edd99af4e147dc6074862148a3f78ffaf16b7021d2dec25faf",
+          "size": 390974,
+          "file": "teamspeak_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_windows_readme.md",
+          "readmeFile": "teamspeak_windows_readme.md",
+          "name": "TeamSpeak",
+          "description": "TeamSpeak microphone and speaker mute, away, push-to-talk, and the current channel and who is talking. TeamSpeak 5/6 (Remote Apps) and TeamSpeak 3 (ClientQuery).",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "mute-mic": {
+          "type": "toggle",
+          "label": "Mute Microphone",
+          "icon": "mic-off",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Mic On",
+              "icon": "mic"
+            },
+            {
+              "value": "muted",
+              "label": "Mic Muted",
+              "icon": "mic-off"
+            }
+          ]
+        },
+        "mute-speakers": {
+          "type": "toggle",
+          "label": "Mute Speakers",
+          "icon": "volume-x",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Sound On",
+              "icon": "volume-2"
+            },
+            {
+              "value": "muted",
+              "label": "Sound Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "away": {
+          "type": "toggle",
+          "label": "Away",
+          "icon": "moon",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "present",
+              "label": "Present",
+              "icon": "user-round-check"
+            },
+            {
+              "value": "away",
+              "label": "Away",
+              "icon": "moon"
+            }
+          ]
+        },
+        "push-to-talk": {
+          "type": "hold",
+          "label": "Push to Talk",
+          "icon": "mic",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "released": {
+            "label": "Push to Talk",
+            "icon": "mic-off"
+          },
+          "held": {
+            "label": "Talking",
+            "icon": "mic"
+          }
+        },
+        "channel": {
+          "type": "button",
+          "label": "Current Channel",
+          "icon": "hash",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "talking": {
+          "type": "button",
+          "label": "Who's Talking",
+          "icon": "audio-lines",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "button": {
+          "type": "hold",
+          "label": "TeamSpeak Button (5/6)",
+          "icon": "square-mouse-pointer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Button name"
+            }
+          ],
+          "released": {
+            "label": "TeamSpeak",
+            "icon": "square-mouse-pointer"
+          },
+          "held": {
+            "label": "Pressed",
+            "icon": "square-mouse-pointer"
+          }
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "teamspeak-v1.0.0",
       "released": "2026-11-18T18:29:29Z",

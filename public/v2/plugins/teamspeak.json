@@ -4,35 +4,42 @@
   "name": "TeamSpeak",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T18:29:29Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:32Z",
     "platforms": {
       "linux": {
         "id": "teamspeak-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.0/teamspeak_linux_1.0.0.knobdeck",
-        "sha256": "d85ed420b0e52dd3ae6e26bb33c1898aa0618177d67388cd49aa537dcb3f16fc",
-        "size": 1564488,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_linux_1.0.1.knobdeck",
+        "sha256": "bd026d000e0b54be4f9a97b7dc8cae98e08675336604ac95a09c4043635eb967",
+        "size": 1568653,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/teamspeak-linux/readme.md"
       },
       "macos": {
         "id": "teamspeak-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.0/teamspeak_macos_1.0.0.knobdeck",
-        "sha256": "a46af124986027d73f647598b711ac781617662c07e157edc605cb981fb9280e",
-        "size": 1029709,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_macos_1.0.1.knobdeck",
+        "sha256": "8d6c6b612432e39e5c6fdfa8407423b587bebab011ec4619f78bfc3a1b7e3152",
+        "size": 1033930,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/teamspeak-macos/readme.md"
       },
       "windows": {
         "id": "teamspeak-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.0/teamspeak_windows_1.0.0.knobdeck",
-        "sha256": "c44d67b8082ffeb56a23d8c3a6b8620c232659938b881a08c2e671fdd6ac5eb1",
-        "size": 386866,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/teamspeak-v1.0.1/teamspeak_windows_1.0.1.knobdeck",
+        "sha256": "5dd2acba79a169edd99af4e147dc6074862148a3f78ffaf16b7021d2dec25faf",
+        "size": 390974,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/teamspeak-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: Mute Microphone, Mute Speakers, Away, Push to Talk, Current Channel, Who's Talking\n  and TeamSpeak Button, for TeamSpeak 5/6 (Remote Apps) and TeamSpeak 3 (ClientQuery).",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "teamspeak-v1.0.1",
+      "released": "2026-11-19T13:32:32Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "teamspeak-v1.0.0",

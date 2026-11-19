@@ -2,6 +2,443 @@
   "id": "wled",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "wled-v1.0.1",
+      "released": "2026-11-19T13:34:11Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "wled",
+        "version": "1.0.1",
+        "name": "WLED",
+        "summary": "WLED LED strips: power, brightness, presets, effects with speed and intensity, palettes, color, segments.",
+        "tags": [
+          "Lighting",
+          "Smart home"
+        ],
+        "sort": 96
+      },
+      "platforms": {
+        "linux": {
+          "id": "wled-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_linux_1.0.1.knobdeck",
+          "sha256": "7ac372c185bfe67c688c8bbb7a796a802bd23fc453b227434cb2009fa57594b7",
+          "size": 1908512,
+          "file": "wled_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_linux_readme.md",
+          "readmeFile": "wled_linux_readme.md",
+          "name": "WLED",
+          "description": "LED strips and matrices running WLED: power, brightness, presets, effects with speed and intensity, palettes, color and segments.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "wled-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_macos_1.0.1.knobdeck",
+          "sha256": "9a24e638cce95ad5e4677a44456c970b498871d2ead53213ff5c9824dd10b33d",
+          "size": 3487966,
+          "file": "wled_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_macos_readme.md",
+          "readmeFile": "wled_macos_readme.md",
+          "name": "WLED",
+          "description": "LED strips and matrices running WLED: power, brightness, presets, effects with speed and intensity, palettes, color and segments.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "wled-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_windows_1.0.1.knobdeck",
+          "sha256": "2a9d42c92778a82b5ebc825d3ab8318d3047bfb8e39d5b79eb00c6c13e852e83",
+          "size": 1655072,
+          "file": "wled_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_windows_readme.md",
+          "readmeFile": "wled_windows_readme.md",
+          "name": "WLED",
+          "description": "LED strips and matrices running WLED: power, brightness, presets, effects with speed and intensity, palettes, color and segments.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "power": {
+          "type": "toggle",
+          "label": "Power",
+          "icon": "lightbulb",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "lightbulb-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "lightbulb"
+            }
+          ]
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "set-brightness": {
+          "type": "button",
+          "label": "Set Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Brightness (%)",
+              "default": "50"
+            }
+          ]
+        },
+        "preset": {
+          "type": "button",
+          "label": "Preset",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "preset",
+              "type": "select",
+              "label": "Preset"
+            }
+          ]
+        },
+        "presets-wheel": {
+          "type": "wheel",
+          "label": "Presets Wheel",
+          "icon": "bookmark",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            }
+          ]
+        },
+        "effect": {
+          "type": "button",
+          "label": "Effect",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            },
+            {
+              "key": "effect",
+              "type": "select",
+              "label": "Effect"
+            }
+          ]
+        },
+        "effect-dial": {
+          "type": "slider",
+          "label": "Effect (dial)",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            }
+          ],
+          "min": 0,
+          "max": 255,
+          "step": 1,
+          "unit": null
+        },
+        "effects-wheel": {
+          "type": "wheel",
+          "label": "Effects Wheel",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            },
+            {
+              "key": "names",
+              "type": "text",
+              "label": "Effects (comma separated, optional)"
+            }
+          ]
+        },
+        "speed": {
+          "type": "slider",
+          "label": "Effect Speed",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "intensity": {
+          "type": "slider",
+          "label": "Effect Intensity",
+          "icon": "flame",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "palette": {
+          "type": "button",
+          "label": "Palette",
+          "icon": "palette",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            },
+            {
+              "key": "palette",
+              "type": "select",
+              "label": "Palette"
+            }
+          ]
+        },
+        "set-color": {
+          "type": "button",
+          "label": "Set Color",
+          "icon": "paintbrush",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device",
+              "default": "__all__"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment",
+              "default": "selected"
+            },
+            {
+              "key": "color",
+              "type": "text",
+              "label": "Color (#RRGGBB)",
+              "default": "#FF8800"
+            },
+            {
+              "key": "slot",
+              "type": "select",
+              "label": "Color slot",
+              "default": "0",
+              "options": [
+                "0",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        },
+        "select-segment": {
+          "type": "button",
+          "label": "Select Segment",
+          "icon": "layers",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "device",
+              "type": "select",
+              "label": "Device"
+            },
+            {
+              "key": "segment",
+              "type": "select",
+              "label": "Segment"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "wled-v1.0.0",
       "released": "2026-11-18T17:58:56Z",

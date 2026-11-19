@@ -4,21 +4,28 @@
   "name": "macOS Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.8.0",
-    "released": "2026-11-19T11:04:08Z",
+    "version": "1.8.1",
+    "released": "2026-11-19T13:31:45Z",
     "platforms": {
       "macos": {
         "id": "mac-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.8.0/mac-tools_macos_1.8.0.knobdeck",
-        "sha256": "a83c78c35775a9ff95c3d731503df315af0fc15a11a5876c0b4c19da10a6377b",
-        "size": 962744,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.8.1/mac-tools_macos_1.8.1.knobdeck",
+        "sha256": "063378a446b88750537a4e082de5b463e4095f1059e0cbc05276a08e9fa5dbfa",
+        "size": 964989,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md"
       }
     }
   },
-  "changelog": "- New audio actions, matching Win Tools and Linux Tools (same ids and settings): Device Volume\n  slider, Mute Device, Set Audio Device, Toggle Audio Device and Push to Talk. Output volume uses\n  the system's virtual main volume (AudioToolbox), else the device's own volume controls; devices\n  are remembered by their CoreAudio UID.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.8.1",
+      "tag": "mac-tools-v1.8.1",
+      "released": "2026-11-19T13:31:45Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.8.0",
       "tag": "mac-tools-v1.8.0",

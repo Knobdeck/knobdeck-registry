@@ -2,6 +2,236 @@
   "id": "text-to-speech",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "text-to-speech-v1.0.1",
+      "released": "2026-11-19T13:32:35Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "text-to-speech",
+        "version": "1.0.1",
+        "name": "Text to Speech",
+        "summary": "Read the selection, the clipboard or your own text aloud; voice, rate and volume dials.",
+        "tags": [
+          "Accessibility",
+          "Productivity"
+        ],
+        "sort": 102
+      },
+      "platforms": {
+        "linux": {
+          "id": "text-to-speech-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_linux_1.0.1.knobdeck",
+          "sha256": "ec9e5d32f53464b638042601b303c405f39f34a8d6adf27d6631cfae911234d0",
+          "size": 977150,
+          "file": "text-to-speech_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_linux_readme.md",
+          "readmeFile": "text-to-speech_linux_readme.md",
+          "name": "Text to Speech",
+          "description": "Read the selected text, the clipboard or your own text aloud with your computer's voices. Stop it, pick the voice, and set rate and volume on dials.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "text-to-speech-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_macos_1.0.1.knobdeck",
+          "sha256": "ccf6bc250e57946f20f020638b0544a71eb8abbc4cd47094402abe31b384ca3d",
+          "size": 699047,
+          "file": "text-to-speech_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_macos_readme.md",
+          "readmeFile": "text-to-speech_macos_readme.md",
+          "name": "Text to Speech",
+          "description": "Read the selected text, the clipboard or your own text aloud with your computer's voices. Stop it, pick the voice, and set rate and volume on dials.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "text-to-speech-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_windows_1.0.1.knobdeck",
+          "sha256": "6d92e4831b89c025fc07ab62e07d113bb17cb57306a9210a5bf0ac9b94e5d368",
+          "size": 299546,
+          "file": "text-to-speech_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_windows_readme.md",
+          "readmeFile": "text-to-speech_windows_readme.md",
+          "name": "Text to Speech",
+          "description": "Read the selected text, the clipboard or your own text aloud with your computer's voices. Stop it, pick the voice, and set rate and volume on dials.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "speak": {
+          "type": "button",
+          "label": "Speak Text",
+          "icon": "speech",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "text",
+              "type": "textarea",
+              "label": "Text",
+              "default": "{selection}"
+            },
+            {
+              "key": "voice",
+              "type": "select",
+              "label": "Voice",
+              "default": ""
+            },
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "When pressed while speaking",
+              "default": "stop",
+              "options": [
+                "stop",
+                "restart"
+              ]
+            }
+          ]
+        },
+        "stop": {
+          "type": "toggle",
+          "label": "Stop Speaking",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "idle",
+              "label": "Not speaking",
+              "icon": "volume-x"
+            },
+            {
+              "value": "speaking",
+              "label": "Speaking",
+              "icon": "square"
+            }
+          ]
+        },
+        "voice": {
+          "type": "toggle",
+          "label": "Use Voice",
+          "icon": "user-round",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "voice",
+              "type": "select",
+              "label": "Voice"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Voice",
+              "icon": "user-round"
+            },
+            {
+              "value": "on",
+              "label": "Voice in use",
+              "icon": "user-round-check"
+            }
+          ]
+        },
+        "rate": {
+          "type": "slider",
+          "label": "Speech Rate",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "10"
+            }
+          ],
+          "min": 50,
+          "max": 300,
+          "step": 1,
+          "unit": "%"
+        },
+        "volume": {
+          "type": "slider",
+          "label": "Speech Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        }
+      },
+      "setup": false,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.0.0",
       "tag": "text-to-speech-v1.0.0",
       "released": "2026-11-19T07:27:28Z",

@@ -2,6 +2,247 @@
   "id": "soundboard",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "soundboard-v1.0.1",
+      "released": "2026-11-19T13:32:16Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "soundboard",
+        "version": "1.0.1",
+        "name": "Soundboard",
+        "summary": "Play sound files from a key to any output, or to a virtual mic and your headphones at once.",
+        "tags": [
+          "Audio",
+          "Streaming"
+        ],
+        "sort": 92
+      },
+      "platforms": {
+        "linux": {
+          "id": "soundboard-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_linux_1.0.1.knobdeck",
+          "sha256": "2db692f80496ac6a0b163254005f80697729f12c75d349edfc3e51dfcbc97c14",
+          "size": 744960,
+          "file": "soundboard_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_linux_readme.md",
+          "readmeFile": "soundboard_linux_readme.md",
+          "name": "Soundboard",
+          "description": "Play sound files from a key to any output device, or two at once (your headphones and a virtual cable into your mic). Master volume dial; Soundpad on Windows.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "soundboard-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_macos_1.0.1.knobdeck",
+          "sha256": "353a68e50270f53860f1e282abad6ebe573779184cc8462459f557a20e68b211",
+          "size": 1303234,
+          "file": "soundboard_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_macos_readme.md",
+          "readmeFile": "soundboard_macos_readme.md",
+          "name": "Soundboard",
+          "description": "Play sound files from a key to any output device, or two at once (your headphones and a virtual cable into your mic). Master volume dial; Soundpad on Windows.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "soundboard-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_windows_1.0.1.knobdeck",
+          "sha256": "a0036bbe409812ab17326fcd1cc19cd6f99c746d0e869dea81717c966422ded8",
+          "size": 599333,
+          "file": "soundboard_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_windows_readme.md",
+          "readmeFile": "soundboard_windows_readme.md",
+          "name": "Soundboard",
+          "description": "Play sound files from a key to any output device, or two at once (your headphones and a virtual cable into your mic). Master volume dial; Soundpad on Windows.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "play": {
+          "type": "button",
+          "label": "Play Sound",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "file",
+              "type": "text",
+              "label": "Sound file (mp3, wav, ogg, flac)"
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Output device",
+              "default": "default"
+            },
+            {
+              "key": "output2",
+              "type": "select",
+              "label": "Also play on",
+              "default": ""
+            },
+            {
+              "key": "volume",
+              "type": "text",
+              "label": "Volume (%)",
+              "default": "100"
+            },
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "When pressed while playing",
+              "default": "restart",
+              "options": [
+                "restart",
+                "stop",
+                "overlap",
+                "loop"
+              ]
+            }
+          ]
+        },
+        "hold": {
+          "type": "hold",
+          "label": "Hold to Play",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "file",
+              "type": "text",
+              "label": "Sound file (mp3, wav, ogg, flac)"
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Output device",
+              "default": "default"
+            },
+            {
+              "key": "output2",
+              "type": "select",
+              "label": "Also play on",
+              "default": ""
+            },
+            {
+              "key": "volume",
+              "type": "text",
+              "label": "Volume (%)",
+              "default": "100"
+            },
+            {
+              "key": "loop",
+              "type": "checkbox",
+              "label": "Loop while held",
+              "default": true
+            }
+          ],
+          "released": {
+            "label": "Hold to play",
+            "icon": "play"
+          },
+          "held": {
+            "label": "Playing",
+            "icon": "volume-2"
+          }
+        },
+        "stop-all": {
+          "type": "button",
+          "label": "Stop All Sounds",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "master-volume": {
+          "type": "slider",
+          "label": "Soundboard Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "soundpad-play": {
+          "type": "button",
+          "label": "Soundpad: Play Sound",
+          "icon": "play",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "sound",
+              "type": "select",
+              "label": "Sound"
+            },
+            {
+              "key": "lines",
+              "type": "select",
+              "label": "Play on",
+              "default": "both",
+              "options": [
+                "both",
+                "speakers",
+                "mic"
+              ]
+            }
+          ]
+        },
+        "soundpad-stop": {
+          "type": "button",
+          "label": "Soundpad: Stop",
+          "icon": "square",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": []
+        },
+        "soundpad-pause": {
+          "type": "button",
+          "label": "Soundpad: Pause / Resume",
+          "icon": "pause",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "soundboard-v1.0.0",
       "released": "2026-11-18T18:29:26Z",

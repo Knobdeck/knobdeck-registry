@@ -4,35 +4,42 @@
   "name": "MQTT",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-19T07:36:48Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:50Z",
     "platforms": {
       "linux": {
         "id": "mqtt-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_linux_1.0.0.knobdeck",
-        "sha256": "43a4dee8aa2f92dfaf5db39a9a7d79e6a5a470c9f4b1b2a5fad80a2b29683c93",
-        "size": 3254253,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.1/mqtt_linux_1.0.1.knobdeck",
+        "sha256": "7d68c2028e55647ec866655da127db4bd55bca141ad8d4d369eb39befc5d9c43",
+        "size": 3256626,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mqtt-linux/readme.md"
       },
       "macos": {
         "id": "mqtt-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_macos_1.0.0.knobdeck",
-        "sha256": "0d56d928574c0119bbcaf97c624979336db2d306fcf9aed505c986220cfca24a",
-        "size": 3197690,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.1/mqtt_macos_1.0.1.knobdeck",
+        "sha256": "5c448946428b62aa674ad532814f2203d34ad40523f15128566ad249c35c0aea",
+        "size": 3200129,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mqtt-macos/readme.md"
       },
       "windows": {
         "id": "mqtt-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.0/mqtt_windows_1.0.0.knobdeck",
-        "sha256": "113f2a53d06ee432bd98a0d8c0b8bb0464c44ab52ea73b335f98107c3b50b7c4",
-        "size": 1535460,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mqtt-v1.0.1/mqtt_windows_1.0.1.knobdeck",
+        "sha256": "1c97afc17bdea99b176f0725ca26e673e4d56a77945983df068847910ed6f7dd",
+        "size": 1537930,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mqtt-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: Publish (placeholders, QoS, retain), Toggle with state from a topic, Topic Value\n  (JSON path, wildcards) and Value Dial, through your MQTT broker with optional TLS and login.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "mqtt-v1.0.1",
+      "released": "2026-11-19T13:31:50Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "mqtt-v1.0.0",

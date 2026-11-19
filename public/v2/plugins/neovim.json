@@ -4,35 +4,42 @@
   "name": "Neovim",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T17:54:53Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:57Z",
     "platforms": {
       "linux": {
         "id": "neovim-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.0/neovim_linux_1.0.0.knobdeck",
-        "sha256": "e3e62c8d0cd1bcbc948269290ad9d56e4fcd8973b525b6b32d8c66903a39f7bf",
-        "size": 985459,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_linux_1.0.1.knobdeck",
+        "sha256": "33a8b348fd00a2c897241a09864f33c831ed4c87f77f96d43de97f301acc78d1",
+        "size": 987831,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/neovim-linux/readme.md"
       },
       "macos": {
         "id": "neovim-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.0/neovim_macos_1.0.0.knobdeck",
-        "sha256": "36cdfed5d42ec81dfe8dd2dbf197e6182af3779d27771113a3271e3284b57782",
-        "size": 739818,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_macos_1.0.1.knobdeck",
+        "sha256": "c4a4dc0e8052e27a57a549c8ead3a62a5f4a52544e7a917a55feefb43dbed5af",
+        "size": 742205,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/neovim-macos/readme.md"
       },
       "windows": {
         "id": "neovim-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.0/neovim_windows_1.0.0.knobdeck",
-        "sha256": "4b96e7d2781ef6d987228c11a605e015c47b61b20c09a08cbd7f7db90cff11b8",
-        "size": 317896,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_windows_1.0.1.knobdeck",
+        "sha256": "9149491960218b727ea4e898fe1208055878e2f4749a7bd292cdce6806998c29",
+        "size": 320238,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/neovim-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: Run Command, Run Lua, Save All, Switch Buffer, Toggle Option and Mode and File, over Neovim's msgpack-RPC API (found automatically on Windows, macOS and Linux).",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "neovim-v1.0.1",
+      "released": "2026-11-19T13:31:57Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "neovim-v1.0.0",

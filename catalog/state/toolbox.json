@@ -2,6 +2,252 @@
   "id": "toolbox",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "toolbox-v1.0.1",
+      "released": "2026-11-19T13:32:41Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "toolbox",
+        "version": "1.0.1",
+        "name": "Toolbox",
+        "summary": "Counters on a key or dial, dice, coin flip, random pick and a tally file.",
+        "tags": [
+          "Productivity",
+          "Utilities"
+        ],
+        "sort": 100
+      },
+      "platforms": {
+        "linux": {
+          "id": "toolbox-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.1/toolbox_linux_1.0.1.knobdeck",
+          "sha256": "0e5bb23aeef2aefc48f84b1a0ac509f8875d4fda812ed6aa63dc480a46f98893",
+          "size": 415258,
+          "file": "toolbox_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.1/toolbox_linux_readme.md",
+          "readmeFile": "toolbox_linux_readme.md",
+          "name": "Toolbox",
+          "description": "Counters on a key or a dial (kept across restarts), dice, a coin flip, a random pick from your own list and a tally that writes each press to a file.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "toolbox-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.1/toolbox_macos_1.0.1.knobdeck",
+          "sha256": "4b66a512f78c922a09e12c824a9f5c6671d0408c10eb914954821f57934d11cc",
+          "size": 757870,
+          "file": "toolbox_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.1/toolbox_macos_readme.md",
+          "readmeFile": "toolbox_macos_readme.md",
+          "name": "Toolbox",
+          "description": "Counters on a key or a dial (kept across restarts), dice, a coin flip, a random pick from your own list and a tally that writes each press to a file.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "toolbox-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.1/toolbox_windows_1.0.1.knobdeck",
+          "sha256": "4b405eeb3ecaa6abeae9f7c7711a262a71680b52934238c8a08a13ff3c74eb26",
+          "size": 382101,
+          "file": "toolbox_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.1/toolbox_windows_readme.md",
+          "readmeFile": "toolbox_windows_readme.md",
+          "name": "Toolbox",
+          "description": "Counters on a key or a dial (kept across restarts), dice, a coin flip, a random pick from your own list and a tally that writes each press to a file.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "counter": {
+          "type": "button",
+          "label": "Counter",
+          "icon": "hash",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Counter name",
+              "default": "Counter"
+            },
+            {
+              "key": "do",
+              "type": "select",
+              "label": "Press",
+              "default": "add",
+              "options": [
+                "add",
+                "subtract",
+                "reset"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "By",
+              "default": "1",
+              "showIf": {
+                "key": "do",
+                "in": [
+                  "add",
+                  "subtract"
+                ]
+              }
+            },
+            {
+              "key": "reset_to",
+              "type": "text",
+              "label": "Reset to",
+              "default": "0",
+              "showIf": {
+                "key": "do",
+                "equals": "reset"
+              }
+            }
+          ]
+        },
+        "counter-dial": {
+          "type": "slider",
+          "label": "Counter Dial",
+          "icon": "hash",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Counter name",
+              "default": "Counter"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Per tick",
+              "default": "1"
+            }
+          ],
+          "min": -999999,
+          "max": 999999,
+          "step": 1,
+          "unit": null
+        },
+        "dice": {
+          "type": "button",
+          "label": "Roll Dice",
+          "icon": "dices",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "sides",
+              "type": "select",
+              "label": "Die",
+              "default": "6",
+              "options": [
+                "4",
+                "6",
+                "8",
+                "10",
+                "12",
+                "20",
+                "100"
+              ]
+            },
+            {
+              "key": "count",
+              "type": "select",
+              "label": "How many",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ]
+            }
+          ]
+        },
+        "coin": {
+          "type": "button",
+          "label": "Flip a Coin",
+          "icon": "coins",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "pick": {
+          "type": "button",
+          "label": "Random Pick",
+          "icon": "shuffle",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "items",
+              "type": "textarea",
+              "label": "Pick from, one per line"
+            },
+            {
+              "key": "no_repeat",
+              "type": "checkbox",
+              "label": "Never the same one twice in a row",
+              "default": true
+            }
+          ]
+        },
+        "tally": {
+          "type": "button",
+          "label": "Tally to File",
+          "icon": "notebook-pen",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "entry",
+              "type": "text",
+              "label": "Entry",
+              "default": "Tally"
+            },
+            {
+              "key": "file",
+              "type": "text",
+              "label": "File (optional)"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "toolbox-v1.0.0",
       "released": "2026-11-19T07:32:54Z",

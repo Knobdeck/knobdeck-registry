@@ -4,35 +4,42 @@
   "name": "LIFX",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T17:58:52Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:39Z",
     "platforms": {
       "linux": {
         "id": "lifx-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_linux_1.0.0.knobdeck",
-        "sha256": "8710458c93a196572e74869ac34674b25ae7a08d739025d927042e330bbfe6c6",
-        "size": 488607,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.1/lifx_linux_1.0.1.knobdeck",
+        "sha256": "0b9a70de20c1fd4d457e91c6a6fb76dcd74cedc6ce4da919aaeff9ce40ad224f",
+        "size": 491264,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lifx-linux/readme.md"
       },
       "macos": {
         "id": "lifx-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_macos_1.0.0.knobdeck",
-        "sha256": "798d16dc83b03429fe3f359c8fe4204b1cf060476788b249947cbce222e5fb60",
-        "size": 891772,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.1/lifx_macos_1.0.1.knobdeck",
+        "sha256": "6014fb1ad8002b2b82c8743920f1dfc09c1ad93512066230a23f31758217929c",
+        "size": 894399,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lifx-macos/readme.md"
       },
       "windows": {
         "id": "lifx-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.0/lifx_windows_1.0.0.knobdeck",
-        "sha256": "8bfc932347f86090c462d4880242e95327fae84c9091a00a7bbe0554d5bc0e7a",
-        "size": 315469,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lifx-v1.0.1/lifx_windows_1.0.1.knobdeck",
+        "sha256": "44b986a06a74054ea264232b5609c65e4c40b11165cd984996d122a878b3fc3e",
+        "size": 318084,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lifx-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: power, brightness, color temperature, hue and saturation dials, set color and\n  set white for LIFX lights over the LAN protocol, found by broadcast or typed by address.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "lifx-v1.0.1",
+      "released": "2026-11-19T13:31:39Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "lifx-v1.0.0",

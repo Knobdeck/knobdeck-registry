@@ -2,6 +2,254 @@
   "id": "streamlabs",
   "versions": [
     {
+      "version": "1.1.1",
+      "tag": "streamlabs-v1.1.1",
+      "released": "2026-11-19T13:32:29Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "streamlabs",
+        "version": "1.1.1",
+        "name": "Streamlabs Desktop",
+        "summary": "Go live, record, replay buffer, scenes, sources and audio.",
+        "tags": [
+          "Streaming",
+          "Broadcast"
+        ],
+        "sort": 22
+      },
+      "platforms": {
+        "macos": {
+          "id": "streamlabs-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.1/streamlabs_macos_1.1.1.knobdeck",
+          "sha256": "9be6173ded38bf1ea24ab9c7ebabe2875fc24dd91f4a6fe9de22adc4a387378c",
+          "size": 1124714,
+          "file": "streamlabs_macos_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.1/streamlabs_macos_readme.md",
+          "readmeFile": "streamlabs_macos_readme.md",
+          "name": "Streamlabs Desktop",
+          "description": "Go live, record, replay buffer, scenes, sources and audio in Streamlabs Desktop.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "streamlabs-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.1/streamlabs_windows_1.1.1.knobdeck",
+          "sha256": "76c562d4084cbcb50e3f25efeafe5dca26c5a9e42f98e6b25bd80367494852dc",
+          "size": 438545,
+          "file": "streamlabs_windows_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.1/streamlabs_windows_readme.md",
+          "readmeFile": "streamlabs_windows_readme.md",
+          "name": "Streamlabs Desktop",
+          "description": "Go live, record, replay buffer, scenes, sources and audio in Streamlabs Desktop.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "stream": {
+          "type": "toggle",
+          "label": "Go Live",
+          "icon": "radio-tower",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "offline",
+              "label": "Offline",
+              "icon": "circle"
+            },
+            {
+              "value": "live",
+              "label": "Live",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "record": {
+          "type": "toggle",
+          "label": "Record",
+          "icon": "circle",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "offline",
+              "label": "Not Recording",
+              "icon": "square"
+            },
+            {
+              "value": "recording",
+              "label": "Recording",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "replay-buffer": {
+          "type": "toggle",
+          "label": "Replay Buffer",
+          "icon": "history",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "offline",
+              "label": "Buffer Off",
+              "icon": "circle"
+            },
+            {
+              "value": "running",
+              "label": "Buffer On",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "save-replay": {
+          "type": "button",
+          "label": "Save Replay",
+          "icon": "save",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "scene": {
+          "type": "toggle",
+          "label": "Scene",
+          "icon": "layout-grid",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "scene",
+              "type": "select",
+              "label": "Scene"
+            }
+          ],
+          "states": [
+            {
+              "value": "inactive",
+              "label": "Not Live",
+              "icon": "layout-grid"
+            },
+            {
+              "value": "active",
+              "label": "Live",
+              "icon": "circle-check"
+            }
+          ]
+        },
+        "source-visibility": {
+          "type": "toggle",
+          "label": "Source Visibility",
+          "icon": "eye",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "scene",
+              "type": "select",
+              "label": "Scene"
+            },
+            {
+              "key": "item",
+              "type": "select",
+              "label": "Source",
+              "showIf": {
+                "key": "scene",
+                "truthy": true
+              }
+            }
+          ],
+          "states": [
+            {
+              "value": "visible",
+              "label": "Visible",
+              "icon": "eye"
+            },
+            {
+              "value": "hidden",
+              "label": "Hidden",
+              "icon": "eye-off"
+            }
+          ]
+        },
+        "audio-mute": {
+          "type": "toggle",
+          "label": "Mute Audio Source",
+          "icon": "volume-x",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "source",
+              "type": "select",
+              "label": "Audio source"
+            }
+          ],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "On",
+              "icon": "volume-2"
+            },
+            {
+              "value": "muted",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "audio-volume": {
+          "type": "slider",
+          "label": "Audio Source Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "source",
+              "type": "select",
+              "label": "Audio source"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.1.0",
       "tag": "streamlabs-v1.1.0",
       "released": "2026-11-17T14:20:58Z",

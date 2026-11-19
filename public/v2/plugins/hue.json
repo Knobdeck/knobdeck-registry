@@ -4,35 +4,42 @@
   "name": "Philips Hue",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:20:39Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:31:36Z",
     "platforms": {
       "linux": {
         "id": "hue-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_linux_1.1.0.knobdeck",
-        "sha256": "4553a0ae1859601f0599b7c2f6d497fad255b9d8661a8b7e42b729319ead9e50",
-        "size": 2888511,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.1/hue_linux_1.1.1.knobdeck",
+        "sha256": "1154545468526f4f338ec75749f24012a4931ebb8b68d9d62de345ae89787f8e",
+        "size": 2891119,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-linux/readme.md"
       },
       "macos": {
         "id": "hue-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_macos_1.1.0.knobdeck",
-        "sha256": "ea264ef18c574354f864b2faf6462e34e7d95402daa5b23caf8ed7e74555ca1c",
-        "size": 3531162,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.1/hue_macos_1.1.1.knobdeck",
+        "sha256": "86e0f6dbc4707e1adadc4b976aa5150658c4641c6bab2df1a8708b384ec50c09",
+        "size": 3534925,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-macos/readme.md"
       },
       "windows": {
         "id": "hue-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.0/hue_windows_1.1.0.knobdeck",
-        "sha256": "07b8b0dcd90ba1cb2e0be71ef370488eda6c802b550343af2365ad45dea4903a",
-        "size": 1677723,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hue-v1.1.1/hue_windows_1.1.1.knobdeck",
+        "sha256": "bff186105d2776134918e2ddc7d07b7573214be24c6d07059d29640eb9d34047",
+        "size": 1679993,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hue-windows/readme.md"
       }
     }
   },
-  "changelog": "Philips Hue 1.1.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "hue-v1.1.1",
+      "released": "2026-11-19T13:31:36Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "hue-v1.1.0",

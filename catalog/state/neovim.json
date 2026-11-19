@@ -2,6 +2,279 @@
   "id": "neovim",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "neovim-v1.0.1",
+      "released": "2026-11-19T13:31:57Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "neovim",
+        "version": "1.0.1",
+        "name": "Neovim",
+        "summary": "Run Ex commands and Lua, save all, switch buffers on a dial, toggle options, see the mode and file.",
+        "tags": [
+          "Developer tools",
+          "Editor"
+        ],
+        "sort": 95
+      },
+      "platforms": {
+        "linux": {
+          "id": "neovim-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_linux_1.0.1.knobdeck",
+          "sha256": "33a8b348fd00a2c897241a09864f33c831ed4c87f77f96d43de97f301acc78d1",
+          "size": 987831,
+          "file": "neovim_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_linux_readme.md",
+          "readmeFile": "neovim_linux_readme.md",
+          "name": "Neovim",
+          "description": "Run Ex commands and Lua in Neovim, save all, switch buffers on a dial, toggle options and see the mode and file, over Neovim's own RPC API.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "neovim-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_macos_1.0.1.knobdeck",
+          "sha256": "c4a4dc0e8052e27a57a549c8ead3a62a5f4a52544e7a917a55feefb43dbed5af",
+          "size": 742205,
+          "file": "neovim_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_macos_readme.md",
+          "readmeFile": "neovim_macos_readme.md",
+          "name": "Neovim",
+          "description": "Run Ex commands and Lua in Neovim, save all, switch buffers on a dial, toggle options and see the mode and file, over Neovim's own RPC API.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "neovim-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_windows_1.0.1.knobdeck",
+          "sha256": "9149491960218b727ea4e898fe1208055878e2f4749a7bd292cdce6806998c29",
+          "size": 320238,
+          "file": "neovim_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/neovim-v1.0.1/neovim_windows_readme.md",
+          "readmeFile": "neovim_windows_readme.md",
+          "name": "Neovim",
+          "description": "Run Ex commands and Lua in Neovim, save all, switch buffers on a dial, toggle options and see the mode and file, over Neovim's own RPC API.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "command": {
+          "type": "button",
+          "label": "Run Command",
+          "icon": "terminal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "server",
+              "type": "combobox",
+              "label": "Neovim",
+              "default": "__auto__"
+            },
+            {
+              "key": "command",
+              "type": "textarea",
+              "label": "Ex command (one per line)"
+            }
+          ]
+        },
+        "lua": {
+          "type": "button",
+          "label": "Run Lua",
+          "icon": "code",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "server",
+              "type": "combobox",
+              "label": "Neovim",
+              "default": "__auto__"
+            },
+            {
+              "key": "code",
+              "type": "textarea",
+              "label": "Lua"
+            },
+            {
+              "key": "show",
+              "type": "checkbox",
+              "label": "Show what it returns",
+              "default": false
+            }
+          ]
+        },
+        "save-all": {
+          "type": "button",
+          "label": "Save All",
+          "icon": "save",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "server",
+              "type": "combobox",
+              "label": "Neovim",
+              "default": "__auto__"
+            }
+          ]
+        },
+        "buffers": {
+          "type": "slider",
+          "label": "Switch Buffer",
+          "icon": "files",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "server",
+              "type": "combobox",
+              "label": "Neovim",
+              "default": "__auto__"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "toggle-option": {
+          "type": "toggle",
+          "label": "Toggle Option",
+          "icon": "toggle-left",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "server",
+              "type": "combobox",
+              "label": "Neovim",
+              "default": "__auto__"
+            },
+            {
+              "key": "option",
+              "type": "select",
+              "label": "Option",
+              "default": "wrap",
+              "options": [
+                "wrap",
+                "relativenumber",
+                "number",
+                "spell",
+                "list",
+                "cursorline",
+                "hlsearch",
+                "ignorecase",
+                "expandtab",
+                "custom"
+              ]
+            },
+            {
+              "key": "custom",
+              "type": "text",
+              "label": "Option name",
+              "showIf": {
+                "key": "option",
+                "equals": "custom"
+              }
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "toggle-left"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "toggle-right"
+            }
+          ]
+        },
+        "status": {
+          "type": "button",
+          "label": "Mode and File",
+          "icon": "file-code",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "server",
+              "type": "combobox",
+              "label": "Neovim",
+              "default": "__auto__"
+            },
+            {
+              "key": "save",
+              "type": "checkbox",
+              "label": "Press to save the file",
+              "default": false
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.0.0",
       "tag": "neovim-v1.0.0",
       "released": "2026-11-18T17:54:53Z",

@@ -4,35 +4,42 @@
   "name": "Files",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:20:29Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:31:15Z",
     "platforms": {
       "linux": {
         "id": "files-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.0/files_linux_1.1.0.knobdeck",
-        "sha256": "a05a14cb2b1ce4e7121ec6973fb3174ef36052ac9ccb3de19360fd505fec248f",
-        "size": 1684052,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_linux_1.1.1.knobdeck",
+        "sha256": "2bfd9defac012a3b3aff5c470196ddb38aa4521513e13fc708b9d43a5edc57e2",
+        "size": 1686476,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-linux/readme.md"
       },
       "macos": {
         "id": "files-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.0/files_macos_1.1.0.knobdeck",
-        "sha256": "0dc4fbcb42d30422cf430fab0c65d02749ef77a607e14d2245218c661540c60b",
-        "size": 2015283,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_macos_1.1.1.knobdeck",
+        "sha256": "72980db6c46c09b7939ccdff97aee452ffd4293fce404b181373450bc723e31b",
+        "size": 2017692,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-macos/readme.md"
       },
       "windows": {
         "id": "files-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.0/files_windows_1.1.0.knobdeck",
-        "sha256": "4afbc44bc20ac2d4e28387e315d66fd597b2484679156dea007c1e331d30ddfa",
-        "size": 967671,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_windows_1.1.1.knobdeck",
+        "sha256": "52735d9e58a9e57ffbb99be433ca952b89cd2a853a719564f7a994b9dcb7d902",
+        "size": 969988,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-windows/readme.md"
       }
     }
   },
-  "changelog": "Files 1.1.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "files-v1.1.1",
+      "released": "2026-11-19T13:31:15Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "files-v1.1.0",

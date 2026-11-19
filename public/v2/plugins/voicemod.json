@@ -4,28 +4,35 @@
   "name": "Voicemod",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:21:07Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:33:55Z",
     "platforms": {
       "macos": {
         "id": "voicemod-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.0/voicemod_macos_1.1.0.knobdeck",
-        "sha256": "5899dd801ef99e70fd792ed042a4f7b3d359da2710ffbbc0af1428bbdc10c21e",
-        "size": 1098582,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.1/voicemod_macos_1.1.1.knobdeck",
+        "sha256": "1aac063ca18ad4ccc31ac6c4cdf70649a657d2bada0f618b331479edec202075",
+        "size": 1102046,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemod-macos/readme.md"
       },
       "windows": {
         "id": "voicemod-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.0/voicemod_windows_1.1.0.knobdeck",
-        "sha256": "01ae7b539d24a2462d25283385a6d5df9a319a1a72be9f6f41ca669979aad309",
-        "size": 425536,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.1/voicemod_windows_1.1.1.knobdeck",
+        "sha256": "b2817b6c14254e201443ea9acc8cdb2e4a02537760986ca939616ec5a4d9bec8",
+        "size": 427700,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemod-windows/readme.md"
       }
     }
   },
-  "changelog": "Voicemod 1.1.0 for macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "voicemod-v1.1.1",
+      "released": "2026-11-19T13:33:55Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "voicemod-v1.1.0",

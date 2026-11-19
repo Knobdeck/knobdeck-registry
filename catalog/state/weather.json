@@ -2,6 +2,182 @@
   "id": "weather",
   "versions": [
     {
+      "version": "1.1.1",
+      "tag": "weather-v1.1.1",
+      "released": "2026-11-19T13:34:01Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "weather",
+        "version": "1.1.1",
+        "name": "Weather",
+        "summary": "Current weather, 7-day and hourly forecast, air quality. No account.",
+        "tags": [
+          "Weather",
+          "Information"
+        ],
+        "sort": 85
+      },
+      "platforms": {
+        "linux": {
+          "id": "weather-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_linux_1.1.1.knobdeck",
+          "sha256": "1e4ea938cdb495ad4b1a1b9304a900db28a0360d7a6d2fa7222d3eff9fdef19c",
+          "size": 986678,
+          "file": "weather_linux_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_linux_readme.md",
+          "readmeFile": "weather_linux_readme.md",
+          "name": "Weather",
+          "description": "Current weather, forecast and air quality for any place (Open-Meteo, no account).",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "weather-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_macos_1.1.1.knobdeck",
+          "sha256": "a06d794c41712f5044632f2a95f1ab193402c45384e424415155a2cc2ddfdd32",
+          "size": 1803327,
+          "file": "weather_macos_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_macos_readme.md",
+          "readmeFile": "weather_macos_readme.md",
+          "name": "Weather",
+          "description": "Current weather, forecast and air quality for any place (Open-Meteo, no account).",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "weather-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_windows_1.1.1.knobdeck",
+          "sha256": "e3e28f899720daa3fd41799f0410df9978a30b024b68dbce79b632c88811fe5e",
+          "size": 856068,
+          "file": "weather_windows_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_windows_readme.md",
+          "readmeFile": "weather_windows_readme.md",
+          "name": "Weather",
+          "description": "Current weather, forecast and air quality for any place (Open-Meteo, no account).",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "weather": {
+          "type": "button",
+          "label": "Weather",
+          "icon": "cloud-sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "location",
+              "type": "text",
+              "label": "Location"
+            },
+            {
+              "key": "units",
+              "type": "select",
+              "label": "Units",
+              "default": "c",
+              "options": [
+                "c",
+                "f"
+              ]
+            }
+          ]
+        },
+        "forecast-wheel": {
+          "type": "wheel",
+          "label": "Forecast (7 days)",
+          "icon": "calendar-days",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "location",
+              "type": "text",
+              "label": "Location"
+            },
+            {
+              "key": "units",
+              "type": "select",
+              "label": "Units",
+              "default": "c",
+              "options": [
+                "c",
+                "f"
+              ]
+            }
+          ]
+        },
+        "hourly-wheel": {
+          "type": "wheel",
+          "label": "Next 24 hours",
+          "icon": "clock",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "location",
+              "type": "text",
+              "label": "Location"
+            },
+            {
+              "key": "units",
+              "type": "select",
+              "label": "Units",
+              "default": "c",
+              "options": [
+                "c",
+                "f"
+              ]
+            }
+          ]
+        },
+        "air-quality": {
+          "type": "button",
+          "label": "Air Quality",
+          "icon": "wind",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "location",
+              "type": "text",
+              "label": "Location"
+            },
+            {
+              "key": "scale",
+              "type": "select",
+              "label": "Scale",
+              "default": "us",
+              "options": [
+                "us",
+                "eu"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.1.0",
       "tag": "weather-v1.1.0",
       "released": "2026-11-17T14:21:14Z",

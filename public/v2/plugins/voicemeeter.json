@@ -4,21 +4,28 @@
   "name": "Voicemeeter",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T17:50:07Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:50Z",
     "platforms": {
       "windows": {
         "id": "voicemeeter-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemeeter-v1.0.0/voicemeeter_windows_1.0.0.knobdeck",
-        "sha256": "31fb1eb9acd07affd0e627adff76d457cff94c38931e90817d3706c268110792",
-        "size": 204842,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemeeter-v1.0.1/voicemeeter_windows_1.0.1.knobdeck",
+        "sha256": "7f8975c2bdd9d506ded3595727148d7987e8401f66b7b7cca666a7dd12d24f49",
+        "size": 207172,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/voicemeeter-windows/readme.md"
       }
     }
   },
-  "changelog": "Voicemeeter 1.0.0 for windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "voicemeeter-v1.0.1",
+      "released": "2026-11-19T13:32:50Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "voicemeeter-v1.0.0",

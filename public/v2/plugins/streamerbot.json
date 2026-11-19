@@ -4,21 +4,28 @@
   "name": "Streamer.bot",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T17:50:04Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:25Z",
     "platforms": {
       "windows": {
         "id": "streamerbot-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamerbot-v1.0.0/streamerbot_windows_1.0.0.knobdeck",
-        "sha256": "2e1250015da9547067249af0d554eedbddd67fd65a8d41070d466d2ae2a21c73",
-        "size": 459450,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamerbot-v1.0.1/streamerbot_windows_1.0.1.knobdeck",
+        "sha256": "78f56b113e25432af27d33bd1bfdff17227174c18d10e2ffcfbf9983837b6fa1",
+        "size": 461866,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamerbot-windows/readme.md"
       }
     }
   },
-  "changelog": "Streamer.bot 1.0.0 for windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "streamerbot-v1.0.1",
+      "released": "2026-11-19T13:32:25Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "streamerbot-v1.0.0",

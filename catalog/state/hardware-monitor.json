@@ -2,6 +2,194 @@
   "id": "hardware-monitor",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "hardware-monitor-v1.0.1",
+      "released": "2026-11-19T13:31:30Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "hardware-monitor",
+        "version": "1.0.1",
+        "name": "Hardware Monitor",
+        "summary": "CPU and GPU temperatures, fans, power, GPU load and VRAM on a key or a gauge.",
+        "tags": [
+          "System",
+          "Monitoring"
+        ],
+        "sort": 91
+      },
+      "platforms": {
+        "linux": {
+          "id": "hardware-monitor-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_linux_1.0.1.knobdeck",
+          "sha256": "a756b47cab6d927036ff280e956dba066c39e46595c1e71218f18c69e29e4088",
+          "size": 316348,
+          "file": "hardware-monitor_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_linux_readme.md",
+          "readmeFile": "hardware-monitor_linux_readme.md",
+          "name": "Hardware Monitor",
+          "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "hardware-monitor-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_macos_1.0.1.knobdeck",
+          "sha256": "ce3245233ea199a51f9176ceb483b37c26386c1eaf79007601cd462a7f24318a",
+          "size": 539103,
+          "file": "hardware-monitor_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_macos_readme.md",
+          "readmeFile": "hardware-monitor_macos_readme.md",
+          "name": "Hardware Monitor",
+          "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "hardware-monitor-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_windows_1.0.1.knobdeck",
+          "sha256": "781ed1ce9dffe1c1db3e2da72705a4a61e6c1716d548cc47e41b842a0fabcf9a",
+          "size": 213138,
+          "file": "hardware-monitor_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_windows_readme.md",
+          "readmeFile": "hardware-monitor_windows_readme.md",
+          "name": "Hardware Monitor",
+          "description": "Live CPU and GPU temperatures, fan speeds, power, GPU load and VRAM from your computer's sensors, on a key or a gauge.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "sensor": {
+          "type": "button",
+          "label": "Sensor",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "sensor",
+              "type": "select",
+              "label": "Sensor",
+              "default": "auto:cpu-temp"
+            },
+            {
+              "key": "unit",
+              "type": "select",
+              "label": "Temperature unit",
+              "default": "c",
+              "options": [
+                "c",
+                "f"
+              ]
+            },
+            {
+              "key": "alert",
+              "type": "text",
+              "label": "Alert at or above"
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name on the key"
+            }
+          ]
+        },
+        "gauge": {
+          "type": "button",
+          "label": "Sensor Gauge",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "sensor",
+              "type": "select",
+              "label": "Sensor",
+              "default": "auto:cpu-temp"
+            },
+            {
+              "key": "unit",
+              "type": "select",
+              "label": "Temperature unit",
+              "default": "c",
+              "options": [
+                "c",
+                "f"
+              ]
+            },
+            {
+              "key": "alert",
+              "type": "text",
+              "label": "Alert at or above"
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name on the key"
+            },
+            {
+              "key": "min",
+              "type": "text",
+              "label": "Gauge from"
+            },
+            {
+              "key": "max",
+              "type": "text",
+              "label": "Gauge to"
+            }
+          ]
+        },
+        "pair": {
+          "type": "button",
+          "label": "Two Sensors",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "sensor",
+              "type": "select",
+              "label": "First sensor",
+              "default": "auto:cpu-temp"
+            },
+            {
+              "key": "sensor_b",
+              "type": "select",
+              "label": "Second sensor",
+              "default": "auto:gpu-temp"
+            },
+            {
+              "key": "unit",
+              "type": "select",
+              "label": "Temperature unit",
+              "default": "c",
+              "options": [
+                "c",
+                "f"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "hardware-monitor-v1.0.0",
       "released": "2026-11-18T18:19:59Z",

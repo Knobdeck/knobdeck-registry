@@ -2,6 +2,300 @@
   "id": "network",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "network-v1.0.1",
+      "released": "2026-11-19T13:32:00Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "network",
+        "version": "1.0.1",
+        "name": "Network",
+        "summary": "Public IP, Wake-on-LAN, Tailscale on/off and exit node, Wi-Fi networks and VPNs, Pi-hole and Uptime Kuma status.",
+        "tags": [
+          "Network",
+          "Monitoring"
+        ],
+        "sort": 104
+      },
+      "platforms": {
+        "linux": {
+          "id": "network-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.1/network_linux_1.0.1.knobdeck",
+          "sha256": "dcb5d4264bc146581a4aee1c76a54ffad1c11d42638ec1b75d07cc98bf63d8bb",
+          "size": 3363837,
+          "file": "network_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.1/network_linux_readme.md",
+          "readmeFile": "network_linux_readme.md",
+          "name": "Network",
+          "description": "Public IP, Wake-on-LAN, Tailscale (on/off, exit node), saved Wi-Fi networks and VPNs, and Pi-hole / Uptime Kuma status.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window"
+          ]
+        },
+        "macos": {
+          "id": "network-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.1/network_macos_1.0.1.knobdeck",
+          "sha256": "9bac7321c758c751bd515f6ad748d31858744852c28770d31f309171a21aa148",
+          "size": 3551190,
+          "file": "network_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.1/network_macos_readme.md",
+          "readmeFile": "network_macos_readme.md",
+          "name": "Network",
+          "description": "Public IP, Wake-on-LAN, Tailscale (on/off, exit node), saved Wi-Fi networks and VPNs, and Pi-hole / Uptime Kuma status.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "network-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.1/network_windows_1.0.1.knobdeck",
+          "sha256": "2e071a5ab162505b446ad6a0df0b598f69ddc94b51eeeeb15b4519099d167472",
+          "size": 1702108,
+          "file": "network_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.1/network_windows_readme.md",
+          "readmeFile": "network_windows_readme.md",
+          "name": "Network",
+          "description": "Public IP, Wake-on-LAN, Tailscale (on/off, exit node), saved Wi-Fi networks and VPNs, and Pi-hole / Uptime Kuma status.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "public-ip": {
+          "type": "button",
+          "label": "Public IP",
+          "icon": "globe",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "family",
+              "type": "select",
+              "label": "Address",
+              "default": "v4",
+              "options": [
+                "v4",
+                "v6"
+              ]
+            }
+          ]
+        },
+        "wake-on-lan": {
+          "type": "button",
+          "label": "Wake on LAN",
+          "icon": "power",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "mac",
+              "type": "text",
+              "label": "MAC address"
+            },
+            {
+              "key": "broadcast",
+              "type": "text",
+              "label": "Broadcast address",
+              "default": "255.255.255.255"
+            },
+            {
+              "key": "port",
+              "type": "select",
+              "label": "Port",
+              "default": "9",
+              "options": [
+                "9",
+                "7"
+              ]
+            }
+          ]
+        },
+        "tailscale": {
+          "type": "toggle",
+          "label": "Tailscale",
+          "icon": "network",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "cloud-off"
+            },
+            {
+              "value": "on",
+              "label": "Connected",
+              "icon": "network"
+            }
+          ]
+        },
+        "exit-node": {
+          "type": "toggle",
+          "label": "Tailscale Exit Node",
+          "icon": "door-open",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "node",
+              "type": "select",
+              "label": "Exit node"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Not in use",
+              "icon": "door-closed"
+            },
+            {
+              "value": "on",
+              "label": "In use",
+              "icon": "door-open"
+            }
+          ]
+        },
+        "exit-nodes": {
+          "type": "wheel",
+          "label": "Tailscale Exit Nodes",
+          "icon": "door-open",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "wifi": {
+          "type": "toggle",
+          "label": "Wi-Fi Network",
+          "icon": "wifi",
+          "platforms": [
+            "linux",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "connection",
+              "type": "select",
+              "label": "Saved network"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Disconnected",
+              "icon": "wifi-off"
+            },
+            {
+              "value": "on",
+              "label": "Connected",
+              "icon": "wifi"
+            }
+          ]
+        },
+        "vpn": {
+          "type": "toggle",
+          "label": "VPN",
+          "icon": "shield-check",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "connection",
+              "type": "select",
+              "label": "VPN connection"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Disconnected",
+              "icon": "shield-off"
+            },
+            {
+              "value": "on",
+              "label": "Connected",
+              "icon": "shield-check"
+            }
+          ]
+        },
+        "pihole": {
+          "type": "toggle",
+          "label": "Pi-hole Blocking",
+          "icon": "shield",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "minutes",
+              "type": "text",
+              "label": "Pause for (minutes)",
+              "default": "5"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "shield-off"
+            },
+            {
+              "value": "on",
+              "label": "Blocking",
+              "icon": "shield"
+            }
+          ]
+        },
+        "uptime-kuma": {
+          "type": "button",
+          "label": "Uptime Kuma Status",
+          "icon": "activity",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "page",
+              "type": "text",
+              "label": "Status page address"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": [
+        "window"
+      ]
+    },
+    {
       "version": "1.0.0",
       "tag": "network-v1.0.0",
       "released": "2026-11-19T07:32:45Z",

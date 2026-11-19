@@ -4,35 +4,42 @@
   "name": "OpenRGB",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-19T07:36:51Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:06Z",
     "platforms": {
       "linux": {
         "id": "openrgb-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_linux_1.0.0.knobdeck",
-        "sha256": "2fcd2d603ff71a50008d35e691a1d93331780481b31a14c6c0234b1d730993a9",
-        "size": 484760,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.1/openrgb_linux_1.0.1.knobdeck",
+        "sha256": "69336810a4061c8cdc5c9eb8704275a4e07d9758d269e9137d0d3bf8b584ae1c",
+        "size": 487236,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/openrgb-linux/readme.md"
       },
       "macos": {
         "id": "openrgb-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_macos_1.0.0.knobdeck",
-        "sha256": "674ae28cb64590c590d678d49acbf8487b104c17676f3cf55f5a5e19a282dc8c",
-        "size": 886382,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.1/openrgb_macos_1.0.1.knobdeck",
+        "sha256": "c992c95ee858554787b5457764cab1da6b8ed5e66e528e2d320d3ff9640ec708",
+        "size": 888814,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/openrgb-macos/readme.md"
       },
       "windows": {
         "id": "openrgb-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.0/openrgb_windows_1.0.0.knobdeck",
-        "sha256": "bd84385b42cfe3438ef7bde93b4fee4d42dc22ff95eec7a39e4d97ec1af96951",
-        "size": 308553,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/openrgb-v1.0.1/openrgb_windows_1.0.1.knobdeck",
+        "sha256": "4c1c133ced2a9737a16906bbeff7edcdbfa7d784d88ec9c1e1ee7e6ec48cc180",
+        "size": 311011,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/openrgb-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: load profiles (key and wheel), set a colour on every device or one, and a\n  brightness dial, through OpenRGB's SDK server.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "openrgb-v1.0.1",
+      "released": "2026-11-19T13:32:06Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "openrgb-v1.0.0",

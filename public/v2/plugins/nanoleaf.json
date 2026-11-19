@@ -4,35 +4,42 @@
   "name": "Nanoleaf",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T17:09:09Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:54Z",
     "platforms": {
       "linux": {
         "id": "nanoleaf-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_linux_1.0.0.knobdeck",
-        "sha256": "02e98e13823608e0e7d11872a97005c6ef118adc7e1278fdf3bb09a830065bb4",
-        "size": 2869748,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.1/nanoleaf_linux_1.0.1.knobdeck",
+        "sha256": "08daca85307f38f1748c55c33852d20eb5db0ac024aa17224be7d5409f6c800a",
+        "size": 2872097,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/nanoleaf-linux/readme.md"
       },
       "macos": {
         "id": "nanoleaf-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_macos_1.0.0.knobdeck",
-        "sha256": "e8ece52096649b21bce586316356bb7c62ff4d06cfbc50ec78ec952083111bdb",
-        "size": 3506789,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.1/nanoleaf_macos_1.0.1.knobdeck",
+        "sha256": "fd394ab028a57b6b4264261d5d1bcca009f6a9c0d39aed38f1ff7fdc8c534fa6",
+        "size": 3508000,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/nanoleaf-macos/readme.md"
       },
       "windows": {
         "id": "nanoleaf-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.0/nanoleaf_windows_1.0.0.knobdeck",
-        "sha256": "ae76d98b991088390af095263d4cc9c4e87dc2efebfcd032b6af97d4374e3e8c",
-        "size": 1660801,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/nanoleaf-v1.0.1/nanoleaf_windows_1.0.1.knobdeck",
+        "sha256": "299ff03a612eb99adf6943f865d9e1ee1dc61a1b474ba68e4654652e447ba2f5",
+        "size": 1662746,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/nanoleaf-windows/readme.md"
       }
     }
   },
-  "changelog": "Nanoleaf 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "nanoleaf-v1.0.1",
+      "released": "2026-11-19T13:31:54Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "nanoleaf-v1.0.0",

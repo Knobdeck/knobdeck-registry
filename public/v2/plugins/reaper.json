@@ -4,35 +4,42 @@
   "name": "REAPER",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-19T07:32:48Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:09Z",
     "platforms": {
       "linux": {
         "id": "reaper-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_linux_1.0.0.knobdeck",
-        "sha256": "191075867e4b686c9f6f0c151348712a8862fb0fb7b851d0dfd8738bb91a9696",
-        "size": 2877301,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.1/reaper_linux_1.0.1.knobdeck",
+        "sha256": "259a5f9a3a100165420096f1adf6ee56e2dad6a8ce91872a421d8522f2760fe9",
+        "size": 2879652,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-linux/readme.md"
       },
       "macos": {
         "id": "reaper-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_macos_1.0.0.knobdeck",
-        "sha256": "6491a382d32717ec3ac728ddbf096f0bba5da4d7ac32e9c2f666ea2911e161f4",
-        "size": 3520555,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.1/reaper_macos_1.0.1.knobdeck",
+        "sha256": "66c0cee0d0e272876f9fa552f1bb34a54c5300b01e6bffbb9c66ee664fdc7599",
+        "size": 3522851,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-macos/readme.md"
       },
       "windows": {
         "id": "reaper-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_windows_1.0.0.knobdeck",
-        "sha256": "7ab2d00db8608e2e1dca42468f28a14eef1821202f7038f38093f039ca1f7019",
-        "size": 1671616,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.1/reaper_windows_1.0.1.knobdeck",
+        "sha256": "5a21606b386f4c4eb21d24ba7ecba51f557ebc6bca001d9908d7bc6c40c1f7cc",
+        "size": 1673826,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: play / pause, stop, record, repeat and metronome with live state, go to start /\n  end, position, markers (add, previous, next, go to), run any action by numeric or named command\n  id, track volume and pan dials, mute, solo, record arm, selected track and a track selection\n  dial, over REAPER's web browser interface.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "reaper-v1.0.1",
+      "released": "2026-11-19T13:32:09Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "reaper-v1.0.0",

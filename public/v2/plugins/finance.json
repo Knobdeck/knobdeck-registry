@@ -4,35 +4,42 @@
   "name": "Finance",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-19T07:32:42Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:18Z",
     "platforms": {
       "linux": {
         "id": "finance-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_linux_1.0.0.knobdeck",
-        "sha256": "ede05a08c27a3dc3e5b961678adc168b70cc52eb51e7fcdf384cd8ad3fa1d7aa",
-        "size": 2895244,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.1/finance_linux_1.0.1.knobdeck",
+        "sha256": "3e078afaf83473233a1bbf70ac1a62207ae92a18228ff039eab5ec843069176d",
+        "size": 2897543,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/finance-linux/readme.md"
       },
       "macos": {
         "id": "finance-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_macos_1.0.0.knobdeck",
-        "sha256": "950e8cefce50b3bb7ea2ddacc36133254f441e3b9f5e42d42bd6046e20255dff",
-        "size": 3534227,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.1/finance_macos_1.0.1.knobdeck",
+        "sha256": "18f2ec1b2b7c30963c3130e9f8095ad19a6d281bdab1f543b472228b55f0e708",
+        "size": 3536409,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/finance-macos/readme.md"
       },
       "windows": {
         "id": "finance-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_windows_1.0.0.knobdeck",
-        "sha256": "fd85ebd2285ca1f8f8d989bc0e93f22b6e1969044d62595df93a20fc78fcef44",
-        "size": 1694270,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.1/finance_windows_1.0.1.knobdeck",
+        "sha256": "0e56c111339dad32239a5c4992fc652147a4480433e7f49209806c95faf4adaf",
+        "size": 1696591,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/finance-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: ticker keys (price, change and a sparkline over 24 hours or 7 days) for coins\n  from CoinGecko and stocks, ETFs, indices and forex from Yahoo Finance, a watchlist wheel and a\n  watchlist dial. No account needed; optional CoinGecko Demo and Finnhub keys.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "finance-v1.0.1",
+      "released": "2026-11-19T13:31:18Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "finance-v1.0.0",

@@ -4,35 +4,42 @@
   "name": "Coding Agents",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T14:20:21Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:04Z",
     "platforms": {
       "linux": {
         "id": "coding-agents-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_linux_1.0.0.knobdeck",
-        "sha256": "730c78a1bccfc23d5fab630bbf1026b2d3d27c679b57ca4645c8504deb23fead",
-        "size": 618479,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_linux_1.0.1.knobdeck",
+        "sha256": "658bb77b09a17079ae4af7ca1e38d04b3045d2ef2eb7444dbc84554b8c19504e",
+        "size": 620759,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-linux/readme.md"
       },
       "macos": {
         "id": "coding-agents-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_macos_1.0.0.knobdeck",
-        "sha256": "4bb123419f0548926cc7c6e4718aef9466f0843690098a5329d8d59893d6e1ee",
-        "size": 1130397,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_macos_1.0.1.knobdeck",
+        "sha256": "67239f09e47b44f16cd157d8c816c287e312ae6d2d5ff644a105d0c4a3eb6326",
+        "size": 1132672,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-macos/readme.md"
       },
       "windows": {
         "id": "coding-agents-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.0/coding-agents_windows_1.0.0.knobdeck",
-        "sha256": "76d39bce68d83f2f677fa4368aa874ca1b9cb693ea67ffa8da794e43a4a3bda2",
-        "size": 433239,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_windows_1.0.1.knobdeck",
+        "sha256": "1834d6357fada7cef219e5eca796837aa92e6d8518171ccd597b72d4edb0c6b5",
+        "size": 435526,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-windows/readme.md"
       }
     }
   },
-  "changelog": "Coding Agents 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "coding-agents-v1.0.1",
+      "released": "2026-11-19T13:31:04Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "coding-agents-v1.0.0",

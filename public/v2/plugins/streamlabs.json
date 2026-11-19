@@ -4,28 +4,35 @@
   "name": "Streamlabs Desktop",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:20:58Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:32:29Z",
     "platforms": {
       "macos": {
         "id": "streamlabs-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.0/streamlabs_macos_1.1.0.knobdeck",
-        "sha256": "ffdf85112d8c7001de38d32904dd27e5ecdb1f74848c6de07134a6bbb8c8f9d7",
-        "size": 1120989,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.1/streamlabs_macos_1.1.1.knobdeck",
+        "sha256": "9be6173ded38bf1ea24ab9c7ebabe2875fc24dd91f4a6fe9de22adc4a387378c",
+        "size": 1124714,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-macos/readme.md"
       },
       "windows": {
         "id": "streamlabs-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.0/streamlabs_windows_1.1.0.knobdeck",
-        "sha256": "bda1fdad4c688032c6d2ea2c575ac7f78c6c4a4a3c2b4bf442ce22d6f5c9cb1f",
-        "size": 436135,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/streamlabs-v1.1.1/streamlabs_windows_1.1.1.knobdeck",
+        "sha256": "76c562d4084cbcb50e3f25efeafe5dca26c5a9e42f98e6b25bd80367494852dc",
+        "size": 438545,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/streamlabs-windows/readme.md"
       }
     }
   },
-  "changelog": "Streamlabs Desktop 1.1.0 for macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "streamlabs-v1.1.1",
+      "released": "2026-11-19T13:32:29Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "streamlabs-v1.1.0",

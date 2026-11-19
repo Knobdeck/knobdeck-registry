@@ -4,35 +4,42 @@
   "name": "VLC",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.2.0",
-    "released": "2026-11-17T14:21:04Z",
+    "version": "1.2.1",
+    "released": "2026-11-19T13:32:47Z",
     "platforms": {
       "linux": {
         "id": "vlc-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.0/vlc_linux_1.2.0.knobdeck",
-        "sha256": "41ccf301f891211b8ca2a2d9cc0e655f5767e3013e583c73a452276ae9ed81f7",
-        "size": 2861468,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_linux_1.2.1.knobdeck",
+        "sha256": "5e4ff0aaedb597bee06cc7a06d187d97d01f7207350f9136a32bea4cd8113f19",
+        "size": 2864264,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-linux/readme.md"
       },
       "macos": {
         "id": "vlc-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.0/vlc_macos_1.2.0.knobdeck",
-        "sha256": "2f444f8fb60c696950f80d160c53b464d597924a73fcaa7dbb03e2ddca19bff9",
-        "size": 3468029,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_macos_1.2.1.knobdeck",
+        "sha256": "add2877f459242fe5f00cb60531b53554dd405d07c79b4958a8f835d65a213ee",
+        "size": 3471807,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-macos/readme.md"
       },
       "windows": {
         "id": "vlc-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.0/vlc_windows_1.2.0.knobdeck",
-        "sha256": "87dbefee9246381206022fb82bbf7cfb79a2f0da5ceaa0b564af83ecd9c0b28f",
-        "size": 1647106,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_windows_1.2.1.knobdeck",
+        "sha256": "ea11fe19fb11c8e29b25f6021d0071c1751517af75081282fba494a89e07caca",
+        "size": 1649473,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vlc-windows/readme.md"
       }
     }
   },
-  "changelog": "VLC 1.2.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.2.1",
+      "tag": "vlc-v1.2.1",
+      "released": "2026-11-19T13:32:47Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.2.0",
       "tag": "vlc-v1.2.0",

@@ -4,35 +4,42 @@
   "name": "Speed Test",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T17:09:18Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:19Z",
     "platforms": {
       "linux": {
         "id": "speedtest-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_linux_1.0.0.knobdeck",
-        "sha256": "71adff5f337c285e5dc37f7192bc9d5685465194f39d044efa7076e8e419d348",
-        "size": 979196,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_linux_1.0.1.knobdeck",
+        "sha256": "9611d6b4fe5fa4c327f39818897f4944990036b674490ab5f66e42777d0f5936",
+        "size": 981308,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/speedtest-linux/readme.md"
       },
       "macos": {
         "id": "speedtest-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_macos_1.0.0.knobdeck",
-        "sha256": "bbd1ff2a74e0e7fa6f70c9229495bdf6c1ba485e52b0627ad22ae903479f7e7c",
-        "size": 1796707,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_macos_1.0.1.knobdeck",
+        "sha256": "4e532010bffc187c4194abba709e82ec5981467af95398cf568bf9231bf8920f",
+        "size": 1798657,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/speedtest-macos/readme.md"
       },
       "windows": {
         "id": "speedtest-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.0/speedtest_windows_1.0.0.knobdeck",
-        "sha256": "0a9c0b5d93951860f359d2967721e0e6ad99c7ddce5ac3385a809d1c5478bf30",
-        "size": 853710,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_windows_1.0.1.knobdeck",
+        "sha256": "2a52a8308904cdb4a2708b803cb2c69682b25766ac483dc01dac1f33117b0abe",
+        "size": 855749,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/speedtest-windows/readme.md"
       }
     }
   },
-  "changelog": "Speed Test 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "speedtest-v1.0.1",
+      "released": "2026-11-19T13:32:19Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "speedtest-v1.0.0",

@@ -2,6 +2,128 @@
   "id": "speedtest",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "speedtest-v1.0.1",
+      "released": "2026-11-19T13:32:19Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "speedtest",
+        "version": "1.0.1",
+        "name": "Speed Test",
+        "summary": "Internet speed test on a key, and live latency to any host.",
+        "tags": [
+          "Network",
+          "Information"
+        ],
+        "sort": 87
+      },
+      "platforms": {
+        "linux": {
+          "id": "speedtest-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_linux_1.0.1.knobdeck",
+          "sha256": "9611d6b4fe5fa4c327f39818897f4944990036b674490ab5f66e42777d0f5936",
+          "size": 981308,
+          "file": "speedtest_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_linux_readme.md",
+          "readmeFile": "speedtest_linux_readme.md",
+          "name": "Speed Test",
+          "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "speedtest-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_macos_1.0.1.knobdeck",
+          "sha256": "4e532010bffc187c4194abba709e82ec5981467af95398cf568bf9231bf8920f",
+          "size": 1798657,
+          "file": "speedtest_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_macos_readme.md",
+          "readmeFile": "speedtest_macos_readme.md",
+          "name": "Speed Test",
+          "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "speedtest-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_windows_1.0.1.knobdeck",
+          "sha256": "2a52a8308904cdb4a2708b803cb2c69682b25766ac483dc01dac1f33117b0abe",
+          "size": 855749,
+          "file": "speedtest_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/speedtest-v1.0.1/speedtest_windows_readme.md",
+          "readmeFile": "speedtest_windows_readme.md",
+          "name": "Speed Test",
+          "description": "Test your internet speed from a key (Cloudflare's speed test servers) and watch the latency to any host.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "speed-test": {
+          "type": "button",
+          "label": "Speed Test",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "show",
+              "type": "select",
+              "label": "Show",
+              "default": "all",
+              "options": [
+                "all",
+                "down",
+                "up",
+                "ping"
+              ]
+            },
+            {
+              "key": "every",
+              "type": "select",
+              "label": "Test again by itself",
+              "default": "0",
+              "options": [
+                "0",
+                "15",
+                "60",
+                "360"
+              ]
+            }
+          ]
+        },
+        "latency": {
+          "type": "button",
+          "label": "Latency",
+          "icon": "activity",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "host",
+              "type": "text",
+              "label": "Host",
+              "default": "one.one.one.one"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "speedtest-v1.0.0",
       "released": "2026-11-17T17:09:18Z",

@@ -4,35 +4,42 @@
   "name": "Web Requests",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T14:21:17Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:34:05Z",
     "platforms": {
       "linux": {
         "id": "web-requests-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.0/web-requests_linux_1.0.0.knobdeck",
-        "sha256": "18e2729715a73b8c19228c2d5cd809b67605ed0f4268b7ec3179e255fec0ceb3",
-        "size": 2794017,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_linux_1.0.1.knobdeck",
+        "sha256": "4218d1197306f708dbbcecd980dd53815ad5b961b9870e5992a1a2dd7f063896",
+        "size": 2796707,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-linux/readme.md"
       },
       "macos": {
         "id": "web-requests-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.0/web-requests_macos_1.0.0.knobdeck",
-        "sha256": "9c7123028aedb5e7da5047fcb3b059ceccc2ad9bd393ba828d32a3be7140a0e0",
-        "size": 2349358,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_macos_1.0.1.knobdeck",
+        "sha256": "0f4091b9469d8529008c94e60cbdd5cfa88cd9e09b407f3f6b881ab279eb14ac",
+        "size": 2351956,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-macos/readme.md"
       },
       "windows": {
         "id": "web-requests-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.0/web-requests_windows_1.0.0.knobdeck",
-        "sha256": "0331c56efd048bc428b98128fded6598c75f0706dda2a4eda85b77535f714b4f",
-        "size": 1071580,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_windows_1.0.1.knobdeck",
+        "sha256": "abcef2ef3a76ca92d4c4f8b6b83ae8f0793366bc8ef25e75858b7687d281fe36",
+        "size": 1073790,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/web-requests-windows/readme.md"
       }
     }
   },
-  "changelog": "Web Requests 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "web-requests-v1.0.1",
+      "released": "2026-11-19T13:34:05Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "web-requests-v1.0.0",

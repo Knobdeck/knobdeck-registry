@@ -4,35 +4,42 @@
   "name": "YouTube Music Desktop",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:21:27Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:34:17Z",
     "platforms": {
       "linux": {
         "id": "ytmusic-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_linux_1.1.0.knobdeck",
-        "sha256": "e0ff55bcae602a0bd1fe918a022a068233c8d671f2a78123a92c5d8d34513071",
-        "size": 2910159,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_linux_1.1.1.knobdeck",
+        "sha256": "387730dd67b7280e70aafcb601b42f1b9805eeb4fa860a7cceb33fffd32fe52a",
+        "size": 2912397,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-linux/readme.md"
       },
       "macos": {
         "id": "ytmusic-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_macos_1.1.0.knobdeck",
-        "sha256": "f225eb5881155656833058343bea3b825e4d1a3add19f89736ac0bda5fdb4b26",
-        "size": 3587349,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_macos_1.1.1.knobdeck",
+        "sha256": "5c87f3f3043b7866800d5a26c1517acbf5406003461da5950f700fd61041daf8",
+        "size": 3589920,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-macos/readme.md"
       },
       "windows": {
         "id": "ytmusic-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.0/ytmusic_windows_1.1.0.knobdeck",
-        "sha256": "ecbf2955e00579d224b5b9a4bf2dd52f2db7356206c94db9fd26543ea887d12e",
-        "size": 1707692,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_windows_1.1.1.knobdeck",
+        "sha256": "6f42bbfd468dc3b32bb250090d98ed5c39fd3d75c3d39d49beac8e1a798e05f6",
+        "size": 1709991,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-windows/readme.md"
       }
     }
   },
-  "changelog": "YouTube Music Desktop 1.1.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "ytmusic-v1.1.1",
+      "released": "2026-11-19T13:34:17Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "ytmusic-v1.1.0",

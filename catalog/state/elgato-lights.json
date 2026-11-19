@@ -2,6 +2,249 @@
   "id": "elgato-lights",
   "versions": [
     {
+      "version": "1.1.2",
+      "tag": "elgato-lights-v1.1.2",
+      "released": "2026-11-19T13:31:12Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "elgato-lights",
+        "version": "1.1.2",
+        "name": "Elgato Lights",
+        "summary": "Key Light, Ring Light and Light Strip: power, brightness, temperature, color.",
+        "tags": [
+          "Lighting",
+          "Streaming"
+        ],
+        "sort": 25
+      },
+      "platforms": {
+        "linux": {
+          "id": "elgato-lights-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.2/elgato-lights_linux_1.1.2.knobdeck",
+          "sha256": "3f7631371ca241126c189343d2570d1e9d83e7d73ef54eb307235a1631d78193",
+          "size": 1888720,
+          "file": "elgato-lights_linux_1.1.2.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.2/elgato-lights_linux_readme.md",
+          "readmeFile": "elgato-lights_linux_readme.md",
+          "name": "Elgato Lights",
+          "description": "Key Light, Ring Light and Light Strip: power, brightness, temperature and color.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "elgato-lights-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.2/elgato-lights_macos_1.1.2.knobdeck",
+          "sha256": "de25ea5ecfa4c5e7775b16262fe5c118ad321e93387f899569202a300a1d5806",
+          "size": 3454246,
+          "file": "elgato-lights_macos_1.1.2.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.2/elgato-lights_macos_readme.md",
+          "readmeFile": "elgato-lights_macos_readme.md",
+          "name": "Elgato Lights",
+          "description": "Key Light, Ring Light and Light Strip: power, brightness, temperature and color.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "elgato-lights-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.2/elgato-lights_windows_1.1.2.knobdeck",
+          "sha256": "8e7d44978d9b740f04ebea50a5a09a60c898b9c9bd800515e346c9f6db21ab5b",
+          "size": 1637082,
+          "file": "elgato-lights_windows_1.1.2.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/elgato-lights-v1.1.2/elgato-lights_windows_readme.md",
+          "readmeFile": "elgato-lights_windows_readme.md",
+          "name": "Elgato Lights",
+          "description": "Key Light, Ring Light and Light Strip: power, brightness, temperature and color.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "power": {
+          "type": "toggle",
+          "label": "Power",
+          "icon": "lightbulb",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "lightbulb-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "lightbulb"
+            }
+          ]
+        },
+        "brightness": {
+          "type": "slider",
+          "label": "Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "set-brightness": {
+          "type": "button",
+          "label": "Set Brightness",
+          "icon": "sun",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Brightness (%)",
+              "default": "50"
+            }
+          ]
+        },
+        "temperature": {
+          "type": "slider",
+          "label": "Temperature",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (K)",
+              "default": "100"
+            }
+          ],
+          "min": 2900,
+          "max": 7000,
+          "step": 50,
+          "unit": "K"
+        },
+        "set-temperature": {
+          "type": "button",
+          "label": "Set Temperature",
+          "icon": "thermometer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Temperature (K, 2900–7000)",
+              "default": "5000"
+            }
+          ]
+        },
+        "set-color": {
+          "type": "button",
+          "label": "Set Color (Light Strip)",
+          "icon": "palette",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light",
+              "default": "__all__"
+            },
+            {
+              "key": "color",
+              "type": "text",
+              "label": "Color (#RRGGBB)",
+              "default": "#FF8800"
+            }
+          ]
+        },
+        "battery": {
+          "type": "button",
+          "label": "Battery (Key Light Mini)",
+          "icon": "battery",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "light",
+              "type": "select",
+              "label": "Light"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.1.1",
       "tag": "elgato-lights-v1.1.1",
       "released": "2026-11-17T14:20:27Z",

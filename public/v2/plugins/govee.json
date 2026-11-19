@@ -4,35 +4,42 @@
   "name": "Govee",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T17:08:59Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:28Z",
     "platforms": {
       "linux": {
         "id": "govee-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_linux_1.0.0.knobdeck",
-        "sha256": "9c75a76d14ed759585b8b582c19dba0d53ef87540a9fb5e082ff166e7c408060",
-        "size": 2898563,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.1/govee_linux_1.0.1.knobdeck",
+        "sha256": "fbdea75854e74c2cd906603a3c4648f27c99e91375bc5b9deda6408e437a1a33",
+        "size": 2900991,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/govee-linux/readme.md"
       },
       "macos": {
         "id": "govee-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_macos_1.0.0.knobdeck",
-        "sha256": "f188516edf01d58b069c7fea823f4698bc4fc6e254400378cadc05dc5302c54b",
-        "size": 3550471,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.1/govee_macos_1.0.1.knobdeck",
+        "sha256": "bcefce19ddf5ab72ed612866ae330a3ad22bb2c756c97c9212282c83accc6151",
+        "size": 3551486,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/govee-macos/readme.md"
       },
       "windows": {
         "id": "govee-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.0/govee_windows_1.0.0.knobdeck",
-        "sha256": "da339d485574974c2d4ff5d4a51502169a2e6c1dfe8bf69969181f63e53df8dc",
-        "size": 1686010,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/govee-v1.0.1/govee_windows_1.0.1.knobdeck",
+        "sha256": "594d9df22c79ae0e4830c3f4f4748b2a5bec38ab20b539e3c590142097c86361",
+        "size": 1688320,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/govee-windows/readme.md"
       }
     }
   },
-  "changelog": "Govee 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "govee-v1.0.1",
+      "released": "2026-11-19T13:31:28Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "govee-v1.0.0",

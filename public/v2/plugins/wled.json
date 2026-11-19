@@ -4,35 +4,42 @@
   "name": "WLED",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T17:58:56Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:34:11Z",
     "platforms": {
       "linux": {
         "id": "wled-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.0/wled_linux_1.0.0.knobdeck",
-        "sha256": "2379ab240a4a2271aa2eb64713c669b0bf4a1990e84c484ebf1e8c77191bd10a",
-        "size": 1906148,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_linux_1.0.1.knobdeck",
+        "sha256": "7ac372c185bfe67c688c8bbb7a796a802bd23fc453b227434cb2009fa57594b7",
+        "size": 1908512,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/wled-linux/readme.md"
       },
       "macos": {
         "id": "wled-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.0/wled_macos_1.0.0.knobdeck",
-        "sha256": "03bbed3e955e1cf75a7a74aa46f81134410e632c2f23370549ad1b99a2824d5d",
-        "size": 3485695,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_macos_1.0.1.knobdeck",
+        "sha256": "9a24e638cce95ad5e4677a44456c970b498871d2ead53213ff5c9824dd10b33d",
+        "size": 3487966,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/wled-macos/readme.md"
       },
       "windows": {
         "id": "wled-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.0/wled_windows_1.0.0.knobdeck",
-        "sha256": "523fab6d151283a39859be185f460b62206f46eda9525221e68e07ec025a4d35",
-        "size": 1652793,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/wled-v1.0.1/wled_windows_1.0.1.knobdeck",
+        "sha256": "2a9d42c92778a82b5ebc825d3ab8318d3047bfb8e39d5b79eb00c6c13e852e83",
+        "size": 1655072,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/wled-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: power, brightness, presets (key and wheel), effects (picker, dial and wheel) with\n  speed and intensity dials, palettes, color slots and segment selection for WLED devices, found\n  by mDNS or typed by address.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "wled-v1.0.1",
+      "released": "2026-11-19T13:34:11Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "wled-v1.0.0",

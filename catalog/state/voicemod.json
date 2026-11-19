@@ -2,6 +2,274 @@
   "id": "voicemod",
   "versions": [
     {
+      "version": "1.1.1",
+      "tag": "voicemod-v1.1.1",
+      "released": "2026-11-19T13:33:55Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "voicemod",
+        "version": "1.1.1",
+        "name": "Voicemod",
+        "summary": "Voices, voice changer, hear myself, mic mute and soundboard.",
+        "tags": [
+          "Voice",
+          "Streaming"
+        ],
+        "sort": 26
+      },
+      "platforms": {
+        "macos": {
+          "id": "voicemod-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.1/voicemod_macos_1.1.1.knobdeck",
+          "sha256": "1aac063ca18ad4ccc31ac6c4cdf70649a657d2bada0f618b331479edec202075",
+          "size": 1102046,
+          "file": "voicemod_macos_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.1/voicemod_macos_readme.md",
+          "readmeFile": "voicemod_macos_readme.md",
+          "name": "Voicemod",
+          "description": "Voicemod voices, voice changer, hear myself, background effects, mic mute and soundboard.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "voicemod-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.1/voicemod_windows_1.1.1.knobdeck",
+          "sha256": "b2817b6c14254e201443ea9acc8cdb2e4a02537760986ca939616ec5a4d9bec8",
+          "size": 427700,
+          "file": "voicemod_windows_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemod-v1.1.1/voicemod_windows_readme.md",
+          "readmeFile": "voicemod_windows_readme.md",
+          "name": "Voicemod",
+          "description": "Voicemod voices, voice changer, hear myself, background effects, mic mute and soundboard.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "voice-changer": {
+          "type": "toggle",
+          "label": "Voice Changer",
+          "icon": "audio-waveform",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Voice Changer Off",
+              "icon": "audio-lines"
+            },
+            {
+              "value": "on",
+              "label": "Voice Changer On",
+              "icon": "audio-waveform"
+            }
+          ]
+        },
+        "hear-myself": {
+          "type": "toggle",
+          "label": "Hear Myself",
+          "icon": "ear",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Not Hearing",
+              "icon": "ear-off"
+            },
+            {
+              "value": "on",
+              "label": "Hearing Myself",
+              "icon": "ear"
+            }
+          ]
+        },
+        "background-effects": {
+          "type": "toggle",
+          "label": "Background Effects",
+          "icon": "sparkles",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Effects Off",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Effects On",
+              "icon": "sparkles"
+            }
+          ]
+        },
+        "mute-mic": {
+          "type": "toggle",
+          "label": "Mute Microphone",
+          "icon": "mic",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "unmuted",
+              "label": "Mic On",
+              "icon": "mic"
+            },
+            {
+              "value": "muted",
+              "label": "Mic Muted",
+              "icon": "mic-off"
+            }
+          ]
+        },
+        "mute-sounds-for-me": {
+          "type": "toggle",
+          "label": "Mute Sounds for Me",
+          "icon": "volume-x",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "I Hear Sounds",
+              "icon": "volume-2"
+            },
+            {
+              "value": "on",
+              "label": "Sounds Muted for Me",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "voice": {
+          "type": "toggle",
+          "label": "Select Voice",
+          "icon": "user-round",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "voice",
+              "type": "combobox",
+              "label": "Voice"
+            }
+          ],
+          "states": [
+            {
+              "value": "inactive",
+              "label": "Not Selected",
+              "icon": "user-round"
+            },
+            {
+              "value": "active",
+              "label": "Selected",
+              "icon": "circle-check"
+            }
+          ]
+        },
+        "random-voice": {
+          "type": "button",
+          "label": "Random Voice",
+          "icon": "shuffle",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "From",
+              "default": "AllVoices",
+              "options": [
+                "AllVoices",
+                "FreeVoices",
+                "FavoriteVoices",
+                "CustomVoices"
+              ]
+            }
+          ]
+        },
+        "favorite-voices-wheel": {
+          "type": "wheel",
+          "label": "Favorite Voices",
+          "icon": "star",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "play-sound": {
+          "type": "button",
+          "label": "Play Sound",
+          "icon": "play",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "sound",
+              "type": "combobox",
+              "label": "Sound"
+            }
+          ]
+        },
+        "stop-sounds": {
+          "type": "button",
+          "label": "Stop All Sounds",
+          "icon": "square",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "bleep": {
+          "type": "hold",
+          "label": "Bleep",
+          "icon": "message-square-off",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "released": {
+            "label": "Bleep",
+            "icon": "message-square-off"
+          },
+          "held": {
+            "label": "Bleeping",
+            "icon": "megaphone"
+          }
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.1.0",
       "tag": "voicemod-v1.1.0",
       "released": "2026-11-17T14:21:07Z",

@@ -4,35 +4,42 @@
   "name": "Weather",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-17T14:21:14Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:34:01Z",
     "platforms": {
       "linux": {
         "id": "weather-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.0/weather_linux_1.1.0.knobdeck",
-        "sha256": "31b61b05c48a84e0c5d435c4ccbaf22262db88f35e674a819e60c526e137fb94",
-        "size": 984116,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_linux_1.1.1.knobdeck",
+        "sha256": "1e4ea938cdb495ad4b1a1b9304a900db28a0360d7a6d2fa7222d3eff9fdef19c",
+        "size": 986678,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-linux/readme.md"
       },
       "macos": {
         "id": "weather-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.0/weather_macos_1.1.0.knobdeck",
-        "sha256": "a917097c047ea8ee97b45726e456c223d94196ae34e7c85a1bdd0e9f23dc17b9",
-        "size": 1800163,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_macos_1.1.1.knobdeck",
+        "sha256": "a06d794c41712f5044632f2a95f1ab193402c45384e424415155a2cc2ddfdd32",
+        "size": 1803327,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-macos/readme.md"
       },
       "windows": {
         "id": "weather-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.0/weather_windows_1.1.0.knobdeck",
-        "sha256": "cbcaf3626487583fe5958685d1012f69c5f6bc3b6fb4f3fff99f0331be91478e",
-        "size": 854004,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/weather-v1.1.1/weather_windows_1.1.1.knobdeck",
+        "sha256": "e3e28f899720daa3fd41799f0410df9978a30b024b68dbce79b632c88811fe5e",
+        "size": 856068,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/weather-windows/readme.md"
       }
     }
   },
-  "changelog": "Weather 1.1.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "weather-v1.1.1",
+      "released": "2026-11-19T13:34:01Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "weather-v1.1.0",

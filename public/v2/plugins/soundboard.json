@@ -4,35 +4,42 @@
   "name": "Soundboard",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T18:29:26Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:16Z",
     "platforms": {
       "linux": {
         "id": "soundboard-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_linux_1.0.0.knobdeck",
-        "sha256": "404f17308e08389af5c2ecc7756fdd49b95455f22c47e0f460bf2dd318f3e763",
-        "size": 742584,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_linux_1.0.1.knobdeck",
+        "sha256": "2db692f80496ac6a0b163254005f80697729f12c75d349edfc3e51dfcbc97c14",
+        "size": 744960,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-linux/readme.md"
       },
       "macos": {
         "id": "soundboard-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_macos_1.0.0.knobdeck",
-        "sha256": "8fe906b10fe921242533ebf31289b176c7aa502a66b31d143d2d07290a39096c",
-        "size": 1300821,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_macos_1.0.1.knobdeck",
+        "sha256": "353a68e50270f53860f1e282abad6ebe573779184cc8462459f557a20e68b211",
+        "size": 1303234,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-macos/readme.md"
       },
       "windows": {
         "id": "soundboard-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.0/soundboard_windows_1.0.0.knobdeck",
-        "sha256": "b7aef90adb4a08d1a743f6341c8f13ec9afc6dbd9bbd5ff0c7f74c7018149246",
-        "size": 597125,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/soundboard-v1.0.1/soundboard_windows_1.0.1.knobdeck",
+        "sha256": "a0036bbe409812ab17326fcd1cc19cd6f99c746d0e869dea81717c966422ded8",
+        "size": 599333,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/soundboard-windows/readme.md"
       }
     }
   },
-  "changelog": "- Play Sound and Hold to Play: mp3, wav, ogg and flac files, per-sound volume, restart / stop /\n  overlap / loop on press, a second output device per sound (virtual cable + headphones).\n- Stop All Sounds and a master Soundboard Volume dial.\n- Windows: Soundpad Play Sound, Stop and Pause / Resume through its remote control pipe.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "soundboard-v1.0.1",
+      "released": "2026-11-19T13:32:16Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "soundboard-v1.0.0",

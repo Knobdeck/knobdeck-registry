@@ -4,35 +4,42 @@
   "name": "Hardware Monitor",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T18:19:59Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:30Z",
     "platforms": {
       "linux": {
         "id": "hardware-monitor-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_linux_1.0.0.knobdeck",
-        "sha256": "939ecb78b318fa6bebd52bb9a8bd40192a52a69b453dc060ceeffddcc7965d9b",
-        "size": 314030,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_linux_1.0.1.knobdeck",
+        "sha256": "a756b47cab6d927036ff280e956dba066c39e46595c1e71218f18c69e29e4088",
+        "size": 316348,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-linux/readme.md"
       },
       "macos": {
         "id": "hardware-monitor-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_macos_1.0.0.knobdeck",
-        "sha256": "a5bc518fef889a0e803e9dabafb05790b925c7b345975a9a9581e697f87529b5",
-        "size": 536795,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_macos_1.0.1.knobdeck",
+        "sha256": "ce3245233ea199a51f9176ceb483b37c26386c1eaf79007601cd462a7f24318a",
+        "size": 539103,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-macos/readme.md"
       },
       "windows": {
         "id": "hardware-monitor-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.0/hardware-monitor_windows_1.0.0.knobdeck",
-        "sha256": "cb8e4d5cc5ec5a0d179e1f71e8926916ae95daf400299278c4ee3e25711f0407",
-        "size": 210778,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/hardware-monitor-v1.0.1/hardware-monitor_windows_1.0.1.knobdeck",
+        "sha256": "781ed1ce9dffe1c1db3e2da72705a4a61e6c1716d548cc47e41b842a0fabcf9a",
+        "size": 213138,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/hardware-monitor-windows/readme.md"
       }
     }
   },
-  "changelog": "- Sensor, Sensor Gauge and Two Sensors: CPU and GPU temperatures, CPU package power, GPU load,\n  VRAM, power and fans, any other sensor, with an optional alert threshold.\n- Linux hwmon / amdgpu / RAPL, Windows LibreHardwareMonitor or OpenHardwareMonitor (WMI), macOS\n  Apple silicon HID sensors and SMC, NVIDIA through NVML.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "hardware-monitor-v1.0.1",
+      "released": "2026-11-19T13:31:30Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "hardware-monitor-v1.0.0",

@@ -2,6 +2,615 @@
   "id": "daw-mackie",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "daw-mackie-v1.0.1",
+      "released": "2026-11-19T13:31:06Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "daw-mackie",
+        "version": "1.0.1",
+        "name": "DAW Control (Mackie)",
+        "summary": "Control your DAW as a Mackie Control surface: transport, jog, faders, banks, mute / solo / arm, with its LEDs and track names.",
+        "tags": [
+          "Music",
+          "Audio"
+        ],
+        "sort": 106
+      },
+      "platforms": {
+        "linux": {
+          "id": "daw-mackie-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.1/daw-mackie_linux_1.0.1.knobdeck",
+          "sha256": "aefe62e3e314349a9c8259faac4bbaebf8d656ee8d9bee8169ac83b6d770bf13",
+          "size": 496052,
+          "file": "daw-mackie_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.1/daw-mackie_linux_readme.md",
+          "readmeFile": "daw-mackie_linux_readme.md",
+          "name": "DAW Control (Mackie)",
+          "description": "Control your DAW as a Mackie Control surface: transport, jog wheel, faders, V-Pots, banks, mute / solo / record arm / select, with the DAW's LEDs, fader positions, track names and time display.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "daw-mackie-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.1/daw-mackie_macos_1.0.1.knobdeck",
+          "sha256": "460b134edbc4ce4c52da92853a1c8e1f3f366c5a1157a2b02b27554ea09a87a9",
+          "size": 903540,
+          "file": "daw-mackie_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.1/daw-mackie_macos_readme.md",
+          "readmeFile": "daw-mackie_macos_readme.md",
+          "name": "DAW Control (Mackie)",
+          "description": "Control your DAW as a Mackie Control surface: transport, jog wheel, faders, V-Pots, banks, mute / solo / record arm / select, with the DAW's LEDs, fader positions, track names and time display.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "daw-mackie-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.1/daw-mackie_windows_1.0.1.knobdeck",
+          "sha256": "25edcbc3166634a6d0ab034adb9b34aa4b3eec5f29db11ee9b524c46506a48c8",
+          "size": 319862,
+          "file": "daw-mackie_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/daw-mackie-v1.0.1/daw-mackie_windows_readme.md",
+          "readmeFile": "daw-mackie_windows_readme.md",
+          "name": "DAW Control (Mackie)",
+          "description": "Control your DAW as a Mackie Control surface: transport, jog wheel, faders, V-Pots, banks, mute / solo / record arm / select, with the DAW's LEDs, fader positions, track names and time display.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "play": {
+          "type": "toggle",
+          "label": "Play",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Play",
+              "icon": "play"
+            },
+            {
+              "value": "on",
+              "label": "Playing",
+              "icon": "play"
+            }
+          ]
+        },
+        "stop": {
+          "type": "toggle",
+          "label": "Stop",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Stop",
+              "icon": "square"
+            },
+            {
+              "value": "on",
+              "label": "Stopped",
+              "icon": "square"
+            }
+          ]
+        },
+        "record": {
+          "type": "toggle",
+          "label": "Record",
+          "icon": "circle-dot",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Record",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Recording",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "rewind": {
+          "type": "toggle",
+          "label": "Rewind",
+          "icon": "rewind",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Rewind",
+              "icon": "rewind"
+            },
+            {
+              "value": "on",
+              "label": "Rewinding",
+              "icon": "rewind"
+            }
+          ]
+        },
+        "fast-forward": {
+          "type": "toggle",
+          "label": "Fast Forward",
+          "icon": "fast-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Fast Forward",
+              "icon": "fast-forward"
+            },
+            {
+              "value": "on",
+              "label": "Forwarding",
+              "icon": "fast-forward"
+            }
+          ]
+        },
+        "cycle": {
+          "type": "toggle",
+          "label": "Loop",
+          "icon": "repeat",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Loop Off",
+              "icon": "repeat"
+            },
+            {
+              "value": "on",
+              "label": "Loop On",
+              "icon": "repeat"
+            }
+          ]
+        },
+        "mute": {
+          "type": "toggle",
+          "label": "Mute Track",
+          "icon": "volume-x",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Strip",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Mute",
+              "icon": "volume-2"
+            },
+            {
+              "value": "on",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "solo": {
+          "type": "toggle",
+          "label": "Solo Track",
+          "icon": "headphones",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Strip",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Solo",
+              "icon": "headphones"
+            },
+            {
+              "value": "on",
+              "label": "Solo On",
+              "icon": "headphones"
+            }
+          ]
+        },
+        "rec-arm": {
+          "type": "toggle",
+          "label": "Record Arm Track",
+          "icon": "circle-dot",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Strip",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Arm",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Armed",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "select": {
+          "type": "toggle",
+          "label": "Select Track",
+          "icon": "square-check",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Strip",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Select",
+              "icon": "square-dashed"
+            },
+            {
+              "value": "on",
+              "label": "Selected",
+              "icon": "square-check"
+            }
+          ]
+        },
+        "fader": {
+          "type": "slider",
+          "label": "Fader",
+          "icon": "sliders-vertical",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Strip",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "master"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (%)",
+              "default": "2"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "vpot": {
+          "type": "slider",
+          "label": "V-Pot",
+          "icon": "circle-gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Strip",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Ticks per step",
+              "default": "1"
+            }
+          ],
+          "min": 0,
+          "max": 11,
+          "step": 1,
+          "unit": null
+        },
+        "jog": {
+          "type": "slider",
+          "label": "Jog Wheel",
+          "icon": "disc-3",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Ticks per step",
+              "default": "1"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "bank": {
+          "type": "button",
+          "label": "Bank / Track",
+          "icon": "arrow-right-left",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "move",
+              "type": "select",
+              "label": "Move",
+              "default": "bank-right",
+              "options": [
+                "bank-right",
+                "bank-left",
+                "channel-right",
+                "channel-left"
+              ]
+            }
+          ]
+        },
+        "bank-dial": {
+          "type": "slider",
+          "label": "Bank / Track (dial)",
+          "icon": "arrow-right-left",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "by",
+              "type": "select",
+              "label": "Turn moves by",
+              "default": "channel",
+              "options": [
+                "channel",
+                "bank"
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "button": {
+          "type": "hold",
+          "label": "Mackie Button",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "note",
+              "type": "select",
+              "label": "Button",
+              "default": "80",
+              "options": [
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "50",
+                "51",
+                "52",
+                "53",
+                "54",
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70",
+                "71",
+                "72",
+                "73",
+                "74",
+                "75",
+                "76",
+                "77",
+                "78",
+                "79",
+                "80",
+                "81",
+                "82",
+                "83",
+                "84",
+                "85",
+                "86",
+                "87",
+                "88",
+                "89",
+                "90",
+                "96",
+                "97",
+                "98",
+                "99",
+                "100",
+                "101",
+                "102",
+                "103"
+              ]
+            }
+          ],
+          "released": {
+            "label": "Button",
+            "icon": "square"
+          },
+          "held": {
+            "label": "Pressed",
+            "icon": "square-check"
+          }
+        },
+        "time": {
+          "type": "button",
+          "label": "Time Display",
+          "icon": "clock",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "daw-mackie-v1.0.0",
       "released": "2026-11-19T07:36:41Z",

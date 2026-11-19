@@ -2,6 +2,182 @@
   "id": "coding-agents",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "coding-agents-v1.0.1",
+      "released": "2026-11-19T13:31:04Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "coding-agents",
+        "version": "1.0.1",
+        "name": "Coding Agents",
+        "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
+        "tags": [
+          "Developer tools",
+          "AI"
+        ],
+        "sort": 31
+      },
+      "platforms": {
+        "linux": {
+          "id": "coding-agents-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_linux_1.0.1.knobdeck",
+          "sha256": "658bb77b09a17079ae4af7ca1e38d04b3045d2ef2eb7444dbc84554b8c19504e",
+          "size": 620759,
+          "file": "coding-agents_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_linux_readme.md",
+          "readmeFile": "coding-agents_linux_readme.md",
+          "name": "Coding Agents",
+          "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "coding-agents-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_macos_1.0.1.knobdeck",
+          "sha256": "67239f09e47b44f16cd157d8c816c287e312ae6d2d5ff644a105d0c4a3eb6326",
+          "size": 1132672,
+          "file": "coding-agents_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_macos_readme.md",
+          "readmeFile": "coding-agents_macos_readme.md",
+          "name": "Coding Agents",
+          "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "coding-agents-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_windows_1.0.1.knobdeck",
+          "sha256": "1834d6357fada7cef219e5eca796837aa92e6d8518171ccd597b72d4edb0c6b5",
+          "size": 435526,
+          "file": "coding-agents_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_windows_readme.md",
+          "readmeFile": "coding-agents_windows_readme.md",
+          "name": "Coding Agents",
+          "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "status": {
+          "type": "button",
+          "label": "Agent Status",
+          "icon": "bot",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "agent",
+              "type": "select",
+              "label": "Sessions of",
+              "default": "all",
+              "options": [
+                "all",
+                "claude",
+                "codex"
+              ]
+            },
+            {
+              "key": "show_agent",
+              "type": "checkbox",
+              "label": "Show the agent's name",
+              "default": false
+            }
+          ]
+        },
+        "attention": {
+          "type": "button",
+          "label": "Needs Me",
+          "icon": "bell",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "agent",
+              "type": "select",
+              "label": "Sessions of",
+              "default": "all",
+              "options": [
+                "all",
+                "claude",
+                "codex"
+              ]
+            }
+          ]
+        },
+        "approve": {
+          "type": "button",
+          "label": "Approve",
+          "icon": "check",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "deny": {
+          "type": "button",
+          "label": "Deny",
+          "icon": "x",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "approvals-wheel": {
+          "type": "wheel",
+          "label": "Approvals Wheel",
+          "icon": "shield-question",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "sessions-wheel": {
+          "type": "wheel",
+          "label": "Sessions Wheel",
+          "icon": "layout-grid",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "agent",
+              "type": "select",
+              "label": "Sessions of",
+              "default": "all",
+              "options": [
+                "all",
+                "claude",
+                "codex"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "coding-agents-v1.0.0",
       "released": "2026-11-17T14:20:21Z",

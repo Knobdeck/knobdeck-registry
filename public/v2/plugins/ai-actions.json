@@ -4,35 +4,42 @@
   "name": "AI Actions",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-17T14:20:08Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:30:45Z",
     "platforms": {
       "linux": {
         "id": "ai-actions-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_linux_1.0.0.knobdeck",
-        "sha256": "d0fa3f6157238035d54d0bd3ee04026e509aaadfedf5b88234a3010ed3451a20",
-        "size": 3468150,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_linux_1.0.1.knobdeck",
+        "sha256": "bce65b005fc8cbe21f3552890515ceb9802eac47689e0a369b2ea90bd2a36522",
+        "size": 3471589,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-linux/readme.md"
       },
       "macos": {
         "id": "ai-actions-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_macos_1.0.0.knobdeck",
-        "sha256": "d3a93b98c0f2d19b2e31f31e28a856c561173092233d6d7019a3286cf419f74e",
-        "size": 3601535,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_macos_1.0.1.knobdeck",
+        "sha256": "b33b7f1409fe41754663ef8dd105fd547cda5ae38ed4fc74043236cd73136778",
+        "size": 3604724,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-macos/readme.md"
       },
       "windows": {
         "id": "ai-actions-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.0/ai-actions_windows_1.0.0.knobdeck",
-        "sha256": "33201a8ed7055676088f6b12bf2dc24a9687a5e5f4c1b2a3ea670836a4909ae2",
-        "size": 1724842,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_windows_1.0.1.knobdeck",
+        "sha256": "fc90651d9a0f09534aef98624cb22dd5973fe8bc2f202ec3291b524008dd0b37",
+        "size": 1727086,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-actions-windows/readme.md"
       }
     }
   },
-  "changelog": "AI Actions 1.0.0 for linux, macos, windows.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": true,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "ai-actions-v1.0.1",
+      "released": "2026-11-19T13:30:45Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "ai-actions-v1.0.0",

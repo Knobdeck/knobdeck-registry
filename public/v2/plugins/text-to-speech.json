@@ -4,35 +4,42 @@
   "name": "Text to Speech",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-19T07:27:28Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:32:35Z",
     "platforms": {
       "linux": {
         "id": "text-to-speech-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_linux_1.0.0.knobdeck",
-        "sha256": "578262c5c056f598b6fec41b9b6b18ac440fd64b2669f19d1ea13163fc208271",
-        "size": 974662,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_linux_1.0.1.knobdeck",
+        "sha256": "ec9e5d32f53464b638042601b303c405f39f34a8d6adf27d6631cfae911234d0",
+        "size": 977150,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-linux/readme.md"
       },
       "macos": {
         "id": "text-to-speech-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_macos_1.0.0.knobdeck",
-        "sha256": "3419282f089839256d77570f1e5f33557ef780d087f550235ce63923abd59c62",
-        "size": 696648,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_macos_1.0.1.knobdeck",
+        "sha256": "ccf6bc250e57946f20f020638b0544a71eb8abbc4cd47094402abe31b384ca3d",
+        "size": 699047,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-macos/readme.md"
       },
       "windows": {
         "id": "text-to-speech-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_windows_1.0.0.knobdeck",
-        "sha256": "aa047eed45358db7472d19e078e57f29fa170aac512292f3df862a1b0a1d3e98",
-        "size": 297086,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.1/text-to-speech_windows_1.0.1.knobdeck",
+        "sha256": "6d92e4831b89c025fc07ab62e07d113bb17cb57306a9210a5bf0ac9b94e5d368",
+        "size": 299546,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-windows/readme.md"
       }
     }
   },
-  "changelog": "- Speak Text: the selection, the clipboard or your own text (KnobDeck placeholders), with a voice\n  per key; pressing while speaking stops it or speaks the new text.\n- Stop Speaking (lit while speaking), Use Voice (a voice picker), Speech Rate and Speech Volume\n  dials; voice, rate and volume are kept.\n- Windows: WinRT SpeechSynthesizer. macOS: the system synthesizer through `say`. Linux: Speech\n  Dispatcher over SSIP (started when it isn't running).",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "text-to-speech-v1.0.1",
+      "released": "2026-11-19T13:32:35Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "text-to-speech-v1.0.0",

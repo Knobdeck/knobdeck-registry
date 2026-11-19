@@ -4,35 +4,42 @@
   "name": "Blender",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-18T18:29:16Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:30:55Z",
     "platforms": {
       "linux": {
         "id": "blender-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_linux_1.0.0.knobdeck",
-        "sha256": "7c3632af9209cc00a8d004279b366047331feeb13e06a91b1d53a8282e6888b0",
-        "size": 306608,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.1/blender_linux_1.0.1.knobdeck",
+        "sha256": "7b246aab6101da256660cd9923fd27ebed862b2dc2f2d5816d5ceae04478a174",
+        "size": 309346,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/blender-linux/readme.md"
       },
       "macos": {
         "id": "blender-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_macos_1.0.0.knobdeck",
-        "sha256": "5d3b211dc339d3edfb20634987af40fcf41dc3848363f6cbe241f591c606561e",
-        "size": 554389,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.1/blender_macos_1.0.1.knobdeck",
+        "sha256": "a63c2845e4a680183a6f91e511dfc34fe5e452c521d56dd008324ecdd56df499",
+        "size": 557231,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/blender-macos/readme.md"
       },
       "windows": {
         "id": "blender-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.0/blender_windows_1.0.0.knobdeck",
-        "sha256": "69101702056b0fddd8d2b875d7257441a6dc5d8d46f9cd3dbb32f9e5996f7446",
-        "size": 211753,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/blender-v1.0.1/blender_windows_1.0.1.knobdeck",
+        "sha256": "ee3959ac1da50be7e5c72e814c0e7b1292f82e35e9b3da063d6495ac7b5e4bda",
+        "size": 214525,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/blender-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release, for Windows, macOS and Linux. Needs KnobDeck with the companion hub and the\n  KnobDeck add-on for Blender (Blender 4.2+, from extensions.blender.org or\n  github.com/Knobdeck/knobdeck-blender-companion).\n- Play / Pause, Frame dial, Jump to Start / End, Previous / Next Keyframe, Workspace (button and\n  wheel), Object Interaction Mode, Viewport Shading, Overlays, X-Ray, Render Image, Render\n  Animation, Save, Undo, Redo, Brush Size and Brush Strength dials, Object Transform dial\n  (location / rotation / scale, per axis), and a Mode and Object key.\n- Keys follow Blender live: playback, frame, overlays, X-ray, brush, transform, mode and object.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "blender-v1.0.1",
+      "released": "2026-11-19T13:30:55Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "blender-v1.0.0",

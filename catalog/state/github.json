@@ -2,6 +2,323 @@
   "id": "github",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "github-v1.0.1",
+      "released": "2026-11-19T13:31:24Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "github",
+        "version": "1.0.1",
+        "name": "GitHub",
+        "summary": "Notifications, review requests, your PRs, workflow runs and repo counters.",
+        "tags": [
+          "Developer",
+          "Productivity"
+        ],
+        "featured": false,
+        "sort": 93
+      },
+      "platforms": {
+        "linux": {
+          "id": "github-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_linux_1.0.1.knobdeck",
+          "sha256": "01d570a46d12f2a8bc353e179eca247193c939b404a02ad50d2dcfa25634844c",
+          "size": 3525198,
+          "file": "github_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_linux_readme.md",
+          "readmeFile": "github_linux_readme.md",
+          "name": "GitHub",
+          "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "github-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_macos_1.0.1.knobdeck",
+          "sha256": "a58d724d0621308b30ce7b80f00ccb6fb60e3298e2c8b31b4e5965728e38e1ee",
+          "size": 3731656,
+          "file": "github_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_macos_readme.md",
+          "readmeFile": "github_macos_readme.md",
+          "name": "GitHub",
+          "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "github-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_windows_1.0.1.knobdeck",
+          "sha256": "30960f70394884ab5be71d4b2cc6f5e053616c60c7172b6d1c0efcf8146ef2ac",
+          "size": 1800170,
+          "file": "github_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/github-v1.0.1/github_windows_readme.md",
+          "readmeFile": "github_windows_readme.md",
+          "name": "GitHub",
+          "description": "Notifications, review requests, your pull requests, workflow runs and repository counters on GitHub.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "notifications": {
+          "type": "toggle",
+          "label": "Notifications",
+          "icon": "bell",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "participating",
+              "type": "checkbox",
+              "label": "Only threads I take part in"
+            }
+          ],
+          "states": [
+            {
+              "value": "none",
+              "label": "None",
+              "icon": "bell"
+            },
+            {
+              "value": "some",
+              "label": "Unread",
+              "icon": "bell-dot"
+            }
+          ]
+        },
+        "review-requests": {
+          "type": "toggle",
+          "label": "Review Requests",
+          "icon": "git-pull-request-arrow",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "none",
+              "label": "None",
+              "icon": "git-pull-request-arrow"
+            },
+            {
+              "value": "some",
+              "label": "Some",
+              "icon": "git-pull-request-arrow"
+            }
+          ]
+        },
+        "my-prs": {
+          "type": "toggle",
+          "label": "My Open PRs",
+          "icon": "git-pull-request",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "none",
+              "label": "None",
+              "icon": "git-pull-request"
+            },
+            {
+              "value": "some",
+              "label": "Some",
+              "icon": "git-pull-request"
+            }
+          ]
+        },
+        "workflow-status": {
+          "type": "toggle",
+          "label": "Workflow Status",
+          "icon": "workflow",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "repo",
+              "type": "combobox",
+              "label": "Repository"
+            },
+            {
+              "key": "workflow",
+              "type": "select",
+              "label": "Workflow"
+            },
+            {
+              "key": "branch",
+              "type": "text",
+              "label": "Branch (optional)"
+            }
+          ],
+          "states": [
+            {
+              "value": "none",
+              "label": "No runs",
+              "icon": "circle-dashed"
+            },
+            {
+              "value": "running",
+              "label": "Running",
+              "icon": "loader"
+            },
+            {
+              "value": "success",
+              "label": "Success",
+              "icon": "circle-check"
+            },
+            {
+              "value": "failure",
+              "label": "Failed",
+              "icon": "circle-x"
+            },
+            {
+              "value": "cancelled",
+              "label": "Cancelled",
+              "icon": "circle-slash"
+            }
+          ]
+        },
+        "rerun-failed": {
+          "type": "button",
+          "label": "Re-run Failed Jobs",
+          "icon": "rotate-ccw",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "repo",
+              "type": "combobox",
+              "label": "Repository"
+            },
+            {
+              "key": "workflow",
+              "type": "select",
+              "label": "Workflow"
+            },
+            {
+              "key": "branch",
+              "type": "text",
+              "label": "Branch (optional)"
+            }
+          ]
+        },
+        "run-workflow": {
+          "type": "button",
+          "label": "Run Workflow",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "repo",
+              "type": "combobox",
+              "label": "Repository"
+            },
+            {
+              "key": "workflow",
+              "type": "select",
+              "label": "Workflow (needs a workflow_dispatch trigger)"
+            },
+            {
+              "key": "ref",
+              "type": "text",
+              "label": "Branch or tag (optional)"
+            },
+            {
+              "key": "inputs",
+              "type": "textarea",
+              "label": "Inputs, one name=value per line (optional)"
+            }
+          ]
+        },
+        "repo-counter": {
+          "type": "button",
+          "label": "Repository Counter",
+          "icon": "star",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "repo",
+              "type": "combobox",
+              "label": "Repository"
+            },
+            {
+              "key": "metric",
+              "type": "select",
+              "label": "Show",
+              "default": "stars",
+              "options": [
+                "stars",
+                "issues",
+                "prs"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.0.0",
       "tag": "github-v1.0.0",
       "released": "2026-11-18T18:17:15Z",

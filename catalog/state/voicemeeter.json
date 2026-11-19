@@ -2,6 +2,238 @@
   "id": "voicemeeter",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "voicemeeter-v1.0.1",
+      "released": "2026-11-19T13:32:50Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "voicemeeter",
+        "version": "1.0.1",
+        "name": "Voicemeeter",
+        "summary": "Strip and bus gain on a dial, mute, A1–B3 routing, Macro Buttons and configurations.",
+        "tags": [
+          "Audio",
+          "Streaming"
+        ],
+        "sort": 24
+      },
+      "platforms": {
+        "windows": {
+          "id": "voicemeeter-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemeeter-v1.0.1/voicemeeter_windows_1.0.1.knobdeck",
+          "sha256": "7f8975c2bdd9d506ded3595727148d7987e8401f66b7b7cca666a7dd12d24f49",
+          "size": 207172,
+          "file": "voicemeeter_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/voicemeeter-v1.0.1/voicemeeter_windows_readme.md",
+          "readmeFile": "voicemeeter_windows_readme.md",
+          "name": "Voicemeeter",
+          "description": "Voicemeeter, Banana and Potato: strip and bus mute and gain on a dial, A1–A5 / B1–B3 routing, Macro Buttons and configurations.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "strip-mute": {
+          "type": "toggle",
+          "label": "Strip Mute",
+          "icon": "volume-x",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Input strip"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Unmuted",
+              "icon": "volume-2"
+            },
+            {
+              "value": "on",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "strip-gain": {
+          "type": "slider",
+          "label": "Strip Gain",
+          "icon": "sliders-vertical",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Input strip"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (dB)",
+              "default": "1"
+            }
+          ],
+          "min": -60,
+          "max": 12,
+          "step": 1,
+          "unit": "dB"
+        },
+        "bus-mute": {
+          "type": "toggle",
+          "label": "Bus Mute",
+          "icon": "volume-x",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "bus",
+              "type": "select",
+              "label": "Output bus"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Unmuted",
+              "icon": "volume-2"
+            },
+            {
+              "value": "on",
+              "label": "Muted",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "bus-gain": {
+          "type": "slider",
+          "label": "Bus Gain",
+          "icon": "sliders-vertical",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "bus",
+              "type": "select",
+              "label": "Output bus"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step (dB)",
+              "default": "1"
+            }
+          ],
+          "min": -60,
+          "max": 12,
+          "step": 1,
+          "unit": "dB"
+        },
+        "route": {
+          "type": "toggle",
+          "label": "Strip Routing",
+          "icon": "route",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "strip",
+              "type": "select",
+              "label": "Input strip"
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Output (A1–A5, B1–B3)"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "macro": {
+          "type": "button",
+          "label": "Macro Button",
+          "icon": "square-mouse-pointer",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "button",
+              "type": "text",
+              "label": "Button number"
+            },
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "Button type",
+              "default": "push",
+              "options": [
+                "push",
+                "toggle"
+              ]
+            }
+          ]
+        },
+        "load-config": {
+          "type": "button",
+          "label": "Load Configuration",
+          "icon": "folder-open",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "path",
+              "type": "text",
+              "label": "Configuration file (.xml)"
+            }
+          ]
+        },
+        "restart-engine": {
+          "type": "button",
+          "label": "Restart Audio Engine",
+          "icon": "rotate-cw",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": []
+        },
+        "show": {
+          "type": "button",
+          "label": "Show Voicemeeter",
+          "icon": "app-window",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "voicemeeter-v1.0.0",
       "released": "2026-11-17T17:50:07Z",

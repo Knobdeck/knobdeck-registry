@@ -4,35 +4,42 @@
   "name": "MIDI",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-19T07:36:45Z",
+    "version": "1.0.1",
+    "released": "2026-11-19T13:31:48Z",
     "platforms": {
       "linux": {
         "id": "midi-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_linux_1.0.0.knobdeck",
-        "sha256": "ca4af20253f6c5481bcfd921418d4402748d3a0ce8a08b0b91198bd5ccf873ae",
-        "size": 316512,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.1/midi_linux_1.0.1.knobdeck",
+        "sha256": "5249cbff91c7bfc9831db2961b4d5b3ac0b15bbf1bf8c042521c157da25a17a0",
+        "size": 318852,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/midi-linux/readme.md"
       },
       "macos": {
         "id": "midi-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_macos_1.0.0.knobdeck",
-        "sha256": "ff74dd302ff03164977cc1edd1b8b2a700ebbeeacbdc5e4e993df39eb932afa0",
-        "size": 572018,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.1/midi_macos_1.0.1.knobdeck",
+        "sha256": "b34a9fa4d58e3c2fdb8f6272033ae6d4c53199e5a7c7aed584d01e92d609516a",
+        "size": 574422,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/midi-macos/readme.md"
       },
       "windows": {
         "id": "midi-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.0/midi_windows_1.0.0.knobdeck",
-        "sha256": "09498dd9a57d9f07e7131b1bcdc0c86b192ee366cf5afe0dbfd9c790f71fc3fe",
-        "size": 225312,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/midi-v1.0.1/midi_windows_1.0.1.knobdeck",
+        "sha256": "5f784d9884c2ea58f96a16b34effe15c4cbcd7a0f51d4eff7f46a4d08fbc0a7c",
+        "size": 227646,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/midi-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: Note, Control Change, CC Toggle, CC Dial, Program Change, Send MIDI Message and\n  Received Value, on any MIDI port; a virtual \"KnobDeck\" port on macOS and Linux.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "midi-v1.0.1",
+      "released": "2026-11-19T13:31:48Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "midi-v1.0.0",

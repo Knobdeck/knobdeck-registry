@@ -2,6 +2,371 @@
   "id": "web-requests",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "web-requests-v1.0.1",
+      "released": "2026-11-19T13:34:05Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "web-requests",
+        "version": "1.0.1",
+        "name": "Web Requests",
+        "summary": "Call webhooks and web APIs, show a JSON value on a key.",
+        "tags": [
+          "Automation",
+          "Developer tools"
+        ],
+        "sort": 45
+      },
+      "platforms": {
+        "linux": {
+          "id": "web-requests-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_linux_1.0.1.knobdeck",
+          "sha256": "4218d1197306f708dbbcecd980dd53815ad5b961b9870e5992a1a2dd7f063896",
+          "size": 2796707,
+          "file": "web-requests_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_linux_readme.md",
+          "readmeFile": "web-requests_linux_readme.md",
+          "name": "Web Requests",
+          "description": "Call any web address from a key: webhooks (IFTTT, n8n, Zapier, Make), REST APIs, local servers. Show a value from a JSON reply on a key, and switch things on and off.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "web-requests-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_macos_1.0.1.knobdeck",
+          "sha256": "0f4091b9469d8529008c94e60cbdd5cfa88cd9e09b407f3f6b881ab279eb14ac",
+          "size": 2351956,
+          "file": "web-requests_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_macos_readme.md",
+          "readmeFile": "web-requests_macos_readme.md",
+          "name": "Web Requests",
+          "description": "Call any web address from a key: webhooks (IFTTT, n8n, Zapier, Make), REST APIs, local servers. Show a value from a JSON reply on a key, and switch things on and off.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "web-requests-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_windows_1.0.1.knobdeck",
+          "sha256": "abcef2ef3a76ca92d4c4f8b6b83ae8f0793366bc8ef25e75858b7687d281fe36",
+          "size": 1073790,
+          "file": "web-requests_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/web-requests-v1.0.1/web-requests_windows_readme.md",
+          "readmeFile": "web-requests_windows_readme.md",
+          "name": "Web Requests",
+          "description": "Call any web address from a key: webhooks (IFTTT, n8n, Zapier, Make), REST APIs, local servers. Show a value from a JSON reply on a key, and switch things on and off.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "request": {
+          "type": "button",
+          "label": "HTTP Request",
+          "icon": "send",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "method",
+              "type": "select",
+              "label": "method",
+              "default": "POST",
+              "options": [
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "HEAD"
+              ]
+            },
+            {
+              "key": "url",
+              "type": "text",
+              "label": "URL"
+            },
+            {
+              "key": "body",
+              "type": "textarea",
+              "label": "body (optional)"
+            },
+            {
+              "key": "body_type",
+              "type": "select",
+              "label": "Body is",
+              "default": "json",
+              "options": [
+                "json",
+                "form",
+                "text"
+              ]
+            },
+            {
+              "key": "headers",
+              "type": "textarea",
+              "label": "Headers (optional)"
+            },
+            {
+              "key": "token",
+              "type": "select",
+              "label": "Token (optional)"
+            },
+            {
+              "key": "token_header",
+              "type": "text",
+              "label": "Send the token as",
+              "default": "Authorization: Bearer"
+            },
+            {
+              "key": "show",
+              "type": "select",
+              "label": "After the request, show",
+              "default": "none",
+              "options": [
+                "none",
+                "status",
+                "value",
+                "text"
+              ]
+            },
+            {
+              "key": "path",
+              "type": "text",
+              "label": "Value path",
+              "showIf": {
+                "key": "show",
+                "equals": "value"
+              }
+            }
+          ]
+        },
+        "value": {
+          "type": "button",
+          "label": "Show Value",
+          "icon": "braces",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "url",
+              "type": "text",
+              "label": "URL"
+            },
+            {
+              "key": "path",
+              "type": "text",
+              "label": "Value path"
+            },
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Title (optional)"
+            },
+            {
+              "key": "prefix",
+              "type": "text",
+              "label": "Before the value (optional)"
+            },
+            {
+              "key": "suffix",
+              "type": "text",
+              "label": "After the value (optional)"
+            },
+            {
+              "key": "every",
+              "type": "select",
+              "label": "Refresh every",
+              "default": "30",
+              "options": [
+                "5",
+                "15",
+                "30",
+                "60",
+                "300",
+                "900"
+              ]
+            },
+            {
+              "key": "headers",
+              "type": "textarea",
+              "label": "Headers (optional)"
+            },
+            {
+              "key": "token",
+              "type": "select",
+              "label": "Token (optional)"
+            },
+            {
+              "key": "token_header",
+              "type": "text",
+              "label": "Send the token as",
+              "default": "Authorization: Bearer"
+            }
+          ]
+        },
+        "toggle": {
+          "type": "toggle",
+          "label": "HTTP Toggle",
+          "icon": "toggle-right",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "on_method",
+              "type": "select",
+              "label": "Turn on: method",
+              "default": "POST",
+              "options": [
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "HEAD"
+              ]
+            },
+            {
+              "key": "on_url",
+              "type": "text",
+              "label": "Turn on: URL"
+            },
+            {
+              "key": "on_body",
+              "type": "textarea",
+              "label": "Turn on: body (optional)"
+            },
+            {
+              "key": "off_method",
+              "type": "select",
+              "label": "Turn off: method",
+              "default": "POST",
+              "options": [
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "HEAD"
+              ]
+            },
+            {
+              "key": "off_url",
+              "type": "text",
+              "label": "Turn off: URL"
+            },
+            {
+              "key": "off_body",
+              "type": "textarea",
+              "label": "Turn off: body (optional)"
+            },
+            {
+              "key": "body_type",
+              "type": "select",
+              "label": "Body is",
+              "default": "json",
+              "options": [
+                "json",
+                "form",
+                "text"
+              ]
+            },
+            {
+              "key": "headers",
+              "type": "textarea",
+              "label": "Headers (optional)"
+            },
+            {
+              "key": "token",
+              "type": "select",
+              "label": "Token (optional)"
+            },
+            {
+              "key": "token_header",
+              "type": "text",
+              "label": "Send the token as",
+              "default": "Authorization: Bearer"
+            },
+            {
+              "key": "status_url",
+              "type": "text",
+              "label": "Read the state from (optional)"
+            },
+            {
+              "key": "status_path",
+              "type": "text",
+              "label": "State path"
+            },
+            {
+              "key": "on_value",
+              "type": "text",
+              "label": "On when the value is (optional)"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "toggle-left"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "toggle-right"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.0.0",
       "tag": "web-requests-v1.0.0",
       "released": "2026-11-17T14:21:17Z",

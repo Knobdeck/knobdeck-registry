@@ -2,6 +2,167 @@
   "id": "ai-stats",
   "versions": [
     {
+      "version": "2.0.1",
+      "tag": "ai-stats-v2.0.1",
+      "released": "2026-11-19T13:30:49Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "ai-stats",
+        "version": "2.0.1",
+        "name": "AI Stats",
+        "summary": "Claude and Codex plan limits and 30-day token usage.",
+        "tags": [
+          "Developer tools",
+          "AI"
+        ],
+        "sort": 90
+      },
+      "platforms": {
+        "linux": {
+          "id": "ai-stats-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_linux_2.0.1.knobdeck",
+          "sha256": "3004a23c6d456ac1f9e73a5d8b05d4dee66dd2991decb25f982885d89960d707",
+          "size": 992802,
+          "file": "ai-stats_linux_2.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_linux_readme.md",
+          "readmeFile": "ai-stats_linux_readme.md",
+          "name": "AI Stats",
+          "description": "Plan limits (5-hour, weekly) and 30-day token usage for Claude Code and Codex, from the logins and transcripts already on this computer.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "ai-stats-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_macos_2.0.1.knobdeck",
+          "sha256": "995fef4f086e0eaa35258a5154aad4fd7f3a10be54b1659618922a3917f1223e",
+          "size": 1846771,
+          "file": "ai-stats_macos_2.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_macos_readme.md",
+          "readmeFile": "ai-stats_macos_readme.md",
+          "name": "AI Stats",
+          "description": "Plan limits (5-hour, weekly) and 30-day token usage for Claude Code and Codex, from the logins and transcripts already on this computer.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "ai-stats-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_windows_2.0.1.knobdeck",
+          "sha256": "a141762570edb7b8077910bdd0c238908f33ec0536b54813cf3d98d276488df5",
+          "size": 867918,
+          "file": "ai-stats_windows_2.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_windows_readme.md",
+          "readmeFile": "ai-stats_windows_readme.md",
+          "name": "AI Stats",
+          "description": "Plan limits (5-hour, weekly) and 30-day token usage for Claude Code and Codex, from the logins and transcripts already on this computer.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "claude-limits": {
+          "type": "button",
+          "label": "Claude Limits",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "credentials",
+              "type": "text",
+              "label": "Credentials path",
+              "default": "~/.claude/.credentials.json"
+            },
+            {
+              "key": "window",
+              "type": "select",
+              "label": "Usage type",
+              "default": "5h",
+              "options": [
+                "5h",
+                "7d",
+                "fable"
+              ]
+            }
+          ]
+        },
+        "codex-limits": {
+          "type": "button",
+          "label": "Codex Limits",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "credentials",
+              "type": "text",
+              "label": "Credentials path",
+              "default": "~/.codex/auth.json"
+            },
+            {
+              "key": "window",
+              "type": "select",
+              "label": "Usage type",
+              "default": "primary",
+              "options": [
+                "primary",
+                "secondary"
+              ]
+            }
+          ]
+        },
+        "claude-usage": {
+          "type": "button",
+          "label": "Claude Usage",
+          "icon": "sigma",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "folder",
+              "type": "text",
+              "label": "Data folder",
+              "default": "~/.claude"
+            }
+          ]
+        },
+        "codex-usage": {
+          "type": "button",
+          "label": "Codex Usage",
+          "icon": "sigma",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "folder",
+              "type": "text",
+              "label": "Data folder",
+              "default": "~/.codex"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "2.0.0",
       "tag": "ai-stats-v2.0.0",
       "released": "2026-11-17T14:20:11Z",

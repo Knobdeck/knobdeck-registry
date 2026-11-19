@@ -2,6 +2,214 @@
   "id": "apple-music",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "apple-music-v1.0.1",
+      "released": "2026-11-19T13:30:52Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "apple-music",
+        "version": "1.0.1",
+        "name": "Apple Music",
+        "summary": "Music app playback, shuffle, repeat, favorites, volume dial, playlists and what is playing.",
+        "tags": [
+          "Music",
+          "Media"
+        ],
+        "sort": 94
+      },
+      "platforms": {
+        "macos": {
+          "id": "apple-music-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/apple-music-v1.0.1/apple-music_macos_1.0.1.knobdeck",
+          "sha256": "4a72daf826c85bf6ca63d8e551a23a74afd2efc4a5f01c6991c5bed30e61f618",
+          "size": 893247,
+          "file": "apple-music_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/apple-music-v1.0.1/apple-music_macos_readme.md",
+          "readmeFile": "apple-music_macos_readme.md",
+          "name": "Apple Music",
+          "description": "Music app playback, shuffle, repeat, favorites, volume and playlists, with what is playing and its artwork.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "now-playing": {
+          "type": "button",
+          "label": "Now Playing",
+          "icon": "music",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [
+            {
+              "key": "artwork",
+              "type": "checkbox",
+              "label": "Show the artwork",
+              "default": true
+            },
+            {
+              "key": "press",
+              "type": "checkbox",
+              "label": "Press to play / pause",
+              "default": true
+            }
+          ]
+        },
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "paused",
+              "label": "Play",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Pause",
+              "icon": "pause"
+            }
+          ]
+        },
+        "next": {
+          "type": "button",
+          "label": "Next Track",
+          "icon": "skip-forward",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": []
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous Track",
+          "icon": "skip-back",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": []
+        },
+        "shuffle": {
+          "type": "toggle",
+          "label": "Shuffle",
+          "icon": "shuffle",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Shuffle off",
+              "icon": "shuffle"
+            },
+            {
+              "value": "on",
+              "label": "Shuffle on",
+              "icon": "shuffle"
+            }
+          ]
+        },
+        "repeat": {
+          "type": "toggle",
+          "label": "Repeat",
+          "icon": "repeat",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Repeat off",
+              "icon": "repeat"
+            },
+            {
+              "value": "all",
+              "label": "Repeat all",
+              "icon": "repeat"
+            },
+            {
+              "value": "one",
+              "label": "Repeat one",
+              "icon": "repeat-1"
+            }
+          ]
+        },
+        "favorite": {
+          "type": "toggle",
+          "label": "Favorite Track",
+          "icon": "heart",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Favorite",
+              "icon": "heart"
+            },
+            {
+              "value": "on",
+              "label": "Favorited",
+              "icon": "heart"
+            }
+          ]
+        },
+        "volume": {
+          "type": "slider",
+          "label": "Music Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Percent per dial step",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "play-playlist": {
+          "type": "button",
+          "label": "Play Playlist",
+          "icon": "list-music",
+          "platforms": [
+            "macos"
+          ],
+          "inputs": [
+            {
+              "key": "playlist",
+              "type": "combobox",
+              "label": "Playlist"
+            },
+            {
+              "key": "shuffle",
+              "type": "checkbox",
+              "label": "Shuffle it",
+              "default": false
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "apple-music-v1.0.0",
       "released": "2026-11-18T17:54:50Z",

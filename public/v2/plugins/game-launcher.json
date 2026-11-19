@@ -4,35 +4,42 @@
   "name": "Game Launcher",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-19T11:04:05Z",
+    "version": "1.1.1",
+    "released": "2026-11-19T13:31:21Z",
     "platforms": {
       "linux": {
         "id": "game-launcher-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.0/game-launcher_linux_1.1.0.knobdeck",
-        "sha256": "6b912f3574f6fcc357ada4cb3193ea80d5707ea5355cf60fbe3e9175b56e882d",
-        "size": 894915,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_linux_1.1.1.knobdeck",
+        "sha256": "979ac94ba5896171b2ca6fa5429fd2698881ec50f80f112382eab0ca525d1d39",
+        "size": 897418,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-linux/readme.md"
       },
       "macos": {
         "id": "game-launcher-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.0/game-launcher_macos_1.1.0.knobdeck",
-        "sha256": "a8d20e5ee6a27b4c4aa2f1b70985d0e46b8b35e4268804e162e4956968415cd7",
-        "size": 587478,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_macos_1.1.1.knobdeck",
+        "sha256": "c9f3b6a07fe541b00604081e6a06cad303a8cabe0bc6e749a94ea2d0196a0206",
+        "size": 590015,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-macos/readme.md"
       },
       "windows": {
         "id": "game-launcher-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.0/game-launcher_windows_1.1.0.knobdeck",
-        "sha256": "ca077b1b615ddd637fd7ed1df0f78921d812d9863c5f0c6c247579440527f6aa",
-        "size": 256155,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_windows_1.1.1.knobdeck",
+        "sha256": "d4fca73a6da167a0bba92f68587f0ec7d0ff14794a2dd4c2a1bda5481cc83adf",
+        "size": 258643,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-windows/readme.md"
       }
     }
   },
-  "changelog": "- More launchers: GOG Galaxy and Ubisoft Connect (Windows), Heroic (Epic, GOG, Amazon and\n  sideloaded games; every OS) and Lutris (Linux), in Launch Game, the Games Wheel and the store\n  filter.\n- New Close Game action: asks a game (or any running game the plugin knows) to close, and ends\n  it after a few seconds if it doesn't. Only processes started from a known game's install folder\n  are touched.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "game-launcher-v1.1.1",
+      "released": "2026-11-19T13:31:21Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "game-launcher-v1.1.0",

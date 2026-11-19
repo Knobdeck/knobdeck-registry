@@ -2,6 +2,228 @@
   "id": "docker",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "docker-v1.0.1",
+      "released": "2026-11-19T13:31:09Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "docker",
+        "version": "1.0.1",
+        "name": "Docker",
+        "summary": "Start, stop and restart containers and Compose projects; see what is running.",
+        "tags": [
+          "Developer tools",
+          "Automation"
+        ],
+        "sort": 46
+      },
+      "platforms": {
+        "linux": {
+          "id": "docker-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.1/docker_linux_1.0.1.knobdeck",
+          "sha256": "2900d9972456eb4513578fe98ee4e85b803ac785657156dda7990bba6c275224",
+          "size": 314118,
+          "file": "docker_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.1/docker_linux_readme.md",
+          "readmeFile": "docker_linux_readme.md",
+          "name": "Docker",
+          "description": "Start, stop and restart containers and Compose projects, and see what is running. Works with Docker Desktop, Docker Engine, Colima, OrbStack and Podman.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "docker-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.1/docker_macos_1.0.1.knobdeck",
+          "sha256": "f6fc0de902e608e9d59517fe6bae1d16924165a9c7e0f433ae65ffeecfd32652",
+          "size": 567897,
+          "file": "docker_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.1/docker_macos_readme.md",
+          "readmeFile": "docker_macos_readme.md",
+          "name": "Docker",
+          "description": "Start, stop and restart containers and Compose projects, and see what is running. Works with Docker Desktop, Docker Engine, Colima, OrbStack and Podman.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "docker-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.1/docker_windows_1.0.1.knobdeck",
+          "sha256": "ad7cc09cdb17206c590b55846cedf2338fdb61d4743b46ed4f1ea17d2b1cd275",
+          "size": 221897,
+          "file": "docker_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/docker-v1.0.1/docker_windows_readme.md",
+          "readmeFile": "docker_windows_readme.md",
+          "name": "Docker",
+          "description": "Start, stop and restart containers and Compose projects, and see what is running. Works with Docker Desktop, Docker Engine, Colima, OrbStack and Podman.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "container": {
+          "type": "toggle",
+          "label": "Start / Stop Container",
+          "icon": "container",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "container",
+              "type": "combobox",
+              "label": "Container"
+            }
+          ],
+          "states": [
+            {
+              "value": "stopped",
+              "label": "Stopped",
+              "icon": "square"
+            },
+            {
+              "value": "running",
+              "label": "Running",
+              "icon": "play"
+            }
+          ]
+        },
+        "start": {
+          "type": "button",
+          "label": "Start Container",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "container",
+              "type": "combobox",
+              "label": "Container"
+            }
+          ]
+        },
+        "stop": {
+          "type": "button",
+          "label": "Stop Container",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "container",
+              "type": "combobox",
+              "label": "Container"
+            }
+          ]
+        },
+        "restart": {
+          "type": "button",
+          "label": "Restart Container",
+          "icon": "rotate-cw",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "container",
+              "type": "combobox",
+              "label": "Container"
+            }
+          ]
+        },
+        "status": {
+          "type": "button",
+          "label": "Container Status",
+          "icon": "activity",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "container",
+              "type": "combobox",
+              "label": "Container"
+            }
+          ]
+        },
+        "project": {
+          "type": "toggle",
+          "label": "Start / Stop Compose Project",
+          "icon": "layers",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "project",
+              "type": "select",
+              "label": "Compose project"
+            }
+          ],
+          "states": [
+            {
+              "value": "stopped",
+              "label": "Stopped",
+              "icon": "square"
+            },
+            {
+              "value": "running",
+              "label": "Running",
+              "icon": "play"
+            }
+          ]
+        },
+        "running-count": {
+          "type": "button",
+          "label": "Running Containers",
+          "icon": "boxes",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "containers-wheel": {
+          "type": "wheel",
+          "label": "Containers Wheel",
+          "icon": "container",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "running_only",
+              "type": "checkbox",
+              "label": "Only running containers"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "docker-v1.0.0",
       "released": "2026-11-17T17:08:55Z",

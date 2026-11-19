@@ -4,35 +4,42 @@
   "name": "Clocks",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.2.0",
-    "released": "2026-11-19T11:04:01Z",
+    "version": "1.2.1",
+    "released": "2026-11-19T13:31:01Z",
     "platforms": {
       "linux": {
         "id": "clocks-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_linux_1.2.0.knobdeck",
-        "sha256": "c014f9b892d45c09b94d27a27515a17866705ca8430763fc6b361daf97f48f62",
-        "size": 414067,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.1/clocks_linux_1.2.1.knobdeck",
+        "sha256": "2b4fe3293c54fdbfc1fccac3bb7a4b3f3904dc10a3e0562b3f551ae32ed33daa",
+        "size": 416363,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-linux/readme.md"
       },
       "macos": {
         "id": "clocks-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_macos_1.2.0.knobdeck",
-        "sha256": "1d978864e76f9d405aeaf527c5ef8093e63a6cada8a2077cf4f15ba04751741f",
-        "size": 757504,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.1/clocks_macos_1.2.1.knobdeck",
+        "sha256": "4d99b506c7c0146a8669185621a22b3f6a7b1178027cd97f4c3f23b57df72775",
+        "size": 759838,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-macos/readme.md"
       },
       "windows": {
         "id": "clocks-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_windows_1.2.0.knobdeck",
-        "sha256": "37628fc7167c72a862b6bb8927d889b8169319ff3346a8397d450728cde65ec1",
-        "size": 380118,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.1/clocks_windows_1.2.1.knobdeck",
+        "sha256": "59a9650cf31dad7d983519e2d0eadf75ce544ef6135819544f54bd7b6b5444d5",
+        "size": 382413,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-windows/readme.md"
       }
     }
   },
-  "changelog": "- New Pomodoro action: work / short break / long break every N sessions, configurable lengths,\n  the completed-session count on the key, press to start / pause, optional auto-start of the next\n  phase; a new Pomodoro Skip / Reset action skips or resets the Pomodoro with the same name.\n- Countdown Timer can write the time left to a text file every second (for an OBS text source):\n  path, format (mm:ss, h:mm:ss, hh:mm:ss) and text at zero in its settings.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.2.1",
+      "tag": "clocks-v1.2.1",
+      "released": "2026-11-19T13:31:01Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.2.0",
       "tag": "clocks-v1.2.0",

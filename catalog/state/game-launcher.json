@@ -2,6 +2,187 @@
   "id": "game-launcher",
   "versions": [
     {
+      "version": "1.1.1",
+      "tag": "game-launcher-v1.1.1",
+      "released": "2026-11-19T13:31:21Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "game-launcher",
+        "version": "1.1.1",
+        "name": "Game Launcher",
+        "summary": "Launch installed Steam, Epic, GOG, Ubisoft, Heroic and Lutris games; close a running game.",
+        "tags": [
+          "Gaming",
+          "Launcher"
+        ],
+        "sort": 35
+      },
+      "platforms": {
+        "linux": {
+          "id": "game-launcher-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_linux_1.1.1.knobdeck",
+          "sha256": "979ac94ba5896171b2ca6fa5429fd2698881ec50f80f112382eab0ca525d1d39",
+          "size": 897418,
+          "file": "game-launcher_linux_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_linux_readme.md",
+          "readmeFile": "game-launcher_linux_readme.md",
+          "name": "Game Launcher",
+          "description": "Launch your installed Steam, Heroic and Lutris games from a key or a wheel, and close a running game.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "game-launcher-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_macos_1.1.1.knobdeck",
+          "sha256": "c9f3b6a07fe541b00604081e6a06cad303a8cabe0bc6e749a94ea2d0196a0206",
+          "size": 590015,
+          "file": "game-launcher_macos_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_macos_readme.md",
+          "readmeFile": "game-launcher_macos_readme.md",
+          "name": "Game Launcher",
+          "description": "Launch your installed Steam, Epic Games Store and Heroic games from a key or a wheel, and close a running game.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "game-launcher-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_windows_1.1.1.knobdeck",
+          "sha256": "d4fca73a6da167a0bba92f68587f0ec7d0ff14794a2dd4c2a1bda5481cc83adf",
+          "size": 258643,
+          "file": "game-launcher_windows_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.1/game-launcher_windows_readme.md",
+          "readmeFile": "game-launcher_windows_readme.md",
+          "name": "Game Launcher",
+          "description": "Launch your installed Steam, Epic, GOG Galaxy, Ubisoft Connect and Heroic games from a key or a wheel, and close a running game.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "launch": {
+          "type": "button",
+          "label": "Launch Game",
+          "icon": "gamepad-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "game",
+              "type": "select",
+              "label": "Game"
+            },
+            {
+              "key": "show_name",
+              "type": "checkbox",
+              "label": "Show the game's name",
+              "default": true
+            }
+          ]
+        },
+        "games-wheel": {
+          "type": "wheel",
+          "label": "Games Wheel",
+          "icon": "layout-grid",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "store",
+              "type": "select",
+              "label": "Store",
+              "default": "all",
+              "options": [
+                "all",
+                "steam",
+                "heroic",
+                "lutris"
+              ]
+            },
+            {
+              "key": "sort",
+              "type": "select",
+              "label": "Show",
+              "default": "recent",
+              "options": [
+                "recent",
+                "name"
+              ]
+            }
+          ]
+        },
+        "open-page": {
+          "type": "button",
+          "label": "Open Launcher Page",
+          "icon": "library",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "page",
+              "type": "select",
+              "label": "Page",
+              "default": "steam-library",
+              "options": [
+                "steam-library",
+                "steam-store",
+                "steam-friends",
+                "steam-downloads",
+                "steam-settings",
+                "steam-bigpicture"
+              ]
+            }
+          ]
+        },
+        "close": {
+          "type": "button",
+          "label": "Close Game",
+          "icon": "circle-x",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "game",
+              "type": "select",
+              "label": "Game",
+              "default": "__running__"
+            },
+            {
+              "key": "force",
+              "type": "select",
+              "label": "If it doesn't close",
+              "default": "5",
+              "options": [
+                "5",
+                "15",
+                "30",
+                "never"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.1.0",
       "tag": "game-launcher-v1.1.0",
       "released": "2026-11-19T11:04:05Z",

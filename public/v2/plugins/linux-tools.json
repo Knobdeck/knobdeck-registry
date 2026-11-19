@@ -4,21 +4,28 @@
   "name": "Linux Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.5.0",
-    "released": "2026-11-17T17:09:02Z",
+    "version": "1.5.1",
+    "released": "2026-11-19T13:31:42Z",
     "platforms": {
       "linux": {
         "id": "linux-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.0/linux-tools_linux_1.5.0.knobdeck",
-        "sha256": "a4630d899f3b257e811edde41b237d5d1bf9866345756de94d91b7650b6b8bda",
-        "size": 1100951,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.1/linux-tools_linux_1.5.1.knobdeck",
+        "sha256": "0c2cc6563e3ec8eacb838d5e643a59b0039af674a67052f400c1201be6234f83",
+        "size": 1104330,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md"
       }
     }
   },
-  "changelog": "Linux Tools 1.5.0 for linux.",
+  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
   "setup": false,
   "versions": [
+    {
+      "version": "1.5.1",
+      "tag": "linux-tools-v1.5.1",
+      "released": "2026-11-19T13:31:42Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.5.0",
       "tag": "linux-tools-v1.5.0",

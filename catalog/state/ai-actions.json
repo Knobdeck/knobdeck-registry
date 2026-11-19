@@ -2,6 +2,209 @@
   "id": "ai-actions",
   "versions": [
     {
+      "version": "1.0.1",
+      "tag": "ai-actions-v1.0.1",
+      "released": "2026-11-19T13:30:45Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "ai-actions",
+        "version": "1.0.1",
+        "name": "AI Actions",
+        "summary": "Fix, rewrite, translate or explain selected text with your own AI model.",
+        "tags": [
+          "AI",
+          "Productivity"
+        ],
+        "sort": 37
+      },
+      "platforms": {
+        "linux": {
+          "id": "ai-actions-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_linux_1.0.1.knobdeck",
+          "sha256": "bce65b005fc8cbe21f3552890515ceb9802eac47689e0a369b2ea90bd2a36522",
+          "size": 3471589,
+          "file": "ai-actions_linux_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_linux_readme.md",
+          "readmeFile": "ai-actions_linux_readme.md",
+          "name": "AI Actions",
+          "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "ai-actions-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_macos_1.0.1.knobdeck",
+          "sha256": "b33b7f1409fe41754663ef8dd105fd547cda5ae38ed4fc74043236cd73136778",
+          "size": 3604724,
+          "file": "ai-actions_macos_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_macos_readme.md",
+          "readmeFile": "ai-actions_macos_readme.md",
+          "name": "AI Actions",
+          "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "ai-actions-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_windows_1.0.1.knobdeck",
+          "sha256": "fc90651d9a0f09534aef98624cb22dd5973fe8bc2f202ec3291b524008dd0b37",
+          "size": 1727086,
+          "file": "ai-actions_windows_1.0.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-actions-v1.0.1/ai-actions_windows_readme.md",
+          "readmeFile": "ai-actions_windows_readme.md",
+          "name": "AI Actions",
+          "description": "Fix, rewrite, translate, summarize or explain the selected text with your own AI model (Anthropic, OpenAI-compatible or local Ollama), and put the answer back in place.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "run": {
+          "type": "button",
+          "label": "AI Action",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "preset",
+              "type": "select",
+              "label": "Do",
+              "default": "fix",
+              "options": [
+                "fix",
+                "rewrite",
+                "shorter",
+                "professional",
+                "friendly",
+                "bullets",
+                "translate",
+                "summarize",
+                "explain",
+                "explain-code",
+                "reply",
+                "custom"
+              ]
+            },
+            {
+              "key": "prompt",
+              "type": "textarea",
+              "label": "Prompt",
+              "showIf": {
+                "key": "preset",
+                "equals": "custom"
+              }
+            },
+            {
+              "key": "language",
+              "type": "text",
+              "label": "Translate into",
+              "default": "English",
+              "showIf": {
+                "key": "preset",
+                "equals": "translate"
+              }
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Put the answer",
+              "default": "auto",
+              "options": [
+                "auto",
+                "replace",
+                "copy",
+                "show"
+              ]
+            },
+            {
+              "key": "no_clipboard",
+              "type": "checkbox",
+              "label": "Don't fall back to the clipboard when nothing is selected"
+            }
+          ]
+        },
+        "wheel": {
+          "type": "wheel",
+          "label": "AI Actions Wheel",
+          "icon": "wand-sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "language",
+              "type": "text",
+              "label": "Translate into",
+              "default": "English"
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Put the answer",
+              "default": "auto",
+              "options": [
+                "auto",
+                "replace",
+                "copy",
+                "show"
+              ]
+            },
+            {
+              "key": "no_clipboard",
+              "type": "checkbox",
+              "label": "Don't fall back to the clipboard when nothing is selected"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.0.0",
       "tag": "ai-actions-v1.0.0",
       "released": "2026-11-17T14:20:08Z",

@@ -2,6 +2,252 @@
   "id": "vlc",
   "versions": [
     {
+      "version": "1.2.1",
+      "tag": "vlc-v1.2.1",
+      "released": "2026-11-19T13:32:47Z",
+      "notes": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+      "meta": {
+        "dir": "vlc",
+        "version": "1.2.1",
+        "name": "VLC",
+        "summary": "Playback controls for VLC media player.",
+        "tags": [
+          "Media",
+          "Playback"
+        ],
+        "sort": 80
+      },
+      "platforms": {
+        "linux": {
+          "id": "vlc-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_linux_1.2.1.knobdeck",
+          "sha256": "5e4ff0aaedb597bee06cc7a06d187d97d01f7207350f9136a32bea4cd8113f19",
+          "size": 2864264,
+          "file": "vlc_linux_1.2.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_linux_readme.md",
+          "readmeFile": "vlc_linux_readme.md",
+          "name": "VLC",
+          "description": "Control VLC over its built-in HTTP interface.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "vlc-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_macos_1.2.1.knobdeck",
+          "sha256": "add2877f459242fe5f00cb60531b53554dd405d07c79b4958a8f835d65a213ee",
+          "size": 3471807,
+          "file": "vlc_macos_1.2.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_macos_readme.md",
+          "readmeFile": "vlc_macos_readme.md",
+          "name": "VLC",
+          "description": "Control VLC over its built-in HTTP interface.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "vlc-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_windows_1.2.1.knobdeck",
+          "sha256": "ea11fe19fb11c8e29b25f6021d0071c1751517af75081282fba494a89e07caca",
+          "size": 1649473,
+          "file": "vlc_windows_1.2.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vlc-v1.2.1/vlc_windows_readme.md",
+          "readmeFile": "vlc_windows_readme.md",
+          "name": "VLC",
+          "description": "Control VLC over its built-in HTTP interface.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "playback-status": {
+          "type": "toggle",
+          "label": "Playback Status",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "offline",
+              "label": "Offline",
+              "icon": "triangle-alert"
+            },
+            {
+              "value": "stopped",
+              "label": "Stopped",
+              "icon": "square"
+            },
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "pause"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "play"
+            }
+          ]
+        },
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "stopped",
+              "label": "Stopped",
+              "icon": "play"
+            },
+            {
+              "value": "paused",
+              "label": "Paused",
+              "icon": "pause"
+            },
+            {
+              "value": "playing",
+              "label": "Playing",
+              "icon": "play"
+            }
+          ]
+        },
+        "stop": {
+          "type": "button",
+          "label": "Stop",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "next": {
+          "type": "button",
+          "label": "Next",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "fullscreen": {
+          "type": "toggle",
+          "label": "Fullscreen",
+          "icon": "maximize",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Windowed",
+              "icon": "square"
+            },
+            {
+              "value": "on",
+              "label": "Fullscreen",
+              "icon": "maximize"
+            }
+          ]
+        },
+        "seek-backward": {
+          "type": "button",
+          "label": "Seek Back 10s",
+          "icon": "rewind",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "seek-forward": {
+          "type": "button",
+          "label": "Seek Forward 10s",
+          "icon": "fast-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "volume-down": {
+          "type": "button",
+          "label": "Volume Down",
+          "icon": "volume-1",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "volume-up": {
+          "type": "button",
+          "label": "Volume Up",
+          "icon": "volume-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "open-url": {
+          "type": "button",
+          "label": "Open Stream / URL",
+          "icon": "link",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "url",
+              "type": "text",
+              "label": "Media URL"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.2.0",
       "tag": "vlc-v1.2.0",
       "released": "2026-11-17T14:21:04Z",
