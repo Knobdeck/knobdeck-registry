@@ -4,21 +4,28 @@
   "name": "macOS Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.7.0",
-    "released": "2026-11-17T17:09:06Z",
+    "version": "1.8.0",
+    "released": "2026-11-19T11:04:08Z",
     "platforms": {
       "macos": {
         "id": "mac-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.7.0/mac-tools_macos_1.7.0.knobdeck",
-        "sha256": "2e4f96d4cbc0bd630f7910bfd8736291609004e1ab5188e3a24445971866fb1b",
-        "size": 950440,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.8.0/mac-tools_macos_1.8.0.knobdeck",
+        "sha256": "a83c78c35775a9ff95c3d731503df315af0fc15a11a5876c0b4c19da10a6377b",
+        "size": 962744,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md"
       }
     }
   },
-  "changelog": "macOS Tools 1.7.0 for macos.",
+  "changelog": "- New audio actions, matching Win Tools and Linux Tools (same ids and settings): Device Volume\n  slider, Mute Device, Set Audio Device, Toggle Audio Device and Push to Talk. Output volume uses\n  the system's virtual main volume (AudioToolbox), else the device's own volume controls; devices\n  are remembered by their CoreAudio UID.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.8.0",
+      "tag": "mac-tools-v1.8.0",
+      "released": "2026-11-19T11:04:08Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.7.0",
       "tag": "mac-tools-v1.7.0",
@@ -1141,6 +1148,176 @@
         "macos"
       ],
       "inputs": []
+    },
+    "push-to-talk": {
+      "type": "hold",
+      "label": "Push to Talk",
+      "icon": "mic-off",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [],
+      "released": {
+        "label": "Mic Muted",
+        "icon": "mic-off"
+      },
+      "held": {
+        "label": "Talking",
+        "icon": "mic"
+      }
+    },
+    "set-audio-device": {
+      "type": "toggle",
+      "label": "Set Audio Device",
+      "icon": "speaker",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [
+        {
+          "key": "flow",
+          "type": "select",
+          "label": "Type",
+          "default": "output",
+          "options": [
+            "output",
+            "input"
+          ]
+        },
+        {
+          "key": "device",
+          "type": "select",
+          "label": "Device"
+        }
+      ],
+      "states": [
+        {
+          "value": "inactive",
+          "label": "Not Selected",
+          "icon": "speaker"
+        },
+        {
+          "value": "active",
+          "label": "Selected",
+          "icon": "circle-check"
+        }
+      ]
+    },
+    "toggle-audio-device": {
+      "type": "toggle",
+      "label": "Toggle Audio Device",
+      "icon": "arrow-left-right",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [
+        {
+          "key": "flow",
+          "type": "select",
+          "label": "Type",
+          "default": "output",
+          "options": [
+            "output",
+            "input"
+          ]
+        },
+        {
+          "key": "device",
+          "type": "select",
+          "label": "Device A"
+        },
+        {
+          "key": "device_b",
+          "type": "select",
+          "label": "Device B"
+        }
+      ],
+      "states": [
+        {
+          "value": "a",
+          "label": "Device A",
+          "icon": "headphones"
+        },
+        {
+          "value": "b",
+          "label": "Device B",
+          "icon": "speaker"
+        }
+      ]
+    },
+    "device-mute": {
+      "type": "toggle",
+      "label": "Mute Device",
+      "icon": "volume-x",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [
+        {
+          "key": "flow",
+          "type": "select",
+          "label": "Type",
+          "default": "output",
+          "options": [
+            "output",
+            "input"
+          ]
+        },
+        {
+          "key": "device",
+          "type": "select",
+          "label": "Device",
+          "default": "__default__"
+        }
+      ],
+      "states": [
+        {
+          "value": "unmuted",
+          "label": "On",
+          "icon": "volume-2"
+        },
+        {
+          "value": "muted",
+          "label": "Muted",
+          "icon": "volume-x"
+        }
+      ]
+    },
+    "device-volume": {
+      "type": "slider",
+      "label": "Device Volume",
+      "icon": "volume-2",
+      "platforms": [
+        "macos"
+      ],
+      "inputs": [
+        {
+          "key": "flow",
+          "type": "select",
+          "label": "Type",
+          "default": "output",
+          "options": [
+            "output",
+            "input"
+          ]
+        },
+        {
+          "key": "device",
+          "type": "select",
+          "label": "Device",
+          "default": "__default__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
     },
     "brightness": {
       "type": "slider",

@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-19T10:59:11Z",
+  "generated": "2026-11-19T11:04:34Z",
   "plugins": [
     {
       "id": "discord",
@@ -121,7 +121,7 @@
         "Broadcast"
       ],
       "icon": "obs-logo.svg",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/obs-v1.3.0/obs/icons/obs-logo.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/obs-v1.4.0/obs/icons/obs-logo.svg",
       "firstParty": true,
       "badges": [
         "knobdeck"
@@ -130,30 +130,38 @@
       "repository": "https://github.com/Knobdeck/knobdeck-plugins",
       "minHost": null,
       "companions": [],
-      "uses": [],
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ],
       "latest": {
-        "version": "1.3.0",
-        "released": "2026-11-17T14:20:50Z",
+        "version": "1.4.0",
+        "released": "2026-11-19T11:04:12Z",
         "platforms": {
           "linux": {
             "id": "obs-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.3.0/obs_linux_1.3.0.knobdeck",
-            "sha256": "1f4a45fb38ac34502a1a83041d7e9507f81762e3934ca73eb3005c54f62ae033",
-            "size": 1585865,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.4.0/obs_linux_1.4.0.knobdeck",
+            "sha256": "7ef61b536a3b1cbed6d214882bf3f91ca2a999bbc874ab59fbfdc03f11a4b78f",
+            "size": 2196690,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-linux/readme.md"
           },
           "macos": {
             "id": "obs-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.3.0/obs_macos_1.3.0.knobdeck",
-            "sha256": "a8db24b8fb1496210b9a6513dca262f356b36854481a66f660640676ef2d1ed1",
-            "size": 1083138,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.4.0/obs_macos_1.4.0.knobdeck",
+            "sha256": "0fe91994eeb3190d73d10b9c576994c1bb08602f416894481057682eab7aec2f",
+            "size": 1243112,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-macos/readme.md"
           },
           "windows": {
             "id": "obs-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.3.0/obs_windows_1.3.0.knobdeck",
-            "sha256": "f38cc5dfde2c43c78eb1457c618dd320b912a71153c1ae785914727b92123a35",
-            "size": 415547,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/obs-v1.4.0/obs_windows_1.4.0.knobdeck",
+            "sha256": "e3a7e4332eebd14c6287987bb5133f6e732da69cd5bb92646d1568ac38eb557f",
+            "size": 503743,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/obs-windows/readme.md"
           }
         }
@@ -163,8 +171,8 @@
     {
       "id": "twitch",
       "name": "Twitch",
-      "summary": "Chat, chat modes, ads, stream info, markers, clips, viewers.",
-      "description": "Chat, chat modes, ads, stream info, markers, clips, viewers and live channels on Twitch.",
+      "summary": "Chat, chat modes, ads, stream info, markers, clips, viewers, alerts.",
+      "description": "Chat, chat modes, ads, stream info, markers, clips, viewers, alerts and live channels on Twitch.",
       "author": "KnobDeck",
       "tags": [
         "Streaming",
@@ -182,28 +190,28 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.2.0",
-        "released": "2026-11-17T14:21:02Z",
+        "version": "1.3.0",
+        "released": "2026-11-19T11:04:16Z",
         "platforms": {
           "linux": {
             "id": "twitch-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/twitch-v1.2.0/twitch_linux_1.2.0.knobdeck",
-            "sha256": "87baef7a5e9f437504b25ef1f44649616fb219787762e86a09ed693a109642be",
-            "size": 2915004,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/twitch-v1.3.0/twitch_linux_1.3.0.knobdeck",
+            "sha256": "af527f348b68bfa06a2eb5bac5497f4d7fa1303f6206a435d0e5a324ad295370",
+            "size": 2977210,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-linux/readme.md"
           },
           "macos": {
             "id": "twitch-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/twitch-v1.2.0/twitch_macos_1.2.0.knobdeck",
-            "sha256": "dafdcc20204f8bbd1cf980a770107d77c1a700ceadca6dc2cd182a20ba11a30d",
-            "size": 3560599,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/twitch-v1.3.0/twitch_macos_1.3.0.knobdeck",
+            "sha256": "5f9a01c7ee01086e2da0fd75583b038c88bc15c0f220f1e9eaadd3eccd3439ef",
+            "size": 3683799,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-macos/readme.md"
           },
           "windows": {
             "id": "twitch-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/twitch-v1.2.0/twitch_windows_1.2.0.knobdeck",
-            "sha256": "30421e79ec2d5e2837fb1a4e4e5abaf8bb89a3c13d12f5376e37c3f4c97b2a79",
-            "size": 1719614,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/twitch-v1.3.0/twitch_windows_1.3.0.knobdeck",
+            "sha256": "fc4f63256bc90313009559316ac1725a2624d27d937109cdc16d0e35b9cc078e",
+            "size": 1785425,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/twitch-windows/readme.md"
           }
         }
@@ -293,14 +301,14 @@
         "window"
       ],
       "latest": {
-        "version": "1.9.0",
-        "released": "2026-11-17T17:09:21Z",
+        "version": "1.10.0",
+        "released": "2026-11-19T11:04:19Z",
         "platforms": {
           "windows": {
             "id": "win-tools",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.9.0/win-tools_windows_1.9.0.knobdeck",
-            "sha256": "6fc10eb567d7f2013bc12cda348fdc7c53b5e4c9224579c7101c46dba68dad21",
-            "size": 379057,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.10.0/win-tools_windows_1.10.0.knobdeck",
+            "sha256": "c557a1da8ab9c4a668808f519cd6c1ad518892b7b04e066dd2a0b9034ccd8436",
+            "size": 379163,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
           }
         }
@@ -338,14 +346,14 @@
         "window"
       ],
       "latest": {
-        "version": "1.7.0",
-        "released": "2026-11-17T17:09:06Z",
+        "version": "1.8.0",
+        "released": "2026-11-19T11:04:08Z",
         "platforms": {
           "macos": {
             "id": "mac-tools",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.7.0/mac-tools_macos_1.7.0.knobdeck",
-            "sha256": "2e4f96d4cbc0bd630f7910bfd8736291609004e1ab5188e3a24445971866fb1b",
-            "size": 950440,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/mac-tools-v1.8.0/mac-tools_macos_1.8.0.knobdeck",
+            "sha256": "a83c78c35775a9ff95c3d731503df315af0fc15a11a5876c0b4c19da10a6377b",
+            "size": 962744,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/mac-tools/readme.md"
           }
         }
@@ -589,8 +597,8 @@
     {
       "id": "youtube",
       "name": "YouTube",
-      "summary": "Live viewers and the Studio live dashboard (read-only).",
-      "description": "YouTube live viewers and the Studio live dashboard (read-only sign-in).",
+      "summary": "Live viewers, channel stats and the Studio live dashboard (read-only).",
+      "description": "YouTube live viewers, channel stats and the Studio live dashboard (read-only sign-in).",
       "author": "KnobDeck",
       "tags": [
         "Streaming",
@@ -608,28 +616,28 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.2.0",
-        "released": "2026-11-17T14:21:23Z",
+        "version": "1.3.0",
+        "released": "2026-11-19T11:04:22Z",
         "platforms": {
           "linux": {
             "id": "youtube-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.2.0/youtube_linux_1.2.0.knobdeck",
-            "sha256": "c01399193a879b86d852a6976f2c46212be7e0219d72c62ce6ea19d3f9f70811",
-            "size": 2912147,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.3.0/youtube_linux_1.3.0.knobdeck",
+            "sha256": "dde89884aaee293ae51cf09051c72a3f56db6cf6520fbc0d852c2a9510908aae",
+            "size": 2918839,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-linux/readme.md"
           },
           "macos": {
             "id": "youtube-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.2.0/youtube_macos_1.2.0.knobdeck",
-            "sha256": "58a28a9d3fa6c70c5e78c739f645517680329724a00e77a092d43a3d868a2ce0",
-            "size": 3563393,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.3.0/youtube_macos_1.3.0.knobdeck",
+            "sha256": "698e8b9b716507e444a4cb98770e25cb59a47d60f7d796da8ae81dc27d2e34ee",
+            "size": 3595734,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-macos/readme.md"
           },
           "windows": {
             "id": "youtube-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.2.0/youtube_windows_1.2.0.knobdeck",
-            "sha256": "6bac9f096f49b5f89bed668c28babf730dddfd1e78156d3b6bcd7accc61e8c84",
-            "size": 1719919,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.3.0/youtube_windows_1.3.0.knobdeck",
+            "sha256": "c20b88db4b91b42eaaf83181decbfd0ddfac5b949b2065f4ec59c2a5a8748fd5",
+            "size": 1734518,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-windows/readme.md"
           }
         }
@@ -1018,8 +1026,8 @@
     {
       "id": "game-launcher",
       "name": "Game Launcher",
-      "summary": "Launch installed Steam and Epic games from a key or wheel.",
-      "description": "Launch your installed Steam games from a key or a wheel.",
+      "summary": "Launch installed Steam, Epic, GOG, Ubisoft, Heroic and Lutris games; close a running game.",
+      "description": "Launch your installed Steam, Heroic and Lutris games from a key or a wheel, and close a running game.",
       "author": "KnobDeck",
       "tags": [
         "Gaming",
@@ -1037,28 +1045,28 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.0.0",
-        "released": "2026-11-17T14:20:33Z",
+        "version": "1.1.0",
+        "released": "2026-11-19T11:04:05Z",
         "platforms": {
           "linux": {
             "id": "game-launcher-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_linux_1.0.0.knobdeck",
-            "sha256": "9db7445bf1ee4adb1c944c3ddbd0b3a1a5308bcdf7740e9af9648050bf0f400c",
-            "size": 317581,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.0/game-launcher_linux_1.1.0.knobdeck",
+            "sha256": "6b912f3574f6fcc357ada4cb3193ea80d5707ea5355cf60fbe3e9175b56e882d",
+            "size": 894915,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-linux/readme.md"
           },
           "macos": {
             "id": "game-launcher-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_macos_1.0.0.knobdeck",
-            "sha256": "f4e61aa54a478f8dd7bd98c6bcb5f09004c73cfcb05f98be32ed125b5807a6df",
-            "size": 568859,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.0/game-launcher_macos_1.1.0.knobdeck",
+            "sha256": "a8d20e5ee6a27b4c4aa2f1b70985d0e46b8b35e4268804e162e4956968415cd7",
+            "size": 587478,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-macos/readme.md"
           },
           "windows": {
             "id": "game-launcher-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.0.0/game-launcher_windows_1.0.0.knobdeck",
-            "sha256": "d84df95c645f275b839931d4cec3e912aeb3105814d54488e91ad8644420d13f",
-            "size": 240291,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/game-launcher-v1.1.0/game-launcher_windows_1.1.0.knobdeck",
+            "sha256": "ca077b1b615ddd637fd7ed1df0f78921d812d9863c5f0c6c247579440527f6aa",
+            "size": 256155,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/game-launcher-windows/readme.md"
           }
         }
@@ -1548,8 +1556,8 @@
     {
       "id": "clocks",
       "name": "Clocks",
-      "summary": "Clock for any time zone, world clock, countdown timer, stopwatch.",
-      "description": "Clocks for any time zone, a world clock wheel, a countdown timer and a stopwatch.",
+      "summary": "Clock for any time zone, world clock, countdown timer, Pomodoro, stopwatch.",
+      "description": "Clocks for any time zone, a world clock wheel, a countdown timer, a Pomodoro timer and a stopwatch.",
       "author": "KnobDeck",
       "tags": [
         "Time",
@@ -1567,28 +1575,28 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.1.0",
-        "released": "2026-11-17T14:20:18Z",
+        "version": "1.2.0",
+        "released": "2026-11-19T11:04:01Z",
         "platforms": {
           "linux": {
             "id": "clocks-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_linux_1.1.0.knobdeck",
-            "sha256": "0c41ec38998c3af051becdc2bec92c5525badb792f97559453ac93cb985f3d73",
-            "size": 401120,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_linux_1.2.0.knobdeck",
+            "sha256": "c014f9b892d45c09b94d27a27515a17866705ca8430763fc6b361daf97f48f62",
+            "size": 414067,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-linux/readme.md"
           },
           "macos": {
             "id": "clocks-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_macos_1.1.0.knobdeck",
-            "sha256": "2903d9a09a84f479616124afa7a37665662c3f58fd9a96ee70d07285031de01b",
-            "size": 733268,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_macos_1.2.0.knobdeck",
+            "sha256": "1d978864e76f9d405aeaf527c5ef8093e63a6cada8a2077cf4f15ba04751741f",
+            "size": 757504,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-macos/readme.md"
           },
           "windows": {
             "id": "clocks-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.1.0/clocks_windows_1.1.0.knobdeck",
-            "sha256": "c91cb22e83cc1ac7c9104ac0b57b66eb1d391744fe601b48722867b7cbc7596b",
-            "size": 367529,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_windows_1.2.0.knobdeck",
+            "sha256": "37628fc7167c72a862b6bb8927d889b8169319ff3346a8397d450728cde65ec1",
+            "size": 380118,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/clocks-windows/readme.md"
           }
         }

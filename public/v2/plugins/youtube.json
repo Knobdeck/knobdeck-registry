@@ -4,35 +4,42 @@
   "name": "YouTube",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.2.0",
-    "released": "2026-11-17T14:21:23Z",
+    "version": "1.3.0",
+    "released": "2026-11-19T11:04:22Z",
     "platforms": {
       "linux": {
         "id": "youtube-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.2.0/youtube_linux_1.2.0.knobdeck",
-        "sha256": "c01399193a879b86d852a6976f2c46212be7e0219d72c62ce6ea19d3f9f70811",
-        "size": 2912147,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.3.0/youtube_linux_1.3.0.knobdeck",
+        "sha256": "dde89884aaee293ae51cf09051c72a3f56db6cf6520fbc0d852c2a9510908aae",
+        "size": 2918839,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-linux/readme.md"
       },
       "macos": {
         "id": "youtube-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.2.0/youtube_macos_1.2.0.knobdeck",
-        "sha256": "58a28a9d3fa6c70c5e78c739f645517680329724a00e77a092d43a3d868a2ce0",
-        "size": 3563393,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.3.0/youtube_macos_1.3.0.knobdeck",
+        "sha256": "698e8b9b716507e444a4cb98770e25cb59a47d60f7d796da8ae81dc27d2e34ee",
+        "size": 3595734,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-macos/readme.md"
       },
       "windows": {
         "id": "youtube-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.2.0/youtube_windows_1.2.0.knobdeck",
-        "sha256": "6bac9f096f49b5f89bed668c28babf730dddfd1e78156d3b6bcd7accc61e8c84",
-        "size": 1719919,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/youtube-v1.3.0/youtube_windows_1.3.0.knobdeck",
+        "sha256": "c20b88db4b91b42eaaf83181decbfd0ddfac5b949b2065f4ec59c2a5a8748fd5",
+        "size": 1734518,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/youtube-windows/readme.md"
       }
     }
   },
-  "changelog": "YouTube 1.2.0 for linux, macos, windows.",
+  "changelog": "- Channel Stats: subscribers, total views or videos for a channel by @handle, ID or URL (your own\n  when empty), from `channels?part=statistics` with the existing read-only sign-in; refreshed every\n  10 minutes, one quota unit per channel per refresh.",
   "setup": true,
   "versions": [
+    {
+      "version": "1.3.0",
+      "tag": "youtube-v1.3.0",
+      "released": "2026-11-19T11:04:22Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.2.0",
       "tag": "youtube-v1.2.0",
@@ -52,6 +59,34 @@
         "windows"
       ],
       "inputs": []
+    },
+    "channel-stats": {
+      "type": "button",
+      "label": "Channel Stats",
+      "icon": "users",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "channel",
+          "type": "text",
+          "label": "Channel"
+        },
+        {
+          "key": "stat",
+          "type": "select",
+          "label": "Show",
+          "default": "subscribers",
+          "options": [
+            "subscribers",
+            "views",
+            "videos"
+          ]
+        }
+      ]
     },
     "dashboard": {
       "type": "button",

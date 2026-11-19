@@ -4,21 +4,28 @@
   "name": "Windows Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.9.0",
-    "released": "2026-11-17T17:09:21Z",
+    "version": "1.10.0",
+    "released": "2026-11-19T11:04:19Z",
     "platforms": {
       "windows": {
         "id": "win-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.9.0/win-tools_windows_1.9.0.knobdeck",
-        "sha256": "6fc10eb567d7f2013bc12cda348fdc7c53b5e4c9224579c7101c46dba68dad21",
-        "size": 379057,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.10.0/win-tools_windows_1.10.0.knobdeck",
+        "sha256": "c557a1da8ab9c4a668808f519cd6c1ad518892b7b04e066dd2a0b9034ccd8436",
+        "size": 379163,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
       }
     }
   },
-  "changelog": "Windows Tools 1.9.0 for windows.",
+  "changelog": "- New Sleep Display action: turns the monitors off (`SC_MONITORPOWER`, posted so a hung window\n  can't block it), like Mac Tools' and Linux Tools' Sleep Display.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.10.0",
+      "tag": "win-tools-v1.10.0",
+      "released": "2026-11-19T11:04:19Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.9.0",
       "tag": "win-tools-v1.9.0",
@@ -1618,6 +1625,15 @@
       "type": "button",
       "label": "Lock PC",
       "icon": "lock",
+      "platforms": [
+        "windows"
+      ],
+      "inputs": []
+    },
+    "sleep-display": {
+      "type": "button",
+      "label": "Sleep Display",
+      "icon": "moon",
       "platforms": [
         "windows"
       ],

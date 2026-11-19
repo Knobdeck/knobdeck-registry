@@ -2,6 +2,284 @@
   "id": "clocks",
   "versions": [
     {
+      "version": "1.2.0",
+      "tag": "clocks-v1.2.0",
+      "released": "2026-11-19T11:04:01Z",
+      "notes": "- New Pomodoro action: work / short break / long break every N sessions, configurable lengths,\n  the completed-session count on the key, press to start / pause, optional auto-start of the next\n  phase; a new Pomodoro Skip / Reset action skips or resets the Pomodoro with the same name.\n- Countdown Timer can write the time left to a text file every second (for an OBS text source):\n  path, format (mm:ss, h:mm:ss, hh:mm:ss) and text at zero in its settings.",
+      "meta": {
+        "dir": "clocks",
+        "version": "1.2.0",
+        "name": "Clocks",
+        "summary": "Clock for any time zone, world clock, countdown timer, Pomodoro, stopwatch.",
+        "tags": [
+          "Time",
+          "Productivity"
+        ],
+        "sort": 86
+      },
+      "platforms": {
+        "linux": {
+          "id": "clocks-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_linux_1.2.0.knobdeck",
+          "sha256": "c014f9b892d45c09b94d27a27515a17866705ca8430763fc6b361daf97f48f62",
+          "size": 414067,
+          "file": "clocks_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_linux_readme.md",
+          "readmeFile": "clocks_linux_readme.md",
+          "name": "Clocks",
+          "description": "Clocks for any time zone, a world clock wheel, a countdown timer, a Pomodoro timer and a stopwatch.",
+          "author": "KnobDeck",
+          "icon": "clock",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "clocks-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_macos_1.2.0.knobdeck",
+          "sha256": "1d978864e76f9d405aeaf527c5ef8093e63a6cada8a2077cf4f15ba04751741f",
+          "size": 757504,
+          "file": "clocks_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_macos_readme.md",
+          "readmeFile": "clocks_macos_readme.md",
+          "name": "Clocks",
+          "description": "Clocks for any time zone, a world clock wheel, a countdown timer, a Pomodoro timer and a stopwatch.",
+          "author": "KnobDeck",
+          "icon": "clock",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "clocks-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_windows_1.2.0.knobdeck",
+          "sha256": "37628fc7167c72a862b6bb8927d889b8169319ff3346a8397d450728cde65ec1",
+          "size": 380118,
+          "file": "clocks_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/clocks-v1.2.0/clocks_windows_readme.md",
+          "readmeFile": "clocks_windows_readme.md",
+          "name": "Clocks",
+          "description": "Clocks for any time zone, a world clock wheel, a countdown timer, a Pomodoro timer and a stopwatch.",
+          "author": "KnobDeck",
+          "icon": "clock",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "clock": {
+          "type": "button",
+          "label": "Clock",
+          "icon": "clock",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "zone",
+              "type": "combobox",
+              "label": "Time zone",
+              "default": "__local__"
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name on the key (optional)"
+            },
+            {
+              "key": "format",
+              "type": "select",
+              "label": "Format",
+              "default": "24",
+              "options": [
+                "24",
+                "12"
+              ]
+            },
+            {
+              "key": "date",
+              "type": "checkbox",
+              "label": "Show the date"
+            }
+          ]
+        },
+        "world-clock-wheel": {
+          "type": "wheel",
+          "label": "World Clock",
+          "icon": "globe",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "zones",
+              "type": "textarea",
+              "label": "Time zones, one per line"
+            },
+            {
+              "key": "format",
+              "type": "select",
+              "label": "Format",
+              "default": "24",
+              "options": [
+                "24",
+                "12"
+              ]
+            },
+            {
+              "key": "date",
+              "type": "checkbox",
+              "label": "Show the date"
+            }
+          ]
+        },
+        "timer": {
+          "type": "button",
+          "label": "Countdown Timer",
+          "icon": "timer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "length",
+              "type": "text",
+              "label": "Length",
+              "default": "5m"
+            },
+            {
+              "key": "to_file",
+              "type": "checkbox",
+              "label": "Write the time left to a text file (for an OBS text source)"
+            },
+            {
+              "key": "file_path",
+              "type": "text",
+              "label": "Text file",
+              "showIf": {
+                "key": "to_file",
+                "truthy": true
+              }
+            },
+            {
+              "key": "file_format",
+              "type": "select",
+              "label": "Format in the file",
+              "default": "",
+              "showIf": {
+                "key": "to_file",
+                "truthy": true
+              },
+              "options": [
+                "",
+                "mmss",
+                "hhmmss"
+              ]
+            },
+            {
+              "key": "end_text",
+              "type": "text",
+              "label": "Text at zero (optional)",
+              "showIf": {
+                "key": "to_file",
+                "truthy": true
+              }
+            }
+          ]
+        },
+        "pomodoro": {
+          "type": "button",
+          "label": "Pomodoro",
+          "icon": "timer",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "work",
+              "type": "text",
+              "label": "Work",
+              "default": "25m"
+            },
+            {
+              "key": "short",
+              "type": "text",
+              "label": "Short break",
+              "default": "5m"
+            },
+            {
+              "key": "long",
+              "type": "text",
+              "label": "Long break",
+              "default": "15m"
+            },
+            {
+              "key": "every",
+              "type": "text",
+              "label": "Long break every (work sessions)",
+              "default": "4"
+            },
+            {
+              "key": "auto",
+              "type": "checkbox",
+              "label": "Start the next phase on its own"
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name (optional; links Pomodoro Skip / Reset keys)"
+            }
+          ]
+        },
+        "pomodoro-control": {
+          "type": "button",
+          "label": "Pomodoro Skip / Reset",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "op",
+              "type": "select",
+              "label": "Do",
+              "default": "skip",
+              "options": [
+                "skip",
+                "reset"
+              ]
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Pomodoro name (as on its key; empty = unnamed ones)"
+            }
+          ]
+        },
+        "stopwatch": {
+          "type": "button",
+          "label": "Stopwatch",
+          "icon": "timer-reset",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": []
+    },
+    {
       "version": "1.1.0",
       "tag": "clocks-v1.1.0",
       "released": "2026-11-17T14:20:18Z",
