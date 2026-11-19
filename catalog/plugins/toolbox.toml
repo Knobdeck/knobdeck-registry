@@ -1,0 +1,7 @@
+id = "toolbox"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "toolbox", tag = "toolbox-v{version}" }
+first_party = true
+featured = false
+sort = 100
+tags = ["Productivity", "Utilities"]
+companions = []
