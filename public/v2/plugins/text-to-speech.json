@@ -1,0 +1,177 @@
+{
+  "schema": 2,
+  "id": "text-to-speech",
+  "name": "Text to Speech",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-19T07:27:28Z",
+    "platforms": {
+      "linux": {
+        "id": "text-to-speech-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_linux_1.0.0.knobdeck",
+        "sha256": "578262c5c056f598b6fec41b9b6b18ac440fd64b2669f19d1ea13163fc208271",
+        "size": 974662,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-linux/readme.md"
+      },
+      "macos": {
+        "id": "text-to-speech-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_macos_1.0.0.knobdeck",
+        "sha256": "3419282f089839256d77570f1e5f33557ef780d087f550235ce63923abd59c62",
+        "size": 696648,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-macos/readme.md"
+      },
+      "windows": {
+        "id": "text-to-speech-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_windows_1.0.0.knobdeck",
+        "sha256": "aa047eed45358db7472d19e078e57f29fa170aac512292f3df862a1b0a1d3e98",
+        "size": 297086,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "- Speak Text: the selection, the clipboard or your own text (KnobDeck placeholders), with a voice\n  per key; pressing while speaking stops it or speaks the new text.\n- Stop Speaking (lit while speaking), Use Voice (a voice picker), Speech Rate and Speech Volume\n  dials; voice, rate and volume are kept.\n- Windows: WinRT SpeechSynthesizer. macOS: the system synthesizer through `say`. Linux: Speech\n  Dispatcher over SSIP (started when it isn't running).",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "text-to-speech-v1.0.0",
+      "released": "2026-11-19T07:27:28Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "speak": {
+      "type": "button",
+      "label": "Speak Text",
+      "icon": "speech",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Text",
+          "default": "{selection}"
+        },
+        {
+          "key": "voice",
+          "type": "select",
+          "label": "Voice",
+          "default": ""
+        },
+        {
+          "key": "mode",
+          "type": "select",
+          "label": "When pressed while speaking",
+          "default": "stop",
+          "options": [
+            "stop",
+            "restart"
+          ]
+        }
+      ]
+    },
+    "stop": {
+      "type": "toggle",
+      "label": "Stop Speaking",
+      "icon": "square",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "idle",
+          "label": "Not speaking",
+          "icon": "volume-x"
+        },
+        {
+          "value": "speaking",
+          "label": "Speaking",
+          "icon": "square"
+        }
+      ]
+    },
+    "voice": {
+      "type": "toggle",
+      "label": "Use Voice",
+      "icon": "user-round",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "voice",
+          "type": "select",
+          "label": "Voice"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Voice",
+          "icon": "user-round"
+        },
+        {
+          "value": "on",
+          "label": "Voice in use",
+          "icon": "user-round-check"
+        }
+      ]
+    },
+    "rate": {
+      "type": "slider",
+      "label": "Speech Rate",
+      "icon": "gauge",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "10"
+        }
+      ],
+      "min": 50,
+      "max": 300,
+      "step": 1,
+      "unit": "%"
+    },
+    "volume": {
+      "type": "slider",
+      "label": "Speech Volume",
+      "icon": "volume-2",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    }
+  },
+  "companions": []
+}

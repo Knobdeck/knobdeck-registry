@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-18T18:29:46Z",
+  "tag": "catalog-2026-11-19T07:28:59Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -3090,6 +3090,105 @@
       "featured": false,
       "file": "blender_windows_1.0.0.knobdeck",
       "readmeFile": "blender_windows_readme.md"
+    },
+    {
+      "id": "text-to-speech-linux",
+      "name": "Text to Speech",
+      "summary": "Read the selection, the clipboard or your own text aloud; voice, rate and volume dials.",
+      "description": "Read the selected text, the clipboard or your own text aloud with your computer's voices. Stop it, pick the voice, and set rate and volume on dials.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_linux_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "speech",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-linux/readme.md",
+      "sha256": "578262c5c056f598b6fec41b9b6b18ac440fd64b2669f19d1ea13163fc208271",
+      "tags": [
+        "Accessibility",
+        "Productivity"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "text-to-speech_linux_1.0.0.knobdeck",
+      "readmeFile": "text-to-speech_linux_readme.md"
+    },
+    {
+      "id": "text-to-speech-macos",
+      "name": "Text to Speech",
+      "summary": "Read the selection, the clipboard or your own text aloud; voice, rate and volume dials.",
+      "description": "Read the selected text, the clipboard or your own text aloud with your computer's voices. Stop it, pick the voice, and set rate and volume on dials.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_macos_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "speech",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-macos/readme.md",
+      "sha256": "3419282f089839256d77570f1e5f33557ef780d087f550235ce63923abd59c62",
+      "tags": [
+        "Accessibility",
+        "Productivity"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "text-to-speech_macos_1.0.0.knobdeck",
+      "readmeFile": "text-to-speech_macos_readme.md"
+    },
+    {
+      "id": "text-to-speech-windows",
+      "name": "Text to Speech",
+      "summary": "Read the selection, the clipboard or your own text aloud; voice, rate and volume dials.",
+      "description": "Read the selected text, the clipboard or your own text aloud with your computer's voices. Stop it, pick the voice, and set rate and volume on dials.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-to-speech-v1.0.0/text-to-speech_windows_1.0.0.knobdeck",
+      "iconUrl": null,
+      "icon": "speech",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-to-speech-windows/readme.md",
+      "sha256": "aa047eed45358db7472d19e078e57f29fa170aac512292f3df862a1b0a1d3e98",
+      "tags": [
+        "Accessibility",
+        "Productivity"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [
+        "window",
+        "focus",
+        "selection",
+        "files",
+        "clipboard",
+        "document",
+        "browser"
+      ],
+      "featured": false,
+      "file": "text-to-speech_windows_1.0.0.knobdeck",
+      "readmeFile": "text-to-speech_windows_readme.md"
     }
   ]
 }
