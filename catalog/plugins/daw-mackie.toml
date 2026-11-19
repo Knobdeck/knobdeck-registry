@@ -1,0 +1,7 @@
+id = "daw-mackie"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "daw-mackie", tag = "daw-mackie-v{version}" }
+first_party = true
+featured = false
+sort = 106
+tags = ["Music", "Audio"]
+companions = []
