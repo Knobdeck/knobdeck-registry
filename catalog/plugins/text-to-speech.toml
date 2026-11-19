@@ -1,0 +1,7 @@
+id = "text-to-speech"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "text-to-speech", tag = "text-to-speech-v{version}" }
+first_party = true
+featured = false
+sort = 102
+tags = ["Accessibility", "Productivity"]
+companions = []
