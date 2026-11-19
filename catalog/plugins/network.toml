@@ -1,0 +1,7 @@
+id = "network"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "network", tag = "network-v{version}" }
+first_party = true
+featured = false
+sort = 104
+tags = ["Network", "Monitoring"]
+companions = []

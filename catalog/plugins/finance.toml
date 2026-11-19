@@ -1,0 +1,7 @@
+id = "finance"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "finance", tag = "finance-v{version}" }
+first_party = true
+featured = false
+sort = 103
+tags = ["Finance", "Information"]
+companions = []
