@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-19T07:28:59Z",
+  "generated": "2026-11-19T07:33:20Z",
   "plugins": [
     {
       "id": "discord",
@@ -2187,6 +2187,111 @@
       "detail": "/v2/plugins/blender.json"
     },
     {
+      "id": "toolbox",
+      "name": "Toolbox",
+      "summary": "Counters on a key or dial, dice, coin flip, random pick and a tally file.",
+      "description": "Counters on a key or a dial (kept across restarts), dice, a coin flip, a random pick from your own list and a tally that writes each press to a file.",
+      "author": "KnobDeck",
+      "tags": [
+        "Productivity",
+        "Utilities"
+      ],
+      "icon": "wrench",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:32:54Z",
+        "platforms": {
+          "linux": {
+            "id": "toolbox-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.0/toolbox_linux_1.0.0.knobdeck",
+            "sha256": "ce2b08dee5882b5a856908d3d26e5122e9b5db46822fafc743cdf5b45218e138",
+            "size": 412918,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/toolbox-linux/readme.md"
+          },
+          "macos": {
+            "id": "toolbox-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.0/toolbox_macos_1.0.0.knobdeck",
+            "sha256": "4dae5af46a64218cfbd4c95cd5b916a24e31dfc148c6afa0b99a4e838f1f349f",
+            "size": 755443,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/toolbox-macos/readme.md"
+          },
+          "windows": {
+            "id": "toolbox-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.0/toolbox_windows_1.0.0.knobdeck",
+            "sha256": "927d9a30d3a4a6e641d00479d8445e672109bb44e545b5b0969cd2d9e898a5ff",
+            "size": 379863,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/toolbox-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/toolbox.json"
+    },
+    {
+      "id": "text-tools",
+      "name": "Text Tools",
+      "summary": "Change case, slugify, encode / decode, format JSON, count words, text slots.",
+      "description": "Change case, trim, slugify, URL / Base64 encode and decode, or format JSON in the selected text; count words; keep text in numbered slots. Results go on the clipboard or in place of the selection.",
+      "author": "KnobDeck",
+      "tags": [
+        "Productivity",
+        "Text"
+      ],
+      "icon": "type",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [
+        "clipboard",
+        "focus",
+        "selection",
+        "window"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:32:50Z",
+        "platforms": {
+          "linux": {
+            "id": "text-tools-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_linux_1.0.0.knobdeck",
+            "sha256": "807176d5e7a6d261db54cd6a4aebf67bcda5e2e40137eab6f613d40ac038837f",
+            "size": 921652,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-tools-linux/readme.md"
+          },
+          "macos": {
+            "id": "text-tools-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_macos_1.0.0.knobdeck",
+            "sha256": "41868f08fbfc45cc23f6f465005b45dd173de4296117277a603892b1cf102703",
+            "size": 616519,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-tools-macos/readme.md"
+          },
+          "windows": {
+            "id": "text-tools-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_windows_1.0.0.knobdeck",
+            "sha256": "dac87c2022e110cda6066911ac66ace24df1e36479fc72b6df059aece0ed416c",
+            "size": 249057,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/text-tools-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/text-tools.json"
+    },
+    {
       "id": "text-to-speech",
       "name": "Text to Speech",
       "summary": "Read the selection, the clipboard or your own text aloud; voice, rate and volume dials.",
@@ -2243,6 +2348,159 @@
         }
       },
       "detail": "/v2/plugins/text-to-speech.json"
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "summary": "Crypto, stock, ETF, index and forex prices with change and sparkline: ticker keys, a watchlist wheel and dial. No account.",
+      "description": "Crypto, stock, ETF, index and forex prices with change and sparkline: ticker keys, a watchlist wheel and a watchlist dial. No account needed.",
+      "author": "KnobDeck",
+      "tags": [
+        "Finance",
+        "Information"
+      ],
+      "icon": "chart-candlestick",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:32:42Z",
+        "platforms": {
+          "linux": {
+            "id": "finance-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_linux_1.0.0.knobdeck",
+            "sha256": "ede05a08c27a3dc3e5b961678adc168b70cc52eb51e7fcdf384cd8ad3fa1d7aa",
+            "size": 2895244,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/finance-linux/readme.md"
+          },
+          "macos": {
+            "id": "finance-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_macos_1.0.0.knobdeck",
+            "sha256": "950e8cefce50b3bb7ea2ddacc36133254f441e3b9f5e42d42bd6046e20255dff",
+            "size": 3534227,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/finance-macos/readme.md"
+          },
+          "windows": {
+            "id": "finance-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_windows_1.0.0.knobdeck",
+            "sha256": "fd85ebd2285ca1f8f8d989bc0e93f22b6e1969044d62595df93a20fc78fcef44",
+            "size": 1694270,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/finance-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/finance.json"
+    },
+    {
+      "id": "network",
+      "name": "Network",
+      "summary": "Public IP, Wake-on-LAN, Tailscale on/off and exit node, Wi-Fi networks and VPNs, Pi-hole and Uptime Kuma status.",
+      "description": "Public IP, Wake-on-LAN, Tailscale (on/off, exit node), saved Wi-Fi networks and VPNs, and Pi-hole / Uptime Kuma status.",
+      "author": "KnobDeck",
+      "tags": [
+        "Network",
+        "Monitoring"
+      ],
+      "icon": "network",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [
+        "window"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:32:45Z",
+        "platforms": {
+          "linux": {
+            "id": "network-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.0/network_linux_1.0.0.knobdeck",
+            "sha256": "04cee249c5c5c480392562149333487198ac669043949c60313a66da7d0f7d01",
+            "size": 3361338,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/network-linux/readme.md"
+          },
+          "macos": {
+            "id": "network-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.0/network_macos_1.0.0.knobdeck",
+            "sha256": "c095137143d4197951386908664a62f7f60047bd1f7d8bdfc8ae44e8b014d0ce",
+            "size": 3548819,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/network-macos/readme.md"
+          },
+          "windows": {
+            "id": "network-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/network-v1.0.0/network_windows_1.0.0.knobdeck",
+            "sha256": "b7100f9f77cff4828da695de8a14933c12b583e113d711cd5f75251186722909",
+            "size": 1699865,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/network-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/network.json"
+    },
+    {
+      "id": "reaper",
+      "name": "REAPER",
+      "summary": "Transport with live state, markers, any action by command id, track volume / pan dials, mute, solo, arm.",
+      "description": "REAPER transport with live state, markers, any action by command id, and track volume, pan, mute, solo and record arm on keys and dials, over REAPER's web browser interface.",
+      "author": "KnobDeck",
+      "tags": [
+        "Audio",
+        "Music",
+        "Creative"
+      ],
+      "icon": "audio-waveform",
+      "iconUrl": null,
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-19T07:32:48Z",
+        "platforms": {
+          "linux": {
+            "id": "reaper-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_linux_1.0.0.knobdeck",
+            "sha256": "191075867e4b686c9f6f0c151348712a8862fb0fb7b851d0dfd8738bb91a9696",
+            "size": 2877301,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-linux/readme.md"
+          },
+          "macos": {
+            "id": "reaper-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_macos_1.0.0.knobdeck",
+            "sha256": "6491a382d32717ec3ac728ddbf096f0bba5da4d7ac32e9c2f666ea2911e161f4",
+            "size": 3520555,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-macos/readme.md"
+          },
+          "windows": {
+            "id": "reaper-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_windows_1.0.0.knobdeck",
+            "sha256": "7ab2d00db8608e2e1dca42468f28a14eef1821202f7038f38093f039ca1f7019",
+            "size": 1671616,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/reaper.json"
     }
   ]
 }

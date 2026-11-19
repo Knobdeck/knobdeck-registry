@@ -1,4 +1,267 @@
 {
   "id": "text-tools",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "text-tools-v1.0.0",
+      "released": "2026-11-19T07:32:50Z",
+      "notes": "- First release: Transform Text and the Text Tools Wheel (case, trim, slugify, URL and Base64\n  encode / decode, JSON format / minify), Word Count, Save to Slot and Paste Slot.",
+      "meta": {
+        "dir": "text-tools",
+        "version": "1.0.0",
+        "name": "Text Tools",
+        "summary": "Change case, slugify, encode / decode, format JSON, count words, text slots.",
+        "tags": [
+          "Productivity",
+          "Text"
+        ],
+        "sort": 101
+      },
+      "platforms": {
+        "linux": {
+          "id": "text-tools-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_linux_1.0.0.knobdeck",
+          "sha256": "807176d5e7a6d261db54cd6a4aebf67bcda5e2e40137eab6f613d40ac038837f",
+          "size": 921652,
+          "file": "text-tools_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_linux_readme.md",
+          "readmeFile": "text-tools_linux_readme.md",
+          "name": "Text Tools",
+          "description": "Change case, trim, slugify, URL / Base64 encode and decode, or format JSON in the selected text; count words; keep text in numbered slots. Results go on the clipboard or in place of the selection.",
+          "author": "KnobDeck",
+          "icon": "type",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "clipboard"
+          ]
+        },
+        "macos": {
+          "id": "text-tools-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_macos_1.0.0.knobdeck",
+          "sha256": "41868f08fbfc45cc23f6f465005b45dd173de4296117277a603892b1cf102703",
+          "size": 616519,
+          "file": "text-tools_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_macos_readme.md",
+          "readmeFile": "text-tools_macos_readme.md",
+          "name": "Text Tools",
+          "description": "Change case, trim, slugify, URL / Base64 encode and decode, or format JSON in the selected text; count words; keep text in numbered slots. Results go on the clipboard or in place of the selection.",
+          "author": "KnobDeck",
+          "icon": "type",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "clipboard"
+          ]
+        },
+        "windows": {
+          "id": "text-tools-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_windows_1.0.0.knobdeck",
+          "sha256": "dac87c2022e110cda6066911ac66ace24df1e36479fc72b6df059aece0ed416c",
+          "size": 249057,
+          "file": "text-tools_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/text-tools-v1.0.0/text-tools_windows_readme.md",
+          "readmeFile": "text-tools_windows_readme.md",
+          "name": "Text Tools",
+          "description": "Change case, trim, slugify, URL / Base64 encode and decode, or format JSON in the selected text; count words; keep text in numbered slots. Results go on the clipboard or in place of the selection.",
+          "author": "KnobDeck",
+          "icon": "type",
+          "iconInBundle": false,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "clipboard"
+          ]
+        }
+      },
+      "actions": {
+        "transform": {
+          "type": "button",
+          "label": "Transform Text",
+          "icon": "type",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "op",
+              "type": "select",
+              "label": "Do",
+              "default": "upper",
+              "options": [
+                "upper",
+                "lower",
+                "title",
+                "trim",
+                "slug",
+                "url-encode",
+                "url-decode",
+                "base64-encode",
+                "base64-decode",
+                "json-format",
+                "json-minify"
+              ]
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Put the result",
+              "default": "copy",
+              "options": [
+                "copy",
+                "replace"
+              ]
+            },
+            {
+              "key": "no_clipboard",
+              "type": "checkbox",
+              "label": "Don't fall back to the clipboard when nothing is selected"
+            }
+          ]
+        },
+        "wheel": {
+          "type": "wheel",
+          "label": "Text Tools Wheel",
+          "icon": "whole-word",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Put the result",
+              "default": "copy",
+              "options": [
+                "copy",
+                "replace"
+              ]
+            },
+            {
+              "key": "no_clipboard",
+              "type": "checkbox",
+              "label": "Don't fall back to the clipboard when nothing is selected"
+            }
+          ]
+        },
+        "word-count": {
+          "type": "button",
+          "label": "Word Count",
+          "icon": "text",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "show",
+              "type": "select",
+              "label": "Show",
+              "default": "words",
+              "options": [
+                "words",
+                "lines",
+                "chars"
+              ]
+            },
+            {
+              "key": "no_clipboard",
+              "type": "checkbox",
+              "label": "Don't fall back to the clipboard when nothing is selected"
+            }
+          ]
+        },
+        "save-slot": {
+          "type": "button",
+          "label": "Save to Slot",
+          "icon": "bookmark-plus",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "slot",
+              "type": "select",
+              "label": "Slot",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "key": "no_clipboard",
+              "type": "checkbox",
+              "label": "Don't fall back to the clipboard when nothing is selected"
+            }
+          ]
+        },
+        "paste-slot": {
+          "type": "button",
+          "label": "Paste Slot",
+          "icon": "clipboard-paste",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "slot",
+              "type": "select",
+              "label": "Slot",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "key": "output",
+              "type": "select",
+              "label": "Put the text",
+              "default": "replace",
+              "options": [
+                "replace",
+                "copy"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": [
+        "clipboard",
+        "focus",
+        "selection",
+        "window"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,225 @@
+{
+  "schema": 2,
+  "id": "toolbox",
+  "name": "Toolbox",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-19T07:32:54Z",
+    "platforms": {
+      "linux": {
+        "id": "toolbox-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.0/toolbox_linux_1.0.0.knobdeck",
+        "sha256": "ce2b08dee5882b5a856908d3d26e5122e9b5db46822fafc743cdf5b45218e138",
+        "size": 412918,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/toolbox-linux/readme.md"
+      },
+      "macos": {
+        "id": "toolbox-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.0/toolbox_macos_1.0.0.knobdeck",
+        "sha256": "4dae5af46a64218cfbd4c95cd5b916a24e31dfc148c6afa0b99a4e838f1f349f",
+        "size": 755443,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/toolbox-macos/readme.md"
+      },
+      "windows": {
+        "id": "toolbox-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/toolbox-v1.0.0/toolbox_windows_1.0.0.knobdeck",
+        "sha256": "927d9a30d3a4a6e641d00479d8445e672109bb44e545b5b0969cd2d9e898a5ff",
+        "size": 379863,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/toolbox-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "- First release: Counter and Counter Dial (kept across restarts, shared by name), Roll Dice,\n  Flip a Coin, Random Pick and Tally to File.",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "toolbox-v1.0.0",
+      "released": "2026-11-19T07:32:54Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "counter": {
+      "type": "button",
+      "label": "Counter",
+      "icon": "hash",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Counter name",
+          "default": "Counter"
+        },
+        {
+          "key": "do",
+          "type": "select",
+          "label": "Press",
+          "default": "add",
+          "options": [
+            "add",
+            "subtract",
+            "reset"
+          ]
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "By",
+          "default": "1",
+          "showIf": {
+            "key": "do",
+            "in": [
+              "add",
+              "subtract"
+            ]
+          }
+        },
+        {
+          "key": "reset_to",
+          "type": "text",
+          "label": "Reset to",
+          "default": "0",
+          "showIf": {
+            "key": "do",
+            "equals": "reset"
+          }
+        }
+      ]
+    },
+    "counter-dial": {
+      "type": "slider",
+      "label": "Counter Dial",
+      "icon": "hash",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Counter name",
+          "default": "Counter"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Per tick",
+          "default": "1"
+        }
+      ],
+      "min": -999999,
+      "max": 999999,
+      "step": 1,
+      "unit": null
+    },
+    "dice": {
+      "type": "button",
+      "label": "Roll Dice",
+      "icon": "dices",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "sides",
+          "type": "select",
+          "label": "Die",
+          "default": "6",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "20",
+            "100"
+          ]
+        },
+        {
+          "key": "count",
+          "type": "select",
+          "label": "How many",
+          "default": "1",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      ]
+    },
+    "coin": {
+      "type": "button",
+      "label": "Flip a Coin",
+      "icon": "coins",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "pick": {
+      "type": "button",
+      "label": "Random Pick",
+      "icon": "shuffle",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "items",
+          "type": "textarea",
+          "label": "Pick from, one per line"
+        },
+        {
+          "key": "no_repeat",
+          "type": "checkbox",
+          "label": "Never the same one twice in a row",
+          "default": true
+        }
+      ]
+    },
+    "tally": {
+      "type": "button",
+      "label": "Tally to File",
+      "icon": "notebook-pen",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "entry",
+          "type": "text",
+          "label": "Entry",
+          "default": "Tally"
+        },
+        {
+          "key": "file",
+          "type": "text",
+          "label": "File (optional)"
+        }
+      ]
+    }
+  },
+  "companions": []
+}

@@ -1,4 +1,200 @@
 {
   "id": "finance",
-  "versions": []
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "finance-v1.0.0",
+      "released": "2026-11-19T07:32:42Z",
+      "notes": "- First release: ticker keys (price, change and a sparkline over 24 hours or 7 days) for coins\n  from CoinGecko and stocks, ETFs, indices and forex from Yahoo Finance, a watchlist wheel and a\n  watchlist dial. No account needed; optional CoinGecko Demo and Finnhub keys.",
+      "meta": {
+        "dir": "finance",
+        "version": "1.0.0",
+        "name": "Finance",
+        "summary": "Crypto, stock, ETF, index and forex prices with change and sparkline: ticker keys, a watchlist wheel and dial. No account.",
+        "tags": [
+          "Finance",
+          "Information"
+        ],
+        "sort": 103
+      },
+      "platforms": {
+        "linux": {
+          "id": "finance-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_linux_1.0.0.knobdeck",
+          "sha256": "ede05a08c27a3dc3e5b961678adc168b70cc52eb51e7fcdf384cd8ad3fa1d7aa",
+          "size": 2895244,
+          "file": "finance_linux_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_linux_readme.md",
+          "readmeFile": "finance_linux_readme.md",
+          "name": "Finance",
+          "description": "Crypto, stock, ETF, index and forex prices with change and sparkline: ticker keys, a watchlist wheel and a watchlist dial. No account needed.",
+          "author": "KnobDeck",
+          "icon": "chart-candlestick",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "macos": {
+          "id": "finance-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_macos_1.0.0.knobdeck",
+          "sha256": "950e8cefce50b3bb7ea2ddacc36133254f441e3b9f5e42d42bd6046e20255dff",
+          "size": 3534227,
+          "file": "finance_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_macos_readme.md",
+          "readmeFile": "finance_macos_readme.md",
+          "name": "Finance",
+          "description": "Crypto, stock, ETF, index and forex prices with change and sparkline: ticker keys, a watchlist wheel and a watchlist dial. No account needed.",
+          "author": "KnobDeck",
+          "icon": "chart-candlestick",
+          "iconInBundle": false,
+          "uses": []
+        },
+        "windows": {
+          "id": "finance-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_windows_1.0.0.knobdeck",
+          "sha256": "fd85ebd2285ca1f8f8d989bc0e93f22b6e1969044d62595df93a20fc78fcef44",
+          "size": 1694270,
+          "file": "finance_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/finance-v1.0.0/finance_windows_readme.md",
+          "readmeFile": "finance_windows_readme.md",
+          "name": "Finance",
+          "description": "Crypto, stock, ETF, index and forex prices with change and sparkline: ticker keys, a watchlist wheel and a watchlist dial. No account needed.",
+          "author": "KnobDeck",
+          "icon": "chart-candlestick",
+          "iconInBundle": false,
+          "uses": []
+        }
+      },
+      "actions": {
+        "ticker": {
+          "type": "button",
+          "label": "Ticker",
+          "icon": "chart-line",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "market",
+              "type": "select",
+              "label": "Market",
+              "default": "crypto",
+              "options": [
+                "crypto",
+                "stock"
+              ]
+            },
+            {
+              "key": "symbol",
+              "type": "text",
+              "label": "Symbol"
+            },
+            {
+              "key": "currency",
+              "type": "text",
+              "label": "Currency for coins",
+              "default": "usd",
+              "showIf": {
+                "key": "market",
+                "equals": "crypto"
+              }
+            },
+            {
+              "key": "span",
+              "type": "select",
+              "label": "Chart and change over",
+              "default": "day",
+              "options": [
+                "day",
+                "week"
+              ]
+            }
+          ]
+        },
+        "watchlist": {
+          "type": "wheel",
+          "label": "Watchlist Wheel",
+          "icon": "list",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "coins",
+              "type": "text",
+              "label": "Coins"
+            },
+            {
+              "key": "stocks",
+              "type": "text",
+              "label": "Stocks, ETFs, indices, forex"
+            },
+            {
+              "key": "currency",
+              "type": "text",
+              "label": "Currency for coins",
+              "default": "usd"
+            },
+            {
+              "key": "span",
+              "type": "select",
+              "label": "Chart and change over",
+              "default": "day",
+              "options": [
+                "day",
+                "week"
+              ]
+            }
+          ]
+        },
+        "watchlist-dial": {
+          "type": "slider",
+          "label": "Watchlist Dial",
+          "icon": "list",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "coins",
+              "type": "text",
+              "label": "Coins"
+            },
+            {
+              "key": "stocks",
+              "type": "text",
+              "label": "Stocks, ETFs, indices, forex"
+            },
+            {
+              "key": "currency",
+              "type": "text",
+              "label": "Currency for coins",
+              "default": "usd"
+            },
+            {
+              "key": "span",
+              "type": "select",
+              "label": "Chart and change over",
+              "default": "day",
+              "options": [
+                "day",
+                "week"
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 15,
+          "step": 1,
+          "unit": null
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
 }

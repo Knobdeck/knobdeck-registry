@@ -1,0 +1,455 @@
+{
+  "schema": 2,
+  "id": "reaper",
+  "name": "REAPER",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-19T07:32:48Z",
+    "platforms": {
+      "linux": {
+        "id": "reaper-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_linux_1.0.0.knobdeck",
+        "sha256": "191075867e4b686c9f6f0c151348712a8862fb0fb7b851d0dfd8738bb91a9696",
+        "size": 2877301,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-linux/readme.md"
+      },
+      "macos": {
+        "id": "reaper-macos",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_macos_1.0.0.knobdeck",
+        "sha256": "6491a382d32717ec3ac728ddbf096f0bba5da4d7ac32e9c2f666ea2911e161f4",
+        "size": 3520555,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-macos/readme.md"
+      },
+      "windows": {
+        "id": "reaper-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/reaper-v1.0.0/reaper_windows_1.0.0.knobdeck",
+        "sha256": "7ab2d00db8608e2e1dca42468f28a14eef1821202f7038f38093f039ca1f7019",
+        "size": 1671616,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/reaper-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "- First release: play / pause, stop, record, repeat and metronome with live state, go to start /\n  end, position, markers (add, previous, next, go to), run any action by numeric or named command\n  id, track volume and pan dials, mute, solo, record arm, selected track and a track selection\n  dial, over REAPER's web browser interface.",
+  "setup": true,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "reaper-v1.0.0",
+      "released": "2026-11-19T07:32:48Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "play-pause": {
+      "type": "toggle",
+      "label": "Play / Pause",
+      "icon": "play",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "stopped",
+          "label": "Stopped",
+          "icon": "play"
+        },
+        {
+          "value": "playing",
+          "label": "Playing",
+          "icon": "pause"
+        },
+        {
+          "value": "paused",
+          "label": "Paused",
+          "icon": "play"
+        },
+        {
+          "value": "recording",
+          "label": "Recording",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "stop": {
+      "type": "button",
+      "label": "Stop",
+      "icon": "square",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "record": {
+      "type": "toggle",
+      "label": "Record",
+      "icon": "circle-dot",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "off",
+          "label": "Record",
+          "icon": "circle"
+        },
+        {
+          "value": "on",
+          "label": "Recording",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "repeat": {
+      "type": "toggle",
+      "label": "Repeat",
+      "icon": "repeat",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "off",
+          "label": "Repeat off",
+          "icon": "repeat"
+        },
+        {
+          "value": "on",
+          "label": "Repeat on",
+          "icon": "repeat-1"
+        }
+      ]
+    },
+    "metronome": {
+      "type": "toggle",
+      "label": "Metronome",
+      "icon": "timer",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "states": [
+        {
+          "value": "off",
+          "label": "Metronome off",
+          "icon": "timer-off"
+        },
+        {
+          "value": "on",
+          "label": "Metronome on",
+          "icon": "timer"
+        }
+      ]
+    },
+    "go-start": {
+      "type": "button",
+      "label": "Go to Start",
+      "icon": "skip-back",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "go-end": {
+      "type": "button",
+      "label": "Go to End",
+      "icon": "skip-forward",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "position": {
+      "type": "button",
+      "label": "Position",
+      "icon": "clock",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "format",
+          "type": "select",
+          "label": "Show",
+          "default": "time",
+          "options": [
+            "time",
+            "beats"
+          ]
+        }
+      ]
+    },
+    "add-marker": {
+      "type": "button",
+      "label": "Add Marker",
+      "icon": "map-pin-plus",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "previous-marker": {
+      "type": "button",
+      "label": "Previous Marker",
+      "icon": "chevron-left",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "next-marker": {
+      "type": "button",
+      "label": "Next Marker",
+      "icon": "chevron-right",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "go-to-marker": {
+      "type": "button",
+      "label": "Go to Marker",
+      "icon": "map-pin",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "marker",
+          "type": "select",
+          "label": "Marker"
+        }
+      ]
+    },
+    "run-action": {
+      "type": "toggle",
+      "label": "Run Action",
+      "icon": "zap",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "command",
+          "type": "text",
+          "label": "Command ID"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "zap"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "zap"
+        }
+      ]
+    },
+    "track-volume": {
+      "type": "slider",
+      "label": "Track Volume",
+      "icon": "volume-2",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "track",
+          "type": "select",
+          "label": "Track",
+          "default": "selected"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (dB)",
+          "default": "1"
+        }
+      ],
+      "min": -60,
+      "max": 12,
+      "step": 0.1,
+      "unit": "dB"
+    },
+    "track-pan": {
+      "type": "slider",
+      "label": "Track Pan",
+      "icon": "move-horizontal",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "track",
+          "type": "select",
+          "label": "Track",
+          "default": "selected"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": -100,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "mute": {
+      "type": "toggle",
+      "label": "Mute",
+      "icon": "volume-x",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "track",
+          "type": "select",
+          "label": "Track",
+          "default": "selected"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Mute off",
+          "icon": "volume-2"
+        },
+        {
+          "value": "on",
+          "label": "Mute on",
+          "icon": "volume-x"
+        }
+      ]
+    },
+    "solo": {
+      "type": "toggle",
+      "label": "Solo",
+      "icon": "headphones",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "track",
+          "type": "select",
+          "label": "Track",
+          "default": "selected"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Solo off",
+          "icon": "headphones"
+        },
+        {
+          "value": "on",
+          "label": "Solo on",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "record-arm": {
+      "type": "toggle",
+      "label": "Record Arm",
+      "icon": "circle-dot",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "track",
+          "type": "select",
+          "label": "Track",
+          "default": "selected"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Record Arm off",
+          "icon": "circle"
+        },
+        {
+          "value": "on",
+          "label": "Record Arm on",
+          "icon": "circle-dot"
+        }
+      ]
+    },
+    "selected-track": {
+      "type": "button",
+      "label": "Selected Track",
+      "icon": "list-music",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": []
+    },
+    "select-track": {
+      "type": "slider",
+      "label": "Select Track (dial)",
+      "icon": "list-music",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [],
+      "min": 0,
+      "max": 256,
+      "step": 1,
+      "unit": null
+    }
+  },
+  "companions": []
+}
