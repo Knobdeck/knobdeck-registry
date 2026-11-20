@@ -1,0 +1,7 @@
+id = "ableton"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "ableton", tag = "ableton-v{version}" }
+first_party = true
+featured = false
+sort = 110
+tags = ["Audio", "Music", "Creative"]
+companions = ["ableton"]
