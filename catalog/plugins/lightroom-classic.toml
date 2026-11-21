@@ -1,0 +1,7 @@
+id = "lightroom-classic"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "lightroom-classic", tag = "lightroom-classic-v{version}" }
+first_party = true
+featured = false
+sort = 111
+tags = ["Photo", "Creative"]
+companions = ["lightroom"]
