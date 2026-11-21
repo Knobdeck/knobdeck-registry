@@ -1,0 +1,7 @@
+id = "flight-sim"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "flight-sim", tag = "flight-sim-v{version}" }
+first_party = true
+featured = false
+sort = 112
+tags = ["Gaming", "Simulation"]
+companions = []
