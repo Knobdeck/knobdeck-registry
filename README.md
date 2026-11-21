@@ -31,7 +31,7 @@ The Google OAuth client (Desktop app, id in `wrangler.jsonc`) is used only with
 
 ## Catalog
 
-This repo is the catalog (`PLUGIN_INFRA_PLAN.md` in the app repo): `catalog/` holds the sources,
+This repo is the catalog (`PLUGIN_INFRA_PLAN.md` in the maintainers' plans): `catalog/` holds the sources,
 `scripts/build.mjs` resolves them against GitHub Releases and writes `public/`, and
 `.github/workflows/catalog.yml` runs it and commits; the push redeploys. Output format:
 [`catalog/SCHEMA.md`](catalog/SCHEMA.md). Bundles and theme zips stay on the GitHub Releases.
