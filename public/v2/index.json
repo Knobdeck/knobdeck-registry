@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-19T13:34:31Z",
+  "generated": "2026-11-21T12:48:48Z",
   "plugins": [
     {
       "id": "discord",
@@ -2723,6 +2723,52 @@
         }
       },
       "detail": "/v2/plugins/openrgb.json"
+    },
+    {
+      "id": "ableton",
+      "name": "Ableton Live",
+      "summary": "Transport, record, tempo, mixer, scenes, locators and device parameter dials with live state, through the KnobDeck Remote Script.",
+      "description": "Control Ableton Live through the KnobDeck Remote Script: transport, record, metronome, loop, tempo and tap tempo, the mixer (master and track volume, pan, mute, solo, arm), scenes, track and scene selection, locators, undo, Capture MIDI and the selected device's parameters on dials, with live state on every key.",
+      "author": "KnobDeck",
+      "tags": [
+        "Audio",
+        "Music",
+        "Creative"
+      ],
+      "icon": "app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ableton-v1.0.0/ableton/icons/app-icon.svg",
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [
+        "ableton"
+      ],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-21T12:45:42Z",
+        "platforms": {
+          "macos": {
+            "id": "ableton-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_macos_1.0.0.knobdeck",
+            "sha256": "f69b3b6ccf3a7b5607bb3aa931e6ce71b0989280251b1f466105497021e5c139",
+            "size": 2241349,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ableton-macos/readme.md"
+          },
+          "windows": {
+            "id": "ableton-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_windows_1.0.0.knobdeck",
+            "sha256": "b30f7823977790412ed43775f8908bcf5b2c3f4c2ef5ab8ee337deb6ff6926c0",
+            "size": 1017926,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ableton-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/ableton.json"
     }
   ]
 }

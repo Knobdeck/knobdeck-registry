@@ -1,0 +1,762 @@
+{
+  "id": "ableton",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "ableton-v1.0.0",
+      "released": "2026-11-21T12:45:42Z",
+      "notes": "- First release, for Windows and macOS (Ableton Live has no Linux build). Needs KnobDeck with the\n  companion hub, Live 11 or newer, and the KnobDeck Remote Script\n  (github.com/Knobdeck/knobdeck-ableton-companion), which setup copies into Live's User Library.\n- Transport: Play / Stop, Stop, Continue Playing, Arrangement Record, Session Record, MIDI\n  Arrangement Overdub, Automation Arm, Metronome, Loop, Punch In / Out, Capture MIDI, Undo, Redo.\n- Tempo dial (BPM) and Tap Tempo (shows the BPM); Previous / Next Locator, Add / Delete Locator.\n- Mixer: Master Volume and Track Volume dials (dB), Track Pan dial, Mute, Solo and Record Arm for\n  the selected track or a picked one, Selected Track key.\n- Session: Launch Scene (selected or picked), Stop All Clips, Select Track / Select Scene dials,\n  Tracks and Scenes wheels.\n- Device: the selected device's parameters on dials in banks of 8 (Previous / Next Parameter\n  Bank keys, or a fixed bank), Selected Parameter dial, Device On / Off, Selected Device key.\n- Keys follow Live live: transport, switches, tempo, levels, pan, track switches, selection,\n  device and parameter values.",
+      "meta": {
+        "dir": "ableton",
+        "version": "1.0.0",
+        "name": "Ableton Live",
+        "summary": "Transport, record, tempo, mixer, scenes, locators and device parameter dials with live state, through the KnobDeck Remote Script.",
+        "tags": [
+          "Audio",
+          "Music",
+          "Creative"
+        ],
+        "featured": false,
+        "sort": 110
+      },
+      "platforms": {
+        "macos": {
+          "id": "ableton-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_macos_1.0.0.knobdeck",
+          "sha256": "f69b3b6ccf3a7b5607bb3aa931e6ce71b0989280251b1f466105497021e5c139",
+          "size": 2241349,
+          "file": "ableton_macos_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_macos_readme.md",
+          "readmeFile": "ableton_macos_readme.md",
+          "name": "Ableton Live",
+          "description": "Control Ableton Live through the KnobDeck Remote Script: transport, record, metronome, loop, tempo and tap tempo, the mixer (master and track volume, pan, mute, solo, arm), scenes, track and scene selection, locators, undo, Capture MIDI and the selected device's parameters on dials, with live state on every key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "ableton-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_windows_1.0.0.knobdeck",
+          "sha256": "b30f7823977790412ed43775f8908bcf5b2c3f4c2ef5ab8ee337deb6ff6926c0",
+          "size": 1017926,
+          "file": "ableton_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_windows_readme.md",
+          "readmeFile": "ableton_windows_readme.md",
+          "name": "Ableton Live",
+          "description": "Control Ableton Live through the KnobDeck Remote Script: transport, record, metronome, loop, tempo and tap tempo, the mixer (master and track volume, pan, mute, solo, arm), scenes, track and scene selection, locators, undo, Capture MIDI and the selected device's parameters on dials, with live state on every key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "play-stop": {
+          "type": "toggle",
+          "label": "Play / Stop",
+          "icon": "play",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "stopped",
+              "label": "Play",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Stop",
+              "icon": "square"
+            }
+          ]
+        },
+        "stop": {
+          "type": "button",
+          "label": "Stop",
+          "icon": "square",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "continue": {
+          "type": "button",
+          "label": "Continue Playing",
+          "icon": "step-forward",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "record": {
+          "type": "toggle",
+          "label": "Arrangement Record",
+          "icon": "circle-dot",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Arrangement Record Off",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Arrangement Record On",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "session-record": {
+          "type": "toggle",
+          "label": "Session Record",
+          "icon": "circle-dot",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Session Record Off",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Session Record On",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "overdub": {
+          "type": "toggle",
+          "label": "MIDI Arrangement Overdub",
+          "icon": "layers",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "MIDI Arrangement Overdub Off",
+              "icon": "layers"
+            },
+            {
+              "value": "on",
+              "label": "MIDI Arrangement Overdub On",
+              "icon": "layers"
+            }
+          ]
+        },
+        "automation-arm": {
+          "type": "toggle",
+          "label": "Automation Arm",
+          "icon": "activity",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Automation Arm Off",
+              "icon": "activity"
+            },
+            {
+              "value": "on",
+              "label": "Automation Arm On",
+              "icon": "activity"
+            }
+          ]
+        },
+        "metronome": {
+          "type": "toggle",
+          "label": "Metronome",
+          "icon": "timer",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Metronome Off",
+              "icon": "timer-off"
+            },
+            {
+              "value": "on",
+              "label": "Metronome On",
+              "icon": "timer"
+            }
+          ]
+        },
+        "loop": {
+          "type": "toggle",
+          "label": "Loop",
+          "icon": "repeat-1",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Loop Off",
+              "icon": "repeat"
+            },
+            {
+              "value": "on",
+              "label": "Loop On",
+              "icon": "repeat-1"
+            }
+          ]
+        },
+        "punch-in": {
+          "type": "toggle",
+          "label": "Punch In",
+          "icon": "log-in",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Punch In Off",
+              "icon": "log-in"
+            },
+            {
+              "value": "on",
+              "label": "Punch In On",
+              "icon": "log-in"
+            }
+          ]
+        },
+        "punch-out": {
+          "type": "toggle",
+          "label": "Punch Out",
+          "icon": "log-out",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Punch Out Off",
+              "icon": "log-out"
+            },
+            {
+              "value": "on",
+              "label": "Punch Out On",
+              "icon": "log-out"
+            }
+          ]
+        },
+        "capture-midi": {
+          "type": "button",
+          "label": "Capture MIDI",
+          "icon": "download",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "undo": {
+          "type": "button",
+          "label": "Undo",
+          "icon": "undo-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "redo": {
+          "type": "button",
+          "label": "Redo",
+          "icon": "redo-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "tap-tempo": {
+          "type": "button",
+          "label": "Tap Tempo",
+          "icon": "hand",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "tempo": {
+          "type": "slider",
+          "label": "Tempo",
+          "icon": "gauge",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "BPM per tick",
+              "default": "1"
+            }
+          ],
+          "min": 20,
+          "max": 999,
+          "step": 0.1,
+          "unit": "BPM"
+        },
+        "previous-locator": {
+          "type": "button",
+          "label": "Previous Locator",
+          "icon": "chevron-first",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "next-locator": {
+          "type": "button",
+          "label": "Next Locator",
+          "icon": "chevron-last",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "set-locator": {
+          "type": "button",
+          "label": "Add / Delete Locator",
+          "icon": "map-pin-plus",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "master-volume": {
+          "type": "slider",
+          "label": "Master Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "dB per tick",
+              "default": "1"
+            }
+          ],
+          "min": -70,
+          "max": 6,
+          "step": 0.1,
+          "unit": "dB"
+        },
+        "track-volume": {
+          "type": "slider",
+          "label": "Track Volume",
+          "icon": "volume-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "track",
+              "type": "select",
+              "label": "Track",
+              "default": "selected"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "dB per tick",
+              "default": "1"
+            }
+          ],
+          "min": -70,
+          "max": 6,
+          "step": 0.1,
+          "unit": "dB"
+        },
+        "track-pan": {
+          "type": "slider",
+          "label": "Track Pan",
+          "icon": "move-horizontal",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "track",
+              "type": "select",
+              "label": "Track",
+              "default": "selected"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Pan per tick",
+              "default": "2"
+            }
+          ],
+          "min": -50,
+          "max": 50,
+          "step": 1,
+          "unit": null
+        },
+        "mute": {
+          "type": "toggle",
+          "label": "Mute",
+          "icon": "volume-x",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "track",
+              "type": "select",
+              "label": "Track",
+              "default": "selected"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Mute Off",
+              "icon": "volume-2"
+            },
+            {
+              "value": "on",
+              "label": "Mute On",
+              "icon": "volume-x"
+            }
+          ]
+        },
+        "solo": {
+          "type": "toggle",
+          "label": "Solo",
+          "icon": "headphones",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "track",
+              "type": "select",
+              "label": "Track",
+              "default": "selected"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Solo Off",
+              "icon": "headphones"
+            },
+            {
+              "value": "on",
+              "label": "Solo On",
+              "icon": "headphones"
+            }
+          ]
+        },
+        "arm": {
+          "type": "toggle",
+          "label": "Record Arm",
+          "icon": "circle-dot",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "track",
+              "type": "select",
+              "label": "Track",
+              "default": "selected"
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Record Arm Off",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "Record Arm On",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "selected-track": {
+          "type": "button",
+          "label": "Selected Track",
+          "icon": "list-music",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "launch-scene": {
+          "type": "button",
+          "label": "Launch Scene",
+          "icon": "play-circle",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "scene",
+              "type": "select",
+              "label": "Scene",
+              "default": "selected"
+            }
+          ]
+        },
+        "stop-all-clips": {
+          "type": "button",
+          "label": "Stop All Clips",
+          "icon": "square-stack",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "select-track": {
+          "type": "slider",
+          "label": "Select Track (dial)",
+          "icon": "list-music",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "min": 1,
+          "max": 999,
+          "step": 1,
+          "unit": null
+        },
+        "select-scene": {
+          "type": "slider",
+          "label": "Select Scene (dial)",
+          "icon": "rows-3",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "min": 1,
+          "max": 999,
+          "step": 1,
+          "unit": null
+        },
+        "tracks-wheel": {
+          "type": "wheel",
+          "label": "Tracks",
+          "icon": "list-music",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "scenes-wheel": {
+          "type": "wheel",
+          "label": "Scenes",
+          "icon": "rows-3",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "then",
+              "type": "select",
+              "label": "Choosing a scene",
+              "default": "select",
+              "options": [
+                "select",
+                "launch"
+              ]
+            }
+          ]
+        },
+        "device": {
+          "type": "button",
+          "label": "Selected Device",
+          "icon": "cpu",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "device-on": {
+          "type": "toggle",
+          "label": "Device On / Off",
+          "icon": "power",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Device Off",
+              "icon": "power-off"
+            },
+            {
+              "value": "on",
+              "label": "Device On",
+              "icon": "power"
+            }
+          ]
+        },
+        "device-parameter": {
+          "type": "slider",
+          "label": "Device Parameter",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "slot",
+              "type": "select",
+              "label": "Parameter",
+              "default": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            },
+            {
+              "key": "bank",
+              "type": "select",
+              "label": "Bank",
+              "default": "follow",
+              "options": [
+                "follow",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Percent per tick",
+              "default": "2"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "selected-parameter": {
+          "type": "slider",
+          "label": "Selected Parameter",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Percent per tick",
+              "default": "2"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "previous-bank": {
+          "type": "button",
+          "label": "Previous Parameter Bank",
+          "icon": "chevron-left",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "next-bank": {
+          "type": "button",
+          "label": "Next Parameter Bank",
+          "icon": "chevron-right",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": []
+    }
+  ]
+}

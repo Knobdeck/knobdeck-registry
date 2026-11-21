@@ -1,4 +1,6 @@
 {
+  "public/plugins/ableton-macos/readme.md": "ableton-v1.0.0/ableton_macos_readme.md",
+  "public/plugins/ableton-windows/readme.md": "ableton-v1.0.0/ableton_windows_readme.md",
   "public/plugins/ai-actions-linux/readme.md": "ai-actions-v1.0.1/ai-actions_linux_readme.md",
   "public/plugins/ai-actions-macos/readme.md": "ai-actions-v1.0.1/ai-actions_macos_readme.md",
   "public/plugins/ai-actions-windows/readme.md": "ai-actions-v1.0.1/ai-actions_windows_readme.md",

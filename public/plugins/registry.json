@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-19T13:34:31Z",
+  "tag": "catalog-2026-11-21T12:48:48Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -3954,6 +3954,58 @@
       "featured": false,
       "file": "openrgb_windows_1.0.1.knobdeck",
       "readmeFile": "openrgb_windows_readme.md"
+    },
+    {
+      "id": "ableton-macos",
+      "name": "Ableton Live",
+      "summary": "Transport, record, tempo, mixer, scenes, locators and device parameter dials with live state, through the KnobDeck Remote Script.",
+      "description": "Control Ableton Live through the KnobDeck Remote Script: transport, record, metronome, loop, tempo and tap tempo, the mixer (master and track volume, pan, mute, solo, arm), scenes, track and scene selection, locators, undo, Capture MIDI and the selected device's parameters on dials, with live state on every key.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_macos_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ableton-v1.0.0/ableton/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ableton-macos/readme.md",
+      "sha256": "f69b3b6ccf3a7b5607bb3aa931e6ce71b0989280251b1f466105497021e5c139",
+      "tags": [
+        "Audio",
+        "Music",
+        "Creative"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "ableton_macos_1.0.0.knobdeck",
+      "readmeFile": "ableton_macos_readme.md"
+    },
+    {
+      "id": "ableton-windows",
+      "name": "Ableton Live",
+      "summary": "Transport, record, tempo, mixer, scenes, locators and device parameter dials with live state, through the KnobDeck Remote Script.",
+      "description": "Control Ableton Live through the KnobDeck Remote Script: transport, record, metronome, loop, tempo and tap tempo, the mixer (master and track volume, pan, mute, solo, arm), scenes, track and scene selection, locators, undo, Capture MIDI and the selected device's parameters on dials, with live state on every key.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ableton-v1.0.0/ableton_windows_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ableton-v1.0.0/ableton/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ableton-windows/readme.md",
+      "sha256": "b30f7823977790412ed43775f8908bcf5b2c3f4c2ef5ab8ee337deb6ff6926c0",
+      "tags": [
+        "Audio",
+        "Music",
+        "Creative"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "ableton_windows_1.0.0.knobdeck",
+      "readmeFile": "ableton_windows_readme.md"
     }
   ]
 }

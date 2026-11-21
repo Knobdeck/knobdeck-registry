@@ -2,6 +2,18 @@
   "schema": 2,
   "companions": [
     {
+      "id": "ableton",
+      "name": "KnobDeck Remote Script for Ableton Live",
+      "repository": "https://github.com/Knobdeck/knobdeck-ableton-companion",
+      "runsIn": "Ableton Live 11 and newer (Windows, macOS)",
+      "latest": "1.0.0",
+      "minVersion": null,
+      "plugins": [
+        "ableton"
+      ],
+      "stores": []
+    },
+    {
       "id": "blender",
       "name": "KnobDeck add-on for Blender",
       "repository": "https://github.com/Knobdeck/knobdeck-blender-companion",
