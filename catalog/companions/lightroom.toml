@@ -1,0 +1,8 @@
+id = "lightroom"
+name = "KnobDeck plug-in for Lightroom Classic"
+repository = "https://github.com/Knobdeck/knobdeck-lightroom-companion"
+runs_in = "Adobe Lightroom Classic 10 and newer (Windows, macOS)"
+plugins = ["lightroom-classic"]
+# The plugin's setup installs it from the GitHub release; no store listing yet.
+# TODO: add the Adobe Exchange listing if one is made.
+stores = []
