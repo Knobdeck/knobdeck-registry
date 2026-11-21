@@ -38,6 +38,7 @@
   "public/plugins/finance-linux/readme.md": "finance-v1.0.1/finance_linux_readme.md",
   "public/plugins/finance-macos/readme.md": "finance-v1.0.1/finance_macos_readme.md",
   "public/plugins/finance-windows/readme.md": "finance-v1.0.1/finance_windows_readme.md",
+  "public/plugins/flight-sim-windows/readme.md": "flight-sim-v1.0.0/flight-sim_windows_readme.md",
   "public/plugins/game-launcher-linux/readme.md": "game-launcher-v1.1.1/game-launcher_linux_readme.md",
   "public/plugins/game-launcher-macos/readme.md": "game-launcher-v1.1.1/game-launcher_macos_readme.md",
   "public/plugins/game-launcher-windows/readme.md": "game-launcher-v1.1.1/game-launcher_windows_readme.md",

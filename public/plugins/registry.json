@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-21T12:54:03Z",
+  "tag": "catalog-2026-11-21T12:58:21Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -4056,6 +4056,31 @@
       "featured": false,
       "file": "lightroom-classic_windows_1.0.0.knobdeck",
       "readmeFile": "lightroom-classic_windows_readme.md"
+    },
+    {
+      "id": "flight-sim-windows",
+      "name": "Flight Simulator",
+      "summary": "MSFS 2020 and 2024 over SimConnect: autopilot modes and bug dials, radios, transponder, gear, flaps, lights and readouts, with live state.",
+      "description": "Microsoft Flight Simulator 2020 and 2024 over SimConnect: autopilot, heading / altitude / VS / speed / course dials, radios, transponder, gear, flaps, lights, trim, altimeter and readouts, with live state.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/flight-sim-v1.0.0/flight-sim_windows_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/flight-sim-v1.0.0/flight-sim/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/flight-sim-windows/readme.md",
+      "sha256": "2d071a84d01290ce356c640048f015e5d2e4c53595ae7eb4fc5aaa8ce54fac2b",
+      "tags": [
+        "Gaming",
+        "Simulation"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "flight-sim_windows_1.0.0.knobdeck",
+      "readmeFile": "flight-sim_windows_readme.md"
     }
   ]
 }

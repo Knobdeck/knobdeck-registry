@@ -1,0 +1,749 @@
+{
+  "id": "flight-sim",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "flight-sim-v1.0.0",
+      "released": "2026-11-21T12:57:26Z",
+      "notes": "- First release: Microsoft Flight Simulator 2020 and 2024 over SimConnect. Autopilot master and\n  modes, heading / altitude / vertical speed / speed / course dials, COM and NAV standby\n  frequency dials and swap, transponder, gear, flaps, spoilers, parking brake, lights,\n  battery / alternator / avionics, trim, altimeter, pause, sim rate, flight readouts, and any\n  K-event or SimVar for power users. Every key and dial shows the sim's live state.",
+      "meta": {
+        "dir": "flight-sim",
+        "version": "1.0.0",
+        "name": "Flight Simulator",
+        "summary": "MSFS 2020 and 2024 over SimConnect: autopilot modes and bug dials, radios, transponder, gear, flaps, lights and readouts, with live state.",
+        "tags": [
+          "Gaming",
+          "Simulation"
+        ],
+        "featured": false,
+        "sort": 112
+      },
+      "platforms": {
+        "windows": {
+          "id": "flight-sim-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/flight-sim-v1.0.0/flight-sim_windows_1.0.0.knobdeck",
+          "sha256": "2d071a84d01290ce356c640048f015e5d2e4c53595ae7eb4fc5aaa8ce54fac2b",
+          "size": 246154,
+          "file": "flight-sim_windows_1.0.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/flight-sim-v1.0.0/flight-sim_windows_readme.md",
+          "readmeFile": "flight-sim_windows_readme.md",
+          "name": "Flight Simulator",
+          "description": "Microsoft Flight Simulator 2020 and 2024 over SimConnect: autopilot, heading / altitude / VS / speed / course dials, radios, transponder, gear, flaps, lights, trim, altimeter and readouts, with live state.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "ap-master": {
+          "type": "toggle",
+          "label": "Autopilot Master",
+          "icon": "plane",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "AP Off",
+              "icon": "plane"
+            },
+            {
+              "value": "on",
+              "label": "AP On",
+              "icon": "plane"
+            }
+          ]
+        },
+        "ap-mode": {
+          "type": "toggle",
+          "label": "Autopilot Mode",
+          "icon": "navigation",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "which",
+              "type": "select",
+              "label": "Mode",
+              "default": "hdg",
+              "options": [
+                "hdg",
+                "alt",
+                "nav",
+                "apr",
+                "vs",
+                "flc",
+                "ias",
+                "bc",
+                "yd",
+                "fd"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "circle"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "circle-dot"
+            }
+          ]
+        },
+        "heading-bug": {
+          "type": "slider",
+          "label": "Heading Bug",
+          "icon": "compass",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 360,
+          "step": 1,
+          "unit": "°"
+        },
+        "altitude": {
+          "type": "slider",
+          "label": "Autopilot Altitude",
+          "icon": "mountain",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 45000,
+          "step": 100,
+          "unit": "ft"
+        },
+        "vertical-speed": {
+          "type": "slider",
+          "label": "Vertical Speed",
+          "icon": "move-vertical",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": -6000,
+          "max": 6000,
+          "step": 100,
+          "unit": "fpm"
+        },
+        "speed-bug": {
+          "type": "slider",
+          "label": "Speed Bug",
+          "icon": "gauge",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 450,
+          "step": 1,
+          "unit": "kt"
+        },
+        "course": {
+          "type": "slider",
+          "label": "Course (OBS)",
+          "icon": "locate-fixed",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "course",
+              "type": "select",
+              "label": "Course",
+              "default": "nav1",
+              "options": [
+                "nav1",
+                "nav2",
+                "gps"
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 360,
+          "step": 1,
+          "unit": null
+        },
+        "com-mhz": {
+          "type": "slider",
+          "label": "COM Standby MHz",
+          "icon": "radio",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "radio",
+              "type": "select",
+              "label": "Radio",
+              "default": "com1",
+              "options": [
+                "com1",
+                "com2"
+              ]
+            },
+            {
+              "key": "spacing",
+              "type": "select",
+              "label": "Channel spacing",
+              "default": "25",
+              "options": [
+                "25",
+                "8.33"
+              ]
+            }
+          ],
+          "min": 118,
+          "max": 136,
+          "step": 1,
+          "unit": "MHz"
+        },
+        "com-khz": {
+          "type": "slider",
+          "label": "COM Standby kHz",
+          "icon": "radio",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "radio",
+              "type": "select",
+              "label": "Radio",
+              "default": "com1",
+              "options": [
+                "com1",
+                "com2"
+              ]
+            },
+            {
+              "key": "spacing",
+              "type": "select",
+              "label": "Channel spacing",
+              "default": "25",
+              "options": [
+                "25",
+                "8.33"
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 990,
+          "step": 5,
+          "unit": "kHz"
+        },
+        "nav-mhz": {
+          "type": "slider",
+          "label": "NAV Standby MHz",
+          "icon": "radio-tower",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "radio",
+              "type": "select",
+              "label": "Radio",
+              "default": "nav1",
+              "options": [
+                "nav1",
+                "nav2"
+              ]
+            }
+          ],
+          "min": 108,
+          "max": 117,
+          "step": 1,
+          "unit": "MHz"
+        },
+        "nav-khz": {
+          "type": "slider",
+          "label": "NAV Standby kHz",
+          "icon": "radio-tower",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "radio",
+              "type": "select",
+              "label": "Radio",
+              "default": "nav1",
+              "options": [
+                "nav1",
+                "nav2"
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 950,
+          "step": 50,
+          "unit": "kHz"
+        },
+        "radio-swap": {
+          "type": "button",
+          "label": "Swap Radio",
+          "icon": "arrow-left-right",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "radio",
+              "type": "select",
+              "label": "Radio",
+              "default": "com1",
+              "options": [
+                "com1",
+                "com2",
+                "nav1",
+                "nav2"
+              ]
+            }
+          ]
+        },
+        "transponder": {
+          "type": "button",
+          "label": "Set Transponder",
+          "icon": "radio",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "code",
+              "type": "text",
+              "label": "Code",
+              "default": "1200"
+            }
+          ]
+        },
+        "transponder-digit": {
+          "type": "slider",
+          "label": "Transponder Digit",
+          "icon": "binary",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "place",
+              "type": "select",
+              "label": "Digit",
+              "default": "0",
+              "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 7,
+          "step": 1,
+          "unit": null
+        },
+        "gear": {
+          "type": "toggle",
+          "label": "Landing Gear",
+          "icon": "plane-landing",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "up",
+              "label": "Gear Up",
+              "icon": "plane-takeoff"
+            },
+            {
+              "value": "down",
+              "label": "Gear Down",
+              "icon": "plane-landing"
+            }
+          ]
+        },
+        "flaps": {
+          "type": "slider",
+          "label": "Flaps",
+          "icon": "chevrons-down",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "flaps-step": {
+          "type": "button",
+          "label": "Flaps Up / Down",
+          "icon": "chevrons-up-down",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "direction",
+              "type": "select",
+              "label": "Move",
+              "default": "down",
+              "options": [
+                "down",
+                "up",
+                "full-down",
+                "full-up"
+              ]
+            }
+          ]
+        },
+        "spoilers": {
+          "type": "slider",
+          "label": "Spoilers",
+          "icon": "fold-vertical",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "unit": "%"
+        },
+        "spoilers-arm": {
+          "type": "toggle",
+          "label": "Spoilers Arm",
+          "icon": "unfold-vertical",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Spoilers Disarmed",
+              "icon": "fold-vertical"
+            },
+            {
+              "value": "on",
+              "label": "Spoilers Armed",
+              "icon": "unfold-vertical"
+            }
+          ]
+        },
+        "parking-brake": {
+          "type": "toggle",
+          "label": "Parking Brake",
+          "icon": "circle-parking",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Brake Off",
+              "icon": "circle-parking-off"
+            },
+            {
+              "value": "on",
+              "label": "Brake Set",
+              "icon": "circle-parking"
+            }
+          ]
+        },
+        "lights": {
+          "type": "toggle",
+          "label": "Lights",
+          "icon": "lightbulb",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "which",
+              "type": "select",
+              "label": "Light",
+              "default": "landing",
+              "options": [
+                "landing",
+                "taxi",
+                "nav",
+                "beacon",
+                "strobe",
+                "panel",
+                "logo",
+                "wing",
+                "recognition",
+                "cabin"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "lightbulb-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "lightbulb"
+            }
+          ]
+        },
+        "electrical": {
+          "type": "toggle",
+          "label": "Electrical Master",
+          "icon": "zap",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "which",
+              "type": "select",
+              "label": "Switch",
+              "default": "battery",
+              "options": [
+                "battery",
+                "alternator",
+                "avionics"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Off",
+              "icon": "zap-off"
+            },
+            {
+              "value": "on",
+              "label": "On",
+              "icon": "zap"
+            }
+          ]
+        },
+        "trim": {
+          "type": "slider",
+          "label": "Trim",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "axis",
+              "type": "select",
+              "label": "Trim",
+              "default": "elevator",
+              "options": [
+                "elevator",
+                "aileron",
+                "rudder"
+              ]
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 0.5,
+          "unit": "%"
+        },
+        "altimeter-inhg": {
+          "type": "slider",
+          "label": "Altimeter (inHg)",
+          "icon": "gauge",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 28,
+          "max": 31,
+          "step": 0.01,
+          "unit": "inHg"
+        },
+        "altimeter-hpa": {
+          "type": "slider",
+          "label": "Altimeter (hPa)",
+          "icon": "gauge",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "min": 948,
+          "max": 1050,
+          "step": 1,
+          "unit": "hPa"
+        },
+        "altimeter-preset": {
+          "type": "button",
+          "label": "Altimeter STD / Local",
+          "icon": "gauge-circle",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "Set to",
+              "default": "std",
+              "options": [
+                "std",
+                "local"
+              ]
+            },
+            {
+              "key": "units",
+              "type": "select",
+              "label": "Show in",
+              "default": "inhg",
+              "options": [
+                "inhg",
+                "hpa"
+              ]
+            }
+          ]
+        },
+        "pause": {
+          "type": "toggle",
+          "label": "Pause",
+          "icon": "pause",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [],
+          "states": [
+            {
+              "value": "off",
+              "label": "Running",
+              "icon": "play"
+            },
+            {
+              "value": "on",
+              "label": "Paused",
+              "icon": "pause"
+            }
+          ]
+        },
+        "sim-rate": {
+          "type": "button",
+          "label": "Sim Rate",
+          "icon": "fast-forward",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "direction",
+              "type": "select",
+              "label": "Change",
+              "default": "faster",
+              "options": [
+                "faster",
+                "slower"
+              ]
+            }
+          ]
+        },
+        "readout": {
+          "type": "button",
+          "label": "Flight Readout",
+          "icon": "gauge",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "value",
+              "type": "select",
+              "label": "Show",
+              "default": "ias",
+              "options": [
+                "ias",
+                "tas",
+                "gs",
+                "alt",
+                "agl",
+                "vs",
+                "hdg",
+                "fuel",
+                "rate",
+                "oat",
+                "wind"
+              ]
+            }
+          ]
+        },
+        "custom-event": {
+          "type": "button",
+          "label": "Custom Event",
+          "icon": "square-function",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "event",
+              "type": "text",
+              "label": "Event ID"
+            },
+            {
+              "key": "values",
+              "type": "text",
+              "label": "Values (optional)"
+            }
+          ]
+        },
+        "simvar": {
+          "type": "button",
+          "label": "SimVar Readout",
+          "icon": "variable",
+          "platforms": [
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "var",
+              "type": "text",
+              "label": "SimVar"
+            },
+            {
+              "key": "unit",
+              "type": "text",
+              "label": "Unit",
+              "default": "number"
+            },
+            {
+              "key": "decimals",
+              "type": "text",
+              "label": "Decimals",
+              "default": "0"
+            },
+            {
+              "key": "prefix",
+              "type": "text",
+              "label": "Label"
+            }
+          ]
+        }
+      },
+      "setup": false,
+      "uses": []
+    }
+  ]
+}
