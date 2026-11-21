@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-21T12:48:48Z",
+  "tag": "catalog-2026-11-21T12:54:03Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -4006,6 +4006,56 @@
       "featured": false,
       "file": "ableton_windows_1.0.0.knobdeck",
       "readmeFile": "ableton_windows_readme.md"
+    },
+    {
+      "id": "lightroom-classic-macos",
+      "name": "Lightroom Classic",
+      "summary": "Every Develop slider on a dial with its live value, plus modules, photos, flags, ratings, labels and undo, through the KnobDeck plug-in.",
+      "description": "Lightroom Classic on the dial: every Develop slider with its live value (press to reset), modules, next / previous photo, flags, ratings, colour labels, rotate, copy / paste settings, auto tone, undo and before / after, through the KnobDeck plug-in for Lightroom.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.0.0/lightroom-classic_macos_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/lightroom-classic-v1.0.0/lightroom-classic/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lightroom-classic-macos/readme.md",
+      "sha256": "5038b6689c0d3268bc4258aeccb4ed8d9698d328e31126df3b77682d494fae71",
+      "tags": [
+        "Photo",
+        "Creative"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "lightroom-classic_macos_1.0.0.knobdeck",
+      "readmeFile": "lightroom-classic_macos_readme.md"
+    },
+    {
+      "id": "lightroom-classic-windows",
+      "name": "Lightroom Classic",
+      "summary": "Every Develop slider on a dial with its live value, plus modules, photos, flags, ratings, labels and undo, through the KnobDeck plug-in.",
+      "description": "Lightroom Classic on the dial: every Develop slider with its live value (press to reset), modules, next / previous photo, flags, ratings, colour labels, rotate, copy / paste settings, auto tone, undo and before / after, through the KnobDeck plug-in for Lightroom.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.0.0/lightroom-classic_windows_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/lightroom-classic-v1.0.0/lightroom-classic/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lightroom-classic-windows/readme.md",
+      "sha256": "b7e9d5ff9c37fc51d8ad00310cc03e78bf9f29cb6676133c21118d95dda87557",
+      "tags": [
+        "Photo",
+        "Creative"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "lightroom-classic_windows_1.0.0.knobdeck",
+      "readmeFile": "lightroom-classic_windows_readme.md"
     }
   ]
 }

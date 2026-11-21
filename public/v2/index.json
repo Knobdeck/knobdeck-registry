@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-21T12:48:48Z",
+  "generated": "2026-11-21T12:54:03Z",
   "plugins": [
     {
       "id": "discord",
@@ -2769,6 +2769,51 @@
         }
       },
       "detail": "/v2/plugins/ableton.json"
+    },
+    {
+      "id": "lightroom-classic",
+      "name": "Lightroom Classic",
+      "summary": "Every Develop slider on a dial with its live value, plus modules, photos, flags, ratings, labels and undo, through the KnobDeck plug-in.",
+      "description": "Lightroom Classic on the dial: every Develop slider with its live value (press to reset), modules, next / previous photo, flags, ratings, colour labels, rotate, copy / paste settings, auto tone, undo and before / after, through the KnobDeck plug-in for Lightroom.",
+      "author": "KnobDeck",
+      "tags": [
+        "Photo",
+        "Creative"
+      ],
+      "icon": "app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/lightroom-classic-v1.0.0/lightroom-classic/icons/app-icon.svg",
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [
+        "lightroom"
+      ],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-21T12:52:57Z",
+        "platforms": {
+          "macos": {
+            "id": "lightroom-classic-macos",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.0.0/lightroom-classic_macos_1.0.0.knobdeck",
+            "sha256": "5038b6689c0d3268bc4258aeccb4ed8d9698d328e31126df3b77682d494fae71",
+            "size": 2300128,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lightroom-classic-macos/readme.md"
+          },
+          "windows": {
+            "id": "lightroom-classic-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.0.0/lightroom-classic_windows_1.0.0.knobdeck",
+            "sha256": "b7e9d5ff9c37fc51d8ad00310cc03e78bf9f29cb6676133c21118d95dda87557",
+            "size": 1050217,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lightroom-classic-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/lightroom-classic.json"
     }
   ]
 }

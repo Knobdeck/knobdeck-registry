@@ -50,6 +50,18 @@
       "stores": []
     },
     {
+      "id": "lightroom",
+      "name": "KnobDeck plug-in for Lightroom Classic",
+      "repository": "https://github.com/Knobdeck/knobdeck-lightroom-companion",
+      "runsIn": "Adobe Lightroom Classic 10 and newer (Windows, macOS)",
+      "latest": "1.0.0",
+      "minVersion": null,
+      "plugins": [
+        "lightroom-classic"
+      ],
+      "stores": []
+    },
+    {
       "id": "vscode",
       "name": "KnobDeck VS Code Companion",
       "repository": "https://github.com/Knobdeck/knobdeck-vscode-companion",

@@ -62,6 +62,8 @@
   "public/plugins/lifx-linux/readme.md": "lifx-v1.0.1/lifx_linux_readme.md",
   "public/plugins/lifx-macos/readme.md": "lifx-v1.0.1/lifx_macos_readme.md",
   "public/plugins/lifx-windows/readme.md": "lifx-v1.0.1/lifx_windows_readme.md",
+  "public/plugins/lightroom-classic-macos/readme.md": "lightroom-classic-v1.0.0/lightroom-classic_macos_readme.md",
+  "public/plugins/lightroom-classic-windows/readme.md": "lightroom-classic-v1.0.0/lightroom-classic_windows_readme.md",
   "public/plugins/linux-tools/readme.md": "linux-tools-v1.5.1/linux-tools_linux_readme.md",
   "public/plugins/mac-tools/readme.md": "mac-tools-v1.8.1/mac-tools_macos_readme.md",
   "public/plugins/midi-linux/readme.md": "midi-v1.0.1/midi_linux_readme.md",
