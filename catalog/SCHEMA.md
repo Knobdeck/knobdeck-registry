@@ -120,6 +120,7 @@ An app matches an installed plugin by its manifest id's portable id (`obs-macos`
       "name": "KnobDeck VS Code Companion",
       "repository": "https://github.com/Knobdeck/knobdeck-vscode-companion",
       "runsIn": "VS Code, VSCodium, Cursor, Windsurf",
+      "summary": "Editor extension, needed to control VS Code",  // one short line the app shows; null if none
       "latest": "1.2.0",                    // from the companion's latest v* release; null if none
       "minVersion": "1.2.0",                // oldest companion version the current plugin works with
       "plugins": ["vscode"],

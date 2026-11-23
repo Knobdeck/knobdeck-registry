@@ -2,6 +2,7 @@ id = "ableton"
 name = "KnobDeck Remote Script for Ableton Live"
 repository = "https://github.com/Knobdeck/knobdeck-ableton-companion"
 runs_in = "Ableton Live 11 and newer (Windows, macOS)"
+summary = "Remote Script, needed to control Ableton Live"
 plugins = ["ableton"]
 # Live has no add-on store: the plugin's setup installs the script from the GitHub release.
 stores = []

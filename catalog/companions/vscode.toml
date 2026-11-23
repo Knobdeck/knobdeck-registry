@@ -2,6 +2,7 @@ id = "vscode"
 name = "KnobDeck VS Code Companion"
 repository = "https://github.com/Knobdeck/knobdeck-vscode-companion"
 runs_in = "VS Code, VSCodium, Cursor, Windsurf"
+summary = "Editor extension, needed to control VS Code"
 plugins = ["vscode"]
 # No min_version: companions before 1.1 still work through the HTTP dialect.
 

@@ -488,6 +488,7 @@ for (const c of companionsSrc) {
     name: c.name,
     repository: c.repository,
     runsIn: c.runs_in ?? null,
+    summary: c.summary ?? null,
     latest,
     minVersion: c.min_version ?? null,
     plugins: c.plugins ?? [],
