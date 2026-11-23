@@ -2,6 +2,7 @@ id = "blender"
 name = "KnobDeck add-on for Blender"
 repository = "https://github.com/Knobdeck/knobdeck-blender-companion"
 runs_in = "Blender 4.2 and newer"
+summary = "Add-on, needed to control Blender"
 plugins = ["blender"]
 # TODO: add the extensions.blender.org listing (extensions.blender.org/add-ons/knobdeck/) once it is approved.
 stores = []

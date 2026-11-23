@@ -2,6 +2,7 @@ id = "browser"
 name = "KnobDeck Browser Companion"
 repository = "https://github.com/Knobdeck/knobdeck-browser-companion"
 runs_in = "Chrome, Edge, Brave and other Chromium browsers; Firefox, Zen"
+summary = "Browser extension, needed to control your browser"
 plugins = ["browser-plugin"]
 # Edge, Brave and other Chromium browsers install from the Chrome Web Store (no Edge Add-ons listing).
 [[stores]]
