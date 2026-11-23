@@ -4,28 +4,35 @@
   "name": "Lightroom Classic",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.0",
-    "released": "2026-11-21T12:52:57Z",
+    "version": "1.1.0",
+    "released": "2026-11-23T16:25:59Z",
     "platforms": {
       "macos": {
         "id": "lightroom-classic-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.0.0/lightroom-classic_macos_1.0.0.knobdeck",
-        "sha256": "5038b6689c0d3268bc4258aeccb4ed8d9698d328e31126df3b77682d494fae71",
-        "size": 2300128,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.1.0/lightroom-classic_macos_1.1.0.knobdeck",
+        "sha256": "462e8ac4606c7907136f29f7b71bd6d6611b9ca7bae2f171bcbb8b647404dbd8",
+        "size": 2300981,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lightroom-classic-macos/readme.md"
       },
       "windows": {
         "id": "lightroom-classic-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.0.0/lightroom-classic_windows_1.0.0.knobdeck",
-        "sha256": "b7e9d5ff9c37fc51d8ad00310cc03e78bf9f29cb6676133c21118d95dda87557",
-        "size": 1050217,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.1.0/lightroom-classic_windows_1.1.0.knobdeck",
+        "sha256": "53b4d5e8481be3c055d834834cdbe6a005b9076cbec9a3a69223bd3c0aa1ef42",
+        "size": 1050992,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/lightroom-classic-windows/readme.md"
       }
     }
   },
-  "changelog": "- First release: Basic panel dials (Temp, Tint, Exposure, Contrast, Highlights, Shadows, Whites,\n  Blacks, Texture, Clarity, Dehaze, Vibrance, Saturation) and a Develop Slider dial for every\n  other panel (tone curve, HSL, color grading, detail, lens corrections, transform, effects,\n  calibration), with live values and press to reset; modules, next / previous photo, flag,\n  rating (key and dial), colour label, rotate, copy / paste settings, reset all, auto tone and\n  auto white balance, before / after, Develop tools and panels, undo / redo. Through the KnobDeck\n  plug-in for Lightroom Classic, which setup installs.",
+  "changelog": "- Tells KnobDeck whether the KnobDeck plug-in for Lightroom is linked, so the plugin page and placed actions can say when it isn't.",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "lightroom-classic-v1.1.0",
+      "released": "2026-11-23T16:25:59Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.0",
       "tag": "lightroom-classic-v1.0.0",

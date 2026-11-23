@@ -4,35 +4,42 @@
   "name": "Browser Controls",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.4.1",
-    "released": "2026-11-19T13:30:58Z",
+    "version": "1.5.0",
+    "released": "2026-11-23T16:25:53Z",
     "platforms": {
       "linux": {
         "id": "browser-plugin-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.1/browser-plugin_linux_1.4.1.knobdeck",
-        "sha256": "56c420ce7a41e07b1adfdaaa42ecce74366bec7066289aad5f1a56a45877b316",
-        "size": 866586,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.5.0/browser-plugin_linux_1.5.0.knobdeck",
+        "sha256": "97e9d8aaf8cfe1b9e10eeabed16fd18f199e6a5f668fc10b3849587c5b8a3a69",
+        "size": 864246,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-linux/readme.md"
       },
       "macos": {
         "id": "browser-plugin-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.1/browser-plugin_macos_1.4.1.knobdeck",
-        "sha256": "2ba626f3a0457afe4bca782086958b80f8cb9ea6853893c3b6ad9d01afb80043",
-        "size": 701069,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.5.0/browser-plugin_macos_1.5.0.knobdeck",
+        "sha256": "75550ff77b220c7bf5e0f2a5763c1dd9fdf38e773e0e87ad6190ebb456a37a97",
+        "size": 703423,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-macos/readme.md"
       },
       "windows": {
         "id": "browser-plugin-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.4.1/browser-plugin_windows_1.4.1.knobdeck",
-        "sha256": "1eba3bf5fb05d678cf4886eb7561044d7173a6fea1558958f083c270672455e4",
-        "size": 284957,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/browser-plugin-v1.5.0/browser-plugin_windows_1.5.0.knobdeck",
+        "sha256": "29cfcaba30918d35c8ee79ca8c0ff7045f9f407b65beea287aa434175ba0f08e",
+        "size": 286611,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/browser-plugin-windows/readme.md"
       }
     }
   },
-  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+  "changelog": "- Tells KnobDeck whether the KnobDeck Browser Companion is connected, so the plugin page and placed actions can say when it isn't and where to get it.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.5.0",
+      "tag": "browser-plugin-v1.5.0",
+      "released": "2026-11-23T16:25:53Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.4.1",
       "tag": "browser-plugin-v1.4.1",

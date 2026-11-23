@@ -2,6 +2,508 @@
   "id": "vscode",
   "versions": [
     {
+      "version": "1.4.0",
+      "tag": "vscode-v1.4.0",
+      "released": "2026-11-23T16:26:02Z",
+      "notes": "Visual Studio Code 1.4.0 for linux, macos, windows.",
+      "meta": {
+        "dir": "vscode",
+        "version": "1.4.0",
+        "name": "Visual Studio Code",
+        "summary": "Editor commands through the KnobDeck VS Code extension.",
+        "tags": [
+          "Developer tools",
+          "Editor"
+        ],
+        "featured": true,
+        "sort": 30
+      },
+      "platforms": {
+        "linux": {
+          "id": "vscode-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_linux_1.4.0.knobdeck",
+          "sha256": "07764576234961981976532cfa4c0787faca360a150c569a47af48e8acee864c",
+          "size": 2871844,
+          "file": "vscode_linux_1.4.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_linux_readme.md",
+          "readmeFile": "vscode_linux_readme.md",
+          "name": "VS Code",
+          "description": "Control Visual Studio Code through the KnobDeck VS Code companion extension.",
+          "author": "KnobDeck",
+          "icon": "vscode-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "vscode-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_macos_1.4.0.knobdeck",
+          "sha256": "790158c33c30da045377110a1f0bd4f4eb402bc175634cf6840f2ef3f88cc2a0",
+          "size": 3486349,
+          "file": "vscode_macos_1.4.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_macos_readme.md",
+          "readmeFile": "vscode_macos_readme.md",
+          "name": "VS Code",
+          "description": "Control Visual Studio Code through the KnobDeck VS Code companion extension.",
+          "author": "KnobDeck",
+          "icon": "vscode-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "vscode-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_windows_1.4.0.knobdeck",
+          "sha256": "bbca13abb57784e9b134f309aafddded1eec1de68715ec11a4bc4d22023a87d5",
+          "size": 1655136,
+          "file": "vscode_windows_1.4.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_windows_readme.md",
+          "readmeFile": "vscode_windows_readme.md",
+          "name": "VS Code",
+          "description": "Control Visual Studio Code through the KnobDeck VS Code companion extension.",
+          "author": "KnobDeck",
+          "icon": "vscode-logo.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "command-palette": {
+          "type": "button",
+          "label": "Command Palette",
+          "icon": "compass",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "quick-open": {
+          "type": "button",
+          "label": "Quick Open",
+          "icon": "search",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "explorer": {
+          "type": "button",
+          "label": "Explorer",
+          "icon": "folder",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "search": {
+          "type": "button",
+          "label": "Search",
+          "icon": "search",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "source-control": {
+          "type": "button",
+          "label": "Source Control",
+          "icon": "git-branch",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "extensions": {
+          "type": "button",
+          "label": "Extensions",
+          "icon": "puzzle",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "terminal": {
+          "type": "button",
+          "label": "Toggle Terminal",
+          "icon": "terminal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "problems": {
+          "type": "button",
+          "label": "Problems",
+          "icon": "triangle-alert",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "save-all": {
+          "type": "button",
+          "label": "Save All",
+          "icon": "save-all",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "format-document": {
+          "type": "button",
+          "label": "Format Document",
+          "icon": "wand-sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "toggle-sidebar": {
+          "type": "button",
+          "label": "Toggle Sidebar",
+          "icon": "panel-left",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "toggle-panel": {
+          "type": "button",
+          "label": "Toggle Panel",
+          "icon": "blocks",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "zen-mode": {
+          "type": "button",
+          "label": "Zen Mode",
+          "icon": "scan",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "split-editor": {
+          "type": "button",
+          "label": "Split Editor",
+          "icon": "columns-2",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "new-terminal": {
+          "type": "button",
+          "label": "New Terminal",
+          "icon": "plus",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "stop-debugging": {
+          "type": "button",
+          "label": "Stop Debugging",
+          "icon": "square",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "run-task": {
+          "type": "button",
+          "label": "Run Task",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "taskName",
+              "type": "select",
+              "label": "Task"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "start-debugging": {
+          "type": "button",
+          "label": "Start Debugging",
+          "icon": "bug",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "configName",
+              "type": "select",
+              "label": "Launch Configuration"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "focus-terminal": {
+          "type": "button",
+          "label": "Focus Terminal",
+          "icon": "square-terminal",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "terminalName",
+              "type": "select",
+              "label": "Terminal"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "open-editor": {
+          "type": "button",
+          "label": "Open Editor",
+          "icon": "file",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "editorUri",
+              "type": "select",
+              "label": "Open Editor"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "custom-command": {
+          "type": "button",
+          "label": "Custom Command",
+          "icon": "sparkles",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "commandId",
+              "type": "text",
+              "label": "Command ID"
+            },
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "task-wheel": {
+          "type": "wheel",
+          "label": "Task Wheel",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "debug-wheel": {
+          "type": "wheel",
+          "label": "Debug Wheel",
+          "icon": "bug",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        },
+        "open-editor-wheel": {
+          "type": "wheel",
+          "label": "Open Editor Wheel",
+          "icon": "file",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "port",
+              "type": "text",
+              "label": "Action Port (Optional)"
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.3.0",
       "tag": "vscode-v1.3.0",
       "released": "2026-11-17T14:21:10Z",

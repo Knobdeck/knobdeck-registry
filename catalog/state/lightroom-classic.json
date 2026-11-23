@@ -2,6 +2,1090 @@
   "id": "lightroom-classic",
   "versions": [
     {
+      "version": "1.1.0",
+      "tag": "lightroom-classic-v1.1.0",
+      "released": "2026-11-23T16:25:59Z",
+      "notes": "- Tells KnobDeck whether the KnobDeck plug-in for Lightroom is linked, so the plugin page and placed actions can say when it isn't.",
+      "meta": {
+        "dir": "lightroom-classic",
+        "version": "1.1.0",
+        "name": "Lightroom Classic",
+        "summary": "Every Develop slider on a dial with its live value, plus modules, photos, flags, ratings, labels and undo, through the KnobDeck plug-in.",
+        "tags": [
+          "Photo",
+          "Creative"
+        ],
+        "featured": false,
+        "sort": 111
+      },
+      "platforms": {
+        "macos": {
+          "id": "lightroom-classic-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.1.0/lightroom-classic_macos_1.1.0.knobdeck",
+          "sha256": "462e8ac4606c7907136f29f7b71bd6d6611b9ca7bae2f171bcbb8b647404dbd8",
+          "size": 2300981,
+          "file": "lightroom-classic_macos_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.1.0/lightroom-classic_macos_readme.md",
+          "readmeFile": "lightroom-classic_macos_readme.md",
+          "name": "Lightroom Classic",
+          "description": "Lightroom Classic on the dial: every Develop slider with its live value (press to reset), modules, next / previous photo, flags, ratings, colour labels, rotate, copy / paste settings, auto tone, undo and before / after, through the KnobDeck plug-in for Lightroom.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "lightroom-classic-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.1.0/lightroom-classic_windows_1.1.0.knobdeck",
+          "sha256": "53b4d5e8481be3c055d834834cdbe6a005b9076cbec9a3a69223bd3c0aa1ef42",
+          "size": 1050992,
+          "file": "lightroom-classic_windows_1.1.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/lightroom-classic-v1.1.0/lightroom-classic_windows_readme.md",
+          "readmeFile": "lightroom-classic_windows_readme.md",
+          "name": "Lightroom Classic",
+          "description": "Lightroom Classic on the dial: every Develop slider with its live value (press to reset), modules, next / previous photo, flags, ratings, colour labels, rotate, copy / paste settings, auto tone, undo and before / after, through the KnobDeck plug-in for Lightroom.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "temperature": {
+          "type": "slider",
+          "label": "Temp",
+          "icon": "thermometer",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": 2000,
+          "max": 50000,
+          "step": 1,
+          "unit": "K"
+        },
+        "tint": {
+          "type": "slider",
+          "label": "Tint",
+          "icon": "droplet",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -150,
+          "max": 150,
+          "step": 1,
+          "unit": null
+        },
+        "exposure": {
+          "type": "slider",
+          "label": "Exposure",
+          "icon": "sun",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -5,
+          "max": 5,
+          "step": 0.05,
+          "unit": "EV"
+        },
+        "contrast": {
+          "type": "slider",
+          "label": "Contrast",
+          "icon": "contrast",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "highlights": {
+          "type": "slider",
+          "label": "Highlights",
+          "icon": "sun-medium",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "shadows": {
+          "type": "slider",
+          "label": "Shadows",
+          "icon": "moon",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "whites": {
+          "type": "slider",
+          "label": "Whites",
+          "icon": "circle",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "blacks": {
+          "type": "slider",
+          "label": "Blacks",
+          "icon": "circle-dot",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "texture": {
+          "type": "slider",
+          "label": "Texture",
+          "icon": "grip",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "clarity": {
+          "type": "slider",
+          "label": "Clarity",
+          "icon": "focus",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "dehaze": {
+          "type": "slider",
+          "label": "Dehaze",
+          "icon": "cloud-fog",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "vibrance": {
+          "type": "slider",
+          "label": "Vibrance",
+          "icon": "palette",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "saturation": {
+          "type": "slider",
+          "label": "Saturation",
+          "icon": "paintbrush",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "develop-slider": {
+          "type": "slider",
+          "label": "Develop Slider",
+          "icon": "sliders-horizontal",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "param",
+              "type": "select",
+              "label": "Setting",
+              "default": "Exposure",
+              "options": [
+                "Temperature",
+                "Tint",
+                "Exposure",
+                "Contrast",
+                "Highlights",
+                "Shadows",
+                "Whites",
+                "Blacks",
+                "Texture",
+                "Clarity",
+                "Dehaze",
+                "Vibrance",
+                "Saturation",
+                "ParametricHighlights",
+                "ParametricLights",
+                "ParametricDarks",
+                "ParametricShadows",
+                "ParametricShadowSplit",
+                "ParametricMidtoneSplit",
+                "ParametricHighlightSplit",
+                "HueAdjustmentRed",
+                "HueAdjustmentOrange",
+                "HueAdjustmentYellow",
+                "HueAdjustmentGreen",
+                "HueAdjustmentAqua",
+                "HueAdjustmentBlue",
+                "HueAdjustmentPurple",
+                "HueAdjustmentMagenta",
+                "SaturationAdjustmentRed",
+                "SaturationAdjustmentOrange",
+                "SaturationAdjustmentYellow",
+                "SaturationAdjustmentGreen",
+                "SaturationAdjustmentAqua",
+                "SaturationAdjustmentBlue",
+                "SaturationAdjustmentPurple",
+                "SaturationAdjustmentMagenta",
+                "LuminanceAdjustmentRed",
+                "LuminanceAdjustmentOrange",
+                "LuminanceAdjustmentYellow",
+                "LuminanceAdjustmentGreen",
+                "LuminanceAdjustmentAqua",
+                "LuminanceAdjustmentBlue",
+                "LuminanceAdjustmentPurple",
+                "LuminanceAdjustmentMagenta",
+                "SplitToningShadowHue",
+                "SplitToningShadowSaturation",
+                "ColorGradeShadowLum",
+                "ColorGradeMidtoneHue",
+                "ColorGradeMidtoneSat",
+                "ColorGradeMidtoneLum",
+                "SplitToningHighlightHue",
+                "SplitToningHighlightSaturation",
+                "ColorGradeHighlightLum",
+                "ColorGradeGlobalHue",
+                "ColorGradeGlobalSat",
+                "ColorGradeGlobalLum",
+                "ColorGradeBlending",
+                "SplitToningBalance",
+                "Sharpness",
+                "SharpenRadius",
+                "SharpenDetail",
+                "SharpenEdgeMasking",
+                "LuminanceSmoothing",
+                "LuminanceNoiseReductionDetail",
+                "LuminanceNoiseReductionContrast",
+                "ColorNoiseReduction",
+                "ColorNoiseReductionDetail",
+                "ColorNoiseReductionSmoothness",
+                "LensProfileDistortionScale",
+                "LensProfileVignettingScale",
+                "LensManualDistortionAmount",
+                "VignetteAmount",
+                "VignetteMidpoint",
+                "DefringePurpleAmount",
+                "DefringePurpleHueLo",
+                "DefringePurpleHueHi",
+                "DefringeGreenAmount",
+                "DefringeGreenHueLo",
+                "DefringeGreenHueHi",
+                "PerspectiveVertical",
+                "PerspectiveHorizontal",
+                "PerspectiveRotate",
+                "PerspectiveAspect",
+                "PerspectiveScale",
+                "PerspectiveX",
+                "PerspectiveY",
+                "PostCropVignetteAmount",
+                "PostCropVignetteMidpoint",
+                "PostCropVignetteRoundness",
+                "PostCropVignetteFeather",
+                "PostCropVignetteHighlightContrast",
+                "GrainAmount",
+                "GrainSize",
+                "GrainFrequency",
+                "ShadowTint",
+                "RedHue",
+                "RedSaturation",
+                "GreenHue",
+                "GreenSaturation",
+                "BlueHue",
+                "BlueSaturation"
+              ]
+            },
+            {
+              "key": "steps",
+              "type": "select",
+              "label": "Steps",
+              "default": "fine",
+              "options": [
+                "fine",
+                "lightroom"
+              ]
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Step per tick",
+              "showIf": {
+                "key": "steps",
+                "equals": "fine"
+              }
+            },
+            {
+              "key": "reveal",
+              "type": "checkbox",
+              "label": "Show the setting's panel in Lightroom",
+              "default": true
+            }
+          ],
+          "min": -100,
+          "max": 100,
+          "step": 1,
+          "unit": null
+        },
+        "status": {
+          "type": "button",
+          "label": "Lightroom Status",
+          "icon": "aperture",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "module": {
+          "type": "toggle",
+          "label": "Module",
+          "icon": "layout-grid",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "module",
+              "type": "select",
+              "label": "Module",
+              "default": "develop",
+              "options": [
+                "library",
+                "develop",
+                "map",
+                "book",
+                "slideshow",
+                "print",
+                "web"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Module",
+              "icon": "layout-grid"
+            },
+            {
+              "value": "on",
+              "label": "Current module",
+              "icon": "layout-dashboard"
+            }
+          ]
+        },
+        "module-wheel": {
+          "type": "wheel",
+          "label": "Modules",
+          "icon": "layout-grid",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "next-photo": {
+          "type": "button",
+          "label": "Next Photo",
+          "icon": "chevron-right",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "previous-photo": {
+          "type": "button",
+          "label": "Previous Photo",
+          "icon": "chevron-left",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "flag": {
+          "type": "toggle",
+          "label": "Flag",
+          "icon": "flag",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "flag",
+              "type": "select",
+              "label": "Flag",
+              "default": "pick",
+              "options": [
+                "pick",
+                "reject",
+                "none"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "none",
+              "label": "Unflagged",
+              "icon": "flag"
+            },
+            {
+              "value": "pick",
+              "label": "Picked",
+              "icon": "circle-check"
+            },
+            {
+              "value": "reject",
+              "label": "Rejected",
+              "icon": "circle-x"
+            }
+          ]
+        },
+        "rating": {
+          "type": "button",
+          "label": "Rating",
+          "icon": "star",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "rating",
+              "type": "select",
+              "label": "Rating",
+              "default": "5",
+              "options": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "up",
+                "down"
+              ]
+            }
+          ]
+        },
+        "rating-dial": {
+          "type": "slider",
+          "label": "Rating (dial)",
+          "icon": "star",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [],
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "unit": null
+        },
+        "color-label": {
+          "type": "toggle",
+          "label": "Color Label",
+          "icon": "tag",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "label",
+              "type": "select",
+              "label": "Label",
+              "default": "red",
+              "options": [
+                "red",
+                "yellow",
+                "green",
+                "blue",
+                "purple",
+                "none"
+              ]
+            }
+          ],
+          "states": [
+            {
+              "value": "off",
+              "label": "Label off",
+              "icon": "tag"
+            },
+            {
+              "value": "on",
+              "label": "Label on",
+              "icon": "tags"
+            }
+          ]
+        },
+        "rotate-left": {
+          "type": "button",
+          "label": "Rotate Left",
+          "icon": "rotate-ccw",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "rotate-right": {
+          "type": "button",
+          "label": "Rotate Right",
+          "icon": "rotate-cw",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "copy-settings": {
+          "type": "button",
+          "label": "Copy Settings",
+          "icon": "copy",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "paste-settings": {
+          "type": "button",
+          "label": "Paste Settings",
+          "icon": "clipboard-paste",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "reset-all": {
+          "type": "button",
+          "label": "Reset All Settings",
+          "icon": "rotate-ccw-square",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "auto-tone": {
+          "type": "button",
+          "label": "Auto Tone",
+          "icon": "wand-sparkles",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "auto-white-balance": {
+          "type": "button",
+          "label": "Auto White Balance",
+          "icon": "pipette",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "develop-view": {
+          "type": "button",
+          "label": "Before / After",
+          "icon": "columns-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "view",
+              "type": "select",
+              "label": "View",
+              "default": "toggle",
+              "options": [
+                "toggle",
+                "before_after_horiz",
+                "before_after_vert",
+                "before",
+                "loupe"
+              ]
+            }
+          ]
+        },
+        "develop-tool": {
+          "type": "button",
+          "label": "Develop Tool",
+          "icon": "crop",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "tool",
+              "type": "select",
+              "label": "Tool",
+              "default": "crop",
+              "options": [
+                "crop",
+                "healing",
+                "redeye",
+                "masking",
+                "loupe"
+              ]
+            }
+          ]
+        },
+        "show-panel": {
+          "type": "button",
+          "label": "Show Develop Panel",
+          "icon": "panel-right",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "panel",
+              "type": "select",
+              "label": "Panel",
+              "default": "adjustPanel",
+              "options": [
+                "adjustPanel",
+                "tonePanel",
+                "mixerPanel",
+                "colorGradingPanel",
+                "detailPanel",
+                "lensCorrectionsPanel",
+                "transformPanel",
+                "effectsPanel",
+                "calibratePanel"
+              ]
+            }
+          ]
+        },
+        "undo": {
+          "type": "button",
+          "label": "Undo",
+          "icon": "undo-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "redo": {
+          "type": "button",
+          "label": "Redo",
+          "icon": "redo-2",
+          "platforms": [
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.0.0",
       "tag": "lightroom-classic-v1.0.0",
       "released": "2026-11-21T12:52:57Z",

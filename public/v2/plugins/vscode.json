@@ -4,35 +4,42 @@
   "name": "Visual Studio Code",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.3.0",
-    "released": "2026-11-17T14:21:10Z",
+    "version": "1.4.0",
+    "released": "2026-11-23T16:26:02Z",
     "platforms": {
       "linux": {
         "id": "vscode-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.3.0/vscode_linux_1.3.0.knobdeck",
-        "sha256": "0c1500c13bf0252b91c57c2dd72b3f612713ef3992979466ecf0f024455c6138",
-        "size": 2871675,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_linux_1.4.0.knobdeck",
+        "sha256": "07764576234961981976532cfa4c0787faca360a150c569a47af48e8acee864c",
+        "size": 2871844,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-linux/readme.md"
       },
       "macos": {
         "id": "vscode-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.3.0/vscode_macos_1.3.0.knobdeck",
-        "sha256": "c3b52bc2da406573a647126626cf238a147b677c59a9e02ca818b03f3f2fd28a",
-        "size": 3483275,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_macos_1.4.0.knobdeck",
+        "sha256": "790158c33c30da045377110a1f0bd4f4eb402bc175634cf6840f2ef3f88cc2a0",
+        "size": 3486349,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-macos/readme.md"
       },
       "windows": {
         "id": "vscode-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.3.0/vscode_windows_1.3.0.knobdeck",
-        "sha256": "1f786fa055e0ddddf7d9b0f99e40c6ea873685ea0c2ee3d2605e9d6db92c90be",
-        "size": 1655174,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/vscode-v1.4.0/vscode_windows_1.4.0.knobdeck",
+        "sha256": "bbca13abb57784e9b134f309aafddded1eec1de68715ec11a4bc4d22023a87d5",
+        "size": 1655136,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/vscode-windows/readme.md"
       }
     }
   },
-  "changelog": "Visual Studio Code 1.3.0 for linux, macos, windows.",
+  "changelog": "Visual Studio Code 1.4.0 for linux, macos, windows.",
   "setup": true,
   "versions": [
+    {
+      "version": "1.4.0",
+      "tag": "vscode-v1.4.0",
+      "released": "2026-11-23T16:26:02Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.3.0",
       "tag": "vscode-v1.3.0",
