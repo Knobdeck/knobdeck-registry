@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-23T16:26:20Z",
+  "tag": "catalog-2026-11-24T13:40:19Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -606,14 +606,14 @@
       "name": "Now Playing",
       "summary": "What any player is playing, with its cover: play/pause, next, previous, position.",
       "description": "What any media player is playing, with its cover, and play/pause, next, previous and seeking: browsers, Spotify, VLC and every app with media controls.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.0.1/now-playing_linux_1.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.0.1/now-playing/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_linux_1.1.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.1.0/now-playing/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-linux/readme.md",
-      "sha256": "1cd53cda0032ab37f47f438610f7ad857e0e0fff507a0581ebfed62e45fb735c",
+      "sha256": "93dc62a0667c9365d074b0f6da2649abe4c883d051c225ef7658b1c4c3a7546d",
       "tags": [
         "Music",
         "Media"
@@ -625,7 +625,7 @@
         "window"
       ],
       "featured": false,
-      "file": "now-playing_linux_1.0.1.knobdeck",
+      "file": "now-playing_linux_1.1.0.knobdeck",
       "readmeFile": "now-playing_linux_readme.md"
     },
     {
@@ -633,14 +633,14 @@
       "name": "Now Playing",
       "summary": "What any player is playing, with its cover: play/pause, next, previous, position.",
       "description": "What Music or Spotify is playing, with its cover, and play/pause, next, previous and seeking.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.0.1/now-playing_macos_1.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.0.1/now-playing/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_macos_1.1.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.1.0/now-playing/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-macos/readme.md",
-      "sha256": "3d46695f74886cbf378d28e2dfd589d98c6779abe12c09aed1cc6050094b4e67",
+      "sha256": "cf51d5f00bf3de570bec92a703f0f9870cf86e82e0dd0959a1c1c14a7521c9bb",
       "tags": [
         "Music",
         "Media"
@@ -650,7 +650,7 @@
       ],
       "uses": [],
       "featured": false,
-      "file": "now-playing_macos_1.0.1.knobdeck",
+      "file": "now-playing_macos_1.1.0.knobdeck",
       "readmeFile": "now-playing_macos_readme.md"
     },
     {
@@ -658,14 +658,14 @@
       "name": "Now Playing",
       "summary": "What any player is playing, with its cover: play/pause, next, previous, position.",
       "description": "What any media player is playing, with its cover, and play/pause, next, previous and seeking: browsers, Spotify, VLC and every app with media controls.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.0.1/now-playing_windows_1.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.0.1/now-playing/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_windows_1.1.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.1.0/now-playing/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-windows/readme.md",
-      "sha256": "2d0fd448130ede748bf581603d10271535a7ecc71a6d3898987a4c6510ebdf99",
+      "sha256": "a574922d4caad6b432d03ffeffce150a6a79551aa549ff75c4ae337467b601ca",
       "tags": [
         "Music",
         "Media"
@@ -675,7 +675,7 @@
       ],
       "uses": [],
       "featured": false,
-      "file": "now-playing_windows_1.0.1.knobdeck",
+      "file": "now-playing_windows_1.1.0.knobdeck",
       "readmeFile": "now-playing_windows_readme.md"
     },
     {
