@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-25T07:08:23Z",
+  "tag": "catalog-2026-11-25T10:06:14Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -497,14 +497,14 @@
       "name": "Linux Tools",
       "summary": "Windows, workspaces, per-app volume, audio devices on GNOME and KDE.",
       "description": "Window management, workspaces, per-app volume, audio devices and system actions for GNOME and KDE Plasma.",
-      "version": "1.5.1",
+      "version": "1.5.3",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.1/linux-tools_linux_1.5.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/linux-tools-v1.5.1/linux-tools/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.3/linux-tools_linux_1.5.3.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/linux-tools-v1.5.3/linux-tools/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md",
-      "sha256": "0c2cc6563e3ec8eacb838d5e643a59b0039af674a67052f400c1201be6234f83",
+      "sha256": "0fe40fd732ecddefdf87738a039f1eecdf80e8c8cadb46e904713b05a6b1ba77",
       "tags": [
         "Linux",
         "Automation"
@@ -523,7 +523,7 @@
         "browser"
       ],
       "featured": true,
-      "file": "linux-tools_linux_1.5.1.knobdeck",
+      "file": "linux-tools_linux_1.5.3.knobdeck",
       "readmeFile": "linux-tools_linux_readme.md"
     },
     {

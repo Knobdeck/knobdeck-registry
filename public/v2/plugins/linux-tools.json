@@ -4,21 +4,28 @@
   "name": "Linux Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.5.1",
-    "released": "2026-11-19T13:31:42Z",
+    "version": "1.5.3",
+    "released": "2026-11-25T10:05:57Z",
     "platforms": {
       "linux": {
         "id": "linux-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.1/linux-tools_linux_1.5.1.knobdeck",
-        "sha256": "0c2cc6563e3ec8eacb838d5e643a59b0039af674a67052f400c1201be6234f83",
-        "size": 1104330,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/linux-tools-v1.5.3/linux-tools_linux_1.5.3.knobdeck",
+        "sha256": "0fe40fd732ecddefdf87738a039f1eecdf80e8c8cadb46e904713b05a6b1ba77",
+        "size": 1107578,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/linux-tools/readme.md"
       }
     }
   },
-  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+  "changelog": "- System Stats: a GPU input (shown for GPU) picks which GPU to show when the PC has several; one GPU needs no choice. Automatic follows the busiest. NVIDIA cards are no longer hidden by an idle AMD or Intel GPU.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.5.3",
+      "tag": "linux-tools-v1.5.3",
+      "released": "2026-11-25T10:05:57Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.5.1",
       "tag": "linux-tools-v1.5.1",
@@ -1071,6 +1078,16 @@
             "gpu",
             "memory"
           ]
+        },
+        {
+          "key": "gpu",
+          "type": "select",
+          "label": "GPU",
+          "default": "auto",
+          "showIf": {
+            "key": "stat",
+            "equals": "gpu"
+          }
         }
       ]
     },
