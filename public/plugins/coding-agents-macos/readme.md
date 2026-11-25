@@ -14,6 +14,8 @@ permission requests from a key. Works on Windows, macOS and Linux.
   what it is about (`Bash: npm test`, `Write: main.rs`).
 - **Approvals Wheel**: Allow and Deny slices for each waiting request.
 - **Sessions Wheel**: every session and its state.
+- **Claude Limits** / **Codex Limits**: a gauge of the 5-hour or weekly limit (Claude also has the
+  Fable weekly limit) with the time to reset. Pressing a key looks again (at most once a minute).
 
 ## Setup
 
@@ -33,6 +35,18 @@ Restart running sessions after setup so they read the new settings.
 running, a Claude Code permission request waits for your press (30 seconds by default; 15 s to
 2 min, or off, in setup). When the time is up, or KnobDeck isn't running, Claude Code shows its
 usual prompt in the terminal. Without such a key nothing waits.
+
+## Plan limits without rate limiting
+
+Anthropic's and OpenAI's usage endpoints rate-limit hard, so the keys don't poll them. Claude Code
+passes its limits to the status line after every reply and Codex writes them into its session
+logs; the plugin reads those (no network). Setup's *Show Claude's plan limits* option sets
+Claude Code's `statusLine` to the plugin's hook program, which records the numbers and then runs
+your own status line, if you had one (kept in `statusline-original.json` and put back when you
+untick the option). Only when the numbers are over 15 minutes old (no session ran) and a key is
+placed does the plugin call the endpoint: at most once per 10 minutes, `Retry-After` and a growing
+back-off (5 min up to 2 h) obeyed and remembered across restarts, with the last good numbers kept
+on the key. A window that has reset since the last reading shows 0%.
 
 ## How it works
 

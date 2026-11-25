@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-25T05:30:32Z",
+  "tag": "catalog-2026-11-25T07:08:23Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -1291,14 +1291,14 @@
       "name": "Coding Agents",
       "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
       "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_linux_1.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/coding-agents-v1.0.1/coding-agents/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_linux_1.1.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/coding-agents-v1.1.0/coding-agents/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-linux/readme.md",
-      "sha256": "658bb77b09a17079ae4af7ca1e38d04b3045d2ef2eb7444dbc84554b8c19504e",
+      "sha256": "a6d7999b9f8a3978fa80e78eff707487107507b61ab34ec3567cd8e38f22bd56",
       "tags": [
         "Developer tools",
         "AI"
@@ -1308,7 +1308,7 @@
       ],
       "uses": [],
       "featured": false,
-      "file": "coding-agents_linux_1.0.1.knobdeck",
+      "file": "coding-agents_linux_1.1.0.knobdeck",
       "readmeFile": "coding-agents_linux_readme.md"
     },
     {
@@ -1316,14 +1316,14 @@
       "name": "Coding Agents",
       "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
       "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_macos_1.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/coding-agents-v1.0.1/coding-agents/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_macos_1.1.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/coding-agents-v1.1.0/coding-agents/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-macos/readme.md",
-      "sha256": "67239f09e47b44f16cd157d8c816c287e312ae6d2d5ff644a105d0c4a3eb6326",
+      "sha256": "deb0d85a749eb644957e6a0efb0d928734c7fd9012ad08433e899e5dde2592ad",
       "tags": [
         "Developer tools",
         "AI"
@@ -1333,7 +1333,7 @@
       ],
       "uses": [],
       "featured": false,
-      "file": "coding-agents_macos_1.0.1.knobdeck",
+      "file": "coding-agents_macos_1.1.0.knobdeck",
       "readmeFile": "coding-agents_macos_readme.md"
     },
     {
@@ -1341,14 +1341,14 @@
       "name": "Coding Agents",
       "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
       "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_windows_1.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/coding-agents-v1.0.1/coding-agents/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_windows_1.1.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/coding-agents-v1.1.0/coding-agents/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-windows/readme.md",
-      "sha256": "1834d6357fada7cef219e5eca796837aa92e6d8518171ccd597b72d4edb0c6b5",
+      "sha256": "915fb0d973a22b4c10c72a23218a49794b71e3d38a0af7283e37f6bfc6fd3a56",
       "tags": [
         "Developer tools",
         "AI"
@@ -1358,7 +1358,7 @@
       ],
       "uses": [],
       "featured": false,
-      "file": "coding-agents_windows_1.0.1.knobdeck",
+      "file": "coding-agents_windows_1.1.0.knobdeck",
       "readmeFile": "coding-agents_windows_readme.md"
     },
     {
@@ -2338,81 +2338,6 @@
       "featured": false,
       "file": "speedtest_windows_1.0.1.knobdeck",
       "readmeFile": "speedtest_windows_readme.md"
-    },
-    {
-      "id": "ai-stats-linux",
-      "name": "AI Stats",
-      "summary": "Claude and Codex plan limits and 30-day token usage.",
-      "description": "Plan limits (5-hour, weekly) and 30-day token usage for Claude Code and Codex, from the logins and transcripts already on this computer.",
-      "version": "2.0.1",
-      "author": "KnobDeck",
-      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_linux_2.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ai-stats-v2.0.1/ai-stats/icons/app-icon.svg",
-      "icon": "app-icon.svg",
-      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-linux/readme.md",
-      "sha256": "3004a23c6d456ac1f9e73a5d8b05d4dee66dd2991decb25f982885d89960d707",
-      "tags": [
-        "Developer tools",
-        "AI"
-      ],
-      "platforms": [
-        "linux"
-      ],
-      "uses": [],
-      "featured": false,
-      "file": "ai-stats_linux_2.0.1.knobdeck",
-      "readmeFile": "ai-stats_linux_readme.md"
-    },
-    {
-      "id": "ai-stats-macos",
-      "name": "AI Stats",
-      "summary": "Claude and Codex plan limits and 30-day token usage.",
-      "description": "Plan limits (5-hour, weekly) and 30-day token usage for Claude Code and Codex, from the logins and transcripts already on this computer.",
-      "version": "2.0.1",
-      "author": "KnobDeck",
-      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_macos_2.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ai-stats-v2.0.1/ai-stats/icons/app-icon.svg",
-      "icon": "app-icon.svg",
-      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-macos/readme.md",
-      "sha256": "995fef4f086e0eaa35258a5154aad4fd7f3a10be54b1659618922a3917f1223e",
-      "tags": [
-        "Developer tools",
-        "AI"
-      ],
-      "platforms": [
-        "macos"
-      ],
-      "uses": [],
-      "featured": false,
-      "file": "ai-stats_macos_2.0.1.knobdeck",
-      "readmeFile": "ai-stats_macos_readme.md"
-    },
-    {
-      "id": "ai-stats-windows",
-      "name": "AI Stats",
-      "summary": "Claude and Codex plan limits and 30-day token usage.",
-      "description": "Plan limits (5-hour, weekly) and 30-day token usage for Claude Code and Codex, from the logins and transcripts already on this computer.",
-      "version": "2.0.1",
-      "author": "KnobDeck",
-      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ai-stats-v2.0.1/ai-stats_windows_2.0.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ai-stats-v2.0.1/ai-stats/icons/app-icon.svg",
-      "icon": "app-icon.svg",
-      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ai-stats-windows/readme.md",
-      "sha256": "a141762570edb7b8077910bdd0c238908f33ec0536b54813cf3d98d276488df5",
-      "tags": [
-        "Developer tools",
-        "AI"
-      ],
-      "platforms": [
-        "windows"
-      ],
-      "uses": [],
-      "featured": false,
-      "file": "ai-stats_windows_2.0.1.knobdeck",
-      "readmeFile": "ai-stats_windows_readme.md"
     },
     {
       "id": "hardware-monitor-linux",

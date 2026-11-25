@@ -4,35 +4,42 @@
   "name": "Coding Agents",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.0.1",
-    "released": "2026-11-19T13:31:04Z",
+    "version": "1.1.0",
+    "released": "2026-11-25T07:08:16Z",
     "platforms": {
       "linux": {
         "id": "coding-agents-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_linux_1.0.1.knobdeck",
-        "sha256": "658bb77b09a17079ae4af7ca1e38d04b3045d2ef2eb7444dbc84554b8c19504e",
-        "size": 620759,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_linux_1.1.0.knobdeck",
+        "sha256": "a6d7999b9f8a3978fa80e78eff707487107507b61ab34ec3567cd8e38f22bd56",
+        "size": 1368002,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-linux/readme.md"
       },
       "macos": {
         "id": "coding-agents-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_macos_1.0.1.knobdeck",
-        "sha256": "67239f09e47b44f16cd157d8c816c287e312ae6d2d5ff644a105d0c4a3eb6326",
-        "size": 1132672,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_macos_1.1.0.knobdeck",
+        "sha256": "deb0d85a749eb644957e6a0efb0d928734c7fd9012ad08433e899e5dde2592ad",
+        "size": 2504167,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-macos/readme.md"
       },
       "windows": {
         "id": "coding-agents-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.0.1/coding-agents_windows_1.0.1.knobdeck",
-        "sha256": "1834d6357fada7cef219e5eca796837aa92e6d8518171ccd597b72d4edb0c6b5",
-        "size": 435526,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_windows_1.1.0.knobdeck",
+        "sha256": "915fb0d973a22b4c10c72a23218a49794b71e3d38a0af7283e37f6bfc6fd3a56",
+        "size": 1151106,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-windows/readme.md"
       }
     }
   },
-  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+  "changelog": "- **Claude Limits** and **Codex Limits** keys (5-hour, weekly and, for Claude, Fable gauges), replacing the AI Stats plugin.\n- No more rate limiting: the numbers come from Claude Code's status line and Codex's session logs, with no network calls. The providers' usage endpoints are only a fallback when those numbers are over 15 minutes old, at most once per 10 minutes, with `Retry-After` and a growing back-off kept across restarts; the last good numbers stay on the key meanwhile.\n- Setup can connect Claude Code's status line for this (on by default). A status line you already have keeps working and is restored when you untick it.",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "coding-agents-v1.1.0",
+      "released": "2026-11-25T07:08:16Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.0.1",
       "tag": "coding-agents-v1.0.1",
@@ -97,6 +104,51 @@
             "all",
             "claude",
             "codex"
+          ]
+        }
+      ]
+    },
+    "claude-limits": {
+      "type": "button",
+      "label": "Claude Limits",
+      "icon": "gauge",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "window",
+          "type": "select",
+          "label": "Usage type",
+          "default": "5h",
+          "options": [
+            "5h",
+            "7d",
+            "fable"
+          ]
+        }
+      ]
+    },
+    "codex-limits": {
+      "type": "button",
+      "label": "Codex Limits",
+      "icon": "gauge",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "window",
+          "type": "select",
+          "label": "Usage type",
+          "default": "primary",
+          "options": [
+            "primary",
+            "secondary"
           ]
         }
       ]
