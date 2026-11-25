@@ -2,6 +2,227 @@
   "id": "coding-agents",
   "versions": [
     {
+      "version": "1.2.0",
+      "tag": "coding-agents-v1.2.0",
+      "released": "2026-11-25T14:59:00Z",
+      "notes": "- **Claude Limits** and **Codex Limits** send their numbers as the tile's value: the title is yours, and `{0}` (or `%0%`) in it shows where the usage goes (`5 Hour {0}`). A new key starts as `Claude {0}` / `Codex {0}`; an empty title shows the usage alone. Older KnobDeck versions still get the numbers as the title.",
+      "meta": {
+        "dir": "coding-agents",
+        "version": "1.2.0",
+        "name": "Coding Agents",
+        "summary": "Claude Code and Codex session status; approve or deny requests from a key.",
+        "tags": [
+          "Developer tools",
+          "AI"
+        ],
+        "sort": 31
+      },
+      "platforms": {
+        "linux": {
+          "id": "coding-agents-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_linux_1.2.0.knobdeck",
+          "sha256": "39529e4a56a4164726c97b0e97b323df071856618ae48995d007f094a88f1c8e",
+          "size": 1368357,
+          "file": "coding-agents_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_linux_readme.md",
+          "readmeFile": "coding-agents_linux_readme.md",
+          "name": "Coding Agents",
+          "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "macos": {
+          "id": "coding-agents-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_macos_1.2.0.knobdeck",
+          "sha256": "97b534ba746cec1b7692cc763689b16980dce331ccdce0562018ab8e127e2329",
+          "size": 2504537,
+          "file": "coding-agents_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_macos_readme.md",
+          "readmeFile": "coding-agents_macos_readme.md",
+          "name": "Coding Agents",
+          "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "coding-agents-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_windows_1.2.0.knobdeck",
+          "sha256": "6d526a23e26c98d1af5b11b375c744806e8f0d0883370c63ff25dcc4c0d39e16",
+          "size": 1151454,
+          "file": "coding-agents_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_windows_readme.md",
+          "readmeFile": "coding-agents_windows_readme.md",
+          "name": "Coding Agents",
+          "description": "See what your Claude Code and Codex sessions are doing (working, waiting for approval, your turn) and approve or deny Claude Code's requests from a key.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "status": {
+          "type": "button",
+          "label": "Agent Status",
+          "icon": "bot",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "agent",
+              "type": "select",
+              "label": "Sessions of",
+              "default": "all",
+              "options": [
+                "all",
+                "claude",
+                "codex"
+              ]
+            },
+            {
+              "key": "show_agent",
+              "type": "checkbox",
+              "label": "Show the agent's name",
+              "default": false
+            }
+          ]
+        },
+        "attention": {
+          "type": "button",
+          "label": "Needs Me",
+          "icon": "bell",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "agent",
+              "type": "select",
+              "label": "Sessions of",
+              "default": "all",
+              "options": [
+                "all",
+                "claude",
+                "codex"
+              ]
+            }
+          ]
+        },
+        "claude-limits": {
+          "type": "button",
+          "label": "Claude Limits",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "window",
+              "type": "select",
+              "label": "Usage type",
+              "default": "5h",
+              "options": [
+                "5h",
+                "7d",
+                "fable"
+              ]
+            }
+          ]
+        },
+        "codex-limits": {
+          "type": "button",
+          "label": "Codex Limits",
+          "icon": "gauge",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "window",
+              "type": "select",
+              "label": "Usage type",
+              "default": "primary",
+              "options": [
+                "primary",
+                "secondary"
+              ]
+            }
+          ]
+        },
+        "approve": {
+          "type": "button",
+          "label": "Approve",
+          "icon": "check",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "deny": {
+          "type": "button",
+          "label": "Deny",
+          "icon": "x",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "approvals-wheel": {
+          "type": "wheel",
+          "label": "Approvals Wheel",
+          "icon": "shield-question",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "sessions-wheel": {
+          "type": "wheel",
+          "label": "Sessions Wheel",
+          "icon": "layout-grid",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "agent",
+              "type": "select",
+              "label": "Sessions of",
+              "default": "all",
+              "options": [
+                "all",
+                "claude",
+                "codex"
+              ]
+            }
+          ]
+        }
+      },
+      "setup": true,
+      "uses": []
+    },
+    {
       "version": "1.1.0",
       "tag": "coding-agents-v1.1.0",
       "released": "2026-11-25T07:08:16Z",

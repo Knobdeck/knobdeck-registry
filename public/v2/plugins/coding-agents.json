@@ -4,35 +4,42 @@
   "name": "Coding Agents",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-25T07:08:16Z",
+    "version": "1.2.0",
+    "released": "2026-11-25T14:59:00Z",
     "platforms": {
       "linux": {
         "id": "coding-agents-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_linux_1.1.0.knobdeck",
-        "sha256": "a6d7999b9f8a3978fa80e78eff707487107507b61ab34ec3567cd8e38f22bd56",
-        "size": 1368002,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_linux_1.2.0.knobdeck",
+        "sha256": "39529e4a56a4164726c97b0e97b323df071856618ae48995d007f094a88f1c8e",
+        "size": 1368357,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-linux/readme.md"
       },
       "macos": {
         "id": "coding-agents-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_macos_1.1.0.knobdeck",
-        "sha256": "deb0d85a749eb644957e6a0efb0d928734c7fd9012ad08433e899e5dde2592ad",
-        "size": 2504167,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_macos_1.2.0.knobdeck",
+        "sha256": "97b534ba746cec1b7692cc763689b16980dce331ccdce0562018ab8e127e2329",
+        "size": 2504537,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-macos/readme.md"
       },
       "windows": {
         "id": "coding-agents-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.1.0/coding-agents_windows_1.1.0.knobdeck",
-        "sha256": "915fb0d973a22b4c10c72a23218a49794b71e3d38a0af7283e37f6bfc6fd3a56",
-        "size": 1151106,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/coding-agents-v1.2.0/coding-agents_windows_1.2.0.knobdeck",
+        "sha256": "6d526a23e26c98d1af5b11b375c744806e8f0d0883370c63ff25dcc4c0d39e16",
+        "size": 1151454,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/coding-agents-windows/readme.md"
       }
     }
   },
-  "changelog": "- **Claude Limits** and **Codex Limits** keys (5-hour, weekly and, for Claude, Fable gauges), replacing the AI Stats plugin.\n- No more rate limiting: the numbers come from Claude Code's status line and Codex's session logs, with no network calls. The providers' usage endpoints are only a fallback when those numbers are over 15 minutes old, at most once per 10 minutes, with `Retry-After` and a growing back-off kept across restarts; the last good numbers stay on the key meanwhile.\n- Setup can connect Claude Code's status line for this (on by default). A status line you already have keeps working and is restored when you untick it.",
+  "changelog": "- **Claude Limits** and **Codex Limits** send their numbers as the tile's value: the title is yours, and `{0}` (or `%0%`) in it shows where the usage goes (`5 Hour {0}`). A new key starts as `Claude {0}` / `Codex {0}`; an empty title shows the usage alone. Older KnobDeck versions still get the numbers as the title.",
   "setup": true,
   "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "coding-agents-v1.2.0",
+      "released": "2026-11-25T14:59:00Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "coding-agents-v1.1.0",
