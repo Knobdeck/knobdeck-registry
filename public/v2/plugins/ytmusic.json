@@ -4,35 +4,42 @@
   "name": "YouTube Music Desktop",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.1",
-    "released": "2026-11-19T13:34:17Z",
+    "version": "1.1.2",
+    "released": "2026-11-25T05:30:11Z",
     "platforms": {
       "linux": {
         "id": "ytmusic-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_linux_1.1.1.knobdeck",
-        "sha256": "387730dd67b7280e70aafcb601b42f1b9805eeb4fa860a7cceb33fffd32fe52a",
-        "size": 2912397,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.2/ytmusic_linux_1.1.2.knobdeck",
+        "sha256": "89aae479ad0428e0c8e8cb9daccbe5c08111229d021bbfb2568fd4b2c73d5c28",
+        "size": 2913593,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-linux/readme.md"
       },
       "macos": {
         "id": "ytmusic-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_macos_1.1.1.knobdeck",
-        "sha256": "5c87f3f3043b7866800d5a26c1517acbf5406003461da5950f700fd61041daf8",
-        "size": 3589920,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.2/ytmusic_macos_1.1.2.knobdeck",
+        "sha256": "287aab08ddf5845b627196071bc895af11912a129e67fc994bb44b469c5d061f",
+        "size": 3592086,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-macos/readme.md"
       },
       "windows": {
         "id": "ytmusic-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_windows_1.1.1.knobdeck",
-        "sha256": "6f42bbfd468dc3b32bb250090d98ed5c39fd3d75c3d39d49beac8e1a798e05f6",
-        "size": 1709991,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.2/ytmusic_windows_1.1.2.knobdeck",
+        "sha256": "4356a0c6bd4ee60e3d3501577a838dca372b7ef76af765a5ccaeb74bb004048b",
+        "size": 1710598,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-windows/readme.md"
       }
     }
   },
-  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+  "changelog": "- The Now Playing tile shows the album art when there is one and otherwise your own icon, not a built-in music, play or pause icon.",
   "setup": true,
   "versions": [
+    {
+      "version": "1.1.2",
+      "tag": "ytmusic-v1.1.2",
+      "released": "2026-11-25T05:30:11Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.1",
       "tag": "ytmusic-v1.1.1",

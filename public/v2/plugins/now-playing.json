@@ -4,35 +4,42 @@
   "name": "Now Playing",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.0",
-    "released": "2026-11-24T13:39:57Z",
+    "version": "1.1.1",
+    "released": "2026-11-25T05:30:02Z",
     "platforms": {
       "linux": {
         "id": "now-playing-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_linux_1.1.0.knobdeck",
-        "sha256": "93dc62a0667c9365d074b0f6da2649abe4c883d051c225ef7658b1c4c3a7546d",
-        "size": 1719877,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_linux_1.1.1.knobdeck",
+        "sha256": "e7ee2975122c48b4845be22f3ffb92b27f19265697def56c173e796cd01f8bd4",
+        "size": 1717267,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-linux/readme.md"
       },
       "macos": {
         "id": "now-playing-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_macos_1.1.0.knobdeck",
-        "sha256": "cf51d5f00bf3de570bec92a703f0f9870cf86e82e0dd0959a1c1c14a7521c9bb",
-        "size": 2239257,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_macos_1.1.1.knobdeck",
+        "sha256": "9869d6dcb9e70f92afe6efb58f4cf46376ab8a8a9f32abf58e5cd310e4338cf8",
+        "size": 2239735,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-macos/readme.md"
       },
       "windows": {
         "id": "now-playing-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_windows_1.1.0.knobdeck",
-        "sha256": "a574922d4caad6b432d03ffeffce150a6a79551aa549ff75c4ae337467b601ca",
-        "size": 1071583,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_windows_1.1.1.knobdeck",
+        "sha256": "e6b1ce827c7679d1e94b54e07030c3a088c9e38531011512d2014c98d46d4f93",
+        "size": 1071590,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-windows/readme.md"
       }
     }
   },
-  "changelog": "- Sharper covers on big tiles: art is sent at 384 px (was 144 px), scaled with Lanczos at JPEG quality 85.",
+  "changelog": "- The tile shows the cover when there is one and otherwise your own icon for the action, not a built-in disc or pause icon.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "now-playing-v1.1.1",
+      "released": "2026-11-25T05:30:02Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.0",
       "tag": "now-playing-v1.1.0",

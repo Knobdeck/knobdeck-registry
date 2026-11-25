@@ -2,6 +2,213 @@
   "id": "now-playing",
   "versions": [
     {
+      "version": "1.1.1",
+      "tag": "now-playing-v1.1.1",
+      "released": "2026-11-25T05:30:02Z",
+      "notes": "- The tile shows the cover when there is one and otherwise your own icon for the action, not a built-in disc or pause icon.",
+      "meta": {
+        "dir": "now-playing",
+        "version": "1.1.1",
+        "name": "Now Playing",
+        "summary": "What any player is playing, with its cover: play/pause, next, previous, position.",
+        "tags": [
+          "Music",
+          "Media"
+        ],
+        "sort": 17
+      },
+      "platforms": {
+        "linux": {
+          "id": "now-playing-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_linux_1.1.1.knobdeck",
+          "sha256": "e7ee2975122c48b4845be22f3ffb92b27f19265697def56c173e796cd01f8bd4",
+          "size": 1717267,
+          "file": "now-playing_linux_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_linux_readme.md",
+          "readmeFile": "now-playing_linux_readme.md",
+          "name": "Now Playing",
+          "description": "What any media player is playing, with its cover, and play/pause, next, previous and seeking: browsers, Spotify, VLC and every app with media controls.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window"
+          ]
+        },
+        "macos": {
+          "id": "now-playing-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_macos_1.1.1.knobdeck",
+          "sha256": "9869d6dcb9e70f92afe6efb58f4cf46376ab8a8a9f32abf58e5cd310e4338cf8",
+          "size": 2239735,
+          "file": "now-playing_macos_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_macos_readme.md",
+          "readmeFile": "now-playing_macos_readme.md",
+          "name": "Now Playing",
+          "description": "What Music or Spotify is playing, with its cover, and play/pause, next, previous and seeking.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        },
+        "windows": {
+          "id": "now-playing-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_windows_1.1.1.knobdeck",
+          "sha256": "e6b1ce827c7679d1e94b54e07030c3a088c9e38531011512d2014c98d46d4f93",
+          "size": 1071590,
+          "file": "now-playing_windows_1.1.1.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_windows_readme.md",
+          "readmeFile": "now-playing_windows_readme.md",
+          "name": "Now Playing",
+          "description": "What any media player is playing, with its cover, and play/pause, next, previous and seeking: browsers, Spotify, VLC and every app with media controls.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": []
+        }
+      },
+      "actions": {
+        "now-playing": {
+          "type": "button",
+          "label": "Now Playing",
+          "icon": "disc-3",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "player",
+              "type": "select",
+              "label": "Player",
+              "default": "__auto__"
+            },
+            {
+              "key": "cover",
+              "type": "checkbox",
+              "label": "Show the cover",
+              "default": true
+            },
+            {
+              "key": "press",
+              "type": "checkbox",
+              "label": "Press to play / pause",
+              "default": true
+            }
+          ]
+        },
+        "play-pause": {
+          "type": "toggle",
+          "label": "Play / Pause",
+          "icon": "play",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "player",
+              "type": "select",
+              "label": "Player",
+              "default": "__auto__"
+            }
+          ],
+          "states": [
+            {
+              "value": "paused",
+              "label": "Play",
+              "icon": "play"
+            },
+            {
+              "value": "playing",
+              "label": "Pause",
+              "icon": "pause"
+            }
+          ]
+        },
+        "next": {
+          "type": "button",
+          "label": "Next Track",
+          "icon": "skip-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "player",
+              "type": "select",
+              "label": "Player",
+              "default": "__auto__"
+            }
+          ]
+        },
+        "previous": {
+          "type": "button",
+          "label": "Previous Track",
+          "icon": "skip-back",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "player",
+              "type": "select",
+              "label": "Player",
+              "default": "__auto__"
+            }
+          ]
+        },
+        "position": {
+          "type": "slider",
+          "label": "Position",
+          "icon": "fast-forward",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "player",
+              "type": "select",
+              "label": "Player",
+              "default": "__auto__"
+            },
+            {
+              "key": "step",
+              "type": "text",
+              "label": "Seconds per dial step",
+              "default": "5"
+            }
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        "players-wheel": {
+          "type": "wheel",
+          "label": "Players Wheel",
+          "icon": "disc-3",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": [
+        "window"
+      ]
+    },
+    {
       "version": "1.1.0",
       "tag": "now-playing-v1.1.0",
       "released": "2026-11-24T13:39:57Z",

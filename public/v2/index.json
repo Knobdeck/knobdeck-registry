@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-24T13:40:19Z",
+  "generated": "2026-11-25T05:30:32Z",
   "plugins": [
     {
       "id": "discord",
@@ -63,7 +63,7 @@
         "Media"
       ],
       "icon": "app-icon.svg",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/spotify-v1.3.1/spotify/icons/app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/spotify-v1.3.2/spotify/icons/app-icon.svg",
       "firstParty": true,
       "badges": [
         "knobdeck"
@@ -82,28 +82,28 @@
         "window"
       ],
       "latest": {
-        "version": "1.3.1",
-        "released": "2026-11-19T13:32:22Z",
+        "version": "1.3.2",
+        "released": "2026-11-25T05:30:05Z",
         "platforms": {
           "linux": {
             "id": "spotify-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.1/spotify_linux_1.3.1.knobdeck",
-            "sha256": "471c22976268f3d29d8bc443fe462a68eec049cd73a659aa488ea9b3692a974b",
-            "size": 3555058,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.2/spotify_linux_1.3.2.knobdeck",
+            "sha256": "54dcf35a3bdb6f8f3be9f41f8a90d908916650066eec13ac6f0949a241bf15bc",
+            "size": 3555730,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-linux/readme.md"
           },
           "macos": {
             "id": "spotify-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.1/spotify_macos_1.3.1.knobdeck",
-            "sha256": "3dd3f011315fada49044826c22ec5a90a7e79caf421c81141a984563d4fe0c27",
-            "size": 3757765,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.2/spotify_macos_1.3.2.knobdeck",
+            "sha256": "ff8c1d9c4d60f43dbb0f4b5e3baf012693e2c0f2c51451180c967610c70ddfcb",
+            "size": 3759548,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-macos/readme.md"
           },
           "windows": {
             "id": "spotify-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.1/spotify_windows_1.3.1.knobdeck",
-            "sha256": "653ef0ec2a888bc4416e06a42d7279956143197395dcc5fe2f59e70a388867a3",
-            "size": 1816717,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/spotify-v1.3.2/spotify_windows_1.3.2.knobdeck",
+            "sha256": "a31a0fb7da1d7a8b808a32c315ee3eff5fcd3aa76c11e06bbe4f9128cb3fa749",
+            "size": 1816860,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/spotify-windows/readme.md"
           }
         }
@@ -281,7 +281,7 @@
         "Automation"
       ],
       "icon": "app-icon.svg",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/win-tools-v1.10.1/win-tools/icons/app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/win-tools-v1.10.2/win-tools/icons/app-icon.svg",
       "firstParty": true,
       "badges": [
         "knobdeck"
@@ -301,14 +301,14 @@
         "window"
       ],
       "latest": {
-        "version": "1.10.1",
-        "released": "2026-11-19T13:34:07Z",
+        "version": "1.10.2",
+        "released": "2026-11-25T05:30:08Z",
         "platforms": {
           "windows": {
             "id": "win-tools",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.10.1/win-tools_windows_1.10.1.knobdeck",
-            "sha256": "5006f157cd268b6a0920b398c96ec6336191c5df2dcab514a4be8b042de43ce4",
-            "size": 381502,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.10.2/win-tools_windows_1.10.2.knobdeck",
+            "sha256": "4f5103eeab0d53356bb25f1ba544451247b650b3cf0024912fa1b99a6db2b67c",
+            "size": 382042,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
           }
         }
@@ -416,7 +416,7 @@
         "Media"
       ],
       "icon": "app-icon.svg",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ytmusic-v1.1.1/ytmusic/icons/app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/ytmusic-v1.1.2/ytmusic/icons/app-icon.svg",
       "firstParty": true,
       "badges": [
         "knobdeck"
@@ -427,28 +427,28 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.1.1",
-        "released": "2026-11-19T13:34:17Z",
+        "version": "1.1.2",
+        "released": "2026-11-25T05:30:11Z",
         "platforms": {
           "linux": {
             "id": "ytmusic-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_linux_1.1.1.knobdeck",
-            "sha256": "387730dd67b7280e70aafcb601b42f1b9805eeb4fa860a7cceb33fffd32fe52a",
-            "size": 2912397,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.2/ytmusic_linux_1.1.2.knobdeck",
+            "sha256": "89aae479ad0428e0c8e8cb9daccbe5c08111229d021bbfb2568fd4b2c73d5c28",
+            "size": 2913593,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-linux/readme.md"
           },
           "macos": {
             "id": "ytmusic-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_macos_1.1.1.knobdeck",
-            "sha256": "5c87f3f3043b7866800d5a26c1517acbf5406003461da5950f700fd61041daf8",
-            "size": 3589920,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.2/ytmusic_macos_1.1.2.knobdeck",
+            "sha256": "287aab08ddf5845b627196071bc895af11912a129e67fc994bb44b469c5d061f",
+            "size": 3592086,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-macos/readme.md"
           },
           "windows": {
             "id": "ytmusic-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.1/ytmusic_windows_1.1.1.knobdeck",
-            "sha256": "6f42bbfd468dc3b32bb250090d98ed5c39fd3d75c3d39d49beac8e1a798e05f6",
-            "size": 1709991,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/ytmusic-v1.1.2/ytmusic_windows_1.1.2.knobdeck",
+            "sha256": "4356a0c6bd4ee60e3d3501577a838dca372b7ef76af765a5ccaeb74bb004048b",
+            "size": 1710598,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/ytmusic-windows/readme.md"
           }
         }
@@ -466,7 +466,7 @@
         "Media"
       ],
       "icon": "app-icon.svg",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.1.0/now-playing/icons/app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/now-playing-v1.1.1/now-playing/icons/app-icon.svg",
       "firstParty": true,
       "badges": [
         "knobdeck"
@@ -479,28 +479,28 @@
         "window"
       ],
       "latest": {
-        "version": "1.1.0",
-        "released": "2026-11-24T13:39:57Z",
+        "version": "1.1.1",
+        "released": "2026-11-25T05:30:02Z",
         "platforms": {
           "linux": {
             "id": "now-playing-linux",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_linux_1.1.0.knobdeck",
-            "sha256": "93dc62a0667c9365d074b0f6da2649abe4c883d051c225ef7658b1c4c3a7546d",
-            "size": 1719877,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_linux_1.1.1.knobdeck",
+            "sha256": "e7ee2975122c48b4845be22f3ffb92b27f19265697def56c173e796cd01f8bd4",
+            "size": 1717267,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-linux/readme.md"
           },
           "macos": {
             "id": "now-playing-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_macos_1.1.0.knobdeck",
-            "sha256": "cf51d5f00bf3de570bec92a703f0f9870cf86e82e0dd0959a1c1c14a7521c9bb",
-            "size": 2239257,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_macos_1.1.1.knobdeck",
+            "sha256": "9869d6dcb9e70f92afe6efb58f4cf46376ab8a8a9f32abf58e5cd310e4338cf8",
+            "size": 2239735,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-macos/readme.md"
           },
           "windows": {
             "id": "now-playing-windows",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.0/now-playing_windows_1.1.0.knobdeck",
-            "sha256": "a574922d4caad6b432d03ffeffce150a6a79551aa549ff75c4ae337467b601ca",
-            "size": 1071583,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/now-playing-v1.1.1/now-playing_windows_1.1.1.knobdeck",
+            "sha256": "e6b1ce827c7679d1e94b54e07030c3a088c9e38531011512d2014c98d46d4f93",
+            "size": 1071590,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/now-playing-windows/readme.md"
           }
         }
@@ -1872,7 +1872,7 @@
         "Media"
       ],
       "icon": "app-icon.svg",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/apple-music-v1.0.1/apple-music/icons/app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/apple-music-v1.0.2/apple-music/icons/app-icon.svg",
       "firstParty": true,
       "badges": [
         "knobdeck"
@@ -1883,14 +1883,14 @@
       "companions": [],
       "uses": [],
       "latest": {
-        "version": "1.0.1",
-        "released": "2026-11-19T13:30:52Z",
+        "version": "1.0.2",
+        "released": "2026-11-25T05:29:59Z",
         "platforms": {
           "macos": {
             "id": "apple-music-macos",
-            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/apple-music-v1.0.1/apple-music_macos_1.0.1.knobdeck",
-            "sha256": "4a72daf826c85bf6ca63d8e551a23a74afd2efc4a5f01c6991c5bed30e61f618",
-            "size": 893247,
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/apple-music-v1.0.2/apple-music_macos_1.0.2.knobdeck",
+            "sha256": "4d2d905a138b4dae708cf6409f7d76e7aedbbb9da7d3e3ee7b10b7ca0cf7caa6",
+            "size": 893334,
             "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/apple-music-macos/readme.md"
           }
         }

@@ -4,21 +4,28 @@
   "name": "Windows Tools",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.10.1",
-    "released": "2026-11-19T13:34:07Z",
+    "version": "1.10.2",
+    "released": "2026-11-25T05:30:08Z",
     "platforms": {
       "windows": {
         "id": "win-tools",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.10.1/win-tools_windows_1.10.1.knobdeck",
-        "sha256": "5006f157cd268b6a0920b398c96ec6336191c5df2dcab514a4be8b042de43ce4",
-        "size": 381502,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/win-tools-v1.10.2/win-tools_windows_1.10.2.knobdeck",
+        "sha256": "4f5103eeab0d53356bb25f1ba544451247b650b3cf0024912fa1b99a6db2b67c",
+        "size": 382042,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/win-tools/readme.md"
       }
     }
   },
-  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+  "changelog": "- System Stats drops its gauge icon while a reading is unavailable, so your own icon shows.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.10.2",
+      "tag": "win-tools-v1.10.2",
+      "released": "2026-11-25T05:30:08Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.10.1",
       "tag": "win-tools-v1.10.1",
