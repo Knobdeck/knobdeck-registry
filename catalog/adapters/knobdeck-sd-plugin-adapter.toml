@@ -1,0 +1,9 @@
+# One file per adapter (see catalog/SCHEMA.md, "Adapters"). The builder takes the newest v<version>
+# release of `repo` that has a zip for every platform.
+id = "knobdeck-sd-plugin-adapter"
+name = "SD Plugin Adapter"
+repo = "Knobdeck/knobdeck-sd-plugin-adapter"
+author = "KnobDeck"
+summary = "Runs plugins made for Stream Deck inside KnobDeck."
+description = "Bring your own .streamDeckPlugin files and use them as KnobDeck actions. Plugins written for Node that talk to web services work best; plugins that need Windows or macOS system code won't."
+has_ui = true
