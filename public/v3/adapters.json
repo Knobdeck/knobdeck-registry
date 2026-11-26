@@ -1,0 +1,39 @@
+{
+  "schema": 3,
+  "adapters": [
+    {
+      "id": "knobdeck-sd-plugin-adapter",
+      "name": "SD Plugin Adapter",
+      "summary": "Runs plugins made for Stream Deck inside KnobDeck.",
+      "description": "Bring your own .streamDeckPlugin files and use them as KnobDeck actions. Plugins written for Node that talk to web services work best; plugins that need Windows or macOS system code won't.",
+      "author": "KnobDeck",
+      "repository": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter",
+      "version": "0.1.0",
+      "releasedAt": "2026-11-26T13:13:57Z",
+      "minHost": null,
+      "hasUi": true,
+      "platforms": {
+        "linux-x86_64": {
+          "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-linux-x86_64.zip",
+          "sha256": "13db9299e71b33476094c0fd676f00a3291ecf8cd190d7b4739ee115e59a3f7b",
+          "size": 1155513
+        },
+        "macos-aarch64": {
+          "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-macos-aarch64.zip",
+          "sha256": "12eee0e6ec73c3a379d718faaa0b2511cb1d6b113d93997dc129c90a2f08cec2",
+          "size": 1037577
+        },
+        "macos-x86_64": {
+          "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-macos-x86_64.zip",
+          "sha256": "88b7dd48c024b3e889ef302510f6546d5f2bfb34a7fa092aca5069ff349468da",
+          "size": 1058744
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-windows-x86_64.zip",
+          "sha256": "f55e5bd83c3cce28ffb298344e78ae5668741cd1d554a941a8a9b1cd091233fc",
+          "size": 856141
+        }
+      }
+    }
+  ]
+}
