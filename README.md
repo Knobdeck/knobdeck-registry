@@ -9,6 +9,7 @@ updates never redeploy checkout or licensing.
 | `/v2/index.json` (+ `.minisig`) | Plugin catalog: one entry per plugin, latest allowed version per OS (apps with v2 support) |
 | `/v2/plugins/<id>.json` | Plugin detail: actions, versions, changelog |
 | `/v2/policy.json` (+ `.minisig`) | Kill switches: disabled actions/plugins, yanked versions, minimum app versions |
+| `/v3/adapters.json` (+ `.minisig`) | Adapters the app can install and run (separate programs, e.g. the SD plugin adapter) |
 | `/v2/companions.json`, `/v2/themes.json` | Companion store links and versions; theme registry |
 | `/plugins/registry.json` | v1 plugin registry, generated from the catalog (older apps, website `/plugins`) |
 | `/plugins/<id>/readme.md` | Plugin readmes, the registries' `readmeUrl` |
@@ -41,6 +42,7 @@ This repo is the catalog (`PLUGIN_INFRA_PLAN.md` in the maintainers' plans): `ca
 | `catalog/plugins/<id>.toml` | One per plugin: source repo/path/tag template, first party, featured, sort, tags, companions, `min_host`. Third-party entries pin `version` + `sha256`. |
 | `catalog/policy.toml` | Disable an action or a plugin per OS, yank versions, require an app version. Merging an edit is enough: no plugin rebuild. |
 | `catalog/companions/<id>.toml` | Companion repo, store links, `min_version`, plugins it serves. |
+| `catalog/adapters/<id>.toml` | One per adapter: repo, name, summary. Releases `v<version>` with a zip per platform. |
 | `catalog/themes.toml`, `catalog/profiles.toml` | Theme repo (latest release's `registry.json`); profile repo (checked against the catalog, report only). |
 | `catalog/authors.toml` | Verified third-party authors (later). |
 | `catalog/state/` | What the builder already resolved (versions, hashes, actions). Written by the build; don't edit. |

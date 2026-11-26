@@ -9,7 +9,7 @@
 name: catalog
 on:
   repository_dispatch:
-    types: [plugin-released, theme-released, companion-released]
+    types: [plugin-released, theme-released, companion-released, adapter-released]
   push:
     branches: [master]
     paths: ["catalog/**", "!catalog/state/**", "scripts/build.mjs", "scripts/sign.mjs", ".github/workflows/catalog.yml"]

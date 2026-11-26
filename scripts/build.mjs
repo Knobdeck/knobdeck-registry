@@ -1,7 +1,7 @@
 // Catalog builder (PLUGIN_INFRA_PLAN.md §4). Reads catalog/*.toml, resolves every source to its
 // releases on GitHub, and writes the static output the Worker serves (catalog/SCHEMA.md):
 //   public/v2/index.json, public/v2/plugins/<id>.json, public/v2/policy.json, public/v2/companions.json,
-//   public/v2/themes.json, public/themes/registry.json, public/plugins/registry.json (v1) + readmes,
+//   public/v2/themes.json, public/v3/adapters.json, public/themes/registry.json, public/plugins/registry.json (v1) + readmes,
 // and signs index.json and policy.json when CATALOG_SIGNING_KEY is set.
 //
 // Plugin versions come from per-plugin release tags (<id>-v<version>, found with the git
@@ -511,6 +511,65 @@ if (themesSrc && !OFFLINE) {
   }
 }
 
+// ---------- adapters (v3) ----------
+// Adapters are separate programs KnobDeck downloads and runs (Adapters screen). One release per
+// version, tagged v<version>, with a zip per platform named <id>-<version>-<platform>.zip. What was
+// resolved is kept in catalog/state/.adapters.json so only new versions are downloaded.
+const ADAPTER_PLATFORMS = ["linux-x86_64", "macos-aarch64", "macos-x86_64", "windows-x86_64"];
+const adaptersSrc = tomlDir("catalog/adapters");
+const adapterStatePath = "catalog/state/.adapters.json";
+const adapterState = existsSync(adapterStatePath) ? JSON.parse(readFileSync(adapterStatePath, "utf8")) : {};
+const semverKey = (v) => v.split(".").map((n) => String(Number(n)).padStart(6, "0")).join(".");
+for (const a of adaptersSrc) {
+  if (!/^[a-z0-9-]+$/.test(a.id ?? "") || !a.repo) throw new Error(`catalog/adapters: ${a.id}: id and repo are required`);
+  if (OFFLINE) continue;
+  const releases = (await gh(`repos/${a.repo}/releases?per_page=30`, { allow404: true })) ?? [];
+  const candidates = releases
+    .filter((r) => !r.draft && !r.prerelease && /^v\d+\.\d+\.\d+$/.test(r.tag_name))
+    .sort((x, y) => semverKey(y.tag_name.slice(1)).localeCompare(semverKey(x.tag_name.slice(1))));
+  for (const rel of candidates) {
+    const version = rel.tag_name.slice(1);
+    if (adapterState[a.id]?.version === version) break; // already resolved
+    const names = ADAPTER_PLATFORMS.map((p) => `${a.id}-${version}-${p}.zip`);
+    const missing = names.filter((n) => !rel.assets.some((x) => x.name === n));
+    if (missing.length) {
+      warn(`adapter ${a.id} ${version}: release lacks ${missing.join(", ")}; skipped`);
+      continue;
+    }
+    const platforms = {};
+    for (const [i, p] of ADAPTER_PLATFORMS.entries()) {
+      const asset = rel.assets.find((x) => x.name === names[i]);
+      const bytes = await download(asset.browser_download_url);
+      const sha256 = createHash("sha256").update(bytes).digest("hex");
+      const listed = rel.assets.find((x) => x.name === `${names[i]}.sha256`);
+      if (listed && !(await download(listed.browser_download_url)).toString().startsWith(sha256)) {
+        throw new Error(`adapter ${a.id} ${version} ${p}: sha256 file differs from the zip`);
+      }
+      platforms[p] = { url: asset.browser_download_url, sha256, size: bytes.length };
+    }
+    adapterState[a.id] = { version, releasedAt: rel.published_at, platforms };
+    break;
+  }
+}
+if (!OFFLINE) writeFileSync(adapterStatePath, stable(adapterState));
+const adapters = adaptersSrc
+  .filter((a) => adapterState[a.id])
+  .map((a) => ({
+    id: a.id,
+    name: a.name ?? a.id,
+    summary: a.summary ?? null,
+    description: a.description ?? null,
+    author: a.author ?? null,
+    repository: `https://github.com/${a.repo}`,
+    version: adapterState[a.id].version,
+    releasedAt: adapterState[a.id].releasedAt,
+    minHost: a.min_host ?? null,
+    hasUi: a.has_ui ?? false,
+    platforms: adapterState[a.id].platforms,
+  }));
+for (const a of adaptersSrc) if (!adapterState[a.id]) warn(`adapter ${a.id}: no complete release yet, not listed`);
+const adaptersChanged = writeJson("public/v3/adapters.json", { schema: 3, adapters });
+
 // ---------- profiles check (report only: the Worker serves profiles straight from their repo) ----------
 if (profilesSrc && !OFFLINE) {
   const branch = profilesSrc.branch ?? "master";
@@ -560,6 +619,7 @@ if (profilesSrc && !OFFLINE) {
 const toSign = [];
 if (indexChanged || !existsSync("public/v2/index.json.minisig")) toSign.push("public/v2/index.json");
 if (policyChanged || !existsSync("public/v2/policy.json.minisig")) toSign.push("public/v2/policy.json");
+if (adaptersChanged || !existsSync("public/v3/adapters.json.minisig")) toSign.push("public/v3/adapters.json");
 if (toSign.length) {
   if (process.env.CATALOG_SIGNING_KEY) {
     signFiles(toSign, process.env.CATALOG_SIGNING_KEY);
@@ -572,7 +632,7 @@ if (toSign.length) {
 }
 
 rmSync(work, { recursive: true, force: true });
-console.log(`${indexEntries.length} plugin(s), ${v1.length} v1 entries, ${companions.length} companion(s); ${written.length} file(s) written`);
+console.log(`${indexEntries.length} plugin(s), ${v1.length} v1 entries, ${companions.length} companion(s), ${adapters.length} adapter(s); ${written.length} file(s) written`);
 if (process.env.GITHUB_STEP_SUMMARY && warnings.length) {
   writeFileSync(process.env.GITHUB_STEP_SUMMARY, `## Catalog warnings\n\n${warnings.map((w) => `- ${w}`).join("\n")}\n`, { flag: "a" });
 }
