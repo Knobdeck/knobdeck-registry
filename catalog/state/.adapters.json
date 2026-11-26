@@ -1,27 +1,27 @@
 {
   "knobdeck-sd-plugin-adapter": {
-    "version": "0.1.0",
-    "releasedAt": "2026-11-26T13:13:57Z",
+    "version": "0.1.1",
+    "releasedAt": "2026-11-26T13:25:28Z",
     "platforms": {
       "linux-x86_64": {
-        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-linux-x86_64.zip",
-        "sha256": "13db9299e71b33476094c0fd676f00a3291ecf8cd190d7b4739ee115e59a3f7b",
-        "size": 1155513
+        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.1/knobdeck-sd-plugin-adapter-0.1.1-linux-x86_64.zip",
+        "sha256": "751f3cf45fc4041c66ca64cacec789fb3aaa1ee3b10e185363e185050b45848e",
+        "size": 1156347
       },
       "macos-aarch64": {
-        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-macos-aarch64.zip",
-        "sha256": "12eee0e6ec73c3a379d718faaa0b2511cb1d6b113d93997dc129c90a2f08cec2",
-        "size": 1037577
+        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.1/knobdeck-sd-plugin-adapter-0.1.1-macos-aarch64.zip",
+        "sha256": "23113fe6c0e3603b7a57bd05d3c9f99deb895bda47354c74395b6c3fb67a2337",
+        "size": 1039818
       },
       "macos-x86_64": {
-        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-macos-x86_64.zip",
-        "sha256": "88b7dd48c024b3e889ef302510f6546d5f2bfb34a7fa092aca5069ff349468da",
-        "size": 1058744
+        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.1/knobdeck-sd-plugin-adapter-0.1.1-macos-x86_64.zip",
+        "sha256": "963f8c133c2f2cde7a1f9a1db65c0f1b795b2239dc5faddc690e636146ffa912",
+        "size": 1061364
       },
       "windows-x86_64": {
-        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.0/knobdeck-sd-plugin-adapter-0.1.0-windows-x86_64.zip",
-        "sha256": "f55e5bd83c3cce28ffb298344e78ae5668741cd1d554a941a8a9b1cd091233fc",
-        "size": 856141
+        "url": "https://github.com/Knobdeck/knobdeck-sd-plugin-adapter/releases/download/v0.1.1/knobdeck-sd-plugin-adapter-0.1.1-windows-x86_64.zip",
+        "sha256": "e839aa6dae85ee2175e8afa286c09a83fd62f10f82bbba22b6da3ee385d5fd6a",
+        "size": 856985
       }
     }
   }
