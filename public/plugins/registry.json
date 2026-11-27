@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-25T14:59:14Z",
+  "tag": "catalog-2026-11-27T07:50:55Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -1441,14 +1441,14 @@
       "name": "Files",
       "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
       "description": "Act on the files selected in Dolphin: convert and resize images, merge PDFs, zip, rename, copy paths.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_linux_1.1.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/files-v1.1.1/files/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_linux_1.2.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/files-v1.2.0/files/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-linux/readme.md",
-      "sha256": "2bfd9defac012a3b3aff5c470196ddb38aa4521513e13fc708b9d43a5edc57e2",
+      "sha256": "eca82bf928f6517fa816c83edd2f72f8d755c4cfa580b5d2694bb65c97c5f9b8",
       "tags": [
         "Files",
         "Productivity"
@@ -1466,7 +1466,7 @@
         "browser"
       ],
       "featured": false,
-      "file": "files_linux_1.1.1.knobdeck",
+      "file": "files_linux_1.2.0.knobdeck",
       "readmeFile": "files_linux_readme.md"
     },
     {
@@ -1474,14 +1474,14 @@
       "name": "Files",
       "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
       "description": "Act on the files selected in Finder: convert and resize images, merge PDFs, zip, rename, copy paths.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_macos_1.1.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/files-v1.1.1/files/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_macos_1.2.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/files-v1.2.0/files/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-macos/readme.md",
-      "sha256": "72980db6c46c09b7939ccdff97aee452ffd4293fce404b181373450bc723e31b",
+      "sha256": "9cd5735986615e733511c76b21a0a822cc6047e558c037a3933ca402f55b9d4d",
       "tags": [
         "Files",
         "Productivity"
@@ -1499,7 +1499,7 @@
         "browser"
       ],
       "featured": false,
-      "file": "files_macos_1.1.1.knobdeck",
+      "file": "files_macos_1.2.0.knobdeck",
       "readmeFile": "files_macos_readme.md"
     },
     {
@@ -1507,14 +1507,14 @@
       "name": "Files",
       "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
       "description": "Act on the files selected in File Explorer: convert and resize images, merge PDFs, zip, rename, copy paths.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "KnobDeck",
       "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
-      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_windows_1.1.1.knobdeck",
-      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/files-v1.1.1/files/icons/app-icon.svg",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_windows_1.2.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/files-v1.2.0/files/icons/app-icon.svg",
       "icon": "app-icon.svg",
       "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-windows/readme.md",
-      "sha256": "52735d9e58a9e57ffbb99be433ca952b89cd2a853a719564f7a994b9dcb7d902",
+      "sha256": "3f90178126b29736dc451ec2a4cce528a3b32d8f1eb221c9a4079dd8b9e9a9aa",
       "tags": [
         "Files",
         "Productivity"
@@ -1532,7 +1532,7 @@
         "browser"
       ],
       "featured": false,
-      "file": "files_windows_1.1.1.knobdeck",
+      "file": "files_windows_1.2.0.knobdeck",
       "readmeFile": "files_windows_readme.md"
     },
     {

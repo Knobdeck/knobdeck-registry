@@ -2,6 +2,359 @@
   "id": "files",
   "versions": [
     {
+      "version": "1.2.0",
+      "tag": "files-v1.2.0",
+      "released": "2026-11-27T07:50:38Z",
+      "notes": "- Profile rules can test what is selected: the file types (`png`, `pdf`…) and kinds (image, video, audio, PDF, archive, text, folder) of the selected files are signals. The dial reads them as it opens; a phone's deck follows them while it is connected. They have no value outside a file manager, or for a selection with a type this plugin doesn't list.",
+      "meta": {
+        "dir": "files",
+        "version": "1.2.0",
+        "name": "Files",
+        "summary": "Convert and resize images, merge PDFs, zip, rename and copy paths for the files you've selected.",
+        "tags": [
+          "Files",
+          "Productivity"
+        ],
+        "sort": 36
+      },
+      "platforms": {
+        "linux": {
+          "id": "files-linux",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_linux_1.2.0.knobdeck",
+          "sha256": "eca82bf928f6517fa816c83edd2f72f8d755c4cfa580b5d2694bb65c97c5f9b8",
+          "size": 1703101,
+          "file": "files_linux_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_linux_readme.md",
+          "readmeFile": "files_linux_readme.md",
+          "name": "Files",
+          "description": "Act on the files selected in Dolphin: convert and resize images, merge PDFs, zip, rename, copy paths.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "macos": {
+          "id": "files-macos",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_macos_1.2.0.knobdeck",
+          "sha256": "9cd5735986615e733511c76b21a0a822cc6047e558c037a3933ca402f55b9d4d",
+          "size": 2043226,
+          "file": "files_macos_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_macos_readme.md",
+          "readmeFile": "files_macos_readme.md",
+          "name": "Files",
+          "description": "Act on the files selected in Finder: convert and resize images, merge PDFs, zip, rename, copy paths.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        },
+        "windows": {
+          "id": "files-windows",
+          "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_windows_1.2.0.knobdeck",
+          "sha256": "3f90178126b29736dc451ec2a4cce528a3b32d8f1eb221c9a4079dd8b9e9a9aa",
+          "size": 982649,
+          "file": "files_windows_1.2.0.knobdeck",
+          "readme": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_windows_readme.md",
+          "readmeFile": "files_windows_readme.md",
+          "name": "Files",
+          "description": "Act on the files selected in File Explorer: convert and resize images, merge PDFs, zip, rename, copy paths.",
+          "author": "KnobDeck",
+          "icon": "app-icon.svg",
+          "iconInBundle": true,
+          "uses": [
+            "window",
+            "focus",
+            "selection",
+            "files",
+            "clipboard",
+            "document",
+            "browser"
+          ]
+        }
+      },
+      "actions": {
+        "convert-image": {
+          "type": "button",
+          "label": "Convert Images",
+          "icon": "image",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "format",
+              "type": "select",
+              "label": "To",
+              "default": "png",
+              "options": [
+                "png",
+                "jpeg",
+                "webp"
+              ]
+            }
+          ]
+        },
+        "resize-image": {
+          "type": "button",
+          "label": "Resize Images",
+          "icon": "scaling",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "By",
+              "default": "edge",
+              "options": [
+                "edge",
+                "percent"
+              ]
+            },
+            {
+              "key": "size",
+              "type": "text",
+              "label": "Size",
+              "default": "1920"
+            }
+          ]
+        },
+        "rotate-image": {
+          "type": "button",
+          "label": "Rotate Images",
+          "icon": "rotate-cw",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "angle",
+              "type": "select",
+              "label": "Angle",
+              "default": "90",
+              "options": [
+                "90",
+                "180",
+                "270"
+              ]
+            }
+          ]
+        },
+        "strip-metadata": {
+          "type": "button",
+          "label": "Remove Image Metadata",
+          "icon": "eraser",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "images-to-pdf": {
+          "type": "button",
+          "label": "Images to PDF",
+          "icon": "file-text",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "merge-pdfs": {
+          "type": "button",
+          "label": "Merge PDFs",
+          "icon": "combine",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "split-pdf": {
+          "type": "button",
+          "label": "Split PDF into Pages",
+          "icon": "split",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "zip": {
+          "type": "button",
+          "label": "Zip",
+          "icon": "archive",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "unzip": {
+          "type": "button",
+          "label": "Unzip",
+          "icon": "package-open",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        },
+        "copy-path": {
+          "type": "button",
+          "label": "Copy Path",
+          "icon": "clipboard-copy",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "what",
+              "type": "select",
+              "label": "Copy",
+              "default": "path",
+              "options": [
+                "path",
+                "name",
+                "folder"
+              ]
+            }
+          ]
+        },
+        "rename": {
+          "type": "button",
+          "label": "Rename",
+          "icon": "pencil",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "pattern",
+              "type": "text",
+              "label": "New name",
+              "default": "{name}-{n}"
+            },
+            {
+              "key": "start",
+              "type": "text",
+              "label": "First number",
+              "default": "1"
+            }
+          ]
+        },
+        "move-copy": {
+          "type": "button",
+          "label": "Move or Copy to Folder",
+          "icon": "folder-input",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "mode",
+              "type": "select",
+              "label": "Action",
+              "default": "move",
+              "options": [
+                "move",
+                "copy"
+              ]
+            },
+            {
+              "key": "folder",
+              "type": "text",
+              "label": "Folder"
+            }
+          ]
+        },
+        "new-item": {
+          "type": "button",
+          "label": "New File in Folder",
+          "icon": "file-plus",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": [
+            {
+              "key": "kind",
+              "type": "select",
+              "label": "Create",
+              "default": "file",
+              "options": [
+                "file",
+                "folder"
+              ]
+            },
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name",
+              "default": "New file.txt"
+            }
+          ]
+        },
+        "files-wheel": {
+          "type": "wheel",
+          "label": "Files Wheel",
+          "icon": "files",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "inputs": []
+        }
+      },
+      "setup": false,
+      "uses": [
+        "browser",
+        "clipboard",
+        "document",
+        "files",
+        "focus",
+        "selection",
+        "window"
+      ]
+    },
+    {
       "version": "1.1.1",
       "tag": "files-v1.1.1",
       "released": "2026-11-19T13:31:15Z",

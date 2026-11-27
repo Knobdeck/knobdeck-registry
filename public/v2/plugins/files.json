@@ -4,35 +4,42 @@
   "name": "Files",
   "repository": "https://github.com/Knobdeck/knobdeck-plugins",
   "latest": {
-    "version": "1.1.1",
-    "released": "2026-11-19T13:31:15Z",
+    "version": "1.2.0",
+    "released": "2026-11-27T07:50:38Z",
     "platforms": {
       "linux": {
         "id": "files-linux",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_linux_1.1.1.knobdeck",
-        "sha256": "2bfd9defac012a3b3aff5c470196ddb38aa4521513e13fc708b9d43a5edc57e2",
-        "size": 1686476,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_linux_1.2.0.knobdeck",
+        "sha256": "eca82bf928f6517fa816c83edd2f72f8d755c4cfa580b5d2694bb65c97c5f9b8",
+        "size": 1703101,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-linux/readme.md"
       },
       "macos": {
         "id": "files-macos",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_macos_1.1.1.knobdeck",
-        "sha256": "72980db6c46c09b7939ccdff97aee452ffd4293fce404b181373450bc723e31b",
-        "size": 2017692,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_macos_1.2.0.knobdeck",
+        "sha256": "9cd5735986615e733511c76b21a0a822cc6047e558c037a3933ca402f55b9d4d",
+        "size": 2043226,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-macos/readme.md"
       },
       "windows": {
         "id": "files-windows",
-        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.1.1/files_windows_1.1.1.knobdeck",
-        "sha256": "52735d9e58a9e57ffbb99be433ca952b89cd2a853a719564f7a994b9dcb7d902",
-        "size": 969988,
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/files-v1.2.0/files_windows_1.2.0.knobdeck",
+        "sha256": "3f90178126b29736dc451ec2a4cce528a3b32d8f1eb221c9a4079dd8b9e9a9aa",
+        "size": 982649,
         "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/files-windows/readme.md"
       }
     }
   },
-  "changelog": "- A proper app icon in the Plugins store and sidebar (`icons/app-icon.svg`).",
+  "changelog": "- Profile rules can test what is selected: the file types (`png`, `pdf`…) and kinds (image, video, audio, PDF, archive, text, folder) of the selected files are signals. The dial reads them as it opens; a phone's deck follows them while it is connected. They have no value outside a file manager, or for a selection with a type this plugin doesn't list.",
   "setup": false,
   "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "files-v1.2.0",
+      "released": "2026-11-27T07:50:38Z",
+      "yanked": false,
+      "reason": null
+    },
     {
       "version": "1.1.1",
       "tag": "files-v1.1.1",
