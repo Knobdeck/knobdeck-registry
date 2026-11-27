@@ -141,26 +141,6 @@ The old shape, generated from the same data: one entry per plugin × OS, `id` = 
 (`obs-macos`), `artifactUrl`/`sha256` of the latest allowed version, `tag` = `catalog-<generated>`.
 Policy-disabled plugins/OSes are left out; action disables can't be expressed in v1.
 
-## Adapters (`/v3/adapters.json`)
-
-Adapters are separate programs the app downloads, runs and manages (Adapters screen), for things a plugin
-can't be, such as running plugins made for another product. `v3` is a new file, not a new version of the plugin
-index: `v2` stays as it is. Source: `catalog/adapters/<id>.toml` (`id`, `repo`, `name`, `summary`, `description`,
-`author`, `has_ui`, optional `min_host`). The builder takes the newest `v<major>.<minor>.<patch>` release of
-`repo` that has `<id>-<version>-<platform>.zip` for every platform: `linux-x86_64`, `macos-aarch64`,
-`macos-x86_64`, `windows-x86_64`. Resolved versions are kept in `catalog/state/.adapters.json`.
-
-```json
-{ "schema": 3, "adapters": [{
-  "id": "knobdeck-sd-plugin-adapter", "name": "…", "summary": "…", "description": "…", "author": "…",
-  "repository": "https://github.com/…", "version": "0.1.0", "releasedAt": "…", "minHost": null, "hasUi": true,
-  "platforms": { "linux-x86_64": { "url": "…zip", "sha256": "…", "size": 123 }, "…": {} } }] }
-```
-
-Signed like `index.json` (`adapters.json.minisig`). The zip holds `adapter.json` (how the app runs, stops and
-opens the program), the executables and a licence. A `<id>-released` repository dispatch
-(`adapter-released`, from the adapter repo's release workflow) rebuilds the catalog.
-
 ## Signatures
 
 `<file>.minisig` is a [minisign](https://jedisct1.github.io/minisign/) signature (algorithm `ED`:
