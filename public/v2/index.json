@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated": "2026-11-27T07:50:55Z",
+  "generated": "2026-11-28T17:36:29Z",
   "plugins": [
     {
       "id": "discord",
@@ -2800,6 +2800,49 @@
         }
       },
       "detail": "/v2/plugins/flight-sim.json"
+    },
+    {
+      "id": "usb-camera",
+      "name": "USB Camera",
+      "summary": "Webcam sliders and switches for every control the camera supports: brightness, white balance, exposure, focus, zoom, pan and tilt.",
+      "description": "Webcam controls: brightness, contrast, white balance, exposure, focus, zoom, pan and tilt, for every control the camera supports.",
+      "author": "KnobDeck",
+      "tags": [
+        "Streaming",
+        "Camera"
+      ],
+      "icon": "app-icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/usb-camera-v1.0.0/usb-camera/icons/app-icon.svg",
+      "firstParty": true,
+      "badges": [
+        "knobdeck"
+      ],
+      "featured": false,
+      "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+      "minHost": null,
+      "companions": [],
+      "uses": [],
+      "latest": {
+        "version": "1.0.0",
+        "released": "2026-11-28T17:35:51Z",
+        "platforms": {
+          "linux": {
+            "id": "usb-camera-linux",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/usb-camera-v1.0.0/usb-camera_linux_1.0.0.knobdeck",
+            "sha256": "c70e9c91b1306bc40665a562f81fd09118f3d9690b6e9818277fa96ac12e9188",
+            "size": 297497,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/usb-camera-linux/readme.md"
+          },
+          "windows": {
+            "id": "usb-camera-windows",
+            "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/usb-camera-v1.0.0/usb-camera_windows_1.0.0.knobdeck",
+            "sha256": "98205790eaeffb3ddf5b817ec2c1344c577ba2a80c0336547fe78344e35a027c",
+            "size": 197822,
+            "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/usb-camera-windows/readme.md"
+          }
+        }
+      },
+      "detail": "/v2/plugins/usb-camera.json"
     }
   ]
 }

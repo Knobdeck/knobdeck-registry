@@ -1,5 +1,5 @@
 {
-  "tag": "catalog-2026-11-27T07:50:55Z",
+  "tag": "catalog-2026-11-28T17:36:29Z",
   "plugins": [
     {
       "id": "discord-linux",
@@ -4006,6 +4006,56 @@
       "featured": false,
       "file": "flight-sim_windows_1.0.0.knobdeck",
       "readmeFile": "flight-sim_windows_readme.md"
+    },
+    {
+      "id": "usb-camera-linux",
+      "name": "USB Camera",
+      "summary": "Webcam sliders and switches for every control the camera supports: brightness, white balance, exposure, focus, zoom, pan and tilt.",
+      "description": "Webcam controls: brightness, contrast, white balance, exposure, focus, zoom, pan and tilt, for every control the camera supports.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/usb-camera-v1.0.0/usb-camera_linux_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/usb-camera-v1.0.0/usb-camera/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/usb-camera-linux/readme.md",
+      "sha256": "c70e9c91b1306bc40665a562f81fd09118f3d9690b6e9818277fa96ac12e9188",
+      "tags": [
+        "Streaming",
+        "Camera"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "usb-camera_linux_1.0.0.knobdeck",
+      "readmeFile": "usb-camera_linux_readme.md"
+    },
+    {
+      "id": "usb-camera-windows",
+      "name": "USB Camera",
+      "summary": "Webcam sliders and switches for every control the camera supports: brightness, white balance, exposure, focus, zoom, pan and tilt.",
+      "description": "Webcam controls: brightness, contrast, white balance, exposure, focus, zoom, pan and tilt, for every control the camera supports.",
+      "version": "1.0.0",
+      "author": "KnobDeck",
+      "repositoryUrl": "https://github.com/Knobdeck/knobdeck-plugins",
+      "artifactUrl": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/usb-camera-v1.0.0/usb-camera_windows_1.0.0.knobdeck",
+      "iconUrl": "https://raw.githubusercontent.com/Knobdeck/knobdeck-plugins/usb-camera-v1.0.0/usb-camera/icons/app-icon.svg",
+      "icon": "app-icon.svg",
+      "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/usb-camera-windows/readme.md",
+      "sha256": "98205790eaeffb3ddf5b817ec2c1344c577ba2a80c0336547fe78344e35a027c",
+      "tags": [
+        "Streaming",
+        "Camera"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "uses": [],
+      "featured": false,
+      "file": "usb-camera_windows_1.0.0.knobdeck",
+      "readmeFile": "usb-camera_windows_readme.md"
     }
   ]
 }

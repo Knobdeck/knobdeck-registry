@@ -121,6 +121,8 @@
   "public/plugins/twitch-linux/readme.md": "twitch-v1.3.1/twitch_linux_readme.md",
   "public/plugins/twitch-macos/readme.md": "twitch-v1.3.1/twitch_macos_readme.md",
   "public/plugins/twitch-windows/readme.md": "twitch-v1.3.1/twitch_windows_readme.md",
+  "public/plugins/usb-camera-linux/readme.md": "usb-camera-v1.0.0/usb-camera_linux_readme.md",
+  "public/plugins/usb-camera-windows/readme.md": "usb-camera-v1.0.0/usb-camera_windows_readme.md",
   "public/plugins/vlc-linux/readme.md": "vlc-v1.2.1/vlc_linux_readme.md",
   "public/plugins/vlc-macos/readme.md": "vlc-v1.2.1/vlc_macos_readme.md",
   "public/plugins/vlc-windows/readme.md": "vlc-v1.2.1/vlc_windows_readme.md",

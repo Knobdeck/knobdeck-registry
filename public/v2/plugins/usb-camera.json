@@ -1,0 +1,742 @@
+{
+  "schema": 2,
+  "id": "usb-camera",
+  "name": "USB Camera",
+  "repository": "https://github.com/Knobdeck/knobdeck-plugins",
+  "latest": {
+    "version": "1.0.0",
+    "released": "2026-11-28T17:35:51Z",
+    "platforms": {
+      "linux": {
+        "id": "usb-camera-linux",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/usb-camera-v1.0.0/usb-camera_linux_1.0.0.knobdeck",
+        "sha256": "c70e9c91b1306bc40665a562f81fd09118f3d9690b6e9818277fa96ac12e9188",
+        "size": 297497,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/usb-camera-linux/readme.md"
+      },
+      "windows": {
+        "id": "usb-camera-windows",
+        "url": "https://github.com/Knobdeck/knobdeck-plugins/releases/download/usb-camera-v1.0.0/usb-camera_windows_1.0.0.knobdeck",
+        "sha256": "98205790eaeffb3ddf5b817ec2c1344c577ba2a80c0336547fe78344e35a027c",
+        "size": 197822,
+        "readmeUrl": "https://app.knobdeck.harshalkudale.com/plugins/usb-camera-windows/readme.md"
+      }
+    }
+  },
+  "changelog": "- First release: sliders for every image, exposure, focus, zoom, pan and tilt control a USB\n  webcam (UVC) reports, switches for its auto modes, and generic Camera Control, Switch, Option,\n  Set and Reset actions for anything else it offers. Linux (V4L2) and Windows (DirectShow).",
+  "setup": false,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "usb-camera-v1.0.0",
+      "released": "2026-11-28T17:35:51Z",
+      "yanked": false,
+      "reason": null
+    }
+  ],
+  "actions": {
+    "brightness": {
+      "type": "slider",
+      "label": "Brightness",
+      "icon": "sun",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "contrast": {
+      "type": "slider",
+      "label": "Contrast",
+      "icon": "contrast",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "saturation": {
+      "type": "slider",
+      "label": "Saturation",
+      "icon": "droplet",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "hue": {
+      "type": "slider",
+      "label": "Hue",
+      "icon": "palette",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "sharpness": {
+      "type": "slider",
+      "label": "Sharpness",
+      "icon": "triangle",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "gamma": {
+      "type": "slider",
+      "label": "Gamma",
+      "icon": "sun-dim",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "gain": {
+      "type": "slider",
+      "label": "Gain",
+      "icon": "gauge",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "backlight": {
+      "type": "slider",
+      "label": "Backlight Compensation",
+      "icon": "sun-medium",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "white-balance": {
+      "type": "slider",
+      "label": "White Balance",
+      "icon": "thermometer",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "exposure": {
+      "type": "slider",
+      "label": "Exposure",
+      "icon": "aperture",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "focus": {
+      "type": "slider",
+      "label": "Focus",
+      "icon": "focus",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "zoom": {
+      "type": "slider",
+      "label": "Zoom",
+      "icon": "zoom-in",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "pan": {
+      "type": "slider",
+      "label": "Pan",
+      "icon": "move-horizontal",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "tilt": {
+      "type": "slider",
+      "label": "Tilt",
+      "icon": "move-vertical",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "roll": {
+      "type": "slider",
+      "label": "Roll",
+      "icon": "rotate-cw",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "iris": {
+      "type": "slider",
+      "label": "Iris",
+      "icon": "circle-dot",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "auto-exposure": {
+      "type": "toggle",
+      "label": "Auto Exposure",
+      "icon": "video",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "video-off"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "video"
+        }
+      ]
+    },
+    "auto-white-balance": {
+      "type": "toggle",
+      "label": "Auto White Balance",
+      "icon": "video",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "video-off"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "video"
+        }
+      ]
+    },
+    "autofocus": {
+      "type": "toggle",
+      "label": "Autofocus",
+      "icon": "video",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "video-off"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "video"
+        }
+      ]
+    },
+    "auto-hue": {
+      "type": "toggle",
+      "label": "Auto Hue",
+      "icon": "video",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "video-off"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "video"
+        }
+      ]
+    },
+    "control": {
+      "type": "slider",
+      "label": "Camera Control",
+      "icon": "sliders-horizontal",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "control",
+          "type": "select",
+          "label": "Control"
+        },
+        {
+          "key": "step",
+          "type": "text",
+          "label": "Step (%)",
+          "default": "5"
+        }
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    "switch": {
+      "type": "toggle",
+      "label": "Camera Switch",
+      "icon": "toggle-right",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "control",
+          "type": "select",
+          "label": "Control"
+        }
+      ],
+      "states": [
+        {
+          "value": "off",
+          "label": "Off",
+          "icon": "toggle-left"
+        },
+        {
+          "value": "on",
+          "label": "On",
+          "icon": "toggle-right"
+        }
+      ]
+    },
+    "option": {
+      "type": "button",
+      "label": "Camera Option",
+      "icon": "list",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "control",
+          "type": "select",
+          "label": "Control"
+        },
+        {
+          "key": "direction",
+          "type": "select",
+          "label": "Each press",
+          "default": "next",
+          "options": [
+            "next",
+            "previous"
+          ]
+        }
+      ]
+    },
+    "set": {
+      "type": "button",
+      "label": "Set Camera Control",
+      "icon": "sliders-horizontal",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "control",
+          "type": "select",
+          "label": "Control"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Position (%)",
+          "default": "50"
+        }
+      ]
+    },
+    "reset": {
+      "type": "button",
+      "label": "Reset Camera Control",
+      "icon": "rotate-ccw",
+      "platforms": [
+        "linux",
+        "windows"
+      ],
+      "inputs": [
+        {
+          "key": "camera",
+          "type": "select",
+          "label": "Camera",
+          "default": "__first__"
+        },
+        {
+          "key": "control",
+          "type": "select",
+          "label": "Control",
+          "default": ""
+        },
+        {
+          "key": "all",
+          "type": "checkbox",
+          "label": "Reset every control of the camera"
+        }
+      ]
+    }
+  },
+  "companions": []
+}
