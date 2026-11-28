@@ -1,0 +1,7 @@
+id = "usb-camera"
+source = { repo = "Knobdeck/knobdeck-plugins", path = "usb-camera", tag = "usb-camera-v{version}" }
+first_party = true
+featured = false
+sort = 113
+tags = ["Streaming", "Camera"]
+companions = []
